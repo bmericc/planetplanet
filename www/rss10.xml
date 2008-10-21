@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns="http://purl.org/rss/1.0/"
+>
+<channel rdf:about="http://gezegen.linux.org.tr">
+	<title>Linux Gezegeni</title>
+	<link>http://gezegen.linux.org.tr</link>
+	<description>Linux Gezegeni - http://gezegen.linux.org.tr</description>
+
+	<items>
+		<rdf:Seq>
+			<rdf:li rdf:resource="http://serkan.gen.tr/aug/181" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-7538492.post-1940559228991742784" />
+			<rdf:li rdf:resource="http://serkank.wordpress.com/?p=132" />
+			<rdf:li rdf:resource="http://enveraltin.com/1910080354" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-10228790.post-3602928580930794976" />
+			<rdf:li rdf:resource="http://www.bugunlinux.com/?p=118" />
+			<rdf:li rdf:resource="http://blog.arsln.org/?p=537" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-20350364.post-2201886036335522812" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=148" />
+			<rdf:li rdf:resource="http://www.hakanuygun.com/blog/?p=132" />
+			<rdf:li rdf:resource="http://feeds.feedburner.com/~r/nesimia-gezegen/~3/422423188/qticari-beta-1" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2008/10/16/201/" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-20350364.post-7355011342446328595" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/200/" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/ftp/?p=5" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=147" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/199/" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/198/" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2008/10/14/197/" />
+			<rdf:li rdf:resource="http://ozgurlukicin.com/haber/openofficeorg-30-duyuruldu/" />
+			<rdf:li rdf:resource="http://6kere9.com/blag/2008/10/14/73/" />
+			<rdf:li rdf:resource="http://ozgurlukicin.com/haber/linux-yuklu-dijital-piyano/" />
+			<rdf:li rdf:resource="http://raptiye.org/blog/2008/10/13/arch-linuxda-turkce-yazim-kontrolu/" />
+			<rdf:li rdf:resource="http://sehitoglu.web.tr/gunluk/?p=105" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/webcg/?p=12" />
+		</rdf:Seq>
+	</items>
+</channel>
+
+<item rdf:about="http://serkan.gen.tr/aug/181">
+	<title>Serkan Altuntaş: Samsung ML-1610 Mono Laser Printer</title>
+	<link>http://serkan.gen.tr/aug/181</link>
+	<content:encoded>Babam acilen bir lazer yazıcıya ihtiyaç duyunca bugün aşırı değerli dolara rağmen Samsung ML-1610 Mono Laser Printer aldık. Hatta o kadar acilen lazımdı ki şehirdeki Bimeks ve iki Teknosa&amp;#8217;da bu modelden kutusu açılmamış tek bir ürün bile kalmadığından benim hiç yapmayacağım bir şeyi yapıp teşhir ürününü aldık. Gerçi karlı da çıktık. Normalde kutuyla gelen %60 [...]</content:encoded>
+	<dc:date>2008-10-19T20:36:35+00:00</dc:date>
+</item>
+<item rdf:about="tag:blogger.com,1999:blog-7538492.post-1940559228991742784">
+	<title>Necati Demir: Ülkemden Şahit Manzaraları - I</title>
+	<link>http://blog.demir.web.tr/2008/10/lkemden-ahit-manzaralar-i.html</link>
+	<content:encoded>Dikkat: Gerçek Bir Olaydır!&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;40 yaşlarında bir adam, 1 yaşını henüz doldurmuş çocuğu için dışarı süt almaya çıkmıştır. Mahallede bir bağrışma duyar, yaklaşır. Bir kavga gürültü vardır, olay biterken jandarma sorar: &quot;şahit misin?&quot;. &quot;Evet&quot; cevabını veren adam o akşam evine dönemez. O akşam nezarethanede kalır, ertesi gün cezaevine gönderilir. Anlamamıştır, şahit olmaya gelmişti sadece. 45 gün sonra duruşma var derler, 45 gün cezaevinde kalmak zorundadır. 45 gün sonra da heyecan içinde çıkacağını düşünmektedir, ne de olsa sadece şahit olmaya gelmişti. Ve mahkeme günü gelip çatmıştır, çıkıp çocuklarını görecektir artık. Zaten, cezaevindeki görüşlerde de karısına, &quot;çocuklara dikkat et&quot; deyip durmuştu, özlemişti anlaşılan. Ama, o gün hakim mahkemeyi 1 ay erteler. Özlemle sarılma umutları bir anda sönmüştür Sebepsiz yere 1 ay daha 4 duvar arasında yaşamak zorunda kalacaktır.</content:encoded>
+	<dc:date>2008-10-19T16:44:00+00:00</dc:date>
+</item>
+<item rdf:about="http://serkank.wordpress.com/?p=132">
+	<title>Serkan Kaba: Bazaar sürüm kontrol sistemi</title>
+	<link></link>
+	<content:encoded>Daha önce sadece Java-Gnome projesine yama (Bazaar terminolojisiyle bundle) göndermek için kullandığım Bazaar&amp;#8216;ı bu haftasonu deneme fırsatım oldu. Uzaktaki bir arkadaşım ile basit bir proje üzerinde çalışacaktık. Ne kadar basit olsa bile klasik yöntemlerle çalışsak aramızda ya email ile sürekli kod gidip gelecek ya da en iyi ihtimalle FTP sunucusu üzerine yazarak kodlarımızı paylaşacaktık. CVS, [...]</content:encoded>
+	<dc:date>2008-10-19T09:34:01+00:00</dc:date>
+</item>
+<item rdf:about="http://enveraltin.com/1910080354">
+	<title>Enver Altın: A brave new world</title>
+	<link>http://enveraltin.com/blog/1910080354.html</link>
+	<content:encoded>&lt;p&gt;End of an era marks the beginning of another one. With enormous sculpted success standing right behind me, I've recently quit &lt;a href=&quot;http://www.cellenity.com/&quot;&gt;Cellenity&lt;/a&gt; to &lt;a href=&quot;http://www.construia.com/&quot;&gt;explore&lt;/a&gt; what else the future has to offer.&lt;/p&gt;
+&lt;p&gt;On the way back home I stumbled upon the tail of this guy:&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;http://enveraltin.com/img/kayserili.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I spent the time and fuel that I'd normally be wasting around rush-hours Istanbul traffic on shows like Cebit Eurasia and Autoshow. Quick sum: Cebit is incrementally better every year, but Autoshow was spectacular. I've had the privilege to peek inside the Megane Coupe Concept, I shook hands with a member of the team who designed Sakarya University's 100% solar-cell racing car. Although fun, the rest was usual: short skirts, leg ladies, inefficient internal combustion engines, ugly car designs, little-to-no steps forward in evolution of transportation. Hybrids and electric vehicles receiving more attention was encouraging.&lt;/p&gt;
+&lt;p&gt;What comes next, I'll be blogging.&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-19T07:54:00+00:00</dc:date>
+</item>
+<item rdf:about="tag:blogger.com,1999:blog-10228790.post-3602928580930794976">
+	<title>Murat Hazer: JBoss Seam kitapları ....</title>
+	<link>http://mhazer.blogspot.com/2008/10/jboss-seam-kitaplar.html</link>
+	<content:encoded>Bir önceki yazımda JBoss Seam'in klasik Java Enterprise Development (JEE)'a kazandırdığı çeviklikten, programlama modeline, metodolojisine getirdiği &lt;a href=&quot;http://solutionsfit.com/blog/2008/09/29/seam-and-web-beans-not-just-evolutionary-revolutionary/&quot;&gt;devrim&lt;/a&gt; niteliğindeki özelliklerinden bahsetmeye çalıştım. Yeni bir teknoloji öğrenmenin en iyi yolunun o konu hakkında yazılmış kaliteli kitap(lar)ı okumak olduğunu düşünenlerdenim. Bu yazımda da Seam hakkında yazılmış kitapları ve bu kitaplar hakkındaki düşüncelerimi paylaşmaya çalışacağım.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://2.bp.blogspot.com/_4xA01uC1N2Q/SPeoZaWnNaI/AAAAAAAAAZU/dAIV-io6JuA/s1600-h/seaminaction.jpg&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_4xA01uC1N2Q/SPeoZaWnNaI/AAAAAAAAAZU/dAIV-io6JuA/s200/seaminaction.jpg&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5257856244502705570&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&quot;&lt;a href=&quot;http://www.manning.com/dallen/&quot;&gt;Seam in Action&lt;/a&gt;&quot; Seam'i en kapsamlı şekilde anlatan, okunması rahat ve bol örnekleri olan bir kitap. Manning yayınevinin diğer kitapları gibi bu kitap da oldukça kaliteli ve çok iyi edit edilmiş. Bu kitabı &lt;a href=&quot;http://www.manning.com/about/meap.html&quot;&gt;Early Access&lt;/a&gt; seviyesinden beri takip ediyorum ve her sayfasından yeni bir şeyler öğrendim diyebilirim. Ayrıca referans kitabı olarak kullanılabilecek şekilde kapsamlı olduğu için başucu kitabı niteliğinde. Fakat kitap Seam'e ilk başlayanlar için biraz ağır gelebilir onun için biraz deneyim kazanıldıktan sonra okunmalı. (5/5)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;a href=&quot;http://1.bp.blogspot.com/_4xA01uC1N2Q/SPesnXwmmnI/AAAAAAAAAZk/F7WdXGU1WHc/s1600-h/9781590597927.gif&quot;&gt;&lt;img src=&quot;http://1.bp.blogspot.com/_4xA01uC1N2Q/SPesnXwmmnI/AAAAAAAAAZk/F7WdXGU1WHc/s200/9781590597927.gif&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5257860882371091058&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;Apress yayınevinden çıkan &quot;&lt;a href=&quot;http://www.apress.com/book/view/1590597923&quot;&gt;Beginning JBoss Seam&lt;/a&gt;&quot; özellikle yeni başlayanlar için çok yararlı diyebilirim. Özellikle Seam'in getirdiği yeniliklerden Bijection ve Web Conversation kavramının temellerini başarılı ve kolay anlaşılır bir şekilde anlatıyor.&lt;br /&gt;(4/5)&lt;br /&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;hr /&gt;&lt;p&gt;&lt;/p&gt;&lt;br /&gt;&lt;a href=&quot;http://2.bp.blogspot.com/_4xA01uC1N2Q/SPetUVjXGHI/AAAAAAAAAZ0/3Lx6TlKXZl0/s1600-h/seamyuan.jpg&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_4xA01uC1N2Q/SPetUVjXGHI/AAAAAAAAAZ0/3Lx6TlKXZl0/s200/seamyuan.jpg&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5257861654872791154&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Seam'in 1.x versiyonu sürecindeki geliştiricilerinden&lt;span&gt; Michael Juntao Yuan'ın yazarlığını yaptığı &lt;/span&gt;&quot;&lt;a href=&quot;http://www.amazon.com/Seam-Framework-Experience-Evolution-JBoss/dp/0137129394/ref=pd_bbs_sr_5?ie=UTF8&amp;amp;s=books&amp;amp;qid=1224268151&amp;amp;sr=8-5&quot;&gt;JBoss Seam: Simplicity and Power Beyond Java&lt;/a&gt;&quot; &lt;span&gt; bu kitap yine Seam'e yeni başlayanlar için güzel bir kaynak. Şu anda satışta olan versiyon Seam 1.x sürümünü kapsıyor fakat yakın zamanda Seam 2.x'i kapsayan &lt;a href=&quot;http://www.amazon.com/Seam-Framework-Experience-Evolution-JBoss/dp/0137129394/ref=pd_bbs_sr_5?ie=UTF8&amp;amp;s=books&amp;amp;qid=1224268151&amp;amp;sr=8-5&quot;&gt;yeni sürümü&lt;/a&gt; yayınlanacak.&lt;/span&gt;&lt;br /&gt;(4/5)&lt;br /&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;/p&gt;&lt;br /&gt;&lt;a href=&quot;http://1.bp.blogspot.com/_4xA01uC1N2Q/SPetE5TUo6I/AAAAAAAAAZs/8mum2kwv43c/s1600-h/practical.gif&quot;&gt;&lt;img src=&quot;http://1.bp.blogspot.com/_4xA01uC1N2Q/SPetE5TUo6I/AAAAAAAAAZs/8mum2kwv43c/s200/practical.gif&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5257861389591290786&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Apress yayınevinden çıkan diğer bir kitap &quot;&lt;a href=&quot;http://www.apress.com/book/view/1590598636&quot;&gt;Practical JBoss Seam Projects&lt;/a&gt;&quot;. Henüz bu kitabı okumaya zamanım olmadı fakat okuma listemde üst sıralarda. Okuyan arkadaşlar fikirlerini paylaşabilirlerse çok sevinirim.&lt;br /&gt;(?/5)&lt;br /&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;/p&gt;&lt;br /&gt;&lt;a href=&quot;http://2.bp.blogspot.com/_4xA01uC1N2Q/SPetuBU4CAI/AAAAAAAAAZ8/q5Qb_toS_qI/s1600-h/hibernateinaction.jpg&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_4xA01uC1N2Q/SPetuBU4CAI/AAAAAAAAAZ8/q5Qb_toS_qI/s200/hibernateinaction.jpg&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5257862096119924738&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Seam'in ve Hibernate'in yaratıcısı olan Gavin King'in yazarlığını yaptığı &quot;Java Persistence with Hibernate&quot;'in son ünitesi Seam'e ayrılmış. Seam'in ortaya çıkış sürecini ve temel özelliklerini yaratıcısının kaleminden okumak isteyenler mutlaka göz atmalılar.&lt;br /&gt;(5/5)&lt;br /&gt;&lt;p&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-17T19:32:05+00:00</dc:date>
+</item>
+<item rdf:about="http://www.bugunlinux.com/?p=118">
+	<title>Ahmet Yıldız: Geri Sayım Başladı</title>
+	<link>http://www.bugunlinux.com/?p=118</link>
+	<content:encoded>&lt;p&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-16T21:50:18+00:00</dc:date>
+</item>
+<item rdf:about="http://blog.arsln.org/?p=537">
+	<title>Fatih Arslan: Bardağın yarısı boş mu yoksu dolu mu?</title>
+	<link>http://blog.arsln.org/bardagin-yarisi-bos-mu-yoksu-dolu-mu/</link>
+	<content:encoded>&lt;p&gt;Bur meşhur &lt;a href=&quot;http://en.wikipedia.org/wiki/Is_the_glass_half_empty_or_half_full%3F&quot;&gt;sorunun&lt;/a&gt; bir çok cevabı var. Msn iletisinde şunları yazmıştı geçen bir arkadaşım:&lt;br /&gt;
+&lt;strong&gt;&lt;br /&gt;
+To the optimist, the glass is half full.&lt;br /&gt;
+To the pessimist, the glass is half empty.&lt;br /&gt;
+To the engineer, the glass is twice as big as it needs to be.&lt;br /&gt;
+&lt;/strong&gt;&lt;br /&gt;
+Benim çok hoşuma gitmişti. Aklıma takılmış olacak ki web&amp;#8217;de oradan oraya zıplarken bir yerde şu harika cümleyi gördüm:&lt;br /&gt;
+&lt;strong&gt;&lt;br /&gt;
+The physicists say the glass is neither. It is completely full, half with water, the other half with air.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ardından bugün okulda arkadaşımı gördüm ve bunu söylemiştim. Sonra başardık konuşmaya, başkaları ne derdi acaba diye düşünüyorken kendi aramızda, ben de o arada atladım ve &amp;#8220;&lt;em&gt;Filizof ne derdi ? &lt;/em&gt;&amp;#8221; diye sordum Biraz sessizlik oldu, düşünürken şunu deyiverdim:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hangi bardak ? &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu da böyle bir anımdı bugün. Bu bardağın yarısı boş mu dolu mu sorusu bu arada bilimsel olarak kullanılan bir metotmuş. Adı da &lt;a href=&quot;http://en.wikipedia.org/wiki/Litmus_test_(politics)&quot;&gt;Litmust Testi&lt;/a&gt;. Psikoloji&amp;#8217;de bir insanın en basitinden &lt;strong&gt;iyimser&lt;/strong&gt; mi &lt;strong&gt;kötümser&lt;/strong&gt; mi düşündüğünü belirtmek için yarıyormuş. Bu yöntem ile çok farklı düşünen insanları da görmek mümkün oluyor , örneğin yukarıdaki &lt;strong&gt;mühendis&lt;/strong&gt; örneği gibi.&lt;/p&gt;
+&lt;p&gt;Bu testi farklı amaçlarla da kullanabiliyoruz, örneğin bir  bardaki barmen-müşteri &lt;a href=&quot;http://de.wikipedia.org/wiki/Wikipedia:Humorarchiv/Halb_voll_oder_halb_leer%3F&quot;&gt;ilişikisi&lt;/a&gt;.  &lt;strong&gt;Barmen&lt;/strong&gt; bardağı her zaman tam dolu, yarı dolu, çeyrek dolu,&amp;#8230; şeklinde görüyor etrafı, fakat bardaki müşteriler için tam tersi, onlar tam boş, yarım boş, çeyrek boş,&amp;#8230; şeklinde görüyorlar etraftaki bardakları.  &lt;/p&gt;
+	&lt;p&gt;&lt;/p&gt;
+	&lt;hr noshade=&quot;noshade&quot; /&gt;
+	&lt;small&gt;&lt;p&gt;Copyleft - Fatih Arslan - &lt;a href=&quot;http://blog.arsln.org&quot;&gt;Arslanlar Şehri&lt;/a&gt;, 2008. |
+	&lt;a href=&quot;http://blog.arsln.org/bardagin-yarisi-bos-mu-yoksu-dolu-mu/&quot;&gt;Permalink&lt;/a&gt; |
+	&lt;a href=&quot;http://blog.arsln.org/bardagin-yarisi-bos-mu-yoksu-dolu-mu/#comments&quot;&gt;Yorum(0)&lt;/a&gt;&lt;/p&gt;&lt;/small&gt;</content:encoded>
+	<dc:date>2008-10-16T21:00:40+00:00</dc:date>
+</item>
+<item rdf:about="tag:blogger.com,1999:blog-20350364.post-2201886036335522812">
+	<title>Necdet Yücel: Akademik Bilişim 2009</title>
+	<link>http://nyucel.blogspot.com/2008/10/akademik-biliim-2009.html</link>
+	<content:encoded>XI. Akademik Bilişim Konferansı bu yıl Şanlıurfa'da Harran Üniversitesinde &lt;a href=&quot;http://ab.org.tr/&quot;&gt;yapılacak&lt;/a&gt;. Yakında Akgül Hocanın &lt;em&gt;aktif katılım çağrısı&lt;/em&gt;nı alırsınız ama ben şimdiden haber vereyim dedim.&lt;br /&gt;&lt;br /&gt;Her yıl olduğu gibi bu yıl da Konferans düzenlenmeden önce ev sahibi üniversitede bir toplantı yapılacak; 31 Ekimde Harran'da olacağız. Nereye gideceğiniz konusunda fikriniz olsun diye fotoğraflar eklerim ;)</content:encoded>
+	<dc:date>2008-10-16T20:31:56+00:00</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=148">
+	<title>LKD YK: Eylül Ayı Üye Bülteni Yayınlandı</title>
+	<link>http://gunluk.lkd.org.tr/yk/2008/10/16/eylul-ayi-uye-bulteni-yayinlandi/</link>
+	<content:encoded>&lt;p&gt;Linux Kullanıcıları Derneği’nin yapmış olduğu çalışmaların konsantre bir şekilde anlatıldığı aylık bülteni bu kez Eylül ayı için dernek üyelerimizden Seyfi Genç hazırladı. Bülten tüm üyelerimizin e-posta adreslerine gönderildi.&lt;/p&gt;
+&lt;p&gt;Gönderim sırasında Temmuz ayında olduğu gibi ufak çaplı bir kaza da yaşadık, e-postalara Reply-To yerine yanlışlıkla BCC (gizli karbon kopya) satırı eklenmesi nedeniyle yönetim kurulu listesinin moderatörleri Alper ve Doruk&amp;#8217;un posta kutularına bir anda 1000′e yakın e-posta doldu&amp;#8230; Neyse en azından bu sefer liste arşivleri kurtuldu :) (züğürt tesellisi)&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-16T20:02:32+00:00</dc:date>
+</item>
+<item rdf:about="http://www.hakanuygun.com/blog/?p=132">
+	<title>Hakan Uygun: Google Chrome, Özgür Yazılım ve Amerikan Ticaret Kanunları</title>
+	<link>http://www.hakanuygun.com/blog/?p=132</link>
+	<content:encoded>&lt;p&gt;&lt;a href=&quot;http://www.webrazzi.com/2008/10/15/google-suriye%e2%80%99-de-chrome-kullanimini-engelledi/&quot;&gt;webrazzi&lt;/a&gt;&amp;#8216;den okuduğum habere göre Google Chrome uygulamasını Suriye, İran ve Amerikan Ticaret Kanunu&amp;#8217;na göre ambargolu bir çok ülkeden indirilmesine kapatmış. Gene aynı haber içerisinde Google&amp;#8217;ın Adsense için her hangi bir yaptırım uygulamadığı söyleniyor. Yazıda ticari bir hizmetin kapatılmayıp, ücretsiz bir yazılımın kapatılması üzerinde duruluyor&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Bense başka bir noktaya takıldım. Özgür yazılım lisanslarının Ticaret Kanunları çerçevesinde nasıl değerlendirileceği.&lt;/p&gt;
+&lt;p&gt;Sonuç ürün üzerinde Amerikan Ticaret kanunları çerçevesinde bir ambargo söz konusu olabilir, sonuçta Google bir pazar olarak Amerika ve kanunlarla uğraşmak yerine zaten bir pazar olarak görmediği ülkeler için ambargoyu uygular. Kaynak kodlara ulaşılması, derlenmesi ve ilgili kanunların geçerli olmadığı başka ülkeler üzerinden tekrar yayınlanması ise engellenemez. Tam bu noktada düşündüğüm ise çeşitli kanunlarla özgür yazılım ürünü kaynak kodlarımızında yasaklanması söz konusu olabilir mi? Son durumunu bilmiyorum ama bir dönem Amerikan kanunları nedeniyle şifreleme algoritmaları açısından bir dolu sorun yaşanıyordu&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Bir de aklıma takılan acaba Amerika tarafından ambargolu ülkeler acaba bir fork yaparlar mı?  &lt;img src=&quot;http://www.hakanuygun.com/blog/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;Aslında, dünyanın bu kadar küçüldüğü, sınırların bu kadar belirsizleştiği bir ortamda bir şeylerin kanunlarla sınırlandırılmaya çalışılması konusunda sorulacak o kadar fazla soru ve tartışılacak konu var ki&amp;#8230;&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-16T18:06:04+00:00</dc:date>
+</item>
+<item rdf:about="http://feeds.feedburner.com/~r/nesimia-gezegen/~3/422423188/qticari-beta-1">
+	<title>Nesimi Acarca: QTicari Beta-1</title>
+	<link>http://feeds.feedburner.com/~r/nesimia-gezegen/~3/422423188/qticari-beta-1</link>
+	<content:encoded>&lt;p&gt;&lt;strong&gt;QTicari&lt;/strong&gt;, mod&amp;uuml;ler otomasyon sisteminin beta-1 s&amp;uuml;r&amp;uuml;m&amp;uuml; kullanıma hazır. Bu s&amp;uuml;r&amp;uuml;m ile birlikte projenin lisansı da, &lt;a target=&quot;_blank&quot; href=&quot;http://tr.pardus-wiki.org/GNU_GPL_(Genel_Kamu_Lisans%C4%B1)_S%C3%BCr%C3%BCm_3_Gayr%C4%B1resm%C3%AE_%C3%87evirisi&quot;&gt;GPLv3&lt;/a&gt; olarak değiştirilmiştir. (Alpha-1 GPLv2 idi)&lt;br /&gt;
+&lt;strong&gt;&lt;br /&gt;
+Projeye destek olmak i&amp;ccedil;in :&amp;nbsp; &lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.nesimia.com/projects/qticari#donate&quot;&gt;http://www.nesimia.com/projects/qticari#donate&lt;/a&gt; adresine tıklayıp bağış yapabilir.&lt;/li&gt;
+    &lt;li&gt;Yeni mod&amp;uuml;l yada belge yazabilir.&lt;/li&gt;
+    &lt;li&gt;Tavsiye edebilir.&lt;/li&gt;
+    &lt;li&gt;Olmadı, bir hayır duası edebilirsiniz.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;
+İlk se&amp;ccedil;enek tercihimizdir. :-)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projenin kaynak kodları ve ekran g&amp;ouml;r&amp;uuml;nt&amp;uuml;leri i&amp;ccedil;in:&lt;/strong&gt;&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;http://www.nesimia.com/projects/qticari&quot;&gt;http://www.nesimia.com/projects/qticari&lt;/a&gt; adresine tıklayabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Şuan proje i&amp;ccedil;erisinde iki adet mod&amp;uuml;l, &lt;strong&gt;barkod&lt;/strong&gt; ve &lt;strong&gt;ticari&lt;/strong&gt; mod&amp;uuml;lleri t&amp;uuml;mleşik olarak gelmektedir. Bu mod&amp;uuml;ller hakkında kısaca bilgi vermek gerekirse;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ticari:&lt;/strong&gt; B&amp;uuml;nyesinde; cari, stok, kasa, fatura gibi temel muhasebe mod&amp;uuml;llerini barındıran paket. &lt;br /&gt;
+&lt;u&gt;&lt;em&gt;Kullanım belgeleri i&amp;ccedil;in: &lt;/em&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;http://forums.nesimia.com/index.php?9&quot;&gt;http://forums.nesimia.com/index.php?9&lt;/a&gt; adresine tıklayın.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Barkod:&lt;/strong&gt; Barkod etiket tasarımı yapıp, &amp;ccedil;ıktı alabilmenize yarayan mod&amp;uuml;l. &lt;br /&gt;
+&lt;u&gt;&lt;em&gt;Kullanım belgeleri i&amp;ccedil;in:&lt;/em&gt;&lt;/u&gt;&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;http://forums.nesimia.com/list.php?15&quot;&gt;http://forums.nesimia.com/list.php?15&lt;/a&gt; adresine tıklayın.&lt;/p&gt;
+&lt;p&gt;Ayrıca;&lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Kurulum ve yapılandırma belgeleri i&amp;ccedil;in: &lt;/strong&gt;&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;http://forums.nesimia.com/list.php?8&quot;&gt;http://forums.nesimia.com/list.php?8&lt;/a&gt; adresine tıklayın. &lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Forumlar i&amp;ccedil;in : &lt;/strong&gt;&lt;br /&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;http://forums.nesimia.com/index.php?5&quot;&gt;http://forums.nesimia.com/index.php?5&lt;/a&gt; adresine tıklayın.&lt;br /&gt;
+&lt;strong&gt;&lt;br /&gt;
+&lt;/strong&gt;&lt;/p&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/nesimia-gezegen/~4/422423188&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</content:encoded>
+	<dc:date>2008-10-16T08:21:21+00:00</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2008/10/16/201/">
+	<title>Bora Güngören: Yine güzel bir blog</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2008/10/16/201/</link>
+	<content:encoded>&lt;p&gt;Bugünlerde sosyal ağlarda bir şeyler ararken (evet aranabiliyor) tematik blogu olanlar daha da çok dikkatimi çekiyor. Bu sefer de çok güzel bir &lt;a href=&quot;http://pazarlamacigiremez.blogspot.com/&quot;&gt;pazarlama blogu&lt;/a&gt; dikkatimi çekti. &lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-16T00:09:00+00:00</dc:date>
+</item>
+<item rdf:about="tag:blogger.com,1999:blog-20350364.post-7355011342446328595">
+	<title>Necdet Yücel: Fazıl Hüsnü Dağlarca</title>
+	<link>http://nyucel.blogspot.com/2008/10/fazl-hsn-dalarca.html</link>
+	<content:encoded>&lt;a href=&quot;http://members.comu.edu.tr/nyucel/img/blog/daglarca.jpg&quot;&gt;&lt;img src=&quot;http://members.comu.edu.tr/nyucel/img/blog/daglarca.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Türk şiirinin büyük ismi &lt;a href=&quot;http://tr.wikipedia.org/wiki/Faz%C4%B1l_H%C3%BCsn%C3%BC_Da%C4%9Flarca&quot;&gt;Fazıl Hüsnü Dağlarca&lt;/a&gt; 94 yaşında zatürre tedavisi gördüğü hastanede yaşamını yitirdi.&lt;br /&gt;&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>2008-10-15T23:08:13+00:00</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/200/">
+	<title>Bora Güngören: Aküyle çalışan atsız fayton</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/200/</link>
+	<content:encoded>&lt;p&gt;Memleketim insanı yapar tabii. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.radikal.com.tr/Default.aspx?aType=Detay&amp;amp;ArticleID=903522&amp;amp;Date=15.10.2008&amp;amp;CategoryID=79&quot;&gt;&lt;img src=&quot;http://i.radikal.com.tr/644x385/2008/10/15/fft5_mf59848.Jpeg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-15T20:56:00+00:00</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/ftp/?p=5">
+	<title>FTP ekibi: OpenOffice 3.0 Çıktı</title>
+	<link>http://gunluk.lkd.org.tr/ftp/2008/10/15/openoffice-30-cikti/</link>
+	<content:encoded>&lt;p&gt;OpenOffice 3.0 çıktı, yansımızda da yerini aldı.&lt;/p&gt;
+&lt;p&gt;İndirmek için:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;ftp://ftp.linux.org.tr/pub/openoffice.TR/3.0.0/tr&quot; target=&quot;_blank&quot;&gt;Türkçe OpenOffice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;ftp://ftp.linux.org.tr/pub/openoffice.org/stable/3.0.0&quot; target=&quot;_blank&quot;&gt;İngilizce OpenOffice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ayrıca &lt;a href=&quot;http://www.openoffice.org.tr/&quot; target=&quot;_blank&quot;&gt;OpenOffice Türkiye web sayfası&lt;/a&gt;nda ek bilgiler bulabilirsiniz.&lt;/p&gt;
+&lt;p&gt;- yansı ekibi&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-15T13:16:24+00:00</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=147">
+	<title>LKD YK: Dünya Plone Günü’nde Plone Semineri</title>
+	<link>http://gunluk.lkd.org.tr/yk/2008/10/15/dunya-plone-gununde-plone-semineri/</link>
+	<content:encoded>&lt;p&gt;Önde gelen özgür içerik yönetim sistemlerinden &lt;a href=&quot;http://plone.org&quot;&gt;Plone&lt;/a&gt;&amp;#8216;un yaygınlaştırılması için 7 Kasım &amp;#8220;&lt;a href=&quot;http://plone.org/events/wpd&quot;&gt;Dünya Plone Günü&lt;/a&gt;&amp;#8221; ilan edildi ve o günde dünyanın dört bir yanında Plone&amp;#8217;u tanıtma ve yaygınlaştırma amacıyla seminerler düzenleniyor.&lt;/p&gt;
+&lt;p&gt;Derneğimizin köklerini oluşturan, o zamanki adıyla Linux Kullanıcıları Grubu&amp;#8217;nun aktif insanlarından H. Turgut Uyar bizimle bağlantı kurarak bu etkinliği haber verdi ve o gün bu konuda bir seminer verebileceğini söyledi. Çoğumuz onu 90&amp;#8242;lı yıllardaki Türkiye&amp;#8217;nin ilk GNU/Linux dağıtımı, Turkuaz Linux&amp;#8217;tan hatırlıyoruz. Kendisi 2002 yılından bu yana da Plone kullanıyor. Plone ile site projeleri gerçekleştirdi (www.lkd.org.tr de dahil), Plone&amp;#8217;u temel alan uygulamalar geliştirdi ve Plone&amp;#8217;un Türkçe çevirisini yaptı. Aynı zamanda Plone Vakfı&amp;#8217;nın üyesi.&lt;/p&gt;
+&lt;p&gt;Etkinlikten haberdar olan &lt;a href=&quot;http://www.inetd.org.tr&quot;&gt;Internet Teknolojileri Derneği&lt;/a&gt; de etkinliğin tanıtımında katkıda bulunmak istediğini belirtti. &lt;a href=&quot;http://www.bilgi.edu.tr&quot;&gt;Bilgi Üniversitesi&lt;/a&gt; ile bağlantı kurduğumuzda, seve seve böyle bir etkinliğe ev sahipliği yapacaklarını belirttiler.&lt;/p&gt;
+&lt;p&gt;Plone&amp;#8217;la ve Plone&amp;#8217;a ilgi duyan insanlarla tanışmak isteyen herkesi Dünya Plone Günü, 07 Kasım 2008&amp;#8242;de, 14:00-15:00 arasında İstanbul Bilgi Üniversitesi Dolapdere Kampüsü&amp;#8217;nün D132 numaralı salonuna bekliyoruz.&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-15T06:50:06+00:00</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/199/">
+	<title>Bora Güngören: Bodoslama Bilişim Şirketi 4 - Finans Dediğin Elinin Kiri</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/199/</link>
+	<content:encoded>&lt;p&gt;Bu seferki öykü özellikle 2000 krizini yaşayanların bazılarına tanıdık gelecektir herhalde. Mevcut ekonomik durum için de öğretici olur diye düşünüyorum. &lt;/p&gt;
+&lt;p&gt;Genç girişimcimizin şirketi çok ciddi bir kaç kamu projesi aldıktan sonra kendisi şirketin büyütülmesi için yatırım yapılması gerektiğine karar verir. Henüz bu projeler teslim de edilmemiştir ama son derece iyi teklif metinleri yazıldığına göre, elbette o metinlerin de gerçekleşeceğine inanır ve çalışmaya başlar. &lt;/p&gt;
+&lt;p&gt;Bilindiği gibi bir yazılım şirketinin en önemli demirbaşlarından birisi en az 2, mümkünse 3 aracın otopark alanına zorlukla sığan bir makam arabası olmalıdır. Bu nedenle girişimcimiz bu demirbaş araçlardan en az 2 tane alır. Kendisi tek yöneticidir ama kapının önünde 2 araç gerçekten çok güzel gözükecektir. &lt;/p&gt;
+&lt;p&gt;Arkasından toplamda en fazla 10 sözleşme yöneten, yılda en fazla 10 tane proje için 10 tane fatura kesen, ve onlarca çalışan da olsa hepsi her ay aynı maaşları alan kişilerin bordrolarını dökmek için idari - mali işler bölümüne genç ve dinamik bir kadro kurmak gerekir. Bu bölüme önce 5, sonra bir 5 daha derken 10 kişi işe alınır. Bu 10 kişinin telefon açması uygun olmadığından bu arkadaşlara bir de ön büro kurulur. &lt;/p&gt;
+&lt;p&gt;Bu kadar kalabalık bir finans departmanı oluşunca, bankalardan kredi almak, teminat mektubu elde etmek gibi konularda önemli bir avantaj elde edilir. Artık kendisi 1-2 banka ile muhatap olacağına, ülkemizdeki hemen her banka ve hatta her bankada birden fazla şube ile muhatap olacak bir kadro olduğundan, her şubede hesaplar açılır. Her şubeye her ay güncel mizanlar yollanarak ne kadar büyük ve güçlü bir şirket olunduğu gösterilir. Her bir seferinde en az 10 bankadan kredi teklifi istenir. Hatta teklifler gerekmese de istenir. Bazen bir bankanın mevduata verdiği faiz öyle çekici gelir ki - öteki bankadan kredi çekilip ilk bankaya faize yatırılarak para kazanılır. Bu sayede şirket iş yapmadan para kazanmanın keyfine varmaya başlar. &lt;/p&gt;
+&lt;p&gt;Tabii şirketin aylık gelirleri giderleri aşağı yukarı sabit olduğu için bu kadar kalabalık idari kadro nedeni ile teknik kadro hızlı genişleyemez. Ancak yeni iş alındıkça genişleme sağlanır. Böylece şirketin gerçek iş gücünün büyümesi yavaşlar. Bu da doğal karşılanır - zaten 50 bin kişiyi geçen ABD'li şirketlerin hala hızla büyümesi de ancak yalandır. &lt;/p&gt;
+&lt;p&gt;Büyüme yavaşlarken, elbette ters giden işler ve müşterilerden geciken ödemeler de olur. Şirketin kuvvetli bir idari mali işler kadrosu olduğu için hemen bankalardan proje finansmanları alınmaya başlanır. Bu projelerde dışarıdan yaptırılan işler için de rahatlıkla ileri vadeli çekler ve diğer finansal araçlar ile gün kurtarılır. Böylece kapsamlı bir finansal yönetim başlamış olur.&lt;/p&gt;
+&lt;p&gt;Elbette bu finansal yönetim toplamı yönetmektedir. Ama neyin toplamının yönetildiği tartışmalıdır. Eldeki proje portföyü içinde hangi projelerin zararda olduğunu ifade etmek zor gelir. Muhasebe ekibi zaten onlarca bankadaki hesaplar, çekler, krediler ve bunların faizleri ile meşguldür. Tek düzen muhasebede bunların hepsinin ayrı hesap kodu vardır ve bu kadar hesap kodu içinde yanlış işlem yaparak Maliye'ye yanlış beyan vermek istemezler. Bu nedenle örneğin bir personelin bordrosundan çıkabilecek maliyet kalemlerini yarı yarıya çalıştığı iki projeye eşit bölüştürmek için proje muhasebe hesabı açacak zaman olmaz. &lt;/p&gt;
+&lt;p&gt;An gelir, finansal yönetim, muhasebeden yardım istemeye başlar. Bankaların bazı rasyoları güzel görmesi için muhasebenin o şekilde değil de bu şekilde tutulması gerekmektedir. Ayrıca fasıllar arası aktarımlar da önerilir. Ani sermaye artırımları ve indirimleri, demirbaş alımları ve satışları başlar. Bankalardan krediler geldiği sürece, genç girişimcimiz bunları umursamaz. &lt;/p&gt;
+&lt;p&gt;Bu arada teminat mektubu alabilmek için arsa, apartman dairesi gibi taşınmaz malların alınması salık verilir. Zaten yazılım şirketi makina sanayinde bir fabrika olduğu için ileride depo ve ek bina yapılabilecek geniş bir arazi içinde bina yapma mantığı geçerlidir. Hemen gidilir, şehrin dışında bir yerde geniş arsalar alınır. Arsa başı boş kalmasın diye bir de bina yapılır. O binada hiç bir yazılımcı çalışmayacak istemez ama bir kaç idari personel ve bazı yazılımcılar rotasyon usulü oraya gider gelirler. Ayrıca binanın güvenliği, temizliği gibi ek masraflar çıkar. Binaya gidecek personel için servis aracı satın alınır. Araç için şoför işe alınır. &lt;/p&gt;
+&lt;p&gt;Gün gelir, ülkede finansal sıkıntılar patlak verir. Bazı bankalar batar. Diğer bankalar da kendi durumlarını sağlama almak için kredi borcu olan firmalardan bu kredileri kapatmalarını rica ederler. Bizim girişimci tam da bu sırada arka arkaya bazı işlerinde alacaklarını alamaz. Kendisine verilen bazı çekler de karşılıksız çıkar ve sıkıntıya düşer. Derhal kendisinin dışarıya olan borçları sınıflandırılır.  &lt;/p&gt;
+&lt;p&gt;Öncelikte banka borçları vardır çünkü bankalar en önemli iş ortaklarıdır. Sonra şirketin güçlü görünmesini sağlayan yan masraflar - özellikle de beylik ifadeler ile ne kadar güçlü olduklarını vurgulayan reklam maliyetleri kenara ayrılır. Sonra da kısıntılar başlar. Personel maaşları aylarca eksik ödenir. Taşeron firmaların ödemeleri sudan nedenlerle geciktirilir. Örneğin her gün işe gelen bir müdür tam da o ara hasta olur ve onun dışındaki müdürler de nezaketsizlik olacağı gerekçesi ile belgelere uzun süre imza atmazlar. &lt;/p&gt;
+&lt;p&gt;Bu şekilde bazı taşeronlar batırılır ki onların alacaklarını tahsil etme şansı kalmasın. Bazı elemanların istifa etmesi sağlanır ki tazminat alamasın. &lt;/p&gt;
+&lt;p&gt;Ancak bu arada kötü bir şey olur. Hiç kimse bu şirkette çalışmak istemez, ayrıca kimse bu şirketin taşeronu olmak da istemez. Giderek nitelikli insanların şirkete girişi kısıtlanır. Ayrılanlar içinde de ilk ayrılanlar en nitelikli insanlar olur. Genç girişimcimiz bunu da önemsemez. Bilanço ve aylık mizanlarda harika rasyolar vardır. Daha tahsil edemese de ileride alacağı paraları koyunca harika sayılar oluşmaktadır. Zaten finansal performans en önemli performanstır. &lt;/p&gt;
+&lt;p&gt;Bu arada ortaya çıkan banka krizleri sonrası ülkede yeni yasalar çıkar. Bankaların başka bazı rasyolara da bakması istenir. Bu rasyolar, önceki rasyoları iyi göstermek için oynanmış bilançolarda hassaslaşan yerleri gıdıklamaktadır. Rasyo sayısı artınca, arkadaşın bilançosu da o kadar sağlam gözükmez. Bu yeni teknik yüzünden ahbaplık gelişmiş olan banka şube müdürlerinin de eli kolu bağlanır. &lt;/p&gt;
+&lt;p&gt;Şirket tüm odağını soruna çözmeye verir. Tüm idareciler sürekli bankalara gidip kredi aramaktadır. Kredi sağlayabilen idareci ödüllendirilir. Bu arada projelerdeki aksaklıklar raporlansa dahi dinlenmez ve müşterlerden gelecek ödemeler daha da çok gecikir. Müşteriden gelecek olan gerçekten hak edilmiş para yerine bankadan gelen borç işe süreç yürütme alışkanlığı daha da derinleşir. &lt;/p&gt;
+&lt;p&gt;Gün gelir, şirketin rasyoları o kadar zayıflar ki şirketin borç ödeme kapasitesini doldurduğu anlaşılır. O an şirket yeni kredi alamaz olur ve müşterilerine odaklanması gerektiğini anlar. &lt;/p&gt;
+&lt;p&gt;Ancak müşterilerin bazıları için olan olmuş, iş işten geçmiştir. Bu müşteriler ile artık insani konuşma değil de sözleşme maddeleri üzerinden tartışma  geçerlidir  Bu ortam altında müşteri ödemeleri alınamaz, bankalardan ek kredi alınamaz. Şirket iflasa sürüklenir. Ancak dışarıya bu hissettirilmez. &lt;/p&gt;
+&lt;p&gt;Tam bu sırada genç girişimcimize uluslar arası bir ödül gelir. İki yıl önceki oynanmış bilançoları örnek göstererek, en hızlı büyüyen şirketlerden birisinin kurucusu olarak bir ödüle aday gösterilmiştir ve yıllar süren süreç sonunda bir şekilde seçilmiştir. Bu ödül bankaların ve yatırımcıların şirkete bakışını değiştirir - kredi muslukları açılır, hatta şirketin hisselerinin bir bölümü oldukça iyi bir bedel karşılığı satılır. &lt;/p&gt;
+&lt;p&gt;Şirket iflastan dönmüştür. Bu sırada büyük emekleri geçen idari mali kadroya derhal ikramiyeler verilir. Ancak o dar zamanda maaşlarını eksik alarak projeleri zamanında tamamlayan esas çalışanlar unutulur. Şirket iflastan kurtulmuştur ama personeli ile olan barışı bozulmuştur bir kere. &lt;/p&gt;
+&lt;p&gt;Genç girişimcimizin bu krizden çıkarttığı ders ise, finans departmanını güçlendirmek olur ve 10 kişi daha işe alarak 20 kişilik bir finans departmanı kurulur. &lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-15T01:19:00+00:00</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/198/">
+	<title>Bora Güngören: Masa düzeni</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2008/10/15/198/</link>
+	<content:encoded>&lt;p&gt;Az önce okuduğum bir &lt;a href=&quot;http://www.askmen.com/sports/health_200/215_mens_health.html&quot;&gt;yazıya&lt;/a&gt; göre arada bir masanızın düzenini değiştirmek, sizi rutinden çıkarttığı için olaylara dikkatinizi verme becerinizi artırıyormuş. &lt;/p&gt; 
+
+&lt;p&gt;O zaman, masası hep dağınık olan kişiler acaba size en çok dikkatini veren kişiler mi? :) &lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-15T00:39:00+00:00</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2008/10/14/197/">
+	<title>Bora Güngören: İki blog keşfi</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2008/10/14/197/</link>
+	<content:encoded>&lt;p&gt;Bugün Rusya, Ukrayna ve diğer kuzey komşularımızı değişik bir gözle anlatan iki blog keşfettim. Bağlantılarını da burada paylaşmak istedim. &lt;a href=&quot;http://www.dincarslan.org/&quot;&gt;Dinç Arslan&lt;/a&gt; ve &lt;a href=&quot;http://ulasergin.blogspot.com/&quot;&gt;Ulaş Ergin&lt;/a&gt;'in blogları kesinlikle okunmaya değer. &lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-14T11:32:00+00:00</dc:date>
+</item>
+<item rdf:about="http://ozgurlukicin.com/haber/openofficeorg-30-duyuruldu/">
+	<title>Özgürlükiçin.com: OpenOffice.org 3.0 Duyuruldu</title>
+	<link>http://ozgurlukicin.com/haber/openofficeorg-30-duyuruldu/</link>
+	<content:encoded>&lt;p&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/upload/image/ooo3.png&quot; border=&quot;0&quot; alt=&quot;ooo3.png&quot; width=&quot;310&quot; height=&quot;201&quot; align=&quot;left&quot; /&gt;&lt;a href=&quot;http://www.openoffice.org&quot;&gt;OpenOffice.org&lt;/a&gt; projesinin sekizinci doğum gününde topluluk, OpenOffice.org 3.0'ın yayınlandığını duyurdu. Yazılımın üçüncü ana sürümü, kullanıcıları için pek çok yeni özellik ve gelişmiş, geliştirilebilir araçlar sunuyor. OpenOffice.org artık Mac OS X platformunda da çalışıyor.&lt;br /&gt; &lt;br /&gt; OpenOffice.org 3.0 basit bir uygulamadan çok daha fazlasını içeriyor. Bu sürümle birlikte; temel kelime işlemci, hesap tablosu, grafik, formül ve veritabanı uygulamaları, OpenOffice.org eklenti deposundan indirilebilen genişletmelerle daha da zenginleştirilebiliyor. Bu özellik sayesinde kurumsal kullanıcılar, okullar ve ev kullanıcıları ofis yazılımlarını kendi isteklerine göre özelleştirebiliyor.&lt;br /&gt; &lt;br /&gt; Yüz binlerce kişi tarafından indirilen OpenOffice.org'un önceki sürümleri, projenin popülaritesini kanıtlamakta. OpenOffice.org projesinin topluluk yöneticisi olan Louis Suarez-Potts, yeni sürümle ilgili olarak özetle “Pazarımız büyüdü.” dedi ve sözlerine ”Hükumetler ve kuruluşlar ardı ardına '&lt;a href=&quot;http://tr.pardus-wiki.org/Opendocument&quot;&gt;Açık Belge Biçimi&lt;/a&gt;'ni (OOo'nun öntanımlı kullandığı, ISO onaylı standart) seçiyor, eşzamanlı olarak OpenOffice.org'u da benimsiyor ve çok seviyorlar. OpenOffice.org 3.0 sürümüyle uygulama artık; MS Office ile daha uyumlu, yetenekli ve geliştirilebilir bir hale geldi.” diye devam etti.&lt;br /&gt; &lt;br /&gt; OpenOffice.org pazarlama takımı ise yeni sürüm hakkında “OpenOffice.org artık eskisinden çok daha güçlü. MS Access 2007 .accdb dosya desteği, geliştirilmiş VBA makro desteği ve &lt;a href=&quot;http://tr.pardus-wiki.org/Office_Open_XML&quot;&gt;MS Office Open XML&lt;/a&gt; dosyalarını okuyabilme yeteneği sayesinde MS Office yazılımından göç her zamankinden çok daha kolay.” diyor.&lt;br /&gt; &lt;br /&gt; OpenOffice.org 3.0; yeni “Başlangıç Merkezi”, güncellenen açılış ekranı, yeni simgeseti ve kullanılabilirlik geliştirmeleriyle yepyeni bir yüze kavuşmuş durumda. Yeni özellikler şu şekilde:&lt;/p&gt;
+&lt;h3&gt;Kelime İşlemci (Writer)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Düzenleme sırasında çoklu sayfa görünümüne izin veren yeni yakınlaştırma kontrolü&lt;/li&gt;
+&lt;li&gt;Yeni ve güçlü çoklu dil desteği&lt;/li&gt;
+&lt;li&gt;Geliştirilmiş “Notlar” özelliği&lt;/li&gt;
+&lt;li&gt;Geleneksel ofis belgelerinin yanı sıra web sayfalarını ve wiki belgelerini düzenleyebilme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Hesap Tablosu (Calc)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Tablo başına 1024'e kadar sütun desteği&lt;/li&gt;
+&lt;li&gt;Yeni güçlü eşitlik hesaplayıcı&lt;/li&gt;
+&lt;li&gt;Çoklu kullanıcılar için yeni işbirliği özelliği&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Çizim (Draw)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Poster boyutunda grafik düzenleme yeteneği&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sunu (Impress)&lt;br /&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Sunu içinde yer alan tablolar için düzenleyici&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt; OpenOffice.org'un eklenti destekleme özelliği 3.0 ile de devam ediyor. Farklı geliştiriciler tarafından hazırlanan sunu hazırlama konsolu, ticaret analitikler desteği, PDF aktarma, melez PDF belgesi oluşturma gibi pek çok özellik sağlayan eklentilerin sayısı gün geçtikçe artıyor.&lt;br /&gt; &lt;br /&gt; OpenOffice.org 3.0, kullanıcılarının Kelime İşlemci (Writer) ile web ve wiki belgesi oluşturmasını sağlayarak, XHTML ve MediaWiki gibi belli bir kesime hitap eden web dillerini öğrenmeye gerek kalmadan, Web 2.0 dünyasına katılmasını kolaylaştırıyor.&lt;br /&gt; &lt;br /&gt; OpenOffice.org'un yeni sürümünün PiSi paketinin yakın bir zamanda depomuzdaki yerini almasını bekliyoruz.&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-14T10:31:00+00:00</dc:date>
+</item>
+<item rdf:about="http://6kere9.com/blag/2008/10/14/73/">
+	<title>Gürer Özen: ceeebit</title>
+	<link>http://6kere9.com/blag/2008/10/14/73/</link>
+	<content:encoded>&lt;p&gt;
+11 Ekim Cumartesi günü, Özgürlükİçin ekibi ile birlikte Cebit fuarında
+Pardus standındaydık.
+&lt;/p&gt;
+
+&lt;p&gt;
+Bir süredir üstünde çalıştığımız robotumuz
+&lt;a href=&quot;http://ibilisim.com.tr/inci/index.html&quot;&gt;İnci&lt;/a&gt;'yi tanıttık,
+geldiği noktayı gösterdik, birkaç küçük gösterisini yaptık.
+&lt;/p&gt;
+
+&lt;img src=&quot;http://cekirdek.pardus.org.tr/~gurer/inci-cebit.jpg&quot; /&gt;
+
+&lt;p&gt;
+İnci, araştırma geliştirme amaçlı, omni hareket sistemine sahip bir
+robot. Ayrıca üzerindeki gömülü bilgisayarında çalışan Pardus 2008 ile,
+dünyada Pardus'la çalışan ilk otonom robot :)
+&lt;/p&gt;
+
+&lt;p&gt;
+Şehre çok uzak ve biçimsiz bir yerde yapılmasına karşın, üşenmeyip gelen
+Pardus gönüllüleriyle çok keyifli vakit geçirdik.
+&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-14T08:34:00+00:00</dc:date>
+</item>
+<item rdf:about="http://ozgurlukicin.com/haber/linux-yuklu-dijital-piyano/">
+	<title>Özgürlükiçin.com: Linux Yüklü Dijital  Piyano</title>
+	<link>http://ozgurlukicin.com/haber/linux-yuklu-dijital-piyano/</link>
+	<content:encoded>&lt;p&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/upload/image/YAMAHA3.jpg&quot; border=&quot;0&quot; alt=&quot;YAMAHA3.jpg&quot; align=&quot;left&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Yamaha firmasının dijital piyano modelleri arasına, Linux işletim sistemi gömülü olarak gelen yeni modeller ekledi. Bir gömülü Linux dağıtımı olan Montavista Linux,  akustik kayıt ve web temelli uygulamalarla bütünleşik çalışabilen yeni arabirim imkânları sunuyor. Piyanonun içinde 333 Mhz Geode temelli bir anakart ve Montavista Linux mevcut.&lt;/p&gt;
+&lt;p&gt;Yamaha'nın ürettiği bu piyanonun tuşlarının altına yerleştirilmiş minik bir kutuda yer alan kontrol ünitesi içindeki LSI (Large-scale integration – Geniş-ölçekli entegrasyon) özellikli işlemci, özel bir RTOS (Real Time Operating System – Gerçek Zamanlı İşletim Sistemi) çalıştırıyor. RTOS, bir tuşa basılmasıyla bırakılması arasında, tellere vuran çekiçlerin hareketlerini izleyen hassas alıcıların gönderdiği verileri topluyor. Çekiçlerin ve tuş basınçlarını kaydederek, gerçek bir piyano çalışının verileri bu özel sistem aracılığıyla kayıt altında alınıyor.&lt;br /&gt;&lt;br /&gt;Çekiçlerin ve tuş basıncının konumunu ölçmenin ötesinde, RTOS onları denetleyebiliyor ve böylece yakaladığı verileri “icra” olarak yeniden üretiyor. Sistemde bir optik sürücü mevcut ve kullanıcılar kendi icralarının kaydını yapıp dinleyebildikleri gibi aynı zamanda da büyük üstatların önemli icralarının kayıtlarını da satın alabilirler.&lt;/p&gt;
+&lt;p&gt;Daha anlaşılır bir dille söylemek gerekirse, evinizdeki bu piyano ile Fahir Atakoğlu'nun sadece son albümünü değil, tuşlara dokunuşunu ve piyano çalışını da evinize taşıyabiliyorsunuz.&lt;/p&gt;
+&lt;p&gt;Mark IV Disklavier modeli ile Yamaha, sisteme gömülü olan Linux işletim sistemi sayesinde web temelli istemci/sunucu ile uzaktan kontrol arabiriminin çalışmasına olanak tanınıyor ve bu sayede kullanıcılar, piyanonun yanına kadar gidip optik sürücülerden müziği yüklemek ve çalmak zahmetinden de kurtuluyorlar. Bu uzaktan kumanda sayesinde kullanıcılar akustik kayıt, kayıt işleme ve çalma özellikleri yanında, uzak müzik servislerinin tekliflerini de değerlendirme imkânı bularak İnternet üzerinden alışveriş yapabiliyor.&lt;br /&gt;&lt;br /&gt;Mark IV Disklavier piyano, 333 Mhz AMD Geode tabanlı bir anakart ve Montavista Linux ile birlikte çalışıyor. RAM boyutu 256 MB olup, sabit diski 80 GB genişliğinde. I/O bileşenleri, Ethernet, WiFi, çift USB portu, seri portlar, ses giriş/çıkış, video giriş ve stereo hoparlörden oluşuyor. Piyanomuzda ayrıca PCI genişleme arabirimi de bulunmaktadır :).&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-13T19:35:00+00:00</dc:date>
+</item>
+<item rdf:about="http://raptiye.org/blog/2008/10/13/arch-linuxda-turkce-yazim-kontrolu/">
+	<title>Alper Kanat: Arch Linux'da Türkçe Yazım Kontrolü</title>
+	<link>http://raptiye.org/blog/2008/10/13/arch-linuxda-turkce-yazim-kontrolu/</link>
+	<content:encoded>&lt;img src=&quot;http://raptiye.org/resimler/simge/archlinux.png&quot; alt=&quot;arch linux&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt;Bugün &lt;a title=&quot;samed'in sitesini ziyaret etmek için tıklayın..&quot; href=&quot;http://eventualis.org/&quot; target=&quot;_blank&quot;&gt;Samed BEYRİBEY&lt;/a&gt;'in büyük katkılarıyla &lt;a title=&quot;topluluk sayfasına ulaşmak için tıklayın..&quot; href=&quot;http://www.archlinuxtr.org&quot; target=&quot;_blank&quot;&gt;Arch Linux Türkiye Topluluğu&lt;/a&gt; &lt;a title=&quot;e-posta listeleri hakkında detaylı bilgi almak için tıklayın..&quot; href=&quot;http://www.archlinuxtr.org/liste/&quot; target=&quot;_blank&quot;&gt;listelerine&lt;/a&gt; düşen e-posta'yı görmeyen ve bilmeyenler için buraya da hiç bir değişiklik yapmadan göndermek istiyorum.&lt;br /&gt;&lt;br /&gt;Merhaba,&lt;br /&gt;Zemberek geliştiricisi Serkan Kaba ile konuştuktan sonra, (Archlinux'da&lt;br /&gt;Türkçe yazım denetimini nasıl sağladığımızı teknik olarak anlattım)&lt;br /&gt;bir duyuru yolu ile topluluğumuzu bilgilendirmek istedim.&lt;br /&gt;&lt;br /&gt;Bu duyuruyu, gezegen, blog vs. ortamlarda yazabilir, paylaşabilirsiniz.&lt;br /&gt;&lt;br /&gt;AUR üzerindeki zemberek-server paketinin yardımı ile enchant destekli&lt;br /&gt;*tüm* uygulamalarda Türkçe yazım denetimini sorunsuz olarak&lt;br /&gt;yapabiliyoruz. Bu iş için zemberek kütüphanesinin *şu an için* 2.1&lt;br /&gt;sürümü kullanılıyor, bir takım testlerden sonra tekrar paket haline&lt;br /&gt;getirilerek son sürümü olan 2.1.1'e geçiş yapılacak.&lt;br /&gt;&lt;br /&gt;Ayrıca, KDE3 kullanıcıları, zpspell paketini kurarak, yazım&lt;br /&gt;denetimini sorunsuz gerçekleştiriyor. KDE4 enchant kütüphanesini&lt;br /&gt;kullandığı için KDE4 kullanıcılarının zpspell paketini kurmasına&lt;br /&gt;gerek kalmıyor.&lt;br /&gt;&lt;br /&gt;zemberek-server init betiği ister Sun-JRE ister OpenJDK (icedtea vs.)&lt;br /&gt;şekilde çalıştırılmaya hazır biçimde, hem AUR'da hem de SVN[1]'de yerini&lt;br /&gt;almış durumda. &lt;br /&gt;&lt;br /&gt;GTKseverleri de ayrıca bilgilendirmek istiyorum: enchant destekleyen&lt;br /&gt;her türlü programda (xchat, gaim, evolution ve son olarak claws-mail&lt;br /&gt;-ilk akla gelenler- vs) Türkçe yazım denetimi yapmak mümkün oluyor.&lt;br /&gt;&lt;br /&gt;Ayrıca, http://code.google.com/p/zemberek proje sayfasındaki openoffice&lt;br /&gt;eklentisi ile de, OpenOffice üzerinde Türkçe yazım denetimi yapmak&lt;br /&gt;mümkün oluyor.&lt;br /&gt;&lt;br /&gt; [1] = http://svn.archlinuxtr.org/projects/packages/zemberek-server/&lt;br /&gt;&lt;br /&gt;Saygılarımla,&lt;br /&gt;Samed Beyribey&lt;br /&gt;&lt;br /&gt;Tüm Arch Linux kullanıcılarına afiyet olsun!&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?a=ziA2M&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?i=ziA2M&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?a=I9rvm&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?i=I9rvm&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?a=CBSSm&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?i=CBSSm&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?a=feehM&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?i=feehM&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?a=ffh9m&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~f/raptiye/acikkaynak?i=ffh9m&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;</content:encoded>
+	<dc:date>2008-10-13T17:49:58+00:00</dc:date>
+</item>
+<item rdf:about="http://sehitoglu.web.tr/gunluk/?p=105">
+	<title>Onur Tolga Şehitoğlu: Like a Prayer</title>
+	<link>http://sehitoglu.web.tr/gunluk/?p=105</link>
+	<content:encoded>&lt;p&gt;Son dönemde mail istemcilerinin büyük çoğunluğunu İnternet tarayıcıları ele geçirdi. Çogu kişi IMAP istemciler yerine aslen HTTP-IMAP geçidi olan webmail uygulamalarını tercih ediyor.&lt;/p&gt;
+&lt;p&gt;Webmail sunucularının büyük çoğunluğu durumsuz çalışıyor. Yani istemciden gelen her tıklamada yeni bir IMAP oturumu açıp işlemi yaptıktan sonra oturumu kaybediyor. &lt;a href=&quot;http://www.roundcube.net/&quot;&gt;Rouncube&lt;/a&gt; gibi posta başlık listesini tamponda tutanlar var ama hala bir &amp;#8220;yetkilendir-işlemi yap-çık&amp;#8221; döngüsünü işletmek zorunda kalıyorlar. &lt;/p&gt;
+&lt;p&gt;İşlemi hızlandırmanın bir yolu bir IMAP vekil sunucusu yerleştirmek (Bkz. &lt;a href=&quot;http://www.imapproxy.org/&quot;&gt;imapproxy&lt;/a&gt;) böylelikle yetkilendirmeyi ve oturumu açık tutarak yeniden kullanabiliyorsunuz. Ama hala sunucu, istemcinin &lt;strong&gt;durumunu&lt;/strong&gt; tutmadığı için thunderbird, kmail, evolution benzeri istemcilerden yavaşsınız.&lt;/p&gt;
+&lt;p&gt;İki yıl kadar önce, ya bunu yapmışlardır dediğimde &lt;a href=&quot;http://www-uxsup.csx.cam.ac.uk/~dpc22/prayer/&quot;&gt;Prayer&lt;/a&gt;&amp;#8216;la karşılaştım. C ile yazılmış, tam düşündüğüm gibi her oturum için oturumun durumunu sunucuda tutan, IMAP oturumunu açık tutan ve dolayısıyla her tıklamada sadece minimum gerekli işlemi yapan, bu sayede de son derece hızlı bir webmail yazılımı. Kullanıcı arayüzü çirkin olsa da hızı gerçekten müthiş. Ayrıca PHP tabanlı olan webmail&amp;#8217;lere göre güvenli olduğu da muhakkak. Eminim Java gibi bir dilde uygulama sunucuları üzerinde çalışan muadilleri vardır ama ben Prayer&amp;#8217;in bu koşullarda popüler olmamasına çok şaşırıyorum. &lt;/p&gt;
+&lt;p&gt;Eeee, bunları niye şimdi yazıyorsun derseniz, yeni sürümü çıkmış, Gökdeniz kurmuş, ben duyurayım, siz kurun, sonra gelenler de hani bana hani bana desin diye&amp;#8230; &lt;img src=&quot;http://sehitoglu.web.tr/gunluk/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-13T11:44:07+00:00</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/webcg/?p=12">
+	<title>Web-CG: Liste.linux.org.tr yenilendi</title>
+	<link>http://gunluk.lkd.org.tr/webcg/2008/10/13/listelinuxorgtr-yenilendi/</link>
+	<content:encoded>&lt;p&gt;Uzun süredir aynı tasarım ve içerik ile yayında olan liste.linux.org.tr sayfamız yenilendi. Çalışmada emeği geçen herkese özellikle sayfayı hazırlayan Mehmet Fatih YILDIZ (mfyz) &amp;#8216;a teşekkür ediyoruz.&lt;/p&gt;
+&lt;p&gt;liste sayfası, linux.org.tr, lkd.org.tr ve bunlara ağlı alt alan adları ile ilgili her tür görüş, öneri ve isteklerinizi web[at]linux.org.tr adresine yazabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Not: Linux gezegeni hafta sonu yaşanan bir dns sorunu sebebi ile güncellenememiştir. Bu aksaklıktan dolayı bütün gezegen sakinlerinden özür dileriz.&lt;/p&gt;</content:encoded>
+	<dc:date>2008-10-13T06:40:48+00:00</dc:date>
+</item>
+
+</rdf:RDF>

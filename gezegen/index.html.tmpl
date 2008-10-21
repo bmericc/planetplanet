@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/transitional.dtd">
+<html>
+<head>
+<title><TMPL_VAR name></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="http://gezegen.linux.org.tr/generic.css" type="text/css" />
+<link rel="stylesheet" href="http://gezegen.linux.org.tr/layout.css" type="text/css" />
+<link rel="stylesheet" href="http://gezegen.linux.org.tr/planet.css" type="text/css" />
+<link rel="stylesheet" href="http://gezegen.linux.org.tr/bloggers.css" type="text/css" />
+<!--
+FIXME: add favicon
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="shortcut icon" type="image/png" href="images/logo.png" />
+-->
+<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name>" href="http://gezegen.linux.org.tr/rss20.xml" />
+</head>
+<body>
+<div id="hdr">
+    <div id="banner"><img src="http://gezegen.linux.org.tr/images/spacer.png" alt="spacer" /></div>
+    <div id="logo"><a href="http://gezegen.linux.org.tr/"><img src="http://gezegen.linux.org.tr/images/spacer.png" alt="Anasayfa" /></a></div>
+<!--
+    <div id="hdrNav">
+        <a href="http://gezegenlinux.blogspot.com/">Linux Gezegeni Haberleri</a>
+    </div>-->
+<!--
+   <div id="hdrNav">
+       <center><a href="http://www.cebitbilisim.com/tr" target="_blank"><img src="http://gezegen.linux.org.tr/images/banner2006-tr.gif" border="0"></a></center>
+    </div>
+-->
+</div>
+
+<div id="body">
+<TMPL_LOOP Items>
+    <TMPL_IF new_date>
+        <h2 class="date"><TMPL_VAR new_date></h2>
+    </TMPL_IF>
+
+    <div class="entry <TMPL_IF channel_nick><TMPL_VAR channel_nick></TMPL_IF>">
+        <div class="person-info">
+            <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">">
+            <TMPL_IF channel_face>
+            <img class="face" src="http://gezegen.linux.org.tr/images/heads/<TMPL_VAR channel_face ESCAPE="HTML">" title="<TMPL_VAR channel_name>" /><br />
+            <TMPL_ELSE>
+            <img class="face" src="http://gezegen.linux.org.tr/images/heads/nobody.png" title="<TMPL_VAR channel_name>" /><br />
+            </TMPL_IF>
+            <TMPL_VAR channel_name><TMPL_IF channel_nick><br />(<TMPL_VAR channel_nick>)</TMPL_IF>
+            </a>
+        </div>
+
+        <div class="post">
+            <div class="post2">
+                <div class="post-header">
+                    <TMPL_IF title>
+                    <h4 class="post-title"><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></h4>
+                    <TMPL_ELSE>
+                    <div class="post-title"><span>&nbsp;</span></div>
+                    </TMPL_IF>
+                </div>
+                <br />
+                <div class="post-contents">
+                        <TMPL_VAR content>
+                <br />
+                <br />
+                <div id="post-links" style="text-align: center;">
+                    <TMPL_IF comments><a href="<TMPL_VAR comments ESCAPE="HTML">"><img src="images/yorum.png" border="0" title="Yorumlar" /></a></TMPL_IF>
+                    <a href="http://del.icio.us/post?url=<TMPL_VAR link ESCAPE="HTML">&title=<TMPL_VAR title ESCAPE="HTML">" target="_blank"><img src="images/delicious.png" border="0" title="del.icio.us'a gönder" /></a>
+                    <a href="http://technorati.com/search/<TMPL_VAR link ESCAPE="HTML">" target="_blank"><img src="images/technorati.png" border="0" title="technorati'de ara" /></a>
+                </div>
+                </div>
+                <div class="post-footer">
+                    <p><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR date></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</TMPL_LOOP>
+</div>
+
+<div id="sidebar">
+    <div class="section">
+        <h3>Gezegen Hakkında</h3>
+        <p>Linux Gezegeni, Türkiye'de Linux ve Özgür Yazılım konusunda çalışmalar yapan arkadaşlarımızın web üzerindeki günlüklerini bir tek sayfadan okumamızı ve kendi dünyalarına ulaşmamızı sağlayan basit bir web sitesidir.</p>
+        <p>Gezegeni <a href="http://www.planetplanet.org/">Planet</a> ile oluşturuyoruz, tasarım <a href="http://www.actsofvolition.com/">Steven Garrity</a>'nin eseri.</p>
+    </div>
+
+    <div class="section">
+
+<a href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=a78599b7&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a78599b7' border='0' alt='' /></a>
+
+    </div>
+
+    <div class="bloggers section" id="bloggers">
+        <h3>Üyeler</h3>
+        <ul>
+        <TMPL_LOOP Channels>
+            <li>
+                <div>
+                    <TMPL_IF face><img class="head" src="images/heads/<TMPL_VAR face ESCAPE="HTML">" title="<TMPL_VAR face>" />
+                    <TMPL_ELSE><img class="head" src="images/heads/nobody.png" title="<TMPL_VAR channel_name>" /></TMPL_IF>
+                <div class="ircnick">&nbsp;</div>
+                </div>
+                <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a>
+                <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+            </li>
+        </TMPL_LOOP>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Takip edin</h3>
+        <ul>
+            <li><a href="http://gezegen.linux.org.tr/rss20.xml">RSS 2.0</a></li>
+            <li><a href="http://gezegen.linux.org.tr/rss10.xml">RSS 1.0</a></li>
+            <li><a href="http://gezegen.linux.org.tr/foafroll.xml">FOAF</a></li>
+            <li><a href="http://gezegen.linux.org.tr/opml.xml">OPML</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Diğer Gezegenler</h3>
+        <ul>
+            <li><a href="http://gezegen.pardus.org.tr/">Pardus</a></li>
+            <li><a href="http://www.kernelplanet.org/">Kernel</a></li>
+            <li><a href="http://www.planetkde.org/">KDE</a></li>
+            <li><a href="http://planet.gnome.org">Gnome</a></li>
+            <li><a href="http://www.planetsuse.org/">SuSE</a></li>
+            <li><a href="http://planet.python.org">Python</a></li>
+            <li><a href="http://planet.gentoo.org">Gentoo</a></li>
+            <li><a href="http://www.go-mono.com/monologue/">MONOlogue</a></li>
+            <li><a href="http://planetjava.org">Java</a></li>
+            <li><a href="http://planet.lisp.org">LISP</a></li>
+            <li><a href="http://planet.perl.org">Perl</a></li>
+	     <li><a href="http://fedoraproject.org/people/">Fedora</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Güncelleme</h3>
+        <p>Gezegen her 10 dakikada bir yenilenir.</p>
+        <p>Son güncelleme: <br /><TMPL_VAR date></p>
+    </div>
+
+    <div class="section">
+        <h3>İletişim</h3>
+        <p>Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı ve Gezegen'e iniş başvurularınızı e-posta ile iletebilirsiniz.</p>
+    </div>
+</div>
+
+
+<div id="copyright">
+Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz. <br />
+LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.<br />
+Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.<br />
+<!-- Start of StatCounter Code -->
+<a href="http://www.statcounter.com/" target="_blank"><img src="http://c18.statcounter.com/counter.php?sc_project=1860933&java=0&security=e27e04a9&invisible=0" alt="free tracking" border="0"></a> 
+<!-- End of StatCounter Code -->
+
+</div>
+</body>
+</html>
