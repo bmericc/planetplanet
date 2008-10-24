@@ -15,8 +15,8 @@
 		<foaf:Agent>
 			<foaf:name>A. Murat Eren</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="">
-					<dc:title></dc:title>
+				<foaf:Document rdf:about="http://cekirdek.pardus.org.tr/~meren/blog/">
+					<dc:title>There is no silver bullet..</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -119,8 +119,8 @@
 		<foaf:Agent>
 			<foaf:name>Alper Somuncu</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.alpersomuncu.com/weblog/">
-					<dc:title>alper somuncu nokta com - IBM AIX</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -379,8 +379,8 @@
 		<foaf:Agent>
 			<foaf:name>Gökmen Göksel</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="">
-					<dc:title></dc:title>
+				<foaf:Document rdf:about="http://cekirdek.pardus.org.tr/~gokmen/zangetsu/blog/">
+					<dc:title>Human UNITS</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -432,7 +432,7 @@
 			<foaf:name>Hüseyin Uslu</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://www.huseyinuslu.net/_export/xhtml/topics_linux_feed">
-					<dc:title>Regular (S)expressions » linux</dc:title>
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -548,8 +548,8 @@
 		<foaf:Agent>
 			<foaf:name>Levent Yalçın</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://leoman.gen.tr/blg">
-					<dc:title>Leoman® » LKD-Gezegen</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
