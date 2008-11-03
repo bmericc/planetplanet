@@ -1,0 +1,6 @@
+#!/bin/bash
+# sync.sh
+# 
+# this script is written to syncronize the lkd planet..
+
+./planet.py gezegen/config.ini &> logs/planet-$(date +"%d.%m.%Y-%H:%M").log &
