@@ -2,5 +2,16 @@
 # sync.sh
 # 
 # this script is written to syncronize the lkd planet..
+#
+# author: Alper KANAT <alper.kanat@linux.org.tr>
 
-./planet.py gezegen/config.ini &> logs/planet-$(date +"%d.%m.%Y-%H:%M").log &
+PLANET_DIR="${HOME}/public_html/gezegen"
+LOCK_FILE="planet-sync.lck"
+
+if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
+	echo "there's a sync process running behind, please try again later.." &> logs/planet-$(date +"%d.%m.%Y-%H:%M").log &
+	exit 1
+else
+	./planet.py gezegen/config.ini &> logs/planet-$(date +"%d.%m.%Y-%H:%M").log &
+	touch "$PLANET_DIR/$LOCK_FILE"
+fi
