@@ -6,12 +6,76 @@
 # author: Alper KANAT <alper.kanat@linux.org.tr>
 
 PLANET_DIR="${HOME}/public_html/gezegen"
+LOG_DIR="$PLANET_DIR/logs"
+LOG_FILE="planet-$(date +"%d.%m.%Y").log"
 LOCK_FILE="planet-sync.lck"
 
+usage() {
+	cat << EOF
+Synchronizes the planet by invoking the necessary commands and logges everything.
+
+Options:
+	-h, --help         this help
+	-p, --planetdir    useful if the planet dir is somewhere else than the 
+	                   default one
+
+Usage: $(basename $0) [--help] [--planetdir /path/to/planet]
+EOF
+}
+
+while (( $# > 0 )); do
+	case "$1" in
+		--help|-h)
+			usage
+			shift
+			exit 0
+			;;
+
+		--planetdir|-p)
+			case "$2" in
+				[a-zA-Z0-9\/]*)
+					PLANET_DIR="$2"
+					LOG_DIR="$PLANET_DIR/logs"
+					;;
+
+				*)
+					usage
+					exit 1
+					;;
+			esac
+			shift 2
+			;;
+
+		-*)
+			usage
+			exit 1
+			;;
+
+		?*)
+			usage
+			exit 1
+			;;
+	esac
+done
+
+# checking planet dir
+if [[ ! -d "$PLANET_DIR" ]]; then
+	echo "invalid planet directory.. please specify the correct planet dir with --planetdir /path/to/planet"
+	exit 1
+fi
+
+# checking if the log file created for the current date
+if [[ ! -f "$LOG_DIR/$LOG_FILE" ]]; then
+	touch "$LOG_DIR/$LOG_FILE"
+fi
+
 if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
-	echo "there's a sync process running behind, please try again later.." &> logs/planet-$(date +"%d.%m.%Y-%H:%M").log &
+	echo "there's a sync process running behind, please try again later.."
 	exit 1
 else
-	./planet.py gezegen/config.ini &> logs/planet-$(date +"%d.%m.%Y-%H:%M").log &
 	touch "$PLANET_DIR/$LOCK_FILE"
+	"$PLANET_DIR/planet.py" "$PLANET_DIR/gezegen/config.ini" >> "$LOG_DIR/$LOG_FILE" 2>&1
 fi
+
+# if ended successfully delete the lock file
+rm "$PLANET_DIR/$LOCK_FILE"
