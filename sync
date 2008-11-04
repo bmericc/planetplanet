@@ -75,7 +75,7 @@ if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
 else
 	touch "$PLANET_DIR/$LOCK_FILE"
 	echo  >> "$LOG_DIR/$LOG_FILE" 2>&1
-	echo "starting new sync ($(date +"%d.%m.%Y"))" >> "$LOG_DIR/$LOG_FILE" 2>&1
+	echo "starting new sync ($(date +"%d.%m.%Y, %H:%M"))" >> "$LOG_DIR/$LOG_FILE" 2>&1
 	echo "-----------------------------------------------------------" >> "$LOG_DIR/$LOG_FILE" 2>&1
 	"$PLANET_DIR/planet.py" "$PLANET_DIR/gezegen/config.ini" >> "$LOG_DIR/$LOG_FILE" 2>&1
 	echo "-----------------------------------------------------------" >> "$LOG_DIR/$LOG_FILE" 2>&1
