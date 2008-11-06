@@ -81,6 +81,9 @@ if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
 	exit 1
 else
 	touch "$PLANET_DIR/$LOCK_FILE"
+
+	cd "$PLANET_DIR"
+
 	if (( $VERBOSE == 0 )); then
 		echo >> "$LOG_DIR/$LOG_FILE" 2>&1
 		echo "starting new sync ($(date +"%d.%m.%Y, %H:%M"))" >> "$LOG_DIR/$LOG_FILE" 2>&1
