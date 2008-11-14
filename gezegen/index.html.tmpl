@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="bloggers.css" type="text/css" />
 		<link rel="icon" type="image/png" href="images/planet.png" />
 		<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name>" href="rss20.xml" />
-		<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
-		<script type="text/javascript" src="common.js"></script>
 	</head>
 	<body>
 		<div id="hdr">
@@ -65,22 +63,7 @@
 							</div>
 							<br />
 							<div class="post-contents">
-								<TMPL_IF read_the_rest>
-									<div id="summary_<TMPL_VAR id_hash>">
-										<TMPL_VAR summary>
-									</div>
-									<div id="content_<TMPL_VAR id_hash>" style="display: none">
-										<TMPL_VAR content>
-									</div>
-									<br>
-									<a href="#" id="toggle_content_<TMPL_VAR id_hash>" onclick="toggleEntry(this.id.split('_')[2]); return false;">
-										Bu yazının devamını okumak için tıklayın.
-									</a>
-								<TMPL_ELSE>
-									<div id="content_<TMPL_VAR id_hash>">
-										<TMPL_VAR content>
-									</div>
-								</TMPL_IF>
+								<TMPL_VAR content>
 								<br />
 								<br />
 								<div id="post-links" style="text-align: center;">
@@ -157,10 +140,10 @@
 			<div class="section">
 				<h3>Takip edin</h3>
 				<ul>
-					<li><a href="<TMPL_VAR link>/rss20.xml">RSS 2.0</a></li>
-					<li><a href="<TMPL_VAR link>/rss10.xml">RSS 1.0</a></li>
-					<li><a href="<TMPL_VAR link>/foafroll.xml">FOAF</a></li>
-					<li><a href="<TMPL_VAR link>/opml.xml">OPML</a></li>
+					<li><a href="rss20.xml">RSS 2.0</a></li>
+					<li><a href="rss10.xml">RSS 1.0</a></li>
+					<li><a href="foafroll.xml">FOAF</a></li>
+					<li><a href="opml.xml">OPML</a></li>
 				</ul>
 			</div>
 

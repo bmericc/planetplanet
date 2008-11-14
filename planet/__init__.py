@@ -278,18 +278,6 @@ class Planet:
             items_list = self.gather_items_info(channels, template_file) 
 
             # Gather item information
-
-            # Use summary to summarize the entry to N characters and
-            # put a JS link inside to expand and show the content..
-            from gezegen import gezegen
-
-            # getting the limit from the config.ini file
-            limit_per_entry = int(self.tmpl_config_get("Planet", "limit_per_entry", 1500))
-
-            for item in items_list:
-                if item["content"].__len__() >= limit_per_entry:
-                    item["summary"] = gezegen.summarize(item["content"], limit_per_entry)
-                    item["read_the_rest"] = True
     
             # Process the template
             tp = htmltmpl.TemplateProcessor(html_escape=0)
