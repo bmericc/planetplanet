@@ -299,7 +299,7 @@ class Planet:
             # Update time
 	    	# Gezegen sayfasindaki son guncellenme zamanini dogru gmstermesi icin localtime olarak degistirildi
             # date = time.gmtime()
-	    	date = time.localtime()
+	    date = time.localtime()
             tp.set("date",        time.strftime(date_format, date))
             tp.set("date_iso",    time.strftime(TIMEFMT_ISO, date))
             tp.set("date_822",    time.strftime(TIMEFMT_822, date))
