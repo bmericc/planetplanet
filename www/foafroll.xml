@@ -1038,6 +1038,20 @@
 			</foaf:weblog>
 		</foaf:Agent>
 	</foaf:member>
+	<foaf:member>
+                <foaf:Agent>
+                        <foaf:name>Zemberek NLP</foaf:name>
+                        <foaf:weblog>
+                                <foaf:Document rdf:about="http://zembereknlp.blogspot.com/">
+                                        <dc:title>Zemberek Doğal Dil İşleme</dc:title>
+                                        <rdfs:seeAlso>
+                                                <rss:channel rdf:about="" />
+                                        </rdfs:seeAlso>
+                                </foaf:Document>
+                        </foaf:weblog>
+                </foaf:Agent>
+        </foaf:member>
+
 
 </foaf:Group>
 </rdf:RDF>
