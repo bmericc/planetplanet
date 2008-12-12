@@ -107,7 +107,7 @@
 			<foaf:name>Alper Orus</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://www.murekkep.org">
-					<dc:title></dc:title>
+					<dc:title>Mürekkep - İnternet Yaşam Rehberiniz » admin</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -145,7 +145,7 @@
 		<foaf:Agent>
 			<foaf:name>Anıl Özbek</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://anilozbek.blogspot.com">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -184,7 +184,7 @@
 		<foaf:Agent>
 			<foaf:name>Barış Metin</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.metin.org">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -262,8 +262,8 @@
 		<foaf:Agent>
 			<foaf:name>Devrim Gündüz</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.gunduz.org">
-					<dc:title></dc:title>
+				<foaf:Document rdf:about="http://blog.gunduz.org/">
+					<dc:title>MadBlog - Özgür Yazılım</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -379,8 +379,8 @@
 		<foaf:Agent>
 			<foaf:name>Furkan Çalışkan</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.furkancaliskan.com">
-					<dc:title></dc:title>
+				<foaf:Document rdf:about="http://www.furkancaliskan.com/blog">
+					<dc:title>ozirus' » Gezegen</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -496,7 +496,7 @@
 		<foaf:Agent>
 			<foaf:name>Kaya Oğuz</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.kuzeykutbu.org">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -600,7 +600,7 @@
 		<foaf:Agent>
 			<foaf:name>Levent Yalçın</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://leoman.gen.tr">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -626,7 +626,7 @@
 		<foaf:Agent>
 			<foaf:name>M.Tuğrul Yılmazer</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.corporem.org">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -639,7 +639,7 @@
 		<foaf:Agent>
 			<foaf:name>Mehmet Büyüközer</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.sonofnights.com">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -649,18 +649,18 @@
 		</foaf:Agent>
 	</foaf:member>
 	<foaf:member>
-                <foaf:Agent>
-                        <foaf:name>Mehmet Salih Yıldırım</foaf:name>
-                        <foaf:weblog>
-                                <foaf:Document rdf:about="http://yildirim.isadamlari.org/">
-                                        <dc:title></dc:title>
-                                        <rdfs:seeAlso>
-                                                <rss:channel rdf:about="" />
-                                        </rdfs:seeAlso>
-                                </foaf:Document>
-                        </foaf:weblog>
-                </foaf:Agent>
-        </foaf:member>
+		<foaf:Agent>
+			<foaf:name>Mehmet Salih Yıldırım</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://yildirim.isadamlari.org">
+					<dc:title>Yıldırım -- İşadamı » gezegen</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
 	<foaf:member>
 		<foaf:Agent>
 			<foaf:name>Murat Hazer</foaf:name>
@@ -821,7 +821,7 @@
 		<foaf:Agent>
 			<foaf:name>Penguen-CG</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blogs.lkd.org.tr">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -938,7 +938,7 @@
 		<foaf:Agent>
 			<foaf:name>Stand</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blogs.lkd.org.tr">
+				<foaf:Document rdf:about="">
 					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
@@ -1001,6 +1001,19 @@
 	</foaf:member>
 	<foaf:member>
 		<foaf:Agent>
+			<foaf:name>Zemberek NLP</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://zembereknlp.blogspot.com/">
+					<dc:title>Zemberek NLP</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
 			<foaf:name>Ömer Fadıl Usta</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://bilisimlab.com/blog/index.php">
@@ -1038,20 +1051,6 @@
 			</foaf:weblog>
 		</foaf:Agent>
 	</foaf:member>
-	<foaf:member>
-                <foaf:Agent>
-                        <foaf:name>Zemberek NLP</foaf:name>
-                        <foaf:weblog>
-                                <foaf:Document rdf:about="http://zembereknlp.blogspot.com/">
-                                        <dc:title>Zemberek Doğal Dil İşleme</dc:title>
-                                        <rdfs:seeAlso>
-                                                <rss:channel rdf:about="" />
-                                        </rdfs:seeAlso>
-                                </foaf:Document>
-                        </foaf:weblog>
-                </foaf:Agent>
-        </foaf:member>
-
 
 </foaf:Group>
 </rdf:RDF>
