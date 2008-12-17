@@ -12,6 +12,7 @@ __authors__ = [ "Scott James Remnant <scott@netsplit.com>",
                 "Jeff Waugh <jdub@perkypants.org>" ]
 __license__ = "Python"
 
+import locale
 
 # Modules available without separate import
 import cache
@@ -87,6 +88,15 @@ class stripHtml(sgmllib.SGMLParser):
 def template_info(item, date_format):
     """Produce a dictionary of template information."""
     info = {}
+    
+    #set the locale so that the dates at the feeds will be in english
+    lc=locale.getlocale()
+    if lc[0].find("tr") != -1:
+      try:
+	locale.setlocale(locale.LC_ALL, '')
+      except:
+	pass
+    
     for key in item.keys():
         if item.key_type(key) == item.DATE:
             date = item.get_as_date(key)
