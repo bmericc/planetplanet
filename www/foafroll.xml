@@ -245,6 +245,20 @@
 			</foaf:weblog>
 		</foaf:Agent>
 	</foaf:member>
+
+	<foaf:member>
+                <foaf:Agent>
+                        <foaf:name>Ceyhun Alyeşil</foaf:name>
+                        <foaf:weblog>
+                                <foaf:Document rdf:about="http://devador.blogspot.com">
+                                        <dc:title></dc:title>
+                                        <rdfs:seeAlso>
+                                                <rss:channel rdf:about="" />
+                                        </rdfs:seeAlso>
+                                </foaf:Document>
+                        </foaf:weblog>
+                </foaf:Agent>
+        </foaf:member>
 	<foaf:member>
 		<foaf:Agent>
 			<foaf:name>Deniz Koçak</foaf:name>
