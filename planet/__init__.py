@@ -91,7 +91,12 @@ def template_info(item, date_format):
     
     #set the locale so that the dates at the feeds will be in english
     lc=locale.getlocale()
-    if lc[0].find("tr") != -1:
+    if lc[0] == None:
+      try:
+	locale.setlocale(locale.LC_ALL, '')
+      except:
+	pass
+    elif lc[0].find("tr") != -1:
       try:
 	locale.setlocale(locale.LC_ALL, '')
       except:

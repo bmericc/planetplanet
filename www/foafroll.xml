@@ -107,7 +107,7 @@
 			<foaf:name>Alper Orus</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://www.murekkep.org">
-					<dc:title>Mürekkep - İnternet Yaşam Rehberiniz » admin</dc:title>
+					<dc:title>Mürekkep - İnternet Yaşam Rehberiniz » Bilişim</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -245,20 +245,19 @@
 			</foaf:weblog>
 		</foaf:Agent>
 	</foaf:member>
-
 	<foaf:member>
-                <foaf:Agent>
-                        <foaf:name>Ceyhun Alyeşil</foaf:name>
-                        <foaf:weblog>
-                                <foaf:Document rdf:about="http://devador.blogspot.com">
-                                        <dc:title></dc:title>
-                                        <rdfs:seeAlso>
-                                                <rss:channel rdf:about="" />
-                                        </rdfs:seeAlso>
-                                </foaf:Document>
-                        </foaf:weblog>
-                </foaf:Agent>
-        </foaf:member>
+		<foaf:Agent>
+			<foaf:name>Ceyhun Alyeşil</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
 	<foaf:member>
 		<foaf:Agent>
 			<foaf:name>Deniz Koçak</foaf:name>
