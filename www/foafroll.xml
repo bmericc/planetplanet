@@ -80,7 +80,7 @@
 		<foaf:Agent>
 			<foaf:name>Ali Erkan İMREK</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://armuting.blogspot.com/search/label/%C3%B6i_gezegen">
+				<foaf:Document rdf:about="http://armuting.blogspot.com/">
 					<dc:title>armut</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
