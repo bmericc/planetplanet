@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns="http://purl.org/rss/1.0/"
+>
+<channel rdf:about="http://gezegen.linux.org.tr">
+	<title>Linux Gezegeni</title>
+	<link>http://gezegen.linux.org.tr</link>
+	<description>Linux Gezegeni - http://gezegen.linux.org.tr</description>
+
+	<items>
+		<rdf:Seq>
+			<rdf:li rdf:resource="http://blog.oguz.biz/debian-xen-ve-libc6/" />
+			<rdf:li rdf:resource="http://www.erhanekici.com/blog/2008/12/22/hayatiniz-kimin-elinde-olacak/" />
+			<rdf:li rdf:resource="http://ozgurlukicin.com/haber/acik-kaynak-otomotiv-sektorunde/" />
+			<rdf:li rdf:resource="http://serkank.wordpress.com/?p=221" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=252" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/blog/?p=98" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-18762592.post-7621087352972876825" />
+			<rdf:li rdf:resource="http://www.kirmizivesiyah.org/?p=165" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=248" />
+			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=156" />
+			<rdf:li rdf:resource="http://raptiye.org/blog/2009/01/16/linux-gezegeni-hakkinda/" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/blog/?p=86" />
+			<rdf:li rdf:resource="http://www.hakanuygun.com/blog/?p=176" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=246" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=238" />
+			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=155" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=234" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/blog/?p=83" />
+			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=153" />
+			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=150" />
+			<rdf:li rdf:resource="http://gurcanozturk.com/2009/01/13/regexp-kullanarak-postfixte-catch-all-tanimi/" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/blog/?p=78" />
+			<rdf:li rdf:resource="http://gunluk.lkd.org.tr/yk/?p=232" />
+			<rdf:li rdf:resource="http://www.okanakyuz.com/?p=106" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2009/01/13/231/" />
+		</rdf:Seq>
+	</items>
+</channel>
+
+<item rdf:about="http://blog.oguz.biz/debian-xen-ve-libc6/">
+	<title>Alper Oğuz: Debian, Xen ve libc6</title>
+	<link>http://blog.oguz.biz/debian-xen-ve-libc6/</link>
+	<content:encoded>Debian'da Xen'i düşük bir olasılık olsa da :) bir çekirdek sorunu yaşamadan çalıştırmayı başarırsanız konsola ve syslog'a şuna benzer satırlar düşebilir:
+
+4gb seg fixup, process xxxx (pid xxxx), cs:ip xx:xxxxxxxx
+Sorunun kaynağı; stable dağıtım da kullansanız Xen hypervisor ve Xen çekirdeği ile libc6'nın uyumsuz olması. Çözüm olarak Xen için hazırlanan libc6'yı kurmalısınız ...</content:encoded>
+	<dc:date>Sun, 18 Jan 2009 08:53:22 +0000</dc:date>
+</item>
+<item rdf:about="http://www.erhanekici.com/blog/2008/12/22/hayatiniz-kimin-elinde-olacak/">
+	<title>Erhan Ekici: Hayatınız kimin elinde olacak?</title>
+	<link>http://www.erhanekici.com/blog/2008/12/22/hayatiniz-kimin-elinde-olacak/</link>
+	<content:encoded>30 yıllık bir zaman dilimi insanlık tarihinin uzun yolu içinde matematiksel olarak belki bir nokta kadar bile yer işgal etmiyor. Altı üstü 30 yıl. Ama insanlığın ekonomik, teknolojik, sosyolojik ve politik  vb. bir çok alandaki uzun yürüyüşü içinde belkide en hızlı, en etkili yürüyüşü bu otuz yıl içinde oldu. Teknolojik değişimler, ekonomik değişimleri, ekonomik [...]</content:encoded>
+	<dc:date>Sun, 18 Jan 2009 08:52:41 +0000</dc:date>
+</item>
+<item rdf:about="http://ozgurlukicin.com/haber/acik-kaynak-otomotiv-sektorunde/">
+	<title>Özgürlükiçin.com: Açık Kaynak Otomotiv Sektöründe</title>
+	<link>http://ozgurlukicin.com/haber/acik-kaynak-otomotiv-sektorunde/</link>
+	<content:encoded>&lt;p&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/upload/image/gomulu_bilgisayar.png&quot; border=&quot;0&quot; alt=&quot;Otomotiv_gömülüSistem&quot; title=&quot;Otomotiv_gömülüSistem&quot; align=&quot;right&quot; /&gt;Otomotiv endüstrisi bir yandan zor günler geçirip dünyayı saran ekonomik krizi atlatmaya çalışırken bir yandan da  tüketicilerin günlük hayatına hızla giren kablosuz iletişim teknolojilerinde sahip akıllı cihazlarla arabalar arasındaki etkileşimi artırma peşinde. Çok sayıda cihaza destek verilmesi için arabalarda kullanılan gömülü işletim sistemlerinin de tüketici ürünlerini üreten firmalar tarafından ulaşılabilir yani açık kaynak kodlu olması gerekiyor.&lt;br /&gt;&lt;br /&gt;Tüketici eğilimleri ve teknolojileri odaklı pazar araştırmaları yapan bir şirket olan ABI Research Direktörü &lt;strong&gt;Dominique BONTE&lt;/strong&gt;, &quot;&lt;em&gt;Yazılımlar, gömülü otomotiv sistemlerinin büyük bölümünü oluşturmaya devam ediyor. Buradan yola çıkarak çözümü nerede bulacağımız açık.&lt;/em&gt;&quot; diyor ve &quot;&lt;em&gt;Açık kaynak yazılımlar parça üreticilerine ve tedarikçi firmalara kolay modifiye edilip değiştirilebilen, artan performans ve uzayan ürün ömrü sunan platformlar tasarlamalarına imkân sağlıyor.&lt;/em&gt;&quot; diye ekliyor.&lt;/p&gt;
+&lt;p&gt;Gömülü otomotiv yazılımları pazar lideri &lt;a href=&quot;http://www.qnx.com/&quot;&gt;QNX&lt;/a&gt; de&lt;strong&gt; &lt;/strong&gt;bu yönde bir adım atarak geliştirme kaynaklarını bu günlerde zor zamanlar geçiren otomotiv ekosistemine kazandırmak için işletim sistemini açık kaynak kodlu yaptı. &lt;br /&gt;&lt;br /&gt;Otomotivin geleceği hibrid olacak. Gömülü telemetrik sistemler, kritik güvenlik fonksiyonları ve yüksek kalitede bilgisayar destekli sistemlere gerçekçi çözüm olurken; kullanıcıların sahip olduğu mobil cihazlar da standart arabirimlerde geliştirme yapmak ve araba ile etkileşimde kilit nokta olmaya devam edecek.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynak: &lt;/strong&gt;&lt;a href=&quot;http://www.abiresearch.com/press/1345-Open+Software+the+Only+Way+Forward+for+the+Automotive+Industry&quot;&gt;ABIResearch&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>Sun, 18 Jan 2009 07:56:00 +0000</dc:date>
+</item>
+<item rdf:about="http://serkank.wordpress.com/?p=221">
+	<title>Serkan Kaba: Tez çalışmam ve bulduğum hatalar</title>
+	<link>http://serkank.wordpress.com/2009/01/17/tez-calismam-ve-buldugum-hatalar/</link>
+	<content:encoded>&lt;div class=&quot;snap_preview&quot;&gt;&lt;br /&gt;&lt;p&gt;Tez çalışmamın yazımını çoğu Openoffice programını (Writer, Draw, Math) ve kmplot (ilk Google sonucu) kullanarak tamamladım (son rötuşlar olur tabi). Bu esnada Zemberek tarafından tanınamayan bazı kelimeler keşfettim ve &lt;a href=&quot;http://code.google.com/p/zemberek/issues&quot; target=&quot;_blank&quot;&gt;hata kayıt sistemine&lt;/a&gt; raporladım. Ancak karşılaştığım hataların en ilginci Openoffice&amp;#8217;te çıkandı. Çıktıyı  (Neyse ki ciltli kopya değildi) bile aldıktan sonra arkadaşın gözle farkettiği formüllerim. Openoffice PDF çevrimi yaparken formüllerin bazılarında rakamları Arap alfabesindeki rakamlara çevirmişti. Araştırdığımda bunun bilinen ve uzun zamandır açık olan bir &lt;a href=&quot;http://qa.openoffice.org/issues/show_bug.cgi?id=87669&quot; target=&quot;_blank&quot;&gt;hata&lt;/a&gt; olduğunu öğrendim. Üstelik de yazılanlar gibi rasgele oluyor, bozulan rakamlar her seferinde değişiyordu. Şimdilik yazdırma için PDF&amp;#8217;ye aktarmayı tercih edeceğim (Oysa kı yazıtipi, kayma gibi sorunlar olmasın diye özellikle PDF tercih etmiştim). Ancak PDF&amp;#8217;ye çevirirken (CD&amp;#8217;de PDF olarak da vermem gerekiyor sanırım) muhtemelen &lt;a href=&quot;http://www.cups-pdf.de/&quot; target=&quot;_blank&quot;&gt;CUPS-PDF&lt;/a&gt; kullanmam gerekecek.&lt;/p&gt;
+Posted in gentoo, gezegen, linux, openoffice, zemberek&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/gocomments/serkank.wordpress.com/221/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/serkank.wordpress.com/221/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/godelicious/serkank.wordpress.com/221/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/serkank.wordpress.com/221/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/gostumble/serkank.wordpress.com/221/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/serkank.wordpress.com/221/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/godigg/serkank.wordpress.com/221/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/serkank.wordpress.com/221/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/goreddit/serkank.wordpress.com/221/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/serkank.wordpress.com/221/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://stats.wordpress.com/b.gif?host=serkank.wordpress.com&amp;blog=906032&amp;post=221&amp;subd=serkank&amp;ref=&amp;feed=1&quot; /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>Sat, 17 Jan 2009 16:36:01 +0000</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=252">
+	<title>LKD YK: Üyeler İçin Web Düğmeleri Bayilerde, Aldınız Mı?</title>
+	<link>http://gunluk.lkd.org.tr/yk/2009/01/17/uyeler-icin-web-dugmeleri-bayilerde-aldiniz-mi/</link>
+	<content:encoded>&lt;p&gt;Geçtiğimiz ay isteyen dernek üyelerinin kendi kişisel web sayfalarına koyabilecekleri LKD üyesi olduklarını belirtir web düğmeleri olsa önerisinin lkd-uye listesinde gündeme gelmişti.&lt;/p&gt;
+&lt;p&gt;Melih Taşdizen, beraber çalıştığı iki grafiker arkadaşını da gönüllü yaparak bu çalışmayı üstlendi. 5 farklı düğme tasarlayarak, ufak bir web sayfası da hazırladı. Üye web alanı altına yerleştirilen sayfadan üyeler kendi üye numaraları yazan LKD web düğmelerini alıp kullanabiliyorlar.&lt;/p&gt;
+&lt;table border=&quot;0&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd-00.png&quot; width=&quot;88&quot; height=&quot;31&quot; class=&quot;alignnone size-medium wp-image-253&quot; /&gt;&lt;/td&gt;
+&lt;td width=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd-01.png&quot; width=&quot;88&quot; height=&quot;31&quot; class=&quot;alignnone size-medium wp-image-254&quot; /&gt;&lt;/td&gt;
+&lt;td width=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd-02.png&quot; width=&quot;88&quot; height=&quot;31&quot; class=&quot;alignnone size-medium wp-image-255&quot; /&gt;&lt;/td&gt;
+&lt;td width=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd-03.png&quot; width=&quot;88&quot; height=&quot;31&quot; class=&quot;alignnone size-medium wp-image-256&quot; /&gt;&lt;/td&gt;
+&lt;td width=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd-04.png&quot; width=&quot;88&quot; height=&quot;31&quot; class=&quot;alignnone size-medium wp-image-257&quot; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</content:encoded>
+	<dc:date>Sat, 17 Jan 2009 11:58:20 +0000</dc:date>
+</item>
+<item rdf:about="http://www.ozgurkuru.net/blog/?p=98">
+	<title>Özgür Kuru: Pardus 2008.2 RC1 “Gazze”</title>
+	<link>http://www.ozgurkuru.net/blog/2009/01/17/pardus-20082-rc1-gazze/</link>
+	<content:encoded>&lt;p&gt;Sonunda 2008.2 kararlı sürüm için bir adım daha ileri gidildi. Ve 2008.2 sürümünün üçüncü test sürümü olan 2008.2 RC1, &amp;#8220;Gazze&amp;#8221; adı ile ftplerdeki yerlerini aldı. Bende haberin ilk yayınlandığı anda iso kalıbını indirmeye bıraktım. Tabi saat gece biri geçmişti sanırım. Şu sıralarda &amp;#8220;Gazze&amp;#8221; bilgisayarıma kurulmaya başladı bile. Öncelikle sürüm adı olarak &amp;#8220;Gazze&amp;#8221; seçilmesi çok anlamlı ve yerinde bir karar olmuş. Sürüm yöneticisini ve tüm ekibi kutluyorum. Gelelim ilk izlenimlere.&lt;/p&gt;
+&lt;p&gt;Kurulum  Beta ya göre biraz daha hızlı oluyor gibi geldi bana. Ayrıca Alpha sürümünde fark edilip düzeltilen bir kurulum hatası mevcuttu. Kuruluma başladığınızda konsolda &amp;#8220;modprobe&amp;#8221; ile başlayan iki satırlık bir &lt;a href=&quot;http://liste.pardus.org.tr/testci/2009-January/001111.html&quot; target=&quot;_blank&quot;&gt;hata &lt;/a&gt;oluşuyordu ve kurulum yapılamıyordu. Bu iki satırlık hata Beta kurulumdada ekrana çıkıyor fakat kurulum sorunsuzca yapılabiliyordu. Aynı hata RC1 yani &amp;#8220;Gazze&amp;#8221; sürümündede mevcut, fakat Beta sürümde olduğu gibi kurulum sorun çıkartmadan başlıyor ve devam ediyor.&lt;/p&gt;
+&lt;p&gt;Gelelim ikinci izlenimime. Yine bir Radeonhd-Radeon sürücüsü seçme karmaşası yaşanıyor sanırım. Henüz kurulum bitmediği için net bir şey söylemek zor. Fakat Ati ekran kartlarında Alpha, Beta ve Gazze kurulumlarında butonlara bastığınızda grafik bozuklukları çıkıyor. Bu bozukluklar Alpha ve Beta sürümlerde radeonhd sürücüsü yerine radeon seçene kadar yada ati-drivers sürücülerini yükleyene kadar devam ediyordu. Yani sıkıntı &amp;#8220;RADEONHD&amp;#8221; sürücülerinden kaynaklı. Gazze sürümünde bu sıkıntı kurulumda mevcut. Sanırım kurulum için sürücü olarak yine radeonhd seçilmiş gözüküyor. Fakat kurulum henüz bitmediği için sonrasında durum devam eder mi bilemiyorum. Belki ilk açılışta radeonhd yerine radeonu otomatik olarak seçer. Buyrun konu ile ilgili &lt;a href=&quot;http://bugs.pardus.org.tr/show_bug.cgi?id=8955&quot; target=&quot;_blank&quot;&gt;hata kaydı.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kısaca &amp;#8220;Gazze&amp;#8221; sürümü hakkında şimdi söyleyeceklerim bu kadar. Ama sanırım Beta sürüme göre çok daha hızlı bir kurulum yapıyor. Şimdilik &amp;#8220;Gazze&amp;#8221; hakkında söyleyeceklerim bukadar.&lt;/p&gt;</content:encoded>
+	<dc:date>Sat, 17 Jan 2009 07:06:03 +0000</dc:date>
+</item>
+<item rdf:about="tag:blogger.com,1999:blog-18762592.post-7621087352972876825">
+	<title>Gökdeniz Karadağ: e-bergi</title>
+	<link>http://gokdenix.blogspot.com/2009/01/e-bergi.html</link>
+	<content:encoded>&lt;p&gt;
+İngilizce &lt;a href=&quot;http://en.wikipedia.org/wiki/Computation&quot;&gt;computation&lt;/a&gt; kavramını karşılamak üzere &quot;tasarlanmış&quot; bir kelime &lt;i&gt;berim&lt;/i&gt;. Türkçe'nin bilim dili olabilmesi, yabancı dillerdeki kavramları karşılayabilmesi için pratik bir yolun &quot;kök uydurmak&quot; olduğu fikrinden hareketle &lt;a href=&quot;http://www.ceng.metu.edu.tr/~ucoluk/yazin/berimsel_bir_deneme.html&quot;&gt;&lt;i&gt;uydurulmuş&lt;/i&gt; bir kök&lt;/a&gt;. Dil bilimciler bütün bu &quot;uydurma&quot; süreci hakkında ne der bilmiyorum ama ben &quot;Yüksek Başarımlı Berim&quot; (bkz. &lt;a href=&quot;http://en.wikipedia.org/wiki/Hpc&quot;&gt;HPC&lt;/a&gt;) başlıklı toplantılar gördüğümde hiç kulağım yadırgamadı. Tamamen bir alışkanlık meselesi. &lt;/p&gt;
+
+&lt;p&gt;Aslında bir de tercih meselesi, bir konu hakkında konuşurken terimlerin İngilizce karşılığını kullanmaktansa, yaygınlaşmamış ve oturmamış bile olsa Türkçe karşılıklarını kullanmayı tercih ediyorum. Bu konudan rahatsız değilim, birileri sözcüğü anlamasa bile İngilizce sözcüğü kullanıp önce anlamalarını sağlıyorum, sonra konuyu Türkçe sözcükle anlatmaya devam ediyorum. Türkçe terimleri yaygınlaştırmada bu yöntemin işe yaradığını gözlemledim, &quot;komik/garip&quot; Türkçe karşılığı çekindiği için kullanmayanları cesaretlendiren bir davranış olduğunu düşünüyorum.
+&lt;/p&gt;
+
+&lt;p&gt;&quot;Bermek&quot; kökünü adında kullanan bir de sanal yayın var, &lt;a href=&quot;http://e-bergi.com&quot;&gt;e-bergi&lt;/a&gt;.  Odak noktaları özgür yazılım ve bilgisayar bilimleri olan, ancak güncel konular, oyunlar ve biyografilerle birlikte geniş bir yelpazede yazılar içeren bir dergi. Nisan 2007'den beri yayında olduğundan ötürü geniş bir &lt;a href=&quot;http://e-bergi.com/arsiv.php&quot;&gt;eski sayı arşivi&lt;/a&gt; var. Arşive bakmanızı özellikle tavsiye ederim, ilginizi çekebilecek bir konuda yazılmış bir yazı bulabilirsiniz. Siz de bir ucundan tutmak isterseniz önce dergiyi hazırlayan ekiple &lt;a href=&quot;http://e-bergi.com/iletisim&quot;&gt;iletişime geçip&lt;/a&gt; bir konu belirledikten sonra e-bergi yazarı olabilirsiniz.
+&lt;/p&gt;
+
+&lt;p&gt;Son olarak, günlüğümdeki bazı yazılar &lt;a href=&quot;http://gezegen.linux.org.tr&quot;&gt;Linux Gezegeni&lt;/a&gt;'nde de yayınlanıyor, [[hatta bunu okuyorsanız büyük ihtimalle bir gezegen okuyucusunuz :) ]]. &lt;a href=&quot;http://raptiye.org/blog/2009/01/16/linux-gezegeni-hakkinda/&quot;&gt;Alper Kanat gezegen hakkında yazmış&lt;/a&gt;; demiş ki gezegendeki her şey teknik ve/veya linux ile ilgili olmak zorunda değil. Bu görüşe ben de katılıyorum, Truman Show, BBG evi ya da twitter havasında sürmediği sürece, ortak noktaları Linux ve Özgür Yazılım olan insanların günlüklerindeki diğer konuları da takip etmek ilgimi çekiyor.
+&lt;/p&gt;</content:encoded>
+	<dc:date>Sat, 17 Jan 2009 02:30:04 +0000</dc:date>
+</item>
+<item rdf:about="http://www.kirmizivesiyah.org/?p=165">
+	<title>Kubilay Onur Güngör: LKD Kimlik Kartım</title>
+	<link>http://www.kirmizivesiyah.org/index.php/2009/01/16/lkd-kimlik-kartim/</link>
+	<content:encoded>&lt;p&gt;LKD Kimlik kartımın geldiğinin haberini alınca, heyecanla teslim almak için koşturdum. Bu tarz şeyler sosyal gruplar açısından önemlidir. Özellikle kimlik bir aidiettir bir anlamda. Bu nedenle oldukça sevindim. Fakat malesef kimlik kartımda bir takım yanlışlar olması biraz üzücü oldu. Adım Kubilay Onur Güngör, ancak Onur, soyadı bölümünde görünmekte. Soyadım ise, mail adresi bölümünde =) böyle küçük bir sorun mevcut. Ancak kimlikte yazan ben olmasamda fotoğraf ve üye no dan anlayabileceğim üzere o benim kimliğim =P ve Derneğe olan gönül bağımın somut bir simgesi. Herkese teşekkürler.&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 16 Jan 2009 13:09:06 +0000</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=248">
+	<title>LKD YK: Aralık Ayı Üye Bülteni Yayınlandı</title>
+	<link>http://gunluk.lkd.org.tr/yk/2009/01/16/aralik-ayi-uye-bulteni-yayinlandi/</link>
+	<content:encoded>&lt;p&gt;Linux Kullanıcıları Derneği’nin yapmış olduğu çalışmaların konsantre bir şekilde anlatıldığı aylık üye bülteninin Aralık sayısı tüm üyelerimizin e-posta adreslerine gönderildi.&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 16 Jan 2009 08:33:42 +0000</dc:date>
+</item>
+<item rdf:about="http://www.linuxipuclari.com/?p=156">
+	<title>Linuxipuclari: Sürekli Akan Logları İzleme</title>
+	<link>http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme</link>
+	<content:encoded>&lt;p&gt;Eğer birşeyler ters gidiyorsa hemen loglara bakarız çünkü soruna ait bütün ipuçları oradadır.&lt;/p&gt;
+&lt;p&gt;Bazen bu logları oluştukları anda anında izlemek istediğimizde her linux kullanıcısının ilk öğrendiği komutlardan birini kullanırız&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;tail&lt;/span&gt; &lt;span&gt;-f&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ama bu komutun şöyle bir dezavantajı var loglar orda akıp giderken birşey gözünüze takıldı ne yapacaksınız ctrl+c ve logun akmasını keseceksiniz ya ekranda kalan kısımdan logun gördüğünüz kısmına bakmaya çalışacaksınız yada more yada vi gibi komutları kullanarak dosyanın içine girip o satırı aramaya çalışacaksınız.&lt;/p&gt;
+&lt;p&gt;Peki size bunun daha kolay bir yolu var desem. Evet less komutu. Nasıl mı kullanacağız? Çok basit.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;less&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Shift+F&lt;/strong&gt; tail -f ile aynı işi görür loglar akmaya başlar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; ile istediğiniz yerde logun akmasını durdurabilirsiniz&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B&lt;/strong&gt; ve &lt;strong&gt;F&lt;/strong&gt; tuşları logun içinde ileri geri gitmenizi sağlar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt; ile işiniz bittiğinde logdan çıkarsınız&lt;/p&gt;
+&lt;p&gt;Logların siz komutu yazdığınızda direk akarak başlamasını istiyorsanız komutu aşağıdaki gibi kullanabilirsiniz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;less&lt;/span&gt; +F &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yada daha önce yazdığımız &lt;a href=&quot;http://www.linuxipuclari.com/genel/kendi-komutunuzu-olusturun&quot;&gt;Kendi Komutunuzu Oluşturun&lt;/a&gt; ipucumuzu kullanarak &lt;strong&gt;less +F&lt;/strong&gt; için &lt;strong&gt;akanlog&lt;/strong&gt; diye bir alias yaratabilir ve komutu direkt olarak&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;akanlog &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;şeklinde de kullanabilirsiniz ;)&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 16 Jan 2009 08:17:05 +0000</dc:date>
+</item>
+<item rdf:about="http://raptiye.org/blog/2009/01/16/linux-gezegeni-hakkinda/">
+	<title>Alper Kanat: Linux Gezegeni Hakkında</title>
+	<link>http://raptiye.org/blog/2009/01/16/linux-gezegeni-hakkinda/</link>
+	<content:encoded>&lt;img width=&quot;349&quot; height=&quot;133&quot; src=&quot;http://raptiye.org/resimler/gathering-linux.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;br /&gt;
+Normalde gezegenle alakalı yazıları Gezegen Ekibi'ne ait &lt;a href=&quot;http://gunluk.lkd.org.tr/gezegen/&quot; target=&quot;_blank&quot; title=&quot;gezegen günlüğüne ulaşmak için tıklayın..&quot;&gt;günlüğe&lt;/a&gt; yazıyoruz ancak burada yazacaklarım benim kişisel fikirlerimi de yansıttığından buraya yazmak istedim. Bir süredir LKD'nin Gezegen Ekibi'nde gönüllü olarak elimden geldiğince katkıda bulunmaya çalışıyorum. Bu yazıda gezegende yapmak istediğimiz bir takım değişiklikleri ve ekip olarak bize gelen istekleri, şikayetleri anlatmaya çalışacağım.&lt;br /&gt;
+&lt;a href=&quot;http://planet.gnome.org/&quot; target=&quot;_blank&quot; title=&quot;GNOME Gezegeni'ni ziyaret etmek için tıklayın..&quot;&gt;&lt;br /&gt;
+Planet GNOME&lt;/a&gt; vb. gezegenleri takip edenler bilirler; insanlar çocuklarının doğumlarını, evliliklerini, bir Pazar gününü nasıl geçirdiklerini, tatillerini sıkça paylaşıyorlar. Çünkü hayat yalnızca Linux'tan ya da özgür yazılımdan ibaret değil. Kaldı ki ben dahil bir çok kişi eminim ki; bu insanların gerçekte nasıl bir yaşam sürdüklerini, tecrübelerini, etraflarında olup bitenleri nasıl kavradıklarını merakla takip ediyor. Hal böyle olunca gezegenin olabildiğince mozaik bir yapıya sahip olması kaçınılmaz oluyor. Bu da farklı seslerin ortaya çıkmasına bir sebep yaratıyor. Şahsen bu mozaikten de, çok seslilikten de son derece mutluyum, elimden geldiğince böyle kalmasını sağlamaya çalışıyorum.&lt;br /&gt;
+&lt;br /&gt;
+Gezegen'de herhangi bir sebepten dolayı sevdiğimiz ya da sevmediğimiz insanlar var ya da olabilir. Ancak bu, o insanların gezegene yazma haklarını; hatta istedikleri konuyla ilgili yazma haklarını kısıtlayabileceğimiz bir ortam yaratmamızı gerektirmemeli. Bu durumu kolaylıkla Türkiye'nin içinden geçtiği süreçle yorumlayabilir, benzetebiliriz. (&lt;em&gt;Şu çıldırmışlığın, insan hayatının değerinin hiçe sayıldığı dönemde sevmediğimiz insanların canına, malına kastedemeyeceğimizi bir gün farkedeceğimizi umuyorum bu arada....&lt;/em&gt;)&lt;br /&gt;
+&lt;br /&gt;
+Son zamanlarda &lt;a href=&quot;http://www.linuxipuclari.com/&quot; target=&quot;_blank&quot; title=&quot;Linux Hakkında Pratik İpuçları&quot;&gt;Linux İpuçları&lt;/a&gt; olarak adlandırılan bir oluşumun yazdığı yazılardan dolayı bir kaç şikayet ulaştı ekibimize.. &lt;a href=&quot;http://gunluk.lkd.org.tr/gezegen/2008/11/01/gezegen-kurallari/&quot; target=&quot;_blank&quot; title=&quot;gezegen kurallarını okumak için tıklayın..&quot;&gt;Gezegen Kuralları&lt;/a&gt;, bir gün içerisinde en fazla üç mesaj atılabileceğini söylüyor ve bu kuralı çiğnedikleri için yazar arkadaşlarımızı uyardık. Onlar da kuralların ilgili kısmını kaçırdıklarını belirterek daha özenli davranmaya başladılar. Gezegende tamamen Linux ve Özgür Yazılım yazacağız diye bir kuralımız olsaydı şayet, bu arkadaşlar bu kurala %100 uyuyor olurlardı. Yazdıkları yazıları haber kategorisine sokmak anlamsız ve bence imkansız. Dolayısıyla onların yazmamasını istemek, gezegende olmamalarını istemek gezegen kurallarını hiçe saymak demek; dahası başkasının hakkına gaspetmek demek... Tabii eğer kişisel görüşlerimizi ve egolarımızı bir yana bırakmayı becerebilirsek... Kişisel fikrim bu oluşumun gezegene farklı bir tat getirdiğinden ve kesinlikle (ve inatla) varolmalarından yana! Zira yazdıkları bir takım ipuçlarının bana ve gezegen ziyaretçilerinin büyük çoğunluğuna fazlasıyla katkısı olacağını düşünüyorum. Bu arada gezegen ziyaretçilerinin tamamını süper Linux bilen, işi bitirmiş arkadaşlardan varsaymak da biraz zor olur sanırım..&lt;br /&gt;
+&lt;br /&gt;
+Daha önce gezegen'de bir takım geliştirmeler yaptık ve yazılar belli bir uzunluğu aştığında yazıyı kesiyorduk. Sonrasında bu gelişmeyi sizlerin beğenisine sunarak fikirlerinizi almaya &lt;a href=&quot;http://gunluk.lkd.org.tr/gezegen/2008/11/09/yeni-gezegen-icin-dusuncelerinizi-almak-istiyoruz/&quot; target=&quot;_blank&quot; title=&quot;Yeni Gezegen için Düşüncelerinizi Almak İstiyoruz adlı yazıyı okumak için tıklayın..&quot;&gt;çalıştık&lt;/a&gt; gezegen günlüğünde... Geri beslemeler sayesinde yaptığımız şeyin çok beğenilmediğini ve işi kötü bir yöntemle çözdüğümüzü gördük, yaptığımız değişikliklerin bir kısmını geri aldık. Önümüzdeki zaman dilimi içerisinde &lt;a href=&quot;http://www.planetplanet.org/&quot; target=&quot;_blank&quot; title=&quot;gezegen yazılımının sitesine ulaşmak için tıklayın..&quot;&gt;planetplanet&lt;/a&gt; adlı yazılımla devam etmek ya da sıfırdan bir gezegen yazılımı yazmak gibi bir planımız var. Her iki durumda da şu geliştirmeleri yapmayı planlıyoruz:&lt;br /&gt;
+&lt;ul&gt;
+ &lt;li&gt;Belirli bir uzunluktan daha uzun olan yazıları ana sayfada kırpmak ve kullanıcıların yaptığı seçimi saklamak (böylece tekrar tekrar yapmamalarını sağlamak).&lt;/li&gt;
+ &lt;li&gt;Gezegen yazılarını etiketlerle kataloglamak ve yalnızca istenen etiketlerin RSS kaynağının alınabilmesi.. Böylece belirli günlükleri okumak istemeyen ziyaretçilerimize de bir seçenek vermiş olacağız.&lt;/li&gt;
+&lt;/ul&gt;
+Bu arada gezegenin kod tabanını herkese &lt;a href=&quot;http://svn.linux.org.tr/svn/gezegen/&quot; target=&quot;_blank&quot; title=&quot;kod tabanına ulaşmak için tıklayın..&quot;&gt;açtık&lt;/a&gt;. Trac'imizi de yakında açacağız inşallah.. Böylece kodumuzu inceleyebilir, dilediğiniz konuda bizi eleştirebilir ve istediğiniz özelliklerle ya da bulduğunuz hatalarla ilgili bilet açabilirsiniz. Her zamanki gibi yardım edecek arkadaşları da aramızda görmekten mutluluk duyacağımızı belirtelim!&amp;#160; &lt;img src=&quot;http://raptiye.org/media/images/smiley/face-smile.png&quot; align=&quot;absmiddle&quot; /&gt; &lt;br /&gt;&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?a=I3G1o7DI&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?d=41&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?a=hpeNDHPS&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?i=hpeNDHPS&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?a=hQ0v5iNR&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?i=hQ0v5iNR&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?a=L4ijIyiC&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?d=52&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?a=hzccm4xD&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~f/raptiyeorg?i=hzccm4xD&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;</content:encoded>
+	<dc:date>Thu, 15 Jan 2009 22:41:58 +0000</dc:date>
+</item>
+<item rdf:about="http://www.ozgurkuru.net/blog/?p=86">
+	<title>Özgür Kuru: Bir Pardus Günü…</title>
+	<link>http://www.ozgurkuru.net/blog/2009/01/15/bir-pardus-gunu/</link>
+	<content:encoded>&lt;p&gt;Bugün TOBB Ekonomi ve Teknoloji Üniversitesinde Pardus ile ilgili güzel bir etkinlik yapıldı. Üç gündür yapılan hazırlıklar, açılan standlar ve dağıtılan cdler ile başlayan süreç bugün kısmende olsa neticelendi. Gerçekten güzel bir ortam oluşmuştu. İki ayrı seminerden oluşan yani iki oturumlu bir etkinlikti. Seminerlerden önce Bora Güngören ile sohbet etme fırastı bularak seminer öncesi boşluğu değerlendirdik. İlk semineri Bora Güngören, TOBB ETU öğrenci, hoca ve diğer katılımcılara Özgür Yazılımlar ve Pardus başlıklı sunumuyla bu konuda bilgi vererek gerçekleştirdi. Ardından verilen arada TOBB ETU&amp;#8217;nun yapmış olduğu ikramlar eşliğinde katılımcılarla Linux ve Pardus hakkında güzel sohbetler gerçekleştirdik. Bu aradan sonra ben bilgisayar ile genel olarak kullanılan uygulamaların Pardus ile nasıl yapıldığını, hangi programların kullanıldığını ve Pardus&amp;#8217;un son kullanıcıya sunduğu avantajlarından bahseden küçük bir tanıtım yaparak etkinliği tamamlamış olduk. Üç gün boyunca 200&amp;#8242;e yakın Pardus 2008.1 kurulum cdsi dağıttık, bazı arkadaşlarımıza Pardus kurulumunda yardım ettik, deneyimlerimizden bahsederek Pardus&amp;#8217;u tanıtmak için çabaladık diyebilirim. Bu çabalarada değdiğine inanıyorum. İnşallah daha güzel etkinlikler ile Pardus&amp;#8217;umuzu daha güzel yerlere getirebileceğiz. Başta bizleri yalnız bırakmayan &lt;a href=&quot;http://blogs.portakalteknoloji.com/bora/blog/&quot;&gt;Bora Güngören&lt;/a&gt;&amp;#8216;e, TOBB ETU hocaları ve öğrencilerine tekrar teşekkür etmek istiyorum. Tabi bir teşekkürüde &lt;a href=&quot;http://sevalunver.blogspot.com/&quot; target=&quot;_self&quot;&gt;Seval Ünver&lt;/a&gt; hakediyor ki, ders aralarında koşuşturmaları, üç gün boyunca bizleri en iyi şekilde ağırlaması ile bu etkinlikte en büyük emeği veren kişi oldu diyebilirim.&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 15 Jan 2009 20:05:05 +0000</dc:date>
+</item>
+<item rdf:about="http://www.hakanuygun.com/blog/?p=176">
+	<title>Hakan Uygun: Tekir&#8217;de Yenilikler</title>
+	<link>http://www.hakanuygun.com/blog/?p=176</link>
+	<content:encoded>&lt;p&gt;&lt;a href=&quot;http://www.hakanuygun.com/blog/wp-content/uploads/2009/01/big_paw.png&quot;&gt;&lt;img class=&quot;alignleft size-full wp-image-177&quot; title=&quot;big_paw&quot; src=&quot;http://www.hakanuygun.com/blog/wp-content/uploads/2009/01/big_paw.png&quot; alt=&quot;&quot; width=&quot;82&quot; height=&quot;67&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tekir Ticari Otomasyon ile ilgili bir süredir sesiz sedasız ama yoğun bir çalışma içerisindeydik ve sonunda 1.5 sürümünü yayınladık.&lt;/p&gt;
+&lt;p&gt;Bu sürüm ile bilikte bir çok değişiklik ve yenilik geliyor. Bunların başında &lt;a href=&quot;http://www.tekir.com.tr&quot; target=&quot;_blank&quot;&gt;www.tekir.com.tr&lt;/a&gt; adresinin yeni yüzü ve uygulaması var. Yeni uygulama ve özellikleri ile birlikte, topluluk ilişkilerinin daha iyi yürütülebilmesini sağlamak hedefindeyiz.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignleft size-full wp-image-178&quot; title=&quot;paw_little_pink&quot; src=&quot;http://www.hakanuygun.com/blog/wp-content/uploads/2009/01/paw_little_pink.png&quot; alt=&quot;&quot; width=&quot;44&quot; height=&quot;36&quot; /&gt;Tekir&amp;#8217;i denemek, kullanmadan önce kapsamını görmek isteyenler için kurulum gerektirmeyen fakat diledikleri gibi çalışabilecekleri bir ortam sağlamak amacıyla &lt;a href=&quot;http://www.tekir.com.tr/indir/&quot; target=&quot;_blank&quot;&gt;Tekir Çalışan CD&lt;/a&gt; hazırladık. Bu CD sayesinde, sistemlerinize hiç bir şey kurmaya gerek kalmadan Tekir&amp;#8217;i deneyebileceksiniz.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignleft size-full wp-image-178&quot; title=&quot;paw_little_pink&quot; src=&quot;http://www.hakanuygun.com/blog/wp-content/uploads/2009/01/paw_little_pink.png&quot; alt=&quot;&quot; width=&quot;44&quot; height=&quot;36&quot; /&gt;Tabii ki en önemli değişiklikler Tekir&amp;#8217;in kendisinde. Öncelikle Tekir&amp;#8217;in lisansında yapılan bir değişiklikten bahsedelim. Tekir&amp;#8217;in önceki sürümleri AGPL ile yayınlanıyorlardı. Tekir 1.5 sürümü ile birlikte artık LGPL 3.0 ile yayınlanmaya başladı. Böylece Tekir&amp;#8217;in iş platformu olma yolunda önemli bir adım attığımızı düşünüyoruz.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignleft size-full wp-image-178&quot; title=&quot;paw_little_pink&quot; src=&quot;http://www.hakanuygun.com/blog/wp-content/uploads/2009/01/paw_little_pink.png&quot; alt=&quot;&quot; width=&quot;44&quot; height=&quot;36&quot; /&gt;Tekir&amp;#8217;in becerilerinin geliştirilmesine de devam ediyoruz. Banka Modülü, Çek- Senet Modülü, Sipariş Modülü, Merkez Bankası kurlarının otomatik çekimi gibi hemen sayabileceğimiz yeniliklerimiz var.&lt;/p&gt;
+&lt;p&gt;Bu sürümde henüz yeterli olgunluğa gelmediği için yayınlanmamış fakat kısa süre içerisinde yayınlamayı umduğumuz bir dolu başka özellik ve yetenek de yolda&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Bizi &lt;a href=&quot;http://www.tekir.com.tr/rss/haber&quot; target=&quot;_blank&quot;&gt;izlemeye&lt;/a&gt; devam edin &lt;img src=&quot;http://www.hakanuygun.com/blog/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 15 Jan 2009 19:28:50 +0000</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=246">
+	<title>LKD YK: www.linux.org.tr şablon kullanmaya başladı</title>
+	<link>http://gunluk.lkd.org.tr/yk/2009/01/15/wwwlinuxorgtr-sablon-kullanmaya-basladi/</link>
+	<content:encoded>&lt;p&gt;Geçtiğimiz yıl yaşanan sunucu sorunundan sonra www.linux.org.tr web sitesinin o zamanki hali ancak kısmi olarak internet arşivlerinden çıkarılabilmişti. O zamandan beri de tamamen statik html sayfaları olarak duruyorlardı.&lt;/p&gt;
+&lt;p&gt;Tamamen statik sayfalar güzel olmalarına karşın, menü ve tasarımın güncellenmesinde zorluk yaşatıyorlar. Tasarımda yapacağınız ufak bir değişikliği bile tüm html sayfalarda tek tek değiştirmeyi gerektiriyorlar.  Menüye basit bir seçenek eklemek ya da değiştirmek bile hem tüm sayfalarda değişiklik gerektiriyor, hem de sayfalardan birinin unutulması durumunda tutarsızlık yaratıyordu.&lt;/p&gt;
+&lt;p&gt;Üyelerimizden Barkın Kılıç, sitedeki sayfaların içeriklerini tek tek ayıkladı, tasarımı oluşturan menüleri ayırdı ve bir şablona oturttu. Dış görünüşte hiçbir şey değişmemiş gibi gözükse de, artık tüm sayfalar aynı menü/tasarımı kullanıyorlar. Herhangi bir değişiklik kolaylıkla yapılabiliyor.&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 15 Jan 2009 15:43:16 +0000</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=238">
+	<title>LKD YK: Dernek Kartvizitleri</title>
+	<link>http://gunluk.lkd.org.tr/yk/2009/01/15/dernek-kartvizitleri/</link>
+	<content:encoded>&lt;p&gt;&lt;a href=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd_kartvizit_ornegi1.png&quot;&gt;&lt;img src=&quot;http://gunluk.lkd.org.tr/yk/files/2009/01/lkd_kartvizit_ornegi1.png&quot; width=&quot;150&quot; height=&quot;236&quot; align=&quot;left&quot; class=&quot;alignnone size-full wp-image-240&quot; /&gt;&lt;/a&gt;Dernek adına farklı kişi ve kurumlarla yüzyüze görüştüğümüzde, iletişim bilgilerinin verilmesi/alınması için toplumdaki yaygın alışkanlık kartvizit değişimi oluyor.&lt;/p&gt;
+&lt;p&gt;Geçmişte LKD&amp;#8217;de kişisel kartvizit basımından kaçınılmıştı. Amaç dernekteki görevlerin kişilerle eşleşmesinden kaçınmak, insanların dernekle genel adreslerden bağlantı kurmasını sağlamaktı. Bir bayrak değişimi ile yürüyen dernek kavramına yabancı insanlara birkaç yıl önce dernek adına görüştükleri insanın artık o görevi yapmıyor olabileceğini (ve bunun doğal olduğunu) anlatması gerçekten güç olabiliyordu.&lt;/p&gt;
+&lt;p&gt;Ancak geçen zaman içinde açık seçik ortaya çıktı ki, birçok ilişki ne kadar engellenmeye çalışırsa çalışılsın kişiselleşiyor ve bu kişiler dernekteki görevlerinden ayrılsalar da dernekte o konu ile ilgili ilk olarak onlara başvuruluyor. Kişisel kartvizit yokluğu bunu deva olmuyor.&lt;/p&gt;
+&lt;p&gt;Biz de o zaman madem bu kaçınılmaz, bari hakkıyla yapalım ve dernek adına farklı kurumlarla görüşen üyelere kartvizit bastıralım dedik. Büyük bir maliyeti olmadığı için de görevinden ayrılınca çöpe atılmalarının çok bir sorun olmayacağını düşündük.&lt;/p&gt;
+&lt;p&gt;Üyelerimizden Volkan Uygun Aralık ayında bize birer cici, dikine kart tasarladı (biraz! uğraştırdık da kendisini farklı tasarımlarla). Sonra araya bayram, bir de üzerine yılbaşı girince aklımızdan çıkmıştı. Birkaç gün önce tekrar alevlenen çalışmalarla kartlar son biçimini aldılar ve yine Volkan Uygun&amp;#8217;un uğraşları ile basıldılar.&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 15 Jan 2009 10:39:52 +0000</dc:date>
+</item>
+<item rdf:about="http://www.linuxipuclari.com/?p=155">
+	<title>Linuxipuclari: Periyodik Olarak Bir Programı Çalıştırma ve Çıktısını Takip Etme</title>
+	<link>http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme</link>
+	<content:encoded>&lt;p&gt;Sizin de hiç ihtiyacınız oldu mu bilmem ama bu tür bir şeye çok sık ihtiyacım olunca biraz araştırdım ve bu komutu buldum o günden beri de en sevdiğim linux komutlarından biri oldu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nasıl kullanılır?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;watch [seçenekler] komut&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-n&lt;/strong&gt; Komutun kaç saniyede bir tekrar edileceğini, ekran çıktısının kaç saniyede bir yenileneceğini belirtir. Kullanılmazsa her 2 saniyede bir anlamına gelir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-d&lt;/strong&gt; Ekran çıktısında oluşan değişiklikleri beyaz olarak boyar böylece değişim olan yerleri daha rahat gözlersiniz&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ne için mi kullanıyorum?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bir klasördeki dosya sayısındaki değişimi gözlemlemek için örn: postfix aktif kuyruktaki mail sayısını
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'wc -l | ls -l'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Disklerin doluluk oranlarını gözlemlemek için örn: Kapasite sıkıntısı olan bir diskte log yazma oranı dengesiz bir proses çalıştırdığımda diskte yer sıkıntısı oluşmasın diye
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'df -k'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Hafıza kullanım oranını gözlemlemek için
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'free -m'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Bir klasöre muratz kullanıcısı ile eklenen yada silinen dosyaları gözlemlemek için
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'ls -l | fgrep muratz'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Başka nerelerde kullandığınızı sizde bizimle paylaşırsanız sevirim.&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 15 Jan 2009 07:29:49 +0000</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=234">
+	<title>LKD YK: E-dernekli olduk, sınıfları doldurduk</title>
+	<link>http://gunluk.lkd.org.tr/yk/2009/01/15/e-dernekli-olduk-siniflari-doldurduk/</link>
+	<content:encoded>&lt;p&gt;Üyelerimizden Mehmet Ali Köksal&amp;#8217;ın bilgi vermesiyle, dernekler masasının derneklere sağladığı &amp;#8220;e-dernek&amp;#8221; uygulamasının yararlarından haberdar olduk. E-dernek, derneklerin iş ve işlemlerini internet üzerinden yapmalarını sağlıyor.&lt;/p&gt;
+&lt;p&gt;Internetten başvuru yapıp, birkaç doğrulama yaptıktan sonra bir form doldurup dernekler masasına fiziksel olarak gidilmesi gerektiği ortaya çıktı. Bu işlemi de illa dernek başkanının yapmasını istedikleri için Doruk Ulus&amp;#8217;un yolunu tuttu.&lt;/p&gt;
+&lt;p&gt;Bir hafta önceki ilk sefer, gönderilen forma ek olarak parola e-postasının çıktısını da alması gerektiğini algılamadığı için hüsranla sonuçlanmıştı. Bugün onu da yanına alarak tekrar gitti ve LKD&amp;#8217;nin bir e-dernek kullanıcısı ve parolası oldu. Artık dernekler masasına her bildirmemiz gereken işlem için mesai saatlerinde oraya fiziksel olarak gitmek zorunda kalmayacağız.&lt;/p&gt;</content:encoded>
+	<dc:date>Wed, 14 Jan 2009 21:52:54 +0000</dc:date>
+</item>
+<item rdf:about="http://www.ozgurkuru.net/blog/?p=83">
+	<title>Özgür Kuru: Özgürlükİçin.com E-dergi Sayı 10….</title>
+	<link>http://www.ozgurkuru.net/blog/2009/01/14/ozgurlukicincom-e-dergi-sayi-10/</link>
+	<content:encoded>&lt;p&gt;Özgürlükİçin.com topluluğu her alanda hızlı ve geniş gönüllü katılımıyla çalışmalarına devam ediyor. Son dönemlerde bende Pardus&amp;#8217;a ve bu topluluğa bir şeyler katmak için çalışmalar yapıyorum. Özgürlükİçin.com sitesinin hazırlamış olduğu e-dergi 10. sayısı için çalışmalar çoktan başladı. Bu ay ki konu &amp;#8220;Pardus ve Programlama&amp;#8221;. Bu sayıya bende gönüllü olmak istedim. Bu noktada sevgili Seval Ünver&amp;#8217;in önerisinin büyük rol oynadığını belirtip bir teşekkür daha iletmek istiyorum. Sanırım Seval ve TOBB ETU Pardus seven öğrencileri ile birlikte güzel projeler çıkartma planları her geçen gün dahada çoğalıyor. Konuya dönecek olursak, 10. sayı için bende &amp;#8220;Gambas&amp;#8221; programı hakkında bir yazı yazacağım. Ayrı bir heyecan ve mutluluk içerisindeyim. Hızla gelişen bir topluluğun parçası olmak bu gelişmeye bir katkı sağlayabilmek oldukça mutluluk verici bir olay. 10. sayıya katkı sağlamak isteyen arkadaşlarımız için aşağıdaki forum linkini inceleyerek uygun olan bir konuyu almalarını tavsiye ediyorum. Böylece önümüzdeki sayı daha hızlı gelişmiş olacak. &lt;/p&gt;
+&lt;p&gt;http://www.ozgurlukicin.com/forum/gonullu-calismalar/4162/?page=1&lt;/p&gt;</content:encoded>
+	<dc:date>Wed, 14 Jan 2009 19:03:51 +0000</dc:date>
+</item>
+<item rdf:about="http://www.linuxipuclari.com/?p=153">
+	<title>Linuxipuclari: VM Imajının Kopyasını Aldım Ethernet Bağlanmıyor</title>
+	<link>http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor</link>
+	<content:encoded>&lt;p&gt;Bu sıkça başıma gelen konulardan biri sizinle paylaşmak istedim. Bazen kullandığım vm imajını bir vmware serverdan (gsx) başka bir vmware servera taşıdığımda veya aynı vmware server üzerinde kopyasını aldığımda yeni imajın ethernet bağlantısı çalışmayabiliyor.&lt;/p&gt;
+&lt;p&gt;Bunun genelde sebebi ethernet kartının vmware tarafından yeniden yaratılmasıdır.&lt;/p&gt;
+&lt;p&gt;Eski kartı silip yeni kartı eklediğinden kartın id&amp;#8217;si eth0&amp;#8242;dan eth1&amp;#8242;e değişiyor. Eğer ip tanımlarınız statik yapılmışsa &lt;strong&gt;/etc/network/interfaces&lt;/strong&gt; dosyanızda da yeni ethernet id sine göre düzenleme yapmanız gerecektir.&lt;/p&gt;
+&lt;p&gt;O anki id&amp;#8217;yi bulmanın en pratik yollarından biri de &lt;strong&gt;/proc/net/dev&lt;/strong&gt; dosyasının içine bakmak. &lt;/p&gt;
+&lt;p&gt;Bu dosyanın içi aşağıdaki gibi.&lt;/p&gt;
+&lt;pre&gt;  Interface	Receive bytes	packets errs drop fifo frame
+  eth0:		161543042	916321    0    0    0     0&lt;/pre&gt;
+&lt;p&gt;Unutmayın eğer bu sorunla karşı karşıya iseniz; &lt;strong&gt;ifconfig&lt;/strong&gt; komutu sisteme &lt;strong&gt;/etc/network/interfaces&lt;/strong&gt; dosyasında tanıttığınız kartları gösterecektir. O yüzden siz &lt;strong&gt;ifconfig&lt;/strong&gt; diye baktığınızda eth0&amp;#8242;ı görürken &lt;strong&gt;/proc/net/dev&lt;/strong&gt; altında eth1 görüyor olacaksınız.&lt;/p&gt;</content:encoded>
+	<dc:date>Wed, 14 Jan 2009 13:54:55 +0000</dc:date>
+</item>
+<item rdf:about="http://www.linuxipuclari.com/?p=150">
+	<title>Linuxipuclari: Ubuntu VirtualBox ve KVM çakışma problemi</title>
+	<link>http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi</link>
+	<content:encoded>&lt;p&gt;Virtualbox sanallaştırma uygulamasının son versiyonunu kurduysanız KVM çekirdek modulleri  yüklü makinalarda Virtualbox sanal makinalarınızı  ayağa kaldırmak istediğinizde aşağıdaki hatayı verip kapanacaktır.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;VirtualBox can&amp;#8217;t operate in VMX root mode. Please disable the KVM kernel extension, recompile your kernel and reboot.&lt;br /&gt;
+VBox status code: -4011 (VERR_VMX_IN_VMX_ROOT_MODE).&lt;/p&gt;
+&lt;p&gt;Result Code:&lt;br /&gt;
+0&amp;#215;80004005&lt;br /&gt;
+Component:&lt;br /&gt;
+Console&lt;br /&gt;
+Interface:&lt;br /&gt;
+IConsole {d5a1cbda-f5d7-4824-9afe-d640c94c7dcf}&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Problemlemin çözümü için VirtualBox kullanacağınız zaman KVM çekirdek modullerini hafızadan kaldırmanız gerekecek.&lt;/p&gt;
+&lt;p&gt;Öncelikle hafızada hangi kvm modülünün yüklü olduğuna bakıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$lsmod&lt;/span&gt; | &lt;span&gt;grep&lt;/span&gt; kvm
+kvm_intel              &lt;span&gt;49728&lt;/span&gt;  0
+kvm                   &lt;span&gt;142912&lt;/span&gt;   &lt;span&gt;1&lt;/span&gt; kvm_intel&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hafızada yüklü olan kvm modülü işlemcinize bağlı olarak değişecektir. Intel tabanlı sistemimizde yüklu olan modül &lt;em&gt;kvm_intel&lt;/em&gt; isimli modül.. Aşağıdaki komutla kvm modülünü hafızadan kaldırıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;sudo&lt;/span&gt; rmmod kvm_intel&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eğer VirtualBox&amp;#8217;ı tekrar başlatırsanız sanal makinalarınızın sorunsuz olarak çalışmaya başladığını göreçeksiniz.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content:encoded>
+	<dc:date>Wed, 14 Jan 2009 06:41:49 +0000</dc:date>
+</item>
+<item rdf:about="http://gurcanozturk.com/2009/01/13/regexp-kullanarak-postfixte-catch-all-tanimi/">
+	<title>Gürcan Öztürk: Regexp kullanarak postfix’te catch-all tanimi</title>
+	<link>http://gurcanozturk.com/2009/01/13/regexp-kullanarak-postfixte-catch-all-tanimi/</link>
+	<content:encoded>Diyelim ki, mail sunucunuzda bir çok alan adı var, bunların her birinde gurcan.ozturk@domain1.tld, gurcan.ozturk@domain2.tld şeklinde tanımlar yapmak istemiyorsunuz, her domaine gelen gurcan.ozturk maillerini tek bir emailde toplamak istiyorsunuz. (catch-all işlemi) Postfix&amp;#8217;te aşağıdaki ayarları yaparak bunu basitce sağlayabilirsiniz.
+
+Öncelikle /etc/postfix/main.cf dosyasına aşağıdaki satırı ekleyin.
+
+virtual_alias_maps = regexp:/etc/postfix/virtual
+
+Daha sonra /etc/postfix/virtual dosyası içine aşağıdaki satırı ekleyin, dosya yoksa oluşturun.
+
+/^gurcan.ozturk@/  [...]</content:encoded>
+	<dc:date>Tue, 13 Jan 2009 20:18:19 +0000</dc:date>
+</item>
+<item rdf:about="http://www.ozgurkuru.net/blog/?p=78">
+	<title>Özgür Kuru: Orda bir TOBB ETU var uzakta….</title>
+	<link>http://www.ozgurkuru.net/blog/2009/01/13/orda-bir-tobb-etu-var-uzakta/</link>
+	<content:encoded>&lt;p&gt;Bu gün Hacettepe Üniversitesine yaptığım kısa bir ziyaretin ardından, Perşembe günü TOBB Ekonomi ve Teknoloji Üniversitesinde yapılacak olan Özgürlükiçin.com ve Pardus semineri ile ilgili açılmış standda &amp;#8220;Javacı Kız&amp;#8221; olarak tanıdığımız Seval Ünver arkadaşımıza yardım etmek için TOBB ETU&amp;#8217;ye gittim. Standda neler yaptığımızı anlatacağım. Ama önce üniversitede hocalardan, öğrencilere kadar her kesimin Pardus&amp;#8217;a olan ilgisi oldukça dikkatimi çektiğini belirtmek istiyorum. Oldukça mutluluk verici bir durumdu bu. Buradan Seval arkadaşımıza çabaları için bir kez daha teşekkür etmek istiyorum. Standda durduğum süre boyunca güzel paylaşımlarımız oldu. Gerek gönüllü olarak gelip standda duran arkadaşlarımızla gerekse mühendislik fakültesi öğrenci arkadaşlarımızla Pardus ve geliştirme üzerine oldukça hoş sohbetler yaptık. Pardus&amp;#8217;un tanıtımı için bir kaç ufak proje fikride geldi. Genel olarak üzerinde durduğumuz konu, Ankara üniversitelerinin birlikte neler yapabileceğiydi. Sanırım Ankara Üniversitesi, Hacettepe ve TOBB ETU olarak bir ortak çalışma ileriki dönemlerde yapılabilir. Neyse projelerin sürprizlerini bozmamak adına çok fazla açmayalım şimdilik :).&lt;/p&gt;
+&lt;p&gt;Ayrıca TOBB ETU üniversitesinin bir yazıcı sıkıntısı mevcut durumda. Xerox Workcenter M133 model IP yazıcı sürücülerinde bir sıkıntı mevcut. Pardus ile ufak bir deneme yaptık sonuç başarısızdı. Hali hazırda çalışan bir SuSE zaten evvel zamandan beri bu işi göremiyordu. Sanırım Xerox sürücüleri konusunda bir sıkıntı mevcut, bu yazıyı yayınladıktan sonra hata kayıtlarını araştırıp, hata kaydı yok ise bir hata kaydı açmayı düşünüyorum. Bu işin bir çözümü mevcut ise hali hazırda bulunan SuSE sanırım tarih sayfalarındaki yerini alacak:).&lt;/p&gt;
+&lt;p&gt;Yarın yani 14 Ocak günü yine TOBB ETU&amp;#8217;de masa başı Pardus sohbeti yapmak veya bilgisayarlarına Pardus kurdurmak isteyen arkadaşlarımızı TOBB ETU ya bekliyoruz&amp;#8230;..&lt;/p&gt;</content:encoded>
+	<dc:date>Tue, 13 Jan 2009 19:29:54 +0000</dc:date>
+</item>
+<item rdf:about="http://gunluk.lkd.org.tr/yk/?p=232">
+	<title>LKD YK: Üye olurken uyruk ve ikamet</title>
+	<link>http://gunluk.lkd.org.tr/yk/2009/01/13/uye-olurken-uyruk-ve-ikamet/</link>
+	<content:encoded>&lt;p&gt;Yıllar içerisinde Linux Kullanıcıları Derneği&amp;#8217;ne kimlerin üye olabileceği konusunda yanıtlarını bildiğimiz birkaç durum oluşmuştu. TC vatandaşları dünyanın neresinde olursa olsunlar, yabancı uyruklu insanlar da Türkiye&amp;#8217;de oturuyorlarsa derneğe üye olabiliyorlardı.&lt;/p&gt;
+&lt;p&gt;Bugün apayrı bir senaryoyla karşılaştık. Yurtdışında yaşayan dernek üyelerimizden birinden e-posta aldık, artık farklı bir ülkenin vatandaşı olduğunu, bunun dernek üyeliğinin devam edip etmemesine engel olup olmadığını sordu.&lt;/p&gt;
+&lt;p&gt;Derneğin bir hukuk ekibinin olmasının rahatlığını ilk elden yaşadık :). Daha önce hiç karşılaşmadığımız bu durumu  kendilerine konuyu sormamızın ardından birkaç saat içinde üç avukat üyemiz aralarında fikir alışverişinde bulunup son derece doyurucu bilgileri bize aktarmışlardı bile.&lt;/p&gt;
+&lt;p&gt;Doğumla TC vatandaşı olup, daha sonra vatandaşlıktan ayrılan insanlar ile hiç TC vatandaşı olmamış insanların statüsü aynı değilmiş. Birçok işlemi tıpkı bir TC vatandaşı gibi gerçekleştirmeye devam edebiliyorlarmış, derneklere üyelik de bunlardan biri.&lt;/p&gt;
+&lt;p&gt;Kanunlardaki değişiklikler sayesinde, yabancıların derneklere üyeliği konusundaki sınırlandırmalar da kaldırılmış. İleride karışıklıklara yol açmaması için dernek tüzüğünde bulunan yabancılar için ikametgah şartını da eğer kanunen aykırı bir durum yoksa Haziran&amp;#8217;daki genel kurulda çıkarmayı düşünebiliriz.&lt;/p&gt;</content:encoded>
+	<dc:date>Tue, 13 Jan 2009 15:35:09 +0000</dc:date>
+</item>
+<item rdf:about="http://www.okanakyuz.com/?p=106">
+	<title>Okan Akyüz: Autotools Yenir Mi? İçilir Mi?</title>
+	<link>http://www.okanakyuz.com/?p=106</link>
+	<content:encoded>&lt;p&gt;Açık kaynaklı sisteminizde program derlemek için hep aynı şeyi yapıyorsunuz (&lt;a href=&quot;http://www.debian.org/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot;&gt;debian &lt;/a&gt;kullanıcısı iseniz &lt;a href=&quot;http://www.debian.org/doc/manuals/apt-howto/&quot; rel=&quot;nofollow&quot;&gt;apt-get&lt;/a&gt; ve &lt;a href=&quot;http://en.wikipedia.org/wiki/Deb_(file_format)&quot; rel=&quot;nofollow&quot;&gt;deb &lt;/a&gt;paketleri veya &lt;a href=&quot;http://www.rpm.org/&quot; rel=&quot;nofollow&quot;&gt;rpm&lt;/a&gt;’leri karıştırmayalım şimdilik) tar dosyasını aç içine gir &lt;em&gt;./configure&lt;/em&gt; de &lt;em&gt;make &lt;/em&gt;de hatta &lt;em&gt;make install&lt;/em&gt; de. Ama kendi programlarınızı yazmaya gelince kdevelopa sıkışıp kalıyorsunuz sanırım.&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot;&gt;GNU işleri bize güzelce heryerde program yazalım diye gcc yi sunarken her platformun değişkenlerini bulalım diye configure dosyasını yaratan komutları da sunar.&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot;&gt;Aslında otomatik derleme prosedürü sabit Makefile dosyaları ile çok hızlı şekilde yapılabilir. Fakat Linuxden alıp başınızı Solarise yerleşecekseniz hatta windowsa geçecekseniz bu işinizi görmez.&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot;&gt;Bu durumlar için yazılmış pek çok araç var rakipler &lt;a href=&quot;http://www.cmake.org/&quot; rel=&quot;nofollow&quot;&gt;cmake &lt;/a&gt;ve &lt;a href=&quot;http://www.snake.net/software/imake-stuff/imake-faq.html&quot; rel=&quot;nofollow&quot;&gt;imake&lt;/a&gt;’e nazaran autotools biraz karmaşık ama kullanmayı bildikten sonra çok efektif bir araç Temel mantığa şekil üzerinden bakalım.&lt;img class=&quot;size-full wp-image-107 aligncenter&quot; title=&quot;autotools&quot; src=&quot;http://www.okanakyuz.com/wp-content/uploads/2009/01/image001.gif&quot; alt=&quot;autotools&quot; width=&quot;363&quot; height=&quot;454&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot;&gt;Tanrım tam bir karmaşa.. Çok karışık bir yol haritası oldu. Ben çizdim mi böyle çizerim.&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot;&gt;Gelin örnekle yapalım bari.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gidin biyerlerde bir dizin yaratın adı da prog olsun.&lt;/li&gt;
+&lt;li&gt;Bunla da yetinmeyip içerisinde scr diye bir dizin yaratın.&lt;/li&gt;
+&lt;li&gt;src dizinin içerisinde programınızı yazın mesela
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;cpp cpp&quot;&gt;&lt;span&gt;//prg.cpp dosyası&lt;/span&gt;
+&lt;span&gt;#include ‹iostram›&lt;/span&gt;
+&lt;span&gt;#include &amp;quot;config.h&amp;quot; //bu kendi kendine oluşacak&lt;/span&gt;
+&lt;span&gt;using&lt;/span&gt; &lt;span&gt;namespace&lt;/span&gt; std;
+&lt;span&gt;int&lt;/span&gt; main&lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&lt;span&gt;&amp;#123;&lt;/span&gt;
+   &lt;span&gt;cout&lt;/span&gt; ‹‹ &lt;span&gt;&amp;quot;harika calisti!&amp;quot;&lt;/span&gt; ‹‹ endl;
+   &lt;span&gt;return&lt;/span&gt; &lt;span&gt;0&lt;/span&gt;;
+&lt;span&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;src dizininde Makefile.am dosyasını yazın. söyle olacak:
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;text text&quot;&gt;bin_PROGRAMS = prg
+prg_SOURCES = prg.cpp&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;prog dizininine geçin ve birtane  Makefile.am dosyası buraya yazın bu daha da kolay
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;text text&quot;&gt;SUBDIRS = src&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Bundan sonra tek yapalacaklar konsola geçmek ve komut vermek&lt;/li&gt;
+&lt;li&gt; autoscan yapın
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;autoscan&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;configure.scan ve configure.log diye iki dosya oluşacak  configure.scan isimli dosyayı açın.&lt;/li&gt;
+&lt;li&gt; FULL-PACKAGE-NAME yerine program adı olan &amp;#8220;prg&amp;#8221;&lt;/li&gt;
+&lt;li&gt; VERSION yerine 0.1 veya hangi versiyon ise.&lt;/li&gt;
+&lt;li&gt; BUG-REPORT-ADDRESS yerine mail adresinizi yazın&lt;/li&gt;
+&lt;li&gt;AC_CONFIG_HEADER([config.h]) kısmını AC_CONFIG_HEADER([src/config.h]) yapın altındaki satıra da AM_INIT_AUTOMAKE yazın, kadedin&amp;#8230;&lt;/li&gt;
+&lt;li&gt;configure.scan dosyasının adını configure.ac yapın&lt;/li&gt;
+&lt;li&gt;autoscan.log dosyasını silin veya silmeyin size kalmış.&lt;/li&gt;
+&lt;li&gt;aclocal çalıştırın
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;autolocal&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;aclocal.m4 dosyası oluşacak ve birde cach dizini.&lt;/li&gt;
+&lt;li&gt;autoheader çalıştırın
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;autoheader&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Böylece src dizininde configure.h.in diye bir dosya oluştu &lt;/li&gt;
+&lt;li&gt;autoconf çalıştırın
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;autoconf&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;configure dosyası oluştu. Ama bu dosya ile kullanmak için makefile in dosyası gerekcek. buda automake ile oluşturulur. Ama bu komut bazı dosyaları diskte ister. Bu tamamen GNU program yazma standartı ile ilgili.&lt;/li&gt;
+&lt;li&gt;touch  README AUTHORS NEWS ChangeLog komutu verin
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;touch&lt;/span&gt;  README AUTHORS NEWS ChangeLog&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;automake komutunu aşağıdaki gibi çalıştırın. Boyle çalısınca lisans yazısı beni oku dosyaları kendi oluşacak.
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;automake&lt;/span&gt; &lt;span&gt;--add-missing&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Artık derlenebilir bir sistemimiz olu. Dağıtımıdan önce programı deneyelim.
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;.&lt;span&gt;/&lt;/span&gt;configure
+&lt;span&gt;make&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;src/prg dosyası bizim prgramımız make install konumu verseydik bin dizininde kopyalanırdı.&lt;/li&gt;
+&lt;li&gt;Oluşan Makefile dosyasında pek çok komut hazırdır. Örneğin tüm dosyaları temizleyip güzel bir dağıtım yapmak istiyorsanız.
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;make&lt;/span&gt; dist&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Komutunu çalıştırırız . Tar gz olur elimizde&amp;#8230;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Bu kadar yeter birdahaki yazıda birde Makefiles.am incelikleri yazdıkmı bitmiş olur. &lt;/p&gt;
+&lt;p&gt;Son bir not &lt;a href=&quot;http://www.gnu.org/software/m4/&quot; rel=&quot;nofollow&quot;&gt;m4&lt;/a&gt; makrolarıymış yok başka birşeymiş. Öğrenmek için kasmayın bence. Bir iki yazı sonra tüm programlarınıza çoklu dil desteği nasıl verirsiniz  onu da anlatırım .. Bi ömür yeter size o bilgi..&lt;/p&gt;
+&lt;p&gt;kaynak : &lt;a href=&quot;http://www.lrde.epita.fr/~adl/dl/autotools.pdf&quot; rel=&quot;nofollow&quot;&gt;http://www.lrde.epita.fr/~adl/dl/autotools.pdf&lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>Tue, 13 Jan 2009 12:59:03 +0000</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2009/01/13/231/">
+	<title>Bora Güngören: Yıkanabilr klavye fare seti</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2009/01/13/231/</link>
+	<content:encoded>&lt;p&gt;Nihayetinde bu da piyasaya çıktı. Meraklısı için haberi &lt;a href=&quot;http://www.gazeteport.com.tr/DUNYA/NEWS/GP_365346&quot;&gt;burada&lt;/a&gt;. &lt;/p&gt;</content:encoded>
+	<dc:date>Tue, 13 Jan 2009 12:03:00 +0000</dc:date>
+</item>
+
+</rdf:RDF>
