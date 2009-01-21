@@ -8,7 +8,7 @@
 PLANET_DIR="${HOME}/public_html/gezegen"
 LOG_DIR="$PLANET_DIR/logs"
 LOG_FILE="planet-$(date +"%d.%m.%Y")-LKD.log"
-LOCK_FILE="planet-sync.lck"
+LOCK_FILE="planet-sync-lkd.lck"
 VERBOSE=0
 
 usage() {
