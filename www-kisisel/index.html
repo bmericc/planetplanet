@@ -1,0 +1,1617 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/transitional.dtd">
+<html>
+	<head>
+		<title>Topluluklar Gezegeni</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="generic.css" type="text/css" />
+		<link rel="stylesheet" href="layout.css" type="text/css" />
+		<link rel="stylesheet" href="planet.css" type="text/css" />
+		<link rel="stylesheet" href="bloggers.css" type="text/css" />
+		<link rel="icon" type="image/png" href="images/planet.png" />
+		<link rel="alternate" type="application/rss+xml" title="Topluluklar Gezegeni" href="rss20.xml" />
+	</head>
+	<body>
+		<div id="hdr">
+			<div id="banner">
+				<img src="http://gezegen.linux.org.tr/lkd//images/spacer.png" alt="spacer" />
+			</div>
+			<div id="logo">
+				<a href="http://gezegen.linux.org.tr/lkd//">
+					<img src="http://gezegen.linux.org.tr/lkd//images/spacer.png" alt="Anasayfa" />
+				</a>
+			</div>
+		</div>
+
+		<div id="body">
+					<h2 class="date">21 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz">
+Anahtar Tabanlı SSH Bağlantısı için Açık (public) Anahtarınızı En Kolay Nasıl Paylaşırsınız?										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Eğer internette ssh bağlantıları için anahtarlama kullanımı konusunda biraz araştırma yaptıysanız karşınıza çıkacak dökümanların çoğunda açık anahtarınızın hedef makinada<em> ~/.ssh/authorized_keys </em> dosyasına nasıl ekleneceği, bu dosyanın ve .ssh dizininin hangi kullanıcı ve grup yetkilerine sahip olacağı konusunda bilgi verildiğini göreceksiniz.</p>
+<p>İlgili dökümanlarda bahsedilen herşey doğru olmakla birlikte <em>ssh</em> programı bütün bu adımları sizin için layığıyla gerçekleştiren bir komut satırı programıyla birlikte geliyor. <strong><em>ssh-copy-id</em></strong> isimli bu program ne yazık ki birçoğumuzun dikkatinden kaçıyor.</p>
+<p><strong><em>ssh-copy-id</em></strong> programı ne yapar?</p>
+<ul>
+<li>Açık anahtarınızı hedef makinada  kullanıcı dizini altındaki yetkili anahtarlar dosyasına ekler (<em> ~/.ssh/authorized_keys</em>)</li>
+<li><em>~/.ssh</em> dizinini ve <em>~/.ssh/authorized_keys</em> dosyasının yetkilerini düzenler.</li>
+</ul>
+<p>Aşağıdaki örnek  komutta herhangi bir kimlik belirtmediğimiz için varsayılan açık anahtar ( <em>~/.ssh/id_rsa.pub </em>dosyasının içeriği) <em>hedef.makina.com</em> makinasındaki <em>ali</em> kullanıcısının  home dizinine yüklenir.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>$ssh</span>-copy-id ali<span>@</span>hedef.makina.com</pre></div></div>
+
+<p>Eğer birden çok anahtarınız var ise hedef makinaya göndermek istediğiniz açık anahtarı -i parametresiyle belirtebilirsiniz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>$ssh</span>-copy-id  -i  ~<span>/</span>.ssh<span>/</span>ikinci_anahtar.pub ali<span>@</span>hedef.makina.com</pre></div></div>
+
+<p>Kıssadan hisse tek bir komutla açık anahtarınızı hedef bir makinaya yükleyebilirsiniz.  :)</p>
+<p>İyi çalışmalar</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz&title=Anahtar Tabanlı SSH Bağlantısı için Açık (public) Anahtarınızı En Kolay Nasıl Paylaşırsınız?" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz">
+21 Jan 2009 @ 05:48 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">20 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
+								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
+								<br />
+Pardus-Linux.org						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/">
+PANEL : İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Türk Hukuk Kurumu tarafından düzenlenecek ve  Pardus Kullanıcıları Derneği Fahri Başkanı, Bilkent Üniversitesi öğretim üyesi Doç. Dr. Mustafa Akgül tarafından yöneticilecek olan  &#8220;İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması&#8221; konulu panele, Pardus Kullanıcıları Derneği Yönetim Kurulu Başkanı Av. Nihad Karslı da konuşmacı olacak katılacaktır.
+Günümüzde sık sık uygulanan İnternet yasaklarının hukuksallığının [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/&title=PANEL : İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/">
+20 Jan 2009 @ 01:54 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">19 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme">
+Linux Komut Satırında İnternetten Dosya İndirme										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Linux makinanıza bir dosya indirip kuracaksınız diyelim.</p>
+<p>Bunun için önce grafik arayüzü olan bir yerden <a href="http://www.temizyazilim.org/tr/app/view/7_68.html">Firefox</a> gibi bir tarayıcı veya <a href="http://www.temizyazilim.org/tr/app/view/7_49.html">Filezilla</a> gibi bir ftp istemcisi ile bağlanıp dosyayı indirip sonra bunu tekrar ftp, scp gibi bir program kullanarak dosyaya asıl ihtiyacımız olan yere kopyalamak büyük bir zaman kaybı olacaktır. (İstemci olarak linux kullanan arkadaşların kaşlarını çattıklarını görür gibiyim. Diyelimki kişi linux değil de başka bir işletim sistemi kullanıyor ve grafik arayüzü yüklü olmayan bir linux sunucusu var)</p>
+<p>Bunun yerine wget komutunu kullanarak bu dosyayı bir web sitesinden direkt istediğimiz klasöre indirebiliriz.</p>
+<p>En basit kullanımıyla</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>wget</span> http:<span>//</span>www.ornekwebsite.com<span>/</span>dosya.zip</pre></div></div>
+
+<p>Dosya gelsin ama ben bir yandan konsolu kullanıyım diyorsanız bu işlemi backgrounda atabilirsiniz. İşlemin sonucunu logdosyasi.log adlı dosyaya yazacaktır.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>wget</span> <span>-o</span> logdosyası.log http:<span>//</span>www.ornekwebsite.com<span>/</span>dosya.zip <span>&amp;</span></pre></div></div>
+
+<p>Büyük bir dosya indiriyorsunuz ve kesiliyor o zaman aşağıdaki komut size yardımcı olacaktır.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>wget</span> <span>-c</span> http:<span>//</span>www.ornekwebsite.com<span>/</span>buyukdosya.zip</pre></div></div>
+
+<p>Bazen bir sitedeki toplu dosyaları indirmek istiyorsunuz diyelim. Burada dikkat etmeniz gereken şey bu komut o sayfa içinde geçen .zip isimli dosyaları indirecektir.</p>
+<p><em>downloads.html yerine bir klasör ismi yazarsanız ancak klasör gezinme (directory browsing) yetkisi sunucuda açıksa o şekilde dosyaları indirebilirsiniz aksi taktirde ya o klasörde bir index.html dosyası varsa o dosyada geçen ilgili dosyaları indirmeye kalkar yada &#8220;<strong>ERROR 403: Forbidden</strong>&#8221; şeklinde bir hata ile karşılaşırsınız.</em></p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>wget</span> <span>-r</span> <span>-nd</span> <span>-np</span> <span>-l1</span> <span>-A</span> <span>'*.zip'</span> http:<span>//</span>www.ornekwebsite.com<span>/</span>downloads.html</pre></div></div>
+
+<p>Şu an hattınız yavaş diyelim yada çalışırken indirme işlemi yüzünden yavaşlamasını istemiyorsunuz. Tamam bizde yattıktan sonra başlayacak şekilde ayarlarız, mesela saat 1&#8242;de başlayacak şekilde.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>echo</span> <span>'wget http://www.ornekwebsite.com/dosya.zip'</span> | at 01:00</pre></div></div>
+
+<p>Tahmin edeceğiniz gibi <strong>at</strong> aslında bir zamanlama komutu bunu kullanarak birçok işinizi cron&#8217;a yazmadan zamanlayabilir ve zamanı geldiğinde çalışmasını sağlayabilirsiniz. En kısa sürede <strong>at</strong> komutu ile ilgili de bir ipucu hazırlayacağım.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme&title=Linux Komut Satırında İnternetten Dosya İndirme" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme">
+19 Jan 2009 @ 09:31 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">18 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz">
+Oturumumuz Süresinde Kullandığımız Komutları ve Sonuçlarını Otomatik Olarak Nasıl Kaydedebiliriz?										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Hepimizin başına gelmiştir. Bir problemle uğraşırken veya yeni bir program kurarken not almaya çalışırız. Ama bir noktadan sonra kendimizi yaptığımız işe kaptırır işi bitirdiğimizde;</p>
+<p>Tüh bak yaptıklarımı not almayı unuttum. Ne yapmıştık? Hangi komutları kullanmıştık? Karşımıza hangi mesajlar çıktı ve biz neyi seçtik?</p>
+<p>diye hayıflanırız.</p>
+<p>Kendimizi işimize vermişken bizim adımıza birisinin tüm komutlarımızı ve bu komutların ürettiği mesajları, terminalimize yansıyan çıktıları otomatik olarak kaydetmesi hoş olmaz mıydı?</p>
+<p>Linux <strong>script</strong> komutu bu konuda derdimize derman oluyor. </p>
+<p><strong>script</strong> komutu aracılığıyla terminalize yansıyan tüm çıktıları bir dosyaya kaydedip daha sonra tekrar inceleyebilirsiniz. </p>
+<p>Bir örnek ile nasıl çalıştığına bakalım;</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ script <span>-f</span> otomatikDokumantasyon
+Script started, <span>file</span> is otomatikDokumantasyon
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>pwd</span>
+<span>/</span>home<span>/</span>ali<span>/</span>temp<span>/</span>scriptNot
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>whoami</span>
+ali
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>ls</span> <span>/</span>tmp<span>/</span>
+domains genel.xls  gdl              kde-alisPik0Fj  
+ksocket-alisSBnyBl  orbit-root  plugtmp-<span>1</span>   
+Registration_Form_WBG.pdf  Tracker-alis.7358
+fbug               hsperfdata_alis  keyring-YXOiJM  
+&nbsp;
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>exit</span>
+Script <span>done</span>, <span>file</span> is otomatikDokumantasyon</pre></div></div>
+
+<p>Yukarıda <strong>script</strong> komutunu başlattığımız nokta ile komutu <strong>CTRL+D</strong> tuş kombinasyonu aracılığıyla sonlandırdığımız nokta arasında oluşan ekran görüntülerini görüyorsunuz. Şimdi <strong>script</strong> komutunun yukarıdaki etkileşim sonucunda bizim için oluşturduğu otomatikDokumantasyon dosyasına bakalım.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>more</span> otomatikDokumantasyon
+Script started, <span>file</span> is otomatikDokumantasyon
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>pwd</span>
+<span>/</span>home<span>/</span>ali<span>/</span>temp<span>/</span>scriptNot
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>whoami</span>
+ali
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>ls</span> <span>/</span>tmp<span>/</span>
+domains genel.xls  gdl              kde-alisPik0Fj  
+ksocket-alisSBnyBl  orbit-root  plugtmp-<span>1</span>   
+Registration_Form_WBG.pdf  Tracker-alis.7358
+fbug               hsperfdata_alis  keyring-YXOiJM  
+&nbsp;
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$ <span>exit</span>
+&nbsp;
+Script <span>done</span> on Sun <span>18</span> Jan <span>2009</span> 01:<span>59</span>:<span>44</span> PM CET
+ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$</pre></div></div>
+
+<p>Yukarıda gördünüz gibi <strong>script</strong> komutu terminalimize yazılan herşeyi bizim için kaydetti. Bir problemle uğraşırkan ayrıca kopyala&amp;yapıştır aksiyonlarıyla kendimizi germemize gerek yok.</p>
+<p>İyi çalışmalar.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz&title=Oturumumuz Süresinde Kullandığımız Komutları ve Sonuçlarını Otomatik Olarak Nasıl Kaydedebiliriz?" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz">
+18 Jan 2009 @ 12:22 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">16 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme">
+Sürekli Akan Logları İzleme										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Eğer birşeyler ters gidiyorsa hemen loglara bakarız çünkü soruna ait bütün ipuçları oradadır.</p>
+<p>Bazen bu logları oluştukları anda anında izlemek istediğimizde her linux kullanıcısının ilk öğrendiği komutlardan birini kullanırız</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>tail</span> <span>-f</span> <span>/</span>var<span>/</span>log<span>/</span>messages</pre></div></div>
+
+<p>Ama bu komutun şöyle bir dezavantajı var loglar orda akıp giderken birşey gözünüze takıldı ne yapacaksınız ctrl+c ve logun akmasını keseceksiniz ya ekranda kalan kısımdan logun gördüğünüz kısmına bakmaya çalışacaksınız yada more yada vi gibi komutları kullanarak dosyanın içine girip o satırı aramaya çalışacaksınız.</p>
+<p>Peki size bunun daha kolay bir yolu var desem. Evet less komutu. Nasıl mı kullanacağız? Çok basit.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>less</span> <span>/</span>var<span>/</span>log<span>/</span>messages</pre></div></div>
+
+<p><strong>Shift+F</strong> tail -f ile aynı işi görür loglar akmaya başlar</p>
+<p><strong>Ctrl+C</strong> ile istediğiniz yerde logun akmasını durdurabilirsiniz</p>
+<p><strong>B</strong> ve <strong>F</strong> tuşları logun içinde ileri geri gitmenizi sağlar</p>
+<p><strong>Q</strong> ile işiniz bittiğinde logdan çıkarsınız</p>
+<p>Logların siz komutu yazdığınızda direk akarak başlamasını istiyorsanız komutu aşağıdaki gibi kullanabilirsiniz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>less</span> +F <span>/</span>var<span>/</span>log<span>/</span>messages</pre></div></div>
+
+<p>Yada daha önce yazdığımız <a href="http://www.linuxipuclari.com/genel/kendi-komutunuzu-olusturun">Kendi Komutunuzu Oluşturun</a> ipucumuzu kullanarak <strong>less +F</strong> için <strong>akanlog</strong> diye bir alias yaratabilir ve komutu direkt olarak</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">akanlog <span>/</span>var<span>/</span>log<span>/</span>messages</pre></div></div>
+
+<p>şeklinde de kullanabilirsiniz ;)</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme&title=Sürekli Akan Logları İzleme" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme">
+16 Jan 2009 @ 08:17 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">15 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme">
+Periyodik Olarak Bir Programı Çalıştırma ve Çıktısını Takip Etme										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Sizin de hiç ihtiyacınız oldu mu bilmem ama bu tür bir şeye çok sık ihtiyacım olunca biraz araştırdım ve bu komutu buldum o günden beri de en sevdiğim linux komutlarından biri oldu.</p>
+<p><strong>Nasıl kullanılır?</strong></p>
+<p>watch [seçenekler] komut</p>
+<p><strong>-n</strong> Komutun kaç saniyede bir tekrar edileceğini, ekran çıktısının kaç saniyede bir yenileneceğini belirtir. Kullanılmazsa her 2 saniyede bir anlamına gelir.</p>
+<p><strong>-d</strong> Ekran çıktısında oluşan değişiklikleri beyaz olarak boyar böylece değişim olan yerleri daha rahat gözlersiniz</p>
+<p><strong>Ne için mi kullanıyorum?</strong></p>
+<ul>
+<li>Bir klasördeki dosya sayısındaki değişimi gözlemlemek için örn: postfix aktif kuyruktaki mail sayısını
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">watch <span>-d</span> <span>'wc -l | ls -l'</span></pre></div></div>
+
+</li>
+<li>Disklerin doluluk oranlarını gözlemlemek için örn: Kapasite sıkıntısı olan bir diskte log yazma oranı dengesiz bir proses çalıştırdığımda diskte yer sıkıntısı oluşmasın diye
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">watch <span>-d</span> <span>'df -k'</span></pre></div></div>
+
+</li>
+<li>Hafıza kullanım oranını gözlemlemek için
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">watch <span>-d</span> <span>'free -m'</span></pre></div></div>
+
+</li>
+<li>Bir klasöre muratz kullanıcısı ile eklenen yada silinen dosyaları gözlemlemek için
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">watch <span>-d</span> <span>'ls -l | fgrep muratz'</span></pre></div></div>
+
+</li>
+</ul>
+<p>Başka nerelerde kullandığınızı sizde bizimle paylaşırsanız sevirim.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme&title=Periyodik Olarak Bir Programı Çalıştırma ve Çıktısını Takip Etme" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme">
+15 Jan 2009 @ 07:29 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">14 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor">
+VM Imajının Kopyasını Aldım Ethernet Bağlanmıyor										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Bu sıkça başıma gelen konulardan biri sizinle paylaşmak istedim. Bazen kullandığım vm imajını bir vmware serverdan (gsx) başka bir vmware servera taşıdığımda veya aynı vmware server üzerinde kopyasını aldığımda yeni imajın ethernet bağlantısı çalışmayabiliyor.</p>
+<p>Bunun genelde sebebi ethernet kartının vmware tarafından yeniden yaratılmasıdır.</p>
+<p>Eski kartı silip yeni kartı eklediğinden kartın id&#8217;si eth0&#8242;dan eth1&#8242;e değişiyor. Eğer ip tanımlarınız statik yapılmışsa <strong>/etc/network/interfaces</strong> dosyanızda da yeni ethernet id sine göre düzenleme yapmanız gerecektir.</p>
+<p>O anki id&#8217;yi bulmanın en pratik yollarından biri de <strong>/proc/net/dev</strong> dosyasının içine bakmak. </p>
+<p>Bu dosyanın içi aşağıdaki gibi.</p>
+<pre>  Interface	Receive bytes	packets errs drop fifo frame
+  eth0:		161543042	916321    0    0    0     0</pre>
+<p>Unutmayın eğer bu sorunla karşı karşıya iseniz; <strong>ifconfig</strong> komutu sisteme <strong>/etc/network/interfaces</strong> dosyasında tanıttığınız kartları gösterecektir. O yüzden siz <strong>ifconfig</strong> diye baktığınızda eth0&#8242;ı görürken <strong>/proc/net/dev</strong> altında eth1 görüyor olacaksınız.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor&title=VM Imajının Kopyasını Aldım Ethernet Bağlanmıyor" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor">
+14 Jan 2009 @ 01:54 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi">
+Ubuntu VirtualBox ve KVM çakışma problemi										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Virtualbox sanallaştırma uygulamasının son versiyonunu kurduysanız KVM çekirdek modulleri  yüklü makinalarda Virtualbox sanal makinalarınızı  ayağa kaldırmak istediğinizde aşağıdaki hatayı verip kapanacaktır.</p>
+<blockquote><p>VirtualBox can&#8217;t operate in VMX root mode. Please disable the KVM kernel extension, recompile your kernel and reboot.<br />
+VBox status code: -4011 (VERR_VMX_IN_VMX_ROOT_MODE).</p>
+<p>Result Code:<br />
+0&#215;80004005<br />
+Component:<br />
+Console<br />
+Interface:<br />
+IConsole {d5a1cbda-f5d7-4824-9afe-d640c94c7dcf}</p></blockquote>
+<p>Problemlemin çözümü için VirtualBox kullanacağınız zaman KVM çekirdek modullerini hafızadan kaldırmanız gerekecek.</p>
+<p>Öncelikle hafızada hangi kvm modülünün yüklü olduğuna bakıyoruz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>$lsmod</span> | <span>grep</span> kvm
+kvm_intel              <span>49728</span>  0
+kvm                   <span>142912</span>   <span>1</span> kvm_intel</pre></div></div>
+
+<p>Hafızada yüklü olan kvm modülü işlemcinize bağlı olarak değişecektir. Intel tabanlı sistemimizde yüklu olan modül <em>kvm_intel</em> isimli modül.. Aşağıdaki komutla kvm modülünü hafızadan kaldırıyoruz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>sudo</span> rmmod kvm_intel</pre></div></div>
+
+<p>Eğer VirtualBox&#8217;ı tekrar başlatırsanız sanal makinalarınızın sorunsuz olarak çalışmaya başladığını göreçeksiniz.</p>
+<p>İyi çalışmalar.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi&title=Ubuntu VirtualBox ve KVM çakışma problemi" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi">
+14 Jan 2009 @ 06:41 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">13 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler">
+Sanallaştırma ve Beraberinde Getirdiği Sürprizler										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Trendleri takip eden herkes yakından tecrübe ediyordur ki sanallaştırma ve faydaları her düzeyde konuşuluyor tartışılıyor. Son yılların en sıcak konularından biri, son 2 senedir de Türkiyenin gündemindeki ağırlığını her geçen gün arttırıyor.</p>
+<p>Hemen hemen her şirkette  AR-GE çalışması, test sistemi olarak sanal makinalar uzun yıllardır kullanılıyor.  Son dönemdeki tartışmaların farklı boyutu sanal makinaların artık üretim ortamlarında kullanılmaya  başlanması.</p>
+<p>Ne yazık ki heyecan dalgasına kapılıp sörf yapmaya başlayan IT yöneticilerimiz sadece artı eksi hesabının artı boyutuna bakıyorlar. Fakat madalyonun bir de diğer yüzü var.</p>
+<p><span id="more-119"></span></p>
+<p>Sanallaştırma sayesinde çok kolay yeni bir sistemi ayağa kaldırabiliyorsunuz. Var olan bir sistemin yeni bir kopyasını alabiliyorsunuz. Eğer belli bir planlama ve kontrol olmazsa (ki baslangıçta hiç bir sanallaştırma projesinde ne yazik ki olmuyor) göz açıp kapayana kadar organizayonun yapısına gore 10 larla veya 100 lerle ölçülen sanal makinalara ulaşmanız hiç de şaşırtıcı olmaz.</p>
+<p>Sanallaştırma her fiziksel makinanın nerdeyse ayrı bir datacenter gibi davranmasına imkan sağlıyor.</p>
+<p>Bu noktada sanallaştırma projesi gerçekleştiren veya gerçekleştirmeyi planlayan IT yöneticilerimizin kendilerine aklıma ilk gelen şu soruları sormaları gerekiyor.</p>
+<p>• <strong>Sanal makinalarınızın yama yönetimini nasıl yapacaksınız?<br />
+</strong>Eskiden Sanal makinaları barındıran fiziksel makinenin yamalarını yapmak zorunda kalırken sanallaştırma sonrasında bu fiziksel makine üzerindeki her bir sanal makinanın ayrı olarak yamanması gerekiyor.</p>
+<p>• <strong>Sanal ortamlarda veri güvenliği konusunda ne kadar bilgi sahibisiniz?</strong><br />
+Fiziksel makinanızı datacenter&#8217;a kilitliyorsunuz ama sanal makinanız ağ üzerinden datacenter dışına kaçabilir.</p>
+<p>• <strong>Sanal makinaların loglarını nasıl takip edeceksiniz?</strong><br />
+Sanal makinalarınızın loglarını nasıl takip ediyorsunuz? Sanallaştırmanın sistem yöneticilerine getirdiği ekstra yük nedir? Yeni yasal düzenlemelere uyum kapsamında sanal makinaların kullanımı size ne gibi yükümlülükler getiriyor?</p>
+<p>• <strong>Her bir sanal makinadaki kullanıcı ve yetki yönetimini nasıl yapacaksınız?</strong></p>
+<p>• <strong>Sanal makinalarınızın kaynak kullanımlarını nasıl izliyorsunuz?</strong></p>
+<p>• <strong>Lisansların yönetimi nasıl yapacaksınız?</strong></p>
+<p>• <strong>Yedekleme için ne tür bir altyapı düşünüyorsunuz?</strong></p>
+<p>Takip eden yazılarda her bir başlık için linux platformunda çalışan açık kaynak kodlu veya ücretsiz çözümleri, alternatif senaryoları incelemeye çalışacağız.</p>
+<p>Sizlerin de bu konudaki görüş ve tecrübelerini duymaktan mutluluk duyarız.</p>
+<p>Sanallaştırma tecrübelerinizi, ürettiginiz yaratıcı çözümleri duymak için sabırsızlanıyoruz.</p>
+<p>İyi çalışmalar.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler&title=Sanallaştırma ve Beraberinde Getirdiği Sürprizler" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler">
+13 Jan 2009 @ 09:55 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi">
+Dosyanın Sahipliğinin Değiştirilmesi										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Eğer sizin de benim gibi root kullanıcısıyla çalışma takıntınız varsa (tüm yetki elimde olsun diye değil sadece sürekli sudo yapmayı sevmediğim için) dosya sahipliğiyle ilgili sıkça başınız ağrıyabilir.<br />
+<span id="more-123"></span><br />
+Önce bir dosyanın sahipliğini görmek için ne yapmalıyız ona bakalım.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>ls</span> <span>-l</span> merhaba.c</pre></div></div>
+
+<p>Komutu çalıştırdığımızda aşağıdaki gibi bir sonuç elde ederiz.</p>
+<p>-rw-r&#8211;r&#8211; 1 operator web1   151 2008-02-09 14:46 merhaba.c</p>
+<p>Buradaki operator bize dosyanın kullanıcısını web1 ise dosyanın grubunu verecektir.</p>
+<p>Şimdi aynı dizindeki başka bir dosya için aynı işlemi yapalım</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>ls</span> <span>-l</span> selam.c</pre></div></div>
+
+<p>Aşağıda göreceğiniz gibi bu dosyanın kullanıcısı ve grubu root:root olmuş.</p>
+<p>-rw-r&#8211;r&#8211; 1 root root   265 2008-02-09 14:56 selam.c</p>
+<p>Benden sonra bu dosyaya operator olarak ulaşmak isteyen diğer kullanıcılar yetki hatasıyla karşı karşıya kalacak ve dosyayı açamayacak yada değişiklik yapamayacaklar.</p>
+<p>Gelin şimdi bunu nasıl düzelteceğimizi görelim.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>chown</span> operator:web1 selam.c</pre></div></div>
+
+<p>Bu kadar kolay. Tekrar dosyayı kontrol ettiğimizde kullanıcısının ve grubunun değişmiş olduğunu görürüz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>ls</span> <span>-l</span> selam.c</pre></div></div>
+
+<p>-rw-r&#8211;r&#8211; 1 operator web1   265 2008-02-09 14:56 selam.c</p>
+<p>İyi Çalışmalar</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi&title=Dosyanın Sahipliğinin Değiştirilmesi" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi">
+13 Jan 2009 @ 07:53 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">12 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu">
+pidgin ile msn protokolü sorunu ve çözümü										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>15 numara MSN protokolünü kullanan tüm client&#8217;ların MSN&#8217;e bağlanamaması ile ilgili hatayı &#8220;libpurple&#8221; yerine &#8220;msn-pecan&#8221; kütüphanesini kullanarak aşabilirsiniz.</p>
+<p><strong>Ubuntu, Debian, Mint:</strong></p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>apt-get</span> <span>install</span> msn-pecan</pre></div></div>
+
+<p><strong>Archlinux:</strong><br />
+Arch&#8217;ın depolarında yok ama AUR&#8217;da var,</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">yaourt <span>-Sy</span> msn-pecan</pre></div></div>
+
+<p>Daha sonra pidgin&#8217;den MSN protokolünü WLM ile değiştirirseniz sorun çözülecektir.<br />
+Kolay Gelsin.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu&title=pidgin ile msn protokolü sorunu ve çözümü" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu">
+12 Jan 2009 @ 03:35 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">10 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
+								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
+								<br />
+Pardus-Linux.org						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/">
+eDergi 5. Sayı Hazırlıkları Devam Ediyor										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<img title="Stallman" src="http://ogrenci.hacettepe.edu.tr/~artan05/pardus/stallman.png" alt="" width="200" height="238" align="left" />
+
+Yılbaşında 4. sayısını duyurduğumuz Pardus-Linux.org eDergi'nin 5. Sayısı için hazırlıklar devam ediyor.
+İlk sürprizimiz ise hazır :
+
+Bu sayımızda Özgür Yazılım Vakfı'nın kurucusu Richard Micheal Stallman'a gittik ve bakın bize ne dedi :
+<blockquote>"<em>I've heard it(Pardus) contains and promotes non-free software. That goes against the whole purpose of GNU, which is to give users freedom; it leads users astray.</em>"</blockquote>
+İşte bu yüzden buradayız : "<em>Pardus'un Özgürleşmesi!</em>"
+
+Siz de hazırlıklara katılmak isterseniz <a href="http://forum.pardus-linux.org/viewtopic.php?f=7&t=18720">buradan</a> buyurun ;)
+Önceki sayılarımız için : <a href="http://www.pardus-edergi.org/">www.pardus-edergi.org</a>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/&title=eDergi 5. Sayı Hazırlıkları Devam Ediyor" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/">
+10 Jan 2009 @ 04:05 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">07 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
+								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
+								<br />
+Pardus-Linux.org						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/">
+Pardus 2008.2 Beta Sürümü Duyuruldu										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Pardus 2008.2 &#8216;ye giden yolda ikinci beta sürüm duyuruldu. Kullanıcıları deneme sürümde hatalarla karşılaşabilecekleri yönünde uyarıyoruz, indirmek isteyenleri kurulan cd için [1], çalışan cd için [2] adresine yönlendiriyoruz.
+[1] ftp://ftp.pardus.org.tr/pub/pardus/kurulan/2008.2
+[2] ftp://ftp.pardus.org.tr/pub/pardus/calisan/2008.2/								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/&title=Pardus 2008.2 Beta Sürümü Duyuruldu" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/">
+07 Jan 2009 @ 09:03 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
+								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
+								<br />
+Pardus-Linux.org						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/">
+Forum sunucu sorunu										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Forum sunucumuzda oluşan bir disk problemi sebebi ile forumumuz belli bir süre devre dışı kalacaktır.								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/&title=Forum sunucu sorunu" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/">
+07 Jan 2009 @ 02:34 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">03 January 2009</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/operatorler/">
+Operatörler										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Operat&#246;rler aritmetik operat&#246;rler, ilişkisel operat&#246;rler ve mantıksal operat&#246;rler olarak &#252;&#231;e ayrılır.
+Aritmetik operat&#246;rler matematiksel işlemlerde kullanılır. Ayrıca toplama (+) operat&#246;r&#252; string değerleri birleştirir. Aşağıdaki tabloda Java ve Python programlama dillerine ait aritmetik operat&#246;rler bulunmaktadır.
+
+&#160;
+&#160;
+
+
+
+
+&#160;
+
+
+Toplama
+
+
+&#199;ıkarma
+
+
+&#199;arpma
+
+
+B&#246;lme
+
+
+Mod   Alma
+
+
+
+
+Java
+
+
++
+
+
+-
+
+
+*
+
+
+/
+
+
+%
+
+
+
+
+Python
+
+
++
+
+
+-
+
+
+*
+
+
+/
+
+
+%
+
+
+
+
+&#160;&#160;&#160; &#160;&#160;&#160;&#160; İlişkisel operat&#246;rler programdaki iki değeri karşılaştırmak i&#231;in kullanılır. Aşağıdaki tabloda Java ve Python programlama dillerine ait ilişkisel operat&#246;rler [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/operatorler/&title=Operatörler" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/operatorler/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/operatorler/">
+03 Jan 2009 @ 12:12 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">31 December 2008</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
+								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
+								<br />
+Pardus-Linux.org						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/">
+Pardus-Linux.org eDergi 4. Sayı Yayımlandı										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Pardus-Linux.org eDergi&#8217;lerinin 4. Sayısı uzun bir aradan sonra yayımlandı. Emeği geçen herkese teşekkür eder, dergiyi indirmek isteyenlere buradan[1] sunarız.
+[1] http://www.pardus-edergi.org								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/&title=Pardus-Linux.org eDergi 4. Sayı Yayımlandı" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/">
+31 Dec 2008 @ 11:28 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">28 December 2008</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://zembereknlp.blogspot.com/" title="Zemberek NLP">
+								<img class="face" src="images/heads/nobody.png" title="Zemberek NLP" />
+								<br />
+Zemberek NLP						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html">
+Zemberek-server Firefox Türkçe yazım denetim eklentisi										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Daha önceki bir <a href="http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html">yazıda</a> Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. <a href="http://voikko.sourceforge.net/">Voikko</a> Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.<br /><br /><span>Not:</span> Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.<br /><br />1: <a href="https://addons.mozilla.org/en-US/firefox/addon/10183">https://addons.mozilla.org/en-US/firefox/addon/10183</a><br />2: <a href="http://zemberek.googlecode.com/svn/trunk/mozzemberek/">http://zemberek.googlecode.com/svn/trunk/mozzemberek/</a>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html&title=Zemberek-server Firefox Türkçe yazım denetim eklentisi" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html">
+28 Dec 2008 @ 01:12 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">14 July 2008</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/denetim-deyimleri/">
+Denetim Deyimleri										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+3.5. DENETİM VE D&#214;NG&#220; DEYİMLERİ
+3.5.1. Denetim Deyimleri
+&#160;
+Denetim deyimleri, koşulun mantıksal durumuna g&#246;re programın akışını değiştiren yapılardır.
+3.5.1.1. If deyimi
+If deyimi belirli bir koşul sağlandığında yapılacak işleri belirlememizi sağlar. Java ve Python programlama dillerinde if deyiminin kullanımı [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/denetim-deyimleri/&title=Denetim Deyimleri" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/denetim-deyimleri/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/denetim-deyimleri/">
+14 Jul 2008 @ 08:30 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">16 February 2008</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/matematiksel-fonksiyonlar/">
+Matematiksel Fonksiyonlar										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+&#160;&#160;&#160; Uzun zamandır blog&#8217;umuza yazı eklemiyorduk. Tezimizin i&#231;eirği hazır sayılır fakat t&#252;m tezi siteye hemen ekleyemiyoruz. Ama matematiksel fonksiyonlar b&#246;l&#252;m&#252;n&#252; eklemenin zamanı geldi.
+&#160;&#160;&#160; Matematiksel fonksiyonlar programlama yaparken &#231;eşitli matematik işlemlerini yapmamızı kolaylaştırırlar. Aşağıdaki tabloda Java ve Python programlama dillerine ait matematiksel fonksiyonlar yer almaktadır.
+
+
+
+
+İşlevi
+
+
+Java
+
+
+Python
+
+
+
+
+x arg&#252;manının   mutlak değerini hesaplama
+
+
+abs(x)
+
+
+fabs(x)
+
+
+
+
+x&#8217;i   kendisinden b&#252;y&#252;k en [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/matematiksel-fonksiyonlar/&title=Matematiksel Fonksiyonlar" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/matematiksel-fonksiyonlar/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/matematiksel-fonksiyonlar/">
+16 Feb 2008 @ 08:07 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">06 November 2007</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/">
+Değişkenler ve Temel Veri Tipleri										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Değişkenler, programlarda saklamak istediğimiz değerleri tutarlar. Programlama dillerinde değişkenler tutabilecekleri veri
+cinslerine g&#246;re sınıflandırılmıştır.
+Java&#8217;da değişken tanımlamak i&#231;in eşitliğin sol tarafına değişkenin veri tipi ve değişkenin adı, sağ tarafına ise değeri yazılır. 
+
+
+
+
+
+A&#231;ıklama :
+
+
+&#214;rnek :
+
+
+
+
+int degiskenadi = değer;
+
+
+int a=4;
+
+
+
+
+
+
+
+Java programlama dilinde boolean, char, byte, short, int, long, float ve double temel veri tipleridir. Boolean mantık değişkenidir ve [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/&title=Değişkenler ve Temel Veri Tipleri" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/">
+06 Nov 2007 @ 10:17 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">21 September 2007</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/2-kere-merhaba-dunya/">
+2 Kere &#8220;Merhaba Dünya&#8221;										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Bu siteyi bitirme tezimizin konusu olan &#8220;Java ve Python Programlama Dillerinin Karşılaştırılması&#8221; için oluşturduk. Arkadaşım Emel OKAY (japanese) ve ben Uğur SAMSA (JaMaL), bizler gelişme gösterdikçe, gelişmeleri buraya aktarıyor olacağız. Sitenin adresinin python-tr.com olmasına aldanmayın. Bu sitede Java da anlatılacaktır, Python da. Tezimizi erken bitirebilirsek Python ile bir uygulama yapmayı düşünüyoruz. Tabi bunlar zamanla olacak [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/2-kere-merhaba-dunya/&title=2 Kere &amp;#8220;Merhaba Dünya&amp;#8221;" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/2-kere-merhaba-dunya/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/2-kere-merhaba-dunya/">
+21 Sep 2007 @ 09:59 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">05 August 2007</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/pythonda-klavye-girisleri/">
+Python&#8217;da Klavye Girişleri										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Her programlama dilinde olduğu gibi klavye girişleri, kullanıcıdan bilgi alınmak istendiğinde kullanılır.
+Python&#8217;daki kullanımı şöyledir: karakter girişlerinde &#8220;raw_input&#8221;, sayısal değer girişlerinde &#8220;input&#8221; kullanılır. Şimdi de bunu örnekler üstünde görelim.
+Örnek 1 :
+
+&#8211;>raw_input(&#8221;yaz bir şeyler:&#8221;)
+yaz bir şeyler:Bugün hava çok güzel
+
+veya
+
+
+&#8211;>kelime=raw_input(&#8221;Bir kelime giriniz:&#8221;) #Kullanıcının yazdığını kelime adlı değişkene atadık
+Bir kelime giriniz:Bulut
+&#8211;>kelime #kelime adlı değişkenin değerini istiyoruz
+&#8220;bulut&#8221;
+
+Örnek 2 :
+
+&#8211;>input(&#8221;Bir sayı [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/pythonda-klavye-girisleri/&title=Python&amp;#8217;da Klavye Girişleri" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/pythonda-klavye-girisleri/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/pythonda-klavye-girisleri/">
+05 Aug 2007 @ 10:35 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">12 July 2007</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/">
+Python&#8217;da Karakter Dizilerini Birden Fazla Satırda Yazmak										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Yazımızı satırlar halinde yazarak görsellik kazandırmak istediğimiz durumlar vardır. İşte bunu yaparken Python&#8217;un bize sunduğu bir çok yoldan birini kullanabiliriz. Bunun nasıl yapıldığını her biri için örneklerle görelim.
+a => değişken olsun (Python&#8217;da değişkenleri kullanırken önceden tanımlama yapmamıza gerek olmadığını hatırlayalım)
+Örnek 1 :
+
+a=&#8221;Muhabbet bağına girdim bu gece\
+Açılmış gülleri derdim bu gece&#8221;
+
+Örnek 2 :
+
+
+a=&#8221;Muhabbet bağına girdim bu [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/&title=Python&amp;#8217;da Karakter Dizilerini Birden Fazla Satırda Yazmak" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/">
+12 Jul 2007 @ 01:06 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">11 July 2007</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/javada-sinif-olusturma/">
+Java&#8217;da Sınıf Oluşturma										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Java Programlama Dili&#8217;nde sınıf oluşturmak çok basittir. Tabi önemli olan bu sınıfı ne şekilde ve nasıl kullanacağımızdır. Aşağıda Java&#8217;da sınıf oluşturma kodunu görüyorsunuz.
+public class sinifadi{
+//gerekli tanımlar
+}
+Burada &#8220;sinifadi&#8221; sınıf adının değişkenidir ve programcıya göre şekillendirilir. &#8220;public&#8221; komutunun buradaki amacı ise bilgilerin diğer sınıflar tarafından da kullanılabilmesidir.								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/javada-sinif-olusturma/&title=Java&amp;#8217;da Sınıf Oluşturma" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/javada-sinif-olusturma/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/javada-sinif-olusturma/">
+11 Jul 2007 @ 03:52 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">08 July 2007</h2>
+
+				<div class="entry ">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/pythonda-degisken-tanimlamak/">
+Python&#8217;da Değişken Tanımlamak										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Aslında bu başlık yanlış, doğrusu &#8220;Python&#8217;da Değişken Tanımlamamak&#8221; olacaktı. Çünkü Python&#8217;da değişken tanımlanmıyor, değişkenlerin tipleri atandıkları ilk değere göre belirleniyor. Bu da bize kullanım rahatlığı sağlıyor.
+Değişkene değer atama yaparken sayıları direkt, string ifadeleri ise tırnak içinde yazıyoruz. Tek ya da çift tırnak kullanabiliriz, aynı anlama geliyor.
+Örnek 1 :
+
+değişken=değer
+a=5
+b=&#8221;ali&#8221;
+k=&#8217;veli&#8217;
+
+Örnekten anlaşılacağı gibi program a&#8217;yı integer, b ve [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/pythonda-degisken-tanimlamak/&title=Python&amp;#8217;da Değişken Tanımlamak" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/pythonda-degisken-tanimlamak/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/pythonda-degisken-tanimlamak/">
+08 Jul 2007 @ 08:57 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<div id="sidebar">
+			<div class="section">
+				<h3>Gezegen Hakkında</h3>
+					<p>
+						Topluluklar Gezegeni, özgür yazılım ile ilgili çeşitli toplulukların günlüklerini bir tek sayfadan okumamızı sağlayan basit bir web sitesidir. Türkiye'deki özgür yazılım ile ilgili diğer günlüklere <a href="http://gezegen.linux.org.tr" title="Linux Gezegeni" target="_blank">Linux Gezegeni</a> sayfasından ulaşabilirsiniz.
+					</p>
+					<p>
+						Gezegeni <a href="http://www.planetplanet.org/">Planet</a> ile oluşturuyoruz, tasarım <a href="http://www.actsofvolition.com/">Steven Garrity</a>'nin eseri.
+					</p>
+			</div>
+			
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=2");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=a26e76e1&amp;cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a26e76e1' 
+border='0' alt='' /></a></noscript>
+
+
+			</div>
+			
+			<div class="bloggers section" id="bloggers">
+				<h3>Üyeler</h3>
+				<ul>
+						<li>
+							<div>
+									<img class="head" src="images/heads/linuxipuclari.png" title="linuxipuclari.png" />
+								<div class="ircnick">&nbsp;</div>
+							</div>
+							<a href="http://www.linuxipuclari.com/feed" title="subscribe">
+								<img src="images/feed-icon-10x10.png" alt="(feed)">
+							</a>
+			                <a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+Linuxipuclari							</a>
+						</li>
+						<li>
+							<div>
+									<img class="head" src="images/heads/nobody.png" title="" />
+								<div class="ircnick">&nbsp;</div>
+							</div>
+							<a href="http://www.pardus-linux.org/feed/" title="subscribe">
+								<img src="images/feed-icon-10x10.png" alt="(feed)">
+							</a>
+			                <a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
+Pardus-Linux.org							</a>
+						</li>
+						<li>
+							<div>
+									<img class="head" src="images/heads/nobody.png" title="" />
+								<div class="ircnick">&nbsp;</div>
+							</div>
+							<a href="http://www.python-tr.com/feed/atom/" title="subscribe">
+								<img src="images/feed-icon-10x10.png" alt="(feed)">
+							</a>
+			                <a href="http://www.python-tr.com" title="Python - Java">
+Python-TR							</a>
+						</li>
+						<li>
+							<div>
+									<img class="head" src="images/heads/nobody.png" title="" />
+								<div class="ircnick">&nbsp;</div>
+							</div>
+							<a href="http://zembereknlp.blogspot.com/feeds/posts/default?alt=rss" title="subscribe">
+								<img src="images/feed-icon-10x10.png" alt="(feed)">
+							</a>
+			                <a href="http://zembereknlp.blogspot.com/" title="Zemberek NLP">
+Zemberek NLP							</a>
+						</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Takip edin</h3>
+				<ul>
+					<li><a href="rss20.xml">RSS 2.0</a></li>
+					<li><a href="rss10.xml">RSS 1.0</a></li>
+					<li><a href="foafroll.xml">FOAF</a></li>
+					<li><a href="opml.xml">OPML</a></li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Güncelleme</h3>
+				<p>Gezegen her 10 dakikada bir yenilenir.</p>
+				<p>
+					Son güncelleme: 
+					<br />
+21 Jan 2009 @ 10:06 PM				</p>
+			</div>
+
+			<div class="section">
+				<h3>İletişim</h3>
+				<p>
+					LKD Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı e-posta ile iletebilirsiniz.
+				</p>
+			</div>
+		</div>
+
+		<div id="copyright">
+			Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz.
+			<br />
+			LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.
+			<br />
+			Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/lkd//stats">buradan</a> ulaşabilirsiniz.
+			<br />
+			<!-- Start of StatCounter Code -->
+			<a href="http://www.statcounter.com/" target="_blank"><img src="http://c18.statcounter.com/counter.php?sc_project=1860933&java=0&security=e27e04a9&invisible=0" alt="free tracking" border="0"></a> 
+			<!-- End of StatCounter Code -->
+		</div>
+	</body>
+</html>
