@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Kişisel Günlükler Gezegeni</title>
+	<link rel="self" href="http://gezegen.linux.org.tr/rss20.xml"/>
+	<link href="http://gezegen.linux.org.tr"/>
+	<id>http://gezegen.linux.org.tr/rss20.xml</id>
+	<updated>2009-03-29T18:48:45+00:00</updated>
+	<generator uri="http://www.planetplanet.org/">Planet/2.0 +http://www.planetplanet.org</generator>
+
+	<entry xml:lang="en">
+		<title type="html">Wall Street’de Bir Dedikodu…</title>
+		<link href="http://www.erhanekici.com/blog/2009/03/19/wall-streetde-bir-dedikodu/"/>
+		<id>http://www.erhanekici.com/blog/2009/03/19/wall-streetde-bir-dedikodu/</id>
+		<updated>2009-03-29T15:48:37+00:00</updated>
+		<content type="html">Oliver Stone&amp;#8216;un Wall Street adlı filmiydi. Yanlış hatırlamıyorsam sahne şöyleydi: Wall Street&amp;#8217;in paradan para kazanma uzmanı Mr. Gekko (Michael Douglos), geleceği parlak görünen yeni yetme broker Bud Fox&amp;#8217;a (Charlie Sheen) Wall Street&amp;#8217;e hisse senetlerinin değerlerinin günübirlik nasıl arttıracağına dair işin püf noktalarını gösteriyordu. Önce hedef şirketin düşük seviyelerdeki hisse senetlerinden bol miktarda alınıyor, ardından bir [...]</content>
+		<author>
+			<name>Erhan Ekici</name>
+			<uri>http://www.erhanekici.com/blog</uri>
+		</author>
+		<source>
+			<title type="html">bir delinin hatıra defteri » linux</title>
+			<subtitle type="html">--- diary of a madman ---</subtitle>
+			<link rel="self" href="http://www.erhanekici.com/blog/category/linux/rss"/>
+			<id>http://www.erhanekici.com/blog/category/linux/rss</id>
+			<updated>2009-03-29T15:48:37+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="tr">
+		<title type="html">Ubuntu 8.04 Server üzerinde Sun xVM kurulumu</title>
+		<link href="http://blogs.portakalteknoloji.com/bora/blog/2009/03/29/258/"/>
+		<id>http://blogs.portakalteknoloji.com/bora/blog/2009/03/29/258/</id>
+		<updated>2009-03-29T13:48:00+00:00</updated>
+		<content type="html">&lt;p&gt;Sanallaştırma dediğimiz zaman değişik ev sahibi (host) ve misafir kombinasyonları dışında, değişik sanallaştırma alt yapılarını da değerlendirmek gerekli. Artık &lt;a href=&quot;http://www.sun.com/software/products/virtualbox/&quot;&gt;Sun xVM&lt;/a&gt; olarak adlandırdığımız Virtualbox da bunlardan birisi. Virtualbox'ın hemen her dağıtım için paketleri olduğundan özellikle &lt;a href=&quot;http://www.pardus.org.tr/&quot;&gt;Pardus&lt;/a&gt; ve &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; kullanıcıları yoğun biçimde masa üstü sanallaştırma ihtiyaçlarını VirtualBox ile gideriyor. Artık bir Sun ürünü olduğu için Solaris sürümlerine de çok daha iyi destek veriyor. &lt;/p&gt;
+&lt;p&gt;Bu hafta sonu &lt;a href=&quot;http://www.intel.com/&quot;&gt;Intel&lt;/a&gt;'den kurcalamamız için ödünç gelen &lt;a href=&quot;http://ark.intel.com/cpu.aspx?groupId=35641&quot;&gt;Atom 330&lt;/a&gt; (45 nm) işlemcili bir mini-itx kart ile bazı denemeler yaptım. Bu denemeler sırasında bu karta kurmadığım alt yapı kalmadı gibi bir şey. Karttan ve üzerindeki donanımdan ayrı bir girdi ile bahsedeceğimiz düşünüyorum ama şunu söyleyebilirim ki Atom serisi kesinlikle düşünüldüğünden daha kapasiteli bir işlemci serisi. &lt;/p&gt;
+&lt;p&gt;Bugün aynı Atom anakarta, Ubuntu 8.04 Server (x64) sürümünü de kurdum. Anakarttaki Gbe çıkışını eth1, ek kart ile eklediğimiz 100 Mbit çıkışını ise eth0 olarak tanıyarak, normal Ubuntu kurulumunu sorunsuz hallettik. Daha sonra apt-get ile önce depodaki paket listesini güncelledim, sonra da kurulu paketleri güncel hale getirdim. Bunlar hep rutin şeyler. Bu arada http://tr.archieve.ubuntu.com/ adresindeki yansının performansından da çok memnun kaldığımı belirtmek istiyorum tabi.&lt;/p&gt;
+&lt;p&gt;Gel gelelim Sun xVM'i nasıl kuracağımıza ve kullanacağımıza. Malum Ubuntu Server sürümünde X yok, dolayısı ile cicili bicili ara yüzler de yok. Ancak endişeye gerek de yok. Hem Linux kabuğu hem de xVM'in komut satırı araçları son derece becerikli. &lt;/p&gt;
+&lt;p&gt;Öncelikle &lt;a href=&quot;http://www.sun.com/software/products/virtualbox/get.jsp&quot;&gt;Sun indirme sitesinden&lt;/a&gt; xVM'in güncel sürümünü indirmek gerekli. Burada özgür yazılım olan sürüm (open source edition  - OSE) ile kapalı kodları olan bazı bileşenlerin entegre edildiği sürüm arasında kararsız kalabilirsiniz. Kapalı kodları olan sürümü de istediğiniz gibi kullanmanıza izin var ancak kodları kapalı. Sonuç olarak ben kapalı kodları olan sürümünü indirmeye karar verdim. &lt;a href=&quot;http://dlc.sun.com/virtualbox/2.1.4/virtualbox-2.1_2.1.4-42893_Ubuntu_hardy_amd64.deb&quot;&gt;Buradan&lt;/a&gt; doğrudan doğruya .deb paketini indirdim. Her ne kadar Sun .deb paketini hazırlamış olsa da, bunun kendisinden indirilmesini bekliyor. Dağıtımlar depolarına koyacakları zaman ise Sun ile iletişime geçiyorlar. Özgür yazılım sürüm olan OSE için ise bu tür bir kısıtlama haliyle yok. Daha sonra da &lt;strong&gt;dpkg&lt;/strong&gt; ile bu paketi kuruyoruz.
+&lt;/p&gt;
+&lt;p&gt;
+root@kobigos-proto# dpkg -i virtualbox-2.1_2.1.4-42893_Ubuntu_hardy_amd64.deb&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Ne yazık ki kurulum bundan ibaret değil. Çünkü şu anda bu paket birden fazla (benim için 46 tane) bağımlılık da içeriyor. Kurulum sırasında bir dizi hata mesajı almanızın nedeni de bu. Bu bağımlılıkların kurulması için yine apt-get&lt;/p&gt;'e başvuracağız. 
+
+&lt;p&gt;
+root@kobigos-proto# apt-get -f upgrade  
+&lt;/p&gt;
+&lt;p&gt;Bağımlılıklardan dolayı, benim sistemime 18.9 MB dosya indirildi, bu ADSL bağlantı ile 5-6 dakika sürdü sürmedi. Yani bağımlılık sayısı çok olsa da indirilen dosyalar küçük olduğu için çok büyük bir dert değil. Kurulum sırasında sizden &lt;strong&gt;vboxusers&lt;/strong&gt; adında bir grubun yaratılması için onay vermeniz istenecek. Bu onayı da verin.&lt;/p&gt;
+&lt;p&gt;Böylece Ubuntu Server üzerinde Sun xVM paketini bağımlılıkları ile birliktekurmuş olduk. Elbette sistemin ayağa kaldırılması ve sanal makinelerin yaratılması farklı bir şey.&lt;/p&gt;
+&lt;p&gt;Bir yazılımın kurulumu bazen sadece paket kurulumu ile bitmeyebiliyor. Sun xVM için, yazılımı çalıştıracak ek bir de kullanıcı hesabı gerekli. Bu amaçla var olan bir kullanıcıyı veya yeni yaratacağınız bir kullanıcıyı az önce yaratılmasına onay verdiğiniz &lt;strong&gt;vboxusers&lt;/strong&gt; grubuna dahil etmelisiniz. Ben bu sistemde atom adında bir kullanıcı yaratmıştım ve Sun xVM için de bu kullanıcıyı kullanmaya karar verdim.&lt;/p&gt;
+&lt;p&gt;
+root@kobigos-proto# usermod --append --groups vboxusers atom&lt;br /&gt;
+root@kobigos-proto# &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Siz isterseniz adı vbox, virtualbox, vs olan bir kullanıcı yaratabilirsiniz de. &lt;/p&gt;</content>
+		<author>
+			<name>Bora Güngören</name>
+			<uri>http://blogs.portakalteknoloji.com/bora/blog/</uri>
+		</author>
+		<source>
+			<title type="html">Bora Güngören</title>
+			<subtitle type="html">WORK BLOG</subtitle>
+			<link rel="self" href="http://blogs.portakalteknoloji.com/bora/blog/feed/rss/"/>
+			<id>http://blogs.portakalteknoloji.com/bora/blog/feed/rss/</id>
+			<updated>2009-03-29T15:46:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="tr">
+		<title type="html">Virtualbox 2.2 Semineri</title>
+		<link href="http://feedproxy.google.com/~r/raptiye_linux_gezegeni/~3/Q_nvDgWo_UI/"/>
+		<id>http://raptiye.org/blog/2009/03/29/virtualbox-22-semineri/</id>
+		<updated>2009-03-29T10:37:12+00:00</updated>
+		<content type="html">&lt;img height=&quot;128&quot; width=&quot;108&quot; align=&quot;left&quot; src=&quot;http://raptiye.org/media/images/upload/virtualbox.png&quot; alt=&quot;virtualbox&quot; /&gt;&lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt;, sanallaştırma dünyasında istediği yeri henüz tam olarak bulamamış; Parallels, VMware gibi yazılımların popülerliği nedeniyle pek de dikkate alınmayan bir sanallaştırma yazılımı.. Geliştirilmesi Sun tarafından devam eden yazılımın açık kaynak kodlu ve kapalı kaynak kodlu olmak üzere 2 farklı sürümü bulunuyor ve tüm platformlarda (Unix, Mac OS X ve Windows) çalışabiliyor.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt; ile diğer ücretli alternatiflerin yapabildiği bir çok şeyi sorunsuzca yapabiliyorsunuz. Grafik hızlandırma vb. konularda hala gelişmeye devam etse de örneğin &quot;&lt;em&gt;Seamless Mode&lt;/em&gt;&quot; (örneğin Linux üzerinde Windows yazılımlarını sanki gerçek birer Linux uygulaması gibi kullanabiliyorsunuz, Linux ve Windows masaüstünüz birbirine karışıyor gibi  &lt;img src=&quot;http://raptiye.org/media/images/smiley/face-smile.png&quot; align=&quot;absmiddle&quot; /&gt; ) gibi özellikleri var. Özellikle misafir eklentilerini kurduğunuzda performans ve diğer özellikler açısından çok daha verimli bir şekilde kullanabiliyorsunuz işletim sistemlerini.. Kısaca bir örnek vermek gerekirse.. Günlük hayatta Macbook Pro üzerinde Mac OS X kullanıyorum. Ancak işim (ve hobilerim) gereği Linux'a ve Windows'a ihtiyacım olabiliyor. Linux'a geliştirme ortamımı çok daha rahat yönetebildiğim ve çok daha hakim olduğum için, Windows'a ise Internet Explorer testleri için ihtiyacım var. (Deneme amaçlı bir de Windows 7 kurulu..) Bu işletim sistemlerinin, &lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt;'ın Host Interface özelliği sayesinde mevcut ağda birer bilgisayarmış gibi IP almalarını sağlıyorum. Böylece üzerlerinde çalışan sunuculara da rahatlıkla erişebiliyorum.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt; cephesinde bir süredir sessizlik var. 2.1.4 sürümünün çıkışıyla birlikte 2.2 sürümünün hazırlıklarına başlanmış ve 2.2 sürümü, muhtemelen 1 Nisan günü tanıtılacağı bir internet semineriyle duyurulacak. Bu sürümle birlikte özellikle aşağıdaki özellikler tanıtılacakmış:&lt;br /&gt;
+&lt;ul&gt;
+ &lt;li&gt;Sanal sunuculara ait disk imajlarının OVF&amp;#160;standardı sayesinde içe ve dışa aktarılabilmesi&lt;/li&gt;
+ &lt;li&gt;Linux ve Solaris misafir işletim sistemleri için 3B desteği&lt;/li&gt;
+ &lt;li&gt;Yalnızca İstemci adı verilen yeni bir bağlantı seçeneği&lt;/li&gt;
+&lt;/ul&gt;
+Seminer TSİ&amp;#160;18:00'de başlayacak. Kayıt yaptırmak için &lt;a href=&quot;https://www2.sun.de/dct/forms/reg_us_2503_883_0.jsp&quot; target=&quot;_blank&quot; title=&quot;sanal seminere katılmak için tıklayın..&quot;&gt;buraya&lt;/a&gt; tıklayabilirsiniz.&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://feedads.googleadservices.com/~a/ONDgHrrIHRx0ZJcw2QRGHqKI14Y/a&quot;&gt;&lt;img src=&quot;http://feedads.googleadservices.com/~a/ONDgHrrIHRx0ZJcw2QRGHqKI14Y/i&quot; border=&quot;0&quot; ismap=&quot;true&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=yIl2AUoC8zA&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:YwkR-u9nhCs&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=YwkR-u9nhCs&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:F7zBnMyn0Lo&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?i=Q_nvDgWo_UI:bBFTrijEVEg:F7zBnMyn0Lo&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:7Q72WNTAKBA&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=7Q72WNTAKBA&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:V_sGLiPBpWU&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?i=Q_nvDgWo_UI:bBFTrijEVEg:V_sGLiPBpWU&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=qj6IDK7rITs&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?i=Q_nvDgWo_UI:bBFTrijEVEg:gIN9vFwOqvQ&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~r/raptiye_linux_gezegeni/~4/Q_nvDgWo_UI&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</content>
+		<author>
+			<name>Alper Kanat</name>
+			<uri>http://raptiye.org</uri>
+		</author>
+		<source>
+			<title type="html">raptiye</title>
+			<subtitle type="html">bilgi paylaştıkça çoğalır!</subtitle>
+			<link rel="self" href="http://feeds2.feedburner.com/raptiye_linux_gezegeni"/>
+			<id>http://feeds2.feedburner.com/raptiye_linux_gezegeni</id>
+			<updated>2009-03-29T15:47:26+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Cuma gecesi heyecanı</title>
+		<link href="http://blog.gunduz.org/index.php?/archives/30-Cuma-gecesi-heyecan.html"/>
+		<id>http://blog.gunduz.org/index.php?/archives/30-guid.html</id>
+		<updated>2009-03-29T08:28:50+00:00</updated>
+		<content type="html">&lt;p&gt;Hafta sonuna yaklaşmışım; sakin bir gece bekliyorum. Önce Firefox'un Nagios eklentisi bağırdı, ardından da e-posta geldi:&lt;/p&gt;&lt;br /&gt;
+ &lt;br /&gt;&lt;a href=&quot;http://blog.gunduz.org/index.php?/archives/30-Cuma-gecesi-heyecan.html#extended&quot;&gt;Continue reading &quot;Cuma gecesi heyecanı&quot;&lt;/a&gt;</content>
+		<author>
+			<name>Devrim GUNDUZ</name>
+			<email>nospam@example.com</email>
+			<uri>http://blog.gunduz.org/</uri>
+		</author>
+		<source>
+			<title type="html">MadBlog - Özgür Yazılım</title>
+			<subtitle type="html">My little place on the web...</subtitle>
+			<link rel="self" href="http://blog.gunduz.org/index.php?/feeds/categories/1-OEzguer-Yazlm.rss"/>
+			<id>http://blog.gunduz.org/index.php?/feeds/categories/1-OEzguer-Yazlm.rss</id>
+			<updated>2009-03-29T15:48:34+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Uçurtma Avcısı…</title>
+		<link href="http://www.ozgurkuru.net/ozgur/2009/03/27/ucurtma-avcisi/"/>
+		<id>http://www.ozgurkuru.net/ozgur/?p=316</id>
+		<updated>2009-03-27T19:02:54+00:00</updated>
+		<content type="html">&lt;p&gt;Yollar kısa, Ankara trafiği ise uzun :). Bu uzun trafik süresince boş durmak doğru olmaz diyerek kitap okuma işlerine ağırlık verdim. Son dönemlerde kitaplarla pek haşır neşir olamıyordum.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tr.wikipedia.org/wiki/Jules_Verne&quot; target=&quot;_blank&quot;&gt;Jules Verne&lt;/a&gt;&amp;#8216;nin &lt;a href=&quot;http://kitap.antoloji.com/iki-yil-okul-tatili-8-kitabi/&quot; target=&quot;_blank&quot;&gt;İki Yıl Okul Tatil&lt;/a&gt;&lt;a href=&quot;http://kitap.antoloji.com/iki-yil-okul-tatili-8-kitabi/&quot; target=&quot;_blank&quot;&gt;i&lt;/a&gt; adlı kitabını orta okul dönemlerinden beri okumak istiyordum :). Ve bir ay önce bu kitabı okuyarak otobüste kitap talimlerine başladım. Şimdi herkes &amp;#8220;yaş yirmi oldu hala Jules Verne mi okuyorsun?&amp;#8221; diye sorabilir ama bir türlü bırakamıyorum bu Fransızı.&lt;/p&gt;
+&lt;p&gt;Bu kitabı bitirdikten sonra, kitap okumaya bir hafta ara verdim fakat bir hafta önce &lt;a href=&quot;http://www.khaledhosseini.com/&quot; target=&quot;_blank&quot;&gt;Khaled Hosseini&lt;/a&gt;&amp;#8216;nin &lt;a href=&quot;http://tr.wikipedia.org/wiki/U%C3%A7urtma_Avc%C4%B1s%C4%B1_(roman)&quot; target=&quot;_blank&quot;&gt;Uçurtma Avcısı&lt;/a&gt; adlı kitabını okumaya başladı. Aslında uzun bir süredir bu kitabı alıp okumayı planlıyordum. Umduğumdan daha güzel bir kitap. Henüz yarısına bile gelmemişken oldukça beğendim. Kitap hakkında ayrıntılı bilgi vermeyeceğim. Fakat dostluk adına işlediği konu oldukça ilgimi çekti doğrusu.&lt;/p&gt;
+&lt;p&gt;Kitapta savaş dönemi iki dostun hayatını anlatıyor. Etnik çatışmaların arasında kalan iki küçük çocuk. Birisi hizmetkar, diğeri efendi. Küçük yaşta belki de bizlerin hiç yaşamayacağı duyguları yaşıyorlar kitapta. Herkese okumasını tavsiye ederim&amp;#8230;. Ayrıca bu kitabın bir &lt;a href=&quot;http://beyazperde.mynet.com/film/3881&quot; target=&quot;_blank&quot;&gt;filmi&lt;/a&gt; de çekilmiş&amp;#8230;&lt;/p&gt;</content>
+		<author>
+			<name>Özgür Kuru</name>
+			<uri>http://www.ozgurkuru.net/ozgur</uri>
+		</author>
+		<source>
+			<title type="html">Özgür Kuru » linuxgezegen</title>
+			<subtitle type="html">Balinaya kafa atan deli hamsi</subtitle>
+			<link rel="self" href="http://www.ozgurkuru.net/ozgur/category/linuxgezegen/feed/"/>
+			<id>http://www.ozgurkuru.net/ozgur/category/linuxgezegen/feed/</id>
+			<updated>2009-03-29T15:46:32+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Pandora’yı tek tıkla dinlemek</title>
+		<link href="http://blog.arsln.org/pandorayi-tek-tikla-dinlemek/"/>
+		<id>http://blog.arsln.org/?p=603</id>
+		<updated>2009-03-27T18:28:08+00:00</updated>
+		<content type="html">&lt;p&gt;Başlık bulma konusunda pek iyi değilim, artık bu şekilde idare edin. Demek istediğim aslında şu, Pandora Türkiye&amp;#8217;de dinlenemiyor, bir aralar oluyordu fakat kapattılar. Sonraları &lt;strong&gt;globalpandora&lt;/strong&gt; diye bir şey çıktı fakat onun da sonu çabuk geldi. Proxy üzerinden dinleyebiliyoruz artık sadece. Bunun için de tarayıcımızdaki proxy ayarları değiştirmek lazım.&lt;/p&gt;
+&lt;p&gt;Bunun da  dezavantajları var, tüm şifreleriniz ve özel bilgileriniz proxy üzerinden iletileceği için pek güvenli sayılmayabilir. Ne yapabilirdik peki, site&amp;#8217;ye özel proxy yapabilirdik, yani www.pandora.com sitesine girdiğimizde bizim proxy devre&amp;#8217;ye girecekti. Bunu &lt;a href=&quot;http://foxyproxy.mozdev.org/&quot;&gt;FoxyProxy&lt;/a&gt; ile yapabildiğini öğrendim. Sonra da bu şekilde kullandım, ama müzik dinlemek için Firefox&amp;#8217;u açmak pek hoşuma gitmedi. Last.Fm gibi istemci olsa tadından yenmezdi.&lt;/p&gt;
+&lt;p&gt;Burada yapabileceğim bir şey var, oda &lt;a href=&quot;http://labs.mozilla.com/projects/prism/&quot;&gt;Mozilla Prism&lt;/a&gt; kullanmaktı. Sayesinde web sitelerine uygulama gibi çalıştırabilecektik. Her ne kadar uygulama olmasa bile güzel bir şey bence. Benim yaptığım ise, Mozilla Prism&amp;#8217;de proxy&amp;#8217;ı devreye sokmaktı.  Şimdi aşağıda gördüğünüz gibi simge&amp;#8217;ye tıkladığım an Pandora&amp;#8217;yı dinleyebiliyorum&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.arsln.org/wp-content/uploads/pandora.png&quot;&gt;&lt;img src=&quot;http://blog.arsln.org/wp-content/uploads/pandora-300x221.png&quot; alt=&quot;pandora&quot; title=&quot;pandora&quot; width=&quot;300&quot; height=&quot;221&quot; class=&quot;aligncenter size-medium wp-image-604&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tüm bunları şu şekilde yaptım:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mozilla Prism sayfasından, Prism&amp;#8217;in &lt;a href=&quot;http://people.mozilla.com/%7Emfinkle/prism/prism-0.9.en-US.linux-i686.tar.bz2&quot;&gt;standalone uygulamasını&lt;/a&gt; indiriyoruz&lt;/li&gt;
+&lt;li&gt;Bu uygulamayı  /opt dizinine açıyoruz. Orada /opt/prism diye bir klasör oluşacak&lt;/li&gt;
+&lt;li&gt;En son&lt;a href=&quot;http://get.adobe.com/flashplayer/&quot;&gt; flash sürümünü indiriyoruz&lt;/a&gt; , içinden çıkan &lt;strong&gt;libflashplayer.so&lt;/strong&gt; dosyasını  &lt;strong&gt;/opt/prism/plugins&lt;/strong&gt; klasörüne atıyoruz(eğer plugins klasörü yoksa oluşturuyoruz onu)&lt;/li&gt;
+&lt;li&gt;İstediğiniz bir metin editörü ile &lt;strong&gt;/opt/prism/xulrunner/greprefs/all.js&lt;/strong&gt; dosyasını açıyoruz ve aşağıdaki satırları &lt;strong&gt;
+&lt;p&gt;pref(&amp;#8221;network.proxy.type&amp;#8221;,                  0);&lt;br /&gt;
+pref(&amp;#8221;network.proxy.autoconfig_url&amp;#8221;, &amp;#8220;&amp;#8221;);&lt;/p&gt;&lt;/strong&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;şu şekile çeviriyoruz&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pref(&amp;#8221;network.proxy.type&amp;#8221;,                  2);&lt;br /&gt;
+pref(&amp;#8221;network.proxy.autoconfig_url&amp;#8221;, &amp;#8220;http://pac.byterelay.com/&amp;#8221;);&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu satırlar 750&amp;#8242;ini satırda ve birbirinden ayrı yerdeler, biraz aramanız gerekecek&lt;/p&gt;
+&lt;li&gt; İşimiz bitti sayılır, şimdi konsoldan &lt;strong&gt;/opt/prism/prism&lt;/strong&gt; açıyoruz ve &lt;a href=&quot;http://www.pandora.com&quot;&gt;www.pandora.com&lt;/a&gt; ve Desktop seçeneğini tıklıyoruz&lt;/li&gt;
+&lt;li&gt;Başka adım yok &lt;img src=&quot;http://blog.arsln.org/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt; &lt;/li&gt;
+
+	&lt;p&gt;&lt;/p&gt;
+	&lt;hr noshade=&quot;noshade&quot; /&gt;
+	&lt;small&gt;&lt;p&gt;Copyleft - Fatih Arslan - &lt;a href=&quot;http://blog.arsln.org&quot;&gt;Arslanlar Şehri&lt;/a&gt;, 2009. |
+	&lt;a href=&quot;http://blog.arsln.org/pandorayi-tek-tikla-dinlemek/&quot;&gt;Permalink&lt;/a&gt; |
+	&lt;a href=&quot;http://blog.arsln.org/pandorayi-tek-tikla-dinlemek/#comments&quot;&gt;Yorum(3)&lt;/a&gt;&lt;/p&gt;&lt;/small&gt;</content>
+		<author>
+			<name>Fatih Arslan</name>
+			<uri>http://blog.arsln.org</uri>
+		</author>
+		<source>
+			<title type="html">Arslanlar Şehri » Gezegen</title>
+			<subtitle type="html">Dağlara çıkamayan uzakları göremez ...</subtitle>
+			<link rel="self" href="http://blog.arsln.org/category/gezegen/feed"/>
+			<id>http://blog.arsln.org/category/gezegen/feed</id>
+			<updated>2009-03-29T15:48:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">MS Office XLSX Dosyalarında Güvenlik Açığı</title>
+		<link href="http://armuting.blogspot.com/2009/03/ms-office-xlsx-dosyalarnda-guvenlik-acg.html"/>
+		<id>tag:blogger.com,1999:blog-6806075996663386433.post-2812661079688866968</id>
+		<updated>2009-03-27T15:57:52+00:00</updated>
+		<content type="html">&lt;a href=&quot;http://www.ozgurlukicin.com/media/ooxml/ooxmlekarsi.png&quot;&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/ooxml/ooxmlekarsi.png&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;div&gt;Özgürlükiçin.com'un OOXML'e karşı yürüttüğü imza kampanyasında son 20 imza kalmış, haydi buyrun; &lt;a href=&quot;http://www.ozgurlukicin.com/ooxml/&quot;&gt;http://www.ozgurlukicin.com/ooxml/&lt;/a&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div&gt;Bu konuda neler olup bitiyor diye &lt;a href=&quot;http://www.noooxml.org/&quot;&gt;uluslararası kampanya sitesine&lt;/a&gt; baktığımda da hiç şaşırmadığım şeyler okudum, mesela xlsx dosyalarındaki &lt;a href=&quot;http://www.noooxml.org/forum/t-133339/xlsx-files-as-a-security-risk&quot;&gt;güvenlik açığı&lt;/a&gt; nedeniyle uzaktan kod çalıştırmak bile mümkünmüş.&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/6806075996663386433-2812661079688866968?l=armuting.blogspot.com&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Ali E. İMREK</name>
+			<email>alierkanimrek@gmail.com</email>
+			<uri>http://armuting.blogspot.com/search/label/lkd_gezegen</uri>
+		</author>
+		<source>
+			<title type="html">armut</title>
+			<subtitle type="html">Beşer, şaşar...</subtitle>
+			<link rel="self" href="http://armuting.blogspot.com/feeds/posts/default/-/lkd_gezegen"/>
+			<id>tag:blogger.com,1999:blog-6806075996663386433</id>
+			<updated>2009-03-29T15:47:50+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Ubuntu 9.04 Jaunty Jackalope Beta Hazır</title>
+		<link href="http://www.murekkep.org/ubuntu-904-jaunty-jackalope-beta-hazir"/>
+		<id>http://www.murekkep.org/?p=1667</id>
+		<updated>2009-03-27T09:04:51+00:00</updated>
+		<content type="html">&lt;p&gt;Kod adı Jaunty Jackalope olan Ubuntu&amp;#8217;nun 9.04 sürümü için Beta duyurusu yapıldı. &lt;a href=&quot;http://www.ubuntu.com/testing/jaunty/beta&quot;&gt;Ubuntu 9.04 Beta&lt;/a&gt; birçok hatanın giderildiği ve test edebileceğiniz oranda kararlı bir sürümdür. Yani eğer &lt;strong&gt;Ubuntu 9.04&lt;/strong&gt; ile gelen yenilikleri merak ediyorsanız Beta sürümü indirip kurabilir ya da halihazırda kullandığınız &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; 8.10 masaüstünüzden yükseltme işlemi yapabilirsiniz. &lt;/p&gt;
+&lt;p&gt;Kullandığınız Ubuntu 8.10 masaüstü üzerinden Ubuntu 9.04 Beta&amp;#8217;ya  yükseltme yapmak isterseniz &lt;strong&gt;Alt+F2&lt;/strong&gt; ile açtığınız komut kutusuna &amp;#8220;&lt;strong&gt;update-manager -d&lt;/strong&gt;&amp;#8221; yazmanız yeterli olacaktır. Güncelleme Yöneticisi karşınıza gelecek ve yeni dağıtım 9.04&amp;#8242;ün kullanılabilir olduğu bilgisini verecektir. Bu bölümden &amp;#8220;&lt;strong&gt;yükselt&lt;/strong&gt;&amp;#8221; (upgrade) dedikten sonra kolayca &lt;strong&gt;Ubuntu 9.04 Beta&lt;/strong&gt;&amp;#8216;ya terfi edebilirsiniz. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu 9.04 ile gelen özelliklere kısaca bakmak istersek;&lt;/strong&gt;&lt;br /&gt;
+&lt;span id=&quot;more-1667&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gnome 2.26 - 18 Mart 2009&amp;#8242;da final sürümü duyurulan &lt;a href=&quot;http://library.gnome.org/misc/release-notes/2.26/index.html.tr&quot;&gt;Gnome 2.26 özelliklerine&lt;/a&gt; göz atmak isteyebilirsiniz.&lt;/li&gt;
+&lt;li&gt;Geliştirilmiş çoklu monitör desteği&lt;/li&gt;
+&lt;li&gt;X.Org sunucu 1.6&lt;/li&gt;
+&lt;li&gt;Uyarılar ve uyarı özelliklerine eklenmiş yeni stiller. Örnek olması açısından buradaki &lt;a href=&quot;http://www.markshuttleworth.com/wp-content/uploads/2008/12/jaunty904_notifications_example1_web_092.swf&quot;&gt;videoya&lt;/a&gt; bakılabilir. &lt;/li&gt;
+&lt;li&gt;Daha hızlı başlama süresi (boot performansı) - Ubuntu 9.04 başlangıç süresinde belirgin şekilde geliştirmeler yapılmış. &lt;/li&gt;
+&lt;li&gt;Ext4 dosya sistemi desteği ile başlangıç süresinde iyileştirmeler ve genel olarak dosya sistemi performansı artışı. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.murekkep.org/mini/ubuntuust.jpg&quot; title=&quot;Ubuntu&quot; class=&quot;alignnone&quot; width=&quot;520&quot; height=&quot;200&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu 9.04 Jaunty Jackalope&lt;/strong&gt; için kararlı final sürümü beklediğimiz üzere &lt;strong&gt;23 Nisan 2009&lt;/strong&gt; tarihinde duyurulacak. &lt;a href=&quot;http://www.ubuntu.com/testing/jaunty/beta&quot;&gt;Ubuntu 9.04 Beta&lt;/a&gt; sayfasında hem beta için duyurulan özelliklere hem de indirme adreslerine ulaşabilirsiniz. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu 9.04&lt;/strong&gt; sonrasında bizi bekleyen sürüm ise kod adı Karmic Koala olarak duyurulan &lt;a href=&quot;http://www.murekkep.org/ubuntu-910-karmic-koala&quot;&gt;Ubuntu 9.10 Karmic Koala&lt;/a&gt;.&lt;/p&gt;</content>
+		<author>
+			<name>Alper Orus</name>
+			<uri>http://www.murekkep.org</uri>
+		</author>
+		<source>
+			<title type="html">Mürekkep - İnternet Yaşam Rehberiniz » Bilişim</title>
+			<subtitle type="html">Yazmak Bitmez, Mürekkep Tükenmez</subtitle>
+			<link rel="self" href="http://www.murekkep.org/category/bilisim/feed"/>
+			<id>http://www.murekkep.org/category/bilisim/feed</id>
+			<updated>2009-03-29T15:46:53+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">comp.os.minix’in Ağlatan haline ağıt.</title>
+		<link href="http://www.okanakyuz.com/?p=270"/>
+		<id>http://www.okanakyuz.com/?p=270</id>
+		<updated>2009-03-25T17:10:29+00:00</updated>
+		<content type="html">&lt;p&gt;Hello everybody out there using minix -&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m doing a (free) operating system (just a hobby, won&amp;#8217;t be big and&lt;br /&gt;
+professional like gnu) for 386(486) AT clones.  This has been brewing&lt;br /&gt;
+since april, and is starting to get ready.  I&amp;#8217;d like any feedback on&lt;br /&gt;
+things people like/dislike in minix, as my OS resembles it somewhat&lt;br /&gt;
+(same physical layout of the file-system (due to practical reasons)&lt;br /&gt;
+among other things).&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve currently ported bash(1.08) and gcc(1.40), and things seem to work.&lt;br /&gt;
+This implies that I&amp;#8217;ll get something practical within a few months, and&lt;br /&gt;
+I&amp;#8217;d like to know what features most people would want.  Any suggestions&lt;br /&gt;
+are welcome, but I won&amp;#8217;t promise I&amp;#8217;ll implement them &lt;img src=&quot;http://www.okanakyuz.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:-)&quot; class=&quot;wp-smiley&quot; title=&quot;comp.os.minixin Ağlatan haline ağıt.&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;Linus (torvalds@kruuna.helsinki.fi)&lt;/p&gt;
+&lt;p&gt;PS.  Yes - it&amp;#8217;s free of any minix code, and it has a multi-threaded fs.&lt;br /&gt;
+It is NOT protable (uses 386 task switching etc), and it probably never&lt;br /&gt;
+will support anything other than AT-harddisks, as that&amp;#8217;s all I have :-(.&lt;/p&gt;
+&lt;p&gt;Yukardaki satırlar  comp.os.minix de ilk yazıldı ve linux dünyada tanınan bir işletim sistemi olmaya adım attı. Fakat bugunlerde comp.os.minix&amp;#8217;de yazan tek şey bilmemne marka ayakkabıyı şurdan alabilirsiniz hem de pay-pal ile. İşte bir dev (işletim sistemini öğreten işletim sistemi) şuan acınası halde. Bu yüzden ben evimde bir dakika saygı duruşu yapıyorum.&lt;/p&gt;
+&lt;p&gt;İyi günler.&lt;/p&gt;</content>
+		<author>
+			<name>Okan Akyüz</name>
+			<uri>http://www.okanakyuz.com</uri>
+		</author>
+		<source>
+			<title type="html">Okan Akyüz » Gezegen</title>
+			<link rel="self" href="http://www.okanakyuz.com/?feed=rss2&amp;cat=17"/>
+			<id>http://www.okanakyuz.com/?feed=rss2&amp;cat=17</id>
+			<updated>2009-03-29T15:47:10+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">uzayüssünden mir-uzayistaysonuna</title>
+		<link href="http://www.yalazi.org/index.php/archives/2009/03/25/uzayussunden-mir-uzayistaysonuna/"/>
+		<id>http://www.yalazi.org/?p=263</id>
+		<updated>2009-03-25T15:50:07+00:00</updated>
+		<content type="html">&lt;div class=&quot;wp-caption alignleft&quot;&gt;&lt;a href=&quot;http://tr.wikipedia.org/wiki/Mir&quot;&gt;&lt;img title=&quot;Mir Görev Nişanı&quot; src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f5/Mir_insignia.jpg&quot; alt=&quot;Mir Uzay İstasyonu Görev Nişanı&quot; width=&quot;200&quot; height=&quot;141&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;Mir Uzay İstasyonu Görev Nişanı&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;&amp;#8220;Linux masaüstüne hazır değil&amp;#8221; diyenler utansın.. Ubuntu Intrepid Ibex 8.10 ile yeni aldığım Acer Extensa 5630EZ-421G16 tak kullan biçimde çalıştı. Hatta üzerindeki kameranın Skype ile test et dediğimde görüntü vermesi anı - kamera ile pek işim olmasa da - benim için çok önemliydi. Buradan tek kötü bir haber çıkıyor, çalışmayan bir kısmını henüz bulamadığım için &amp;#8220;bakın bu da böyle çözülür&amp;#8221; gibi bir yazı yazamayacağım.&lt;/p&gt;
+&lt;p&gt;Yeni dizüstüme mir-uzayistasyonu adını verdim.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Linux mir-uzayistasyonu 2.6.27-11-generic #1 SMP Thu Jan 29 19:24:39 UTC 2009 i686 GNU/Linux&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Not: Ayrıca Linpus Linux ile geldiği için bazı gereksiz vergilerden de muaf.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a title=&quot;Mir uzay istasyonu wikipedia&quot; href=&quot;http://en.wikipedia.org/wiki/Mir&quot;&gt;Mir Uzay İstasyonu İngilizce - Wikipedia &lt;/a&gt; &lt;a title=&quot;Mir uzay istasyonu wikipedia&quot; href=&quot;http://tr.wikipedia.org/wiki/Mir&quot;&gt; Turkçe - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Ubuntu&quot; href=&quot;http://www.ubuntu.com&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Acer&quot; href=&quot;http://www.yalazi.org/index.php/feed/www.acer.com.tr&quot;&gt;Acer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content>
+		<author>
+			<name>Onur Yalazı</name>
+			<uri>http://www.yalazi.org</uri>
+		</author>
+		<source>
+			<title type="html">www.yalazi.org</title>
+			<subtitle type="html">Yine bir gayrı ciddi internet günlüğü..</subtitle>
+			<link rel="self" href="http://www.yalazi.org/index.php/feed/"/>
+			<id>http://www.yalazi.org/index.php/feed/</id>
+			<updated>2009-03-29T15:47:52+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Ekonomik Kriz ve Yeni Fırsatlar - 2</title>
+		<link href="http://devador.blogspot.com/2009/03/ekonomik-kriz-ve-yeni-frsatlar-2.html"/>
+		<id>tag:blogger.com,1999:blog-4680162149707281285.post-9013440262584406750</id>
+		<updated>2009-03-25T14:16:22+00:00</updated>
+		<content type="html">&lt;a href=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/ScqfGKPxMSI/AAAAAAAAASc/gCHcFD-4EzQ/s1600-h/open_source.gif&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/ScqfGKPxMSI/AAAAAAAAASc/gCHcFD-4EzQ/s400/open_source.gif&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5317237238242816290&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Bir önceki yazıda ekonomik krize giriş yapmış ardından bunun özgür projeler üzerine etkisinden bahsetmiştik. Bu yazıda ise yeni fırsatlar neler olabilir neler yapılmalıdır onun üzerine duracağız. Sabah saatlerinde ekonomide önlem olarak açıklanan paketlerden beşincisi duyuruldu. Yine vergi indirimleri geldi. İçlerinden bizi ilgilendiren Bilgisayar, Bilişim ve Büro makinalarında alınan verginin %8'e indirilmesi. Bana göre bu oran bile çok. Kabul ediyorum belki dünyanın en pahalı ülkesi değiliz ama en pahalılardan birisi olduğumuzu söyleyebiliriz. En pahalı interneti kullandığımız yönündeki haberlerden sonra biraz araştırma yapmıştım doğru hatırlıyorsam birinci Kazakistan'dı. Ülkemiz ihracatını ne kadar geliştirirse geliştirsin kazancımız düşük oluyor. Özellikle elektronik ürünlerde, elektrikli ev aletlerinde hatta taşıt sektöründe ana parçaları biz üretmediğimiz için sadece ufak bir paya sahip oluyoruz. Yurt dışından gelen parçaları birleştirip satmayla elde edilen kazanç ile ürünün ilk maddesine sahip olup satma arasında fark var.&lt;br /&gt;&lt;br /&gt;Küreselleşen dünyada Çin, Hindistan gibi yeni güçlere karşı yüksek vergi oranları ve işçilik ücretleri ile rekabet etmek imkansız. Yüksek nüfusları sayesinde işçilik o kadar ucuzki onlarla rekabet etmek için ya kendi işçilerimizin maaşlarını kesecez ya da üretilen malın kalitesinden vazgeçecez. İki hareketin sonucuda acıtır. Büyük düşünen bir Türkiye kaliteli mallar üretmeli ve işçilerine hak ettikleri yüksek geliri sağlamalıdır. Bunu başarabilmek içinde öncelikle maliyetler kısılmalı ardından gerekli teknik eğitim verilmeli. Şu alınan vergilere bakın, %18 üstüne ÖTV falan... Böyle maliyetler varken küresel aktörler Türkiye ye niye yatırım yapsın? Serbest Ticaret Bölgeleri, Tekno Kentler bir yere kadar...&lt;br /&gt;&lt;br /&gt;Kriz acıda olsa zayıf şirketleri götürecek. Yapılan yanlışları düzeltmek zorunda kalan küresel ekonomi yeni bir yapılanmaya gidiyor. Tahminimce düşük-orta kalite ürünlerin üretimi giderek doğuya kayarken yüksek kaliteli ürünleri dünyanın batı kesimi üretecek. Türkiye bu iki kutuplu dünyanın yine tam ortasında yer alacak ama önlem alınmazsa ikisine de katılamayabilir.  Teknoloji gerektiren kaliteli ürünleri ortaya çıkarabilmek için teşvikler arttırılmalı. Özgür yazılımlarda bu noktada gittikçe önem kazanacak ama içlerinden sadece en iyi olanları ayakta kalacak. Batı devletlerinin ufak adımlarlada olsa özgür yazılımlara geçtiklerinin haberleri geliyor. Çoğu kurum, göç işlemlerinin maliyetlerini düşünmeden gelecek için özgür yazılımlara geçecek. Bu kurumlar özgür yazılımlara geçmek için bu alanda uzman firmalara ihtiyaç duyacak. Yeni fırsatlar dediğim bu :) Özgür yazılımlara geçtikçe bu alanda ki ihtiyacı karşılamak için yeni firmalar doğacak. Linux nedir bilmeyen, hayatında windowstan başka işletim sistemi kullanmamış firmalar bu ihtiyaçları gidermede yetersiz kalacaktır. Geçiş işlemlerinin tamamlanmasından sonra bu sefer kurumsal destek ihtiyacı doğacak ve bu ihtiyacı gidermek için yine özgür firmalar aranacaktır. Elemanlarını özgür yazılımlar için hazırlamak isteyen firmalar bu konularda onları eğitecek yeni kurumları arayacak! &quot;Linux sertifikası verilir&quot; gibi ilanlara hazır olun.&lt;br /&gt;&lt;br /&gt;Kısaca Göç, Destek ve Eğitim başlıklarında yeni fırsatlar ortaya çıkacak diyebilirim. Bunun yanında ülkeler yazılım sektörüne daha fazla yoğunlaşacaktır. Yazıya başlarken direkt ilk maddeyi dışarıdan aldığımız için kazancımızın az olduğundan bahsetmiştim. Yazılım sektöründe ise eğer özgür yazılımları kullanıyorsanız böyle bir gideriniz olmayacaktır. Tamamen kendi ürettiğiniz, dışa bağımlı olmayan modüllerden oluşan yazılımların pazarlaması araba ve buz dolabı satmaktan daha kazançlı olacak. Bu aşamada kaliteli eleman bulmak için eğitim sektörümüzde değişikliklere gidilebilir. Bunun yanında firmaların bilgisayar, elektrik, internet bağlantısı gibi ihtiyaçlarını karşılarken ödedikleri vergiler düşürülerek gerekli olan hammadde üzerinde ki yükler azaltılırsa türk yazılımcıların batıdaki meslektaşları ile kıyasıya bir mücadeleye gireceğinden eminim.&lt;br /&gt;&lt;br /&gt;Kendi açımdan özel olarak oyun sektörünede özel olarak ilgi gösterebilirim. Ne kadar kriz olursa olsun, oyunlar oynanmaya devam ediyor. Şimdilik oyun satışlarıyla ilgili bir rapor görmesemde online oyunların tartışıldığı forumlar hala hareketli. Ülkemizde oyun sektörü yeni yeni oluşuyor... Mount &amp;amp; Blade gibi türk yapımı oyunların çoğalması yazılımcılarımız için gerekli tecrübeyi sağlayacaktır. Ondan sonra belki Blizzard'a kafa tutacak oyunlar çıkarabiliriz(zor :D)&lt;br /&gt;Oyun sektörüde başka bir yazının konusu olsun.&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/4680162149707281285-9013440262584406750?l=devador.blogspot.com&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Ceyhun Alyeşil</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://devador.blogspot.com/search/label/linux</uri>
+		</author>
+		<source>
+			<title type="html">Devador</title>
+			<link rel="self" href="http://devador.blogspot.com/feeds/posts/default/-/linux"/>
+			<id>tag:blogger.com,1999:blog-4680162149707281285</id>
+			<updated>2009-03-29T15:47:07+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="tr-tr">
+		<title type="html">amixer' ın dayanılmaz hafifliği</title>
+		<link href="http://www.cankavaklioglu.name.tr/guncelgunce/archives/2009/03/24/index.html#e2009-03-24T22_48_28.txt"/>
+		<id>http://www.cankavaklioglu.name.tr/guncelgunce/archives/2009/03/24/index.html#e2009-03-24T22_48_28.txt</id>
+		<updated>2009-03-24T20:48:28+00:00</updated>
+		<content type="html">Bir pencerede her zaman bir adet alsamixer açık tutardım. Ancak az önceki bir dakika itibariyle artık buna ihtiyacım yok. Yaşasın amixer!
+&lt;br /&gt;&lt;br /&gt;
+Sesi kapatmak (mute) (mesela ctrl+alt+aşağı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;amixer set Master mute&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Sesi açmak (unmute) (mesela ctrl+alt+yukarı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;amixer set Master unmute&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Sesi artırmak (mesela ctrl+yukarı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;
+KEK=$(amixer get Master | grep 'Front Left:' | cut -d ' ' -f 6) &lt;br /&gt;
+amixer set Master $[$KEK+1]
+&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Sesi azaltmak (mesela ctrl+aşağı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;
+KEK=$(amixer get Master | grep 'Front Left:' | cut -d ' ' -f 6) &lt;br /&gt;
+amixer set Master $[$KEK-1]
+&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Bu komutlari birer betiğe yazıp, bir de klavye kısayolu verdi mi, dadından yenmiyor. Şiddet ile tavsiye olunur.</content>
+		<author>
+			<name>Can Kavaklıoğlu</name>
+			<uri>http://www.cankavaklioglu.name.tr/guncelgunce/archives/linux/index.html</uri>
+		</author>
+		<source>
+			<title type="html">Güncel günce</title>
+			<subtitle type="html">yapılmışlar yapılacaklar</subtitle>
+			<link rel="self" href="http://cankavaklioglu.name.tr/guncelgunce/archives/linux/index-rss.xml"/>
+			<id>http://cankavaklioglu.name.tr/guncelgunce/archives/linux/index-rss.xml</id>
+			<updated>2009-03-29T15:46:43+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">fdupes ile Hylafax docq dizini temizliği</title>
+		<link href="http://zzz.fisek.com.tr/seyir-defteri/?p=642"/>
+		<id>http://zzz.fisek.com.tr/seyir-defteri/?p=642</id>
+		<updated>2009-03-24T18:32:58+00:00</updated>
+		<content type="html">&lt;p&gt;Dün az kullanılan bir faks sunucusunu taşırken acı bir gerçek ile karşılaştım, gönderilen belgeler dizini gigabyte&amp;#8217;lara ulaşmıştı. Bundan bihaber biçimde yeni diski bölümlendirmiş, üzerine kurulum yapmış, hemen her servisi de taşımıştım. /var dizininde o kadar yerim yoktu (lvm kullansaydın ya dediğinizi duyaar gibi oluyorum).&lt;/p&gt;
+&lt;p&gt;Ne var canım, diskler çok büyüdü, Hylafax dizinini /home disk bölümüne taşıyıp oradan linkleyiveririm olur biter diye düşündüm. Düşünmez olaydım, Hylafax dizinlerin farklı disk bölümlerine sembolik bağlanmasından pek hoşlanmıyormuş. Faks servisi hiç çalışmadı, yazması gereken dizinleri bulamadı. Servisi sembolik bağlama öncesi çalışır hale getirmediğimden problem kullanıcı yetkilendirmelerinde falan zannettim &amp;#8212; bir süre debelendim.&lt;/p&gt;
+&lt;p&gt;Farklı disk bölümüne taşıyamayacağım belli olunca, gönderilen belgelerin saklandığı docq dizinine daha bir alıcı gözüyle baktım. Bir sürü boyutları aynı dosya vardı. Faks sayısına bakınca jeton düştü. Bunların çoğu toplu faks gönderimlerinden dolayı oluşmuştu. &amp;#8220;Tüm müşterilerimize şunu fakslayalım&amp;#8221;, &amp;#8220;basına bunu fakslayalım&amp;#8221; cümlelerinin sonucu aynı belgenin gönderim sayısı kadar kaydedilmesine yol açmıştı. Evet, az ama öz bir kullanım söz konusu :)&lt;/p&gt;
+&lt;p&gt;Tabii optimize motorize birlikler direkt harekete geçti, ne demek efendim buna disk yeri mi yetişir, ayrıca ne kadar saçma, zaten yerim de yok ve benzeri (5 bahane daha ekleyin buraya) düşüncelerle kolları sıvadım. Önce çift dosyaları ayıklayacak bir yazılım bulmam gerekliydi, komut satırından çalışan &lt;a href=&quot;http://netdial.caribe.net/~adrian2/fdupes.html&quot;&gt;fdupes&lt;/a&gt; tam olarak işimi görüyordu. Önce dosya boyutuna, sonra MD5 toplamına baktıktan sonra tek tek byte&amp;#8217;larını da karşılaştırıyordu.&lt;/p&gt;
+&lt;p&gt;Çift olanları sildim silmesine ama bu sefer de iki problemle karşılaştım. Hylafax arayüzünde ilgili faksa tıklandığında dosyayı bulamadığı için gösteremiyordu. Hadi bu beklenen bişidi. Ama bir de ikincisi çıktı, Hylafax istemcisi sunucuyu her sorguladığında &amp;#8220;bu dosyalar yok&amp;#8221; diye yüzlerce hata satırı loga düşüyordu. Hylafax loglarını sistem loglarından ayır, logları gün sonunda silebilirdim ama iki kirli çözüm birden can sıkıcı bir hale gelmişti.&lt;/p&gt;
+&lt;p&gt;Sonra aklıma geldi, yaav ben bu çift olan dosyaları bir tanesi dışında siliyorum ama sildiklerimi o sakladığım tek kopyaya sembolik linklesem? Hylafax dizinlerin farklı disk bölümünde olmasından hoşlanmamış olabilirdi ama aynı disk bölümünde, hem de aynı dizinde birbirine linkli dosyalardan nem kapmayabilrdi. O zaman birçok yerde uygulanabilir mükemmel bir çözüm elde etmiş olurdum.&lt;/p&gt;
+&lt;p&gt;fdupes&amp;#8217;un -1 parametresi, her bir çift dosyalar grubu birer satıra denk gelecek şekilde çiftleri birbirinden boşlukla, grupları da birbirinden yeni satırla ayrılmış bir halde sıralıyordu. Bu çıktıyı kullanacak &lt;a href=&quot;http://zzz.fisek.com.tr/files/fdupes_delete_then_symlink.sh&quot;&gt;basit bir betik&lt;/a&gt; yazdım, çıktının her satırında 2. dosyadan başlayarak hepsini önce silip sonra 1. dosyaya sembolik linkledi.&lt;/p&gt;
+&lt;p&gt;Sonuç : Bir anda docq dizininin boyutu 1/10&amp;#8242;una indi. Uğraşmamak için cron&amp;#8217;a yerleştirdim, her gece faks dizinini kontrol edip, aynı fakstan n tane varsa biri dışında hepsini silip o tek dosyaya linkliyor. Hylafax da mutlu, ben de :)&lt;/p&gt;</content>
+		<author>
+			<name>Doruk Fişek</name>
+			<uri>http://zzz.fisek.com.tr/seyir-defteri</uri>
+		</author>
+		<source>
+			<title type="html">Sit Alanı'nın Seyir Defteri » Gezegen</title>
+			<subtitle type="html">Öyle bir seyir defteri...</subtitle>
+			<link rel="self" href="http://zzz.fisek.com.tr/seyir-defteri/wp-rss2.php?cat=3"/>
+			<id>http://zzz.fisek.com.tr/seyir-defteri/wp-rss2.php?cat=3</id>
+			<updated>2009-03-29T15:46:18+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Document Freedom Day</title>
+		<link href="http://nyucel.blogspot.com/2009/03/document-freedom-day.html"/>
+		<id>tag:blogger.com,1999:blog-20350364.post-1896909439767442581</id>
+		<updated>2009-03-24T16:48:42+00:00</updated>
+		<content type="html">&lt;a href=&quot;http://documentfreedom.org/&quot;&gt;&lt;img src=&quot;http://www.documentfreedom.org/images/7/75/Dfd09w.png&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/20350364-1896909439767442581?l=nyucel.blogspot.com&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Necdet Yücel</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://nyucel.blogspot.com/search/label/gezegen</uri>
+		</author>
+		<source>
+			<title type="html">nyucel's diary</title>
+			<subtitle type="html">Nullum magnum ingenium sine mixtura dementiae fuit</subtitle>
+			<link rel="self" href="http://nyucel.blogspot.com/feeds/posts/default/-/gezegen"/>
+			<id>tag:blogger.com,1999:blog-20350364</id>
+			<updated>2009-03-29T15:48:40+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">8. Linux ve Özgür Yazılım Şenliği</title>
+		<link href="http://www.hakanuygun.com/blog/?p=195"/>
+		<id>http://www.hakanuygun.com/blog/?p=195</id>
+		<updated>2009-03-24T13:07:25+00:00</updated>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://senlik.linux.org.tr/2009/&quot;&gt;&lt;img class=&quot;alignnone&quot; src=&quot;http://senlik.linux.org.tr/2009/banner/banner300250-2.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;8. Linux ve Özgür Yazılım Şenliği, bu sene İstanbul Bilgi Üniversitesinde 17-18 Nisan  tarihlerinde gerçekleştiriliyor.&lt;/p&gt;
+&lt;p&gt;Bu sene şenlik sırasında &lt;a href=&quot;http://seamframework.org/&quot; target=&quot;_blank&quot;&gt;JBoss Seam&lt;/a&gt; konusunda bir atölye çalışması yapıyor olacağım. İlgilenen herkesi beklerim&amp;#8230;&lt;/p&gt;</content>
+		<author>
+			<name>Hakan</name>
+			<uri>http://www.hakanuygun.com/blog</uri>
+		</author>
+		<source>
+			<title type="html">hakan.uygun.yazıyor.* » Gezegen</title>
+			<link rel="self" href="http://www.hakanuygun.com/blog/?feed=atom&amp;cat=13"/>
+			<id>http://www.hakanuygun.com/blog/?feed=atom</id>
+			<updated>2009-03-29T15:46:42+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Ekonomik Kriz ve Yeni Fırsatlar</title>
+		<link href="http://devador.blogspot.com/2009/03/ekonomik-kriz-ve-yeni-frsatlar.html"/>
+		<id>tag:blogger.com,1999:blog-4680162149707281285.post-3384749633201696030</id>
+		<updated>2009-03-24T07:28:00+00:00</updated>
+		<content type="html">&lt;a href=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/Scjt6et2tDI/AAAAAAAAASU/x4Tm_E5weSk/s1600-h/crisis_440.jpg&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/Scjt6et2tDI/AAAAAAAAASU/x4Tm_E5weSk/s400/crisis_440.jpg&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5316760949044458546&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Amerikada başlayan ve dünyaya yayılan kriz belki de yeni bir döneme girmemizi sağlayacak. Öncelikle firmaların bu kadar özgür bırakılamayacağı anlaşıldı. Prim, komisyon gibi kimi çıkarlar için firmaların kötü durumlarını gizlediği, bazı şeylerin görmezden gelindiği anlaşıldı. İnsanlar varolmayan paralarıyla çok büyük harcamalar yaptılar ve sıkıştıklarında herşeylerini kaybettiler. Burada tek suçlu kriz değil. Taksitle ev alıp daha taksidini bitirmediği evin senetleriyle oyun oynayan birisi banka batıp işten çıkarılınca emekliliği dahil herşeyi kaybetmişse suçlu olarak sadece banka ile işçisini işten çıkaran firmayı gösteremeyiz. Bunun yanında AIG'de yaşanan saçmalıklardan sonra devletlerin daha sert bir yaklaşım sergilemesinin gerekli olduğuda ortaya çıktı.&lt;br /&gt;&lt;br /&gt;Başbakanın beceriksizler batıyor açıklaması kısmen doğru. İş, hesap-kitap bilmeyen kişilerin yönetiminde ki şirketlerin iflas süreçleri bilenlere göre daha çabuk oluyor. Yanlış hatırlamıyorsam &lt;a href=&quot;http://blogs.portakalteknoloji.com/bora/blog/&quot;&gt;Bora Güngören&lt;/a&gt; buna benzer bir olayı IT sektörü için örneklendirmişti. Gerçekte işleri yürütmek o kadar zordurki sipariş vermeden önce yaptığınız ufak bir hesap hatası sizi bitirebilir. Esas nokta burada kendi hataları sonucu batanlarla kriz karşısında çaresiz kalanları ayırmakta. Beceriksiz patronlar batabilir ama onların işçilerinin bunda bir suçu yok. İşsizlik fonundan yapılan ödemeler bu insanları bir iki yıl idare eder. Eğer kriz 2009 yılında son bulmazsa(son bulmaya başlamazsa diyelim) bu fondaki paralarda suyunu çekmeye başlayacaktır.&lt;br /&gt;&lt;br /&gt;Kriz ve Linux bağlantısını araştırırken gözüme &lt;b&gt;Cédric Godart'ın&lt;/b&gt; &lt;a href=&quot;http://linuxgazette.net/issue67/caruso.html&quot;&gt;röpörtajında&lt;/a&gt; ki bir söz ilişti,&lt;br /&gt;&lt;span&gt;OLinux:&lt;/span&gt;&lt;span&gt; Do you think that economic crisis which also involves open source enterprises will be reflected in Linux and open source news sites?       &lt;/span&gt;&lt;br /&gt;&lt;span&gt;Cédric Godart:&lt;/span&gt;&lt;span&gt; Of course. The Linux market is not mature yet. These are bad       times for the whole IT economy. Only a limited number of companies focusing on Linux and Open Source solutions may claim to be profitable. Time will tell.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Bizler sürekli kriz sayesinde lisanslara ödenen bedellerin insanlara fazla geleceğini, bu yüzden özgür yazılım kullanan firmaların sayısının artacağını düşünüyoruz. Oysa kriz özgür yazılımı destekleyen firmaları da(bizde devleti) vuruyor. Düşünün Ubuntu'nun arkasında ki en büyük güç ne? Pardus'a Tübitak'ın desteği olmasa proje ne kadar devam eder? Büyük olduklarını düşündüğümüz dağıtımlar, açık projeler sponsorlarını kaybederlerse neler olabilir? Benzer bir tartışma&lt;a href=&quot;http://news.slashdot.org/article.pl?sid=08/10/22/1354207&amp;from=rss&quot;&gt; şurada&lt;/a&gt; yapılmış. Wikipedia gibi projelerin finansmanını sağlayan bağışçılar ortadan kalktığı takdirde devam edemeyeceği söylenen birisinin sözleri üzerine uzun uzun konuşulmuş. Her ne kadar insanlar içeriği gönüllü olarak sağlasada küresel krize girdiğimiz şu zamanlarda bu tarz oluşumların hayatlarını sürdürmesi oldukça zorlaşıyor. Yazıya burada ara veriyorum, buna kısa bir giriş diyelim. Daha çok kriz üzerine durdum devamında yeni fırsatlar üzerine bir beyin jimlastiği yapacağım. İşletme derslerine çalışınca böyle yönetim süreçleri hakkında yazasım geliyor.&lt;br /&gt;&lt;br /&gt;Bir sonraki yazıda görüşmek dileğiyle... Öptüm :D&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/4680162149707281285-3384749633201696030?l=devador.blogspot.com&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Ceyhun Alyeşil</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://devador.blogspot.com/search/label/linux</uri>
+		</author>
+		<source>
+			<title type="html">Devador</title>
+			<link rel="self" href="http://devador.blogspot.com/feeds/posts/default/-/linux"/>
+			<id>tag:blogger.com,1999:blog-4680162149707281285</id>
+			<updated>2009-03-29T15:47:07+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">İkiyide devirdik….</title>
+		<link href="http://www.ozgurkuru.net/ozgur/2009/03/23/ikiyide-devirdik/"/>
+		<id>http://www.ozgurkuru.net/ozgur/?p=308</id>
+		<updated>2009-03-23T17:23:52+00:00</updated>
+		<content type="html">&lt;p&gt;Evet duyurduk, üniversiteleri topladık ve tam 21 kişi Pardus konuştuk&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Güzel bir katılım ve istek vardı. Pardus kullanan kullanmayan herkes bu alana destek olmak istediklerini fakat nasıl olacaklarını bilmediklerini vurguladı. Hiç kullanmayanlara kullanması için birer kurulum cd si verdik :)&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Neyse uzatmayacağım. Seval arkadaşım &lt;a href=&quot;http://sevalunver.blogspot.com/2009/03/2-ankara-pardus-kullanclar-bulusmas_22.html&quot; target=&quot;_blank&quot;&gt;blogunda&lt;/a&gt; uzun uzun belirtmiş zaten&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Gelen herkese teşekkür ediyorum.&lt;/p&gt;
+&lt;p&gt;Üçüncüsünde buluşmak üzere&amp;#8230;.&lt;/p&gt;</content>
+		<author>
+			<name>Özgür Kuru</name>
+			<uri>http://www.ozgurkuru.net/ozgur</uri>
+		</author>
+		<source>
+			<title type="html">Özgür Kuru » linuxgezegen</title>
+			<subtitle type="html">Balinaya kafa atan deli hamsi</subtitle>
+			<link rel="self" href="http://www.ozgurkuru.net/ozgur/category/linuxgezegen/feed/"/>
+			<id>http://www.ozgurkuru.net/ozgur/category/linuxgezegen/feed/</id>
+			<updated>2009-03-29T15:46:32+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Linus’tan Yeni Logo</title>
+		<link href="http://www.okanakyuz.com/?p=267"/>
+		<id>http://www.okanakyuz.com/?p=267</id>
+		<updated>2009-03-23T10:14:53+00:00</updated>
+		<content type="html">&lt;p&gt;Linuxun yazarı Linus yeni bir öneride bulunmuş. Efendim daha çıkmamış olan 2.6.29 sürümü için tazmanya şeytanını düşünelim ve onu koruyalım diyor. Birde şöyle bir logo öngörmüş.&lt;img class=&quot;aligncenter size-medium wp-image-268&quot; title=&quot;tuz&quot; src=&quot;http://www.okanakyuz.com/wp-content/uploads/2009/03/tuz-300x224.png&quot; alt=&quot;tuz-300x224 Linustan Yeni Logo&quot; width=&quot;300&quot; height=&quot;224&quot; /&gt;&lt;br /&gt;
+İyi bir tasarıma sahip ve tasarım harikası denemeyecek olsada bir tux. &lt;a href=&quot;http://torvalds-family.blogspot.com/2009/03/new-logo.html&quot; rel=&quot;nofollow&quot;&gt;Linus&amp;#8217;un bloğu &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tabi bu durum adamı sakalından eder &lt;img src=&quot;http://www.okanakyuz.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; title=&quot;Linustan Yeni Logo&quot; /&gt; &lt;a href=&quot;http://www.computerworld.com.au/article/274149/slideshow_linus_torvalds_shaves_bdale_garbee_beard?fp=4194304&amp;fpid=1&quot; rel=&quot;nofollow&quot; target=&quot;_self&quot;&gt;İşte adresi &lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>Okan Akyüz</name>
+			<uri>http://www.okanakyuz.com</uri>
+		</author>
+		<source>
+			<title type="html">Okan Akyüz » Gezegen</title>
+			<link rel="self" href="http://www.okanakyuz.com/?feed=rss2&amp;cat=17"/>
+			<id>http://www.okanakyuz.com/?feed=rss2&amp;cat=17</id>
+			<updated>2009-03-29T15:47:10+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Alan Adı Yönetimi ODTÜ’den Alındı.</title>
+		<link href="http://kivi.com.tr/blog/2009/03/22/alanadi-yonetimi-odtuden-alindi/"/>
+		<id>http://kivi.com.tr/blog/2009/03/22/alanadi-yonetimi-odtuden-alindi/</id>
+		<updated>2009-03-22T16:10:25+00:00</updated>
+		<content type="html">&lt;p&gt;Birkaç yerde gördüm aslında haberi ama &lt;a href=&quot;http://www.cumhuriyet.com.tr/?im=yhs&amp;hn=45220&quot;&gt;burayı&lt;/a&gt; link olarak vereyim.&lt;/p&gt;
+&lt;p&gt;Sonunda sanırım dünyanın en rezil alan adı yönetim sistem ve politikalarından birine sahip olmaktan duyduğumuz utanç azalacak herhalde.&lt;/p&gt;
+&lt;p&gt;Şu anda olandan daha kötüsünün yapılabileceğini sanmıyorum, yine de belli olmaz tabii.&lt;/p&gt;</content>
+		<author>
+			<name>Murat Koç</name>
+			<uri>http://kivi.com.tr/blog</uri>
+		</author>
+		<source>
+			<title type="html">Koçhane Kayıtları</title>
+			<link rel="self" href="http://kivi.com.tr/blog/?feed=rss2"/>
+			<id>http://kivi.com.tr/blog/?feed=rss2</id>
+			<updated>2009-03-29T15:47:04+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Django sunucusunda statik dosyalar ve Dojo</title>
+		<link href="http://armuting.blogspot.com/2009/03/django-sunucusunda-statik-dosyalar-ve.html"/>
+		<id>tag:blogger.com,1999:blog-6806075996663386433.post-6279411133351793386</id>
+		<updated>2009-03-21T15:23:26+00:00</updated>
+		<content type="html">&lt;div align=&quot;justify&quot;&gt;&lt;br /&gt;&lt;a href=&quot;http://static.uxebu.com/img/dojango_logo.jpg&quot;&gt;&lt;img src=&quot;http://static.uxebu.com/img/dojango_logo.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Biliyorsunuz django'nun &quot;manage.py runserver&quot; komutuyla çalıştırdığımız basit bir Http sunucusu var, bu sunucu ile test ettiğim küçük uygulamama bir CSS dosyası yüklemek istedim. Css dosyasını proje dizinine kaydettim her zamanki gibi yüklenmesini bekledim;&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;&amp;lt; style type=&quot;text/css&quot;&amp;gt;&lt;br /&gt;@import &quot;style.css&quot;;&lt;br /&gt;&amp;lt;/style&amp;gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Ancak django sunucusunun root dizini projenin olduğu dizin değilmiş. Yani Css icin HTTP 400 kodu aldım :) Bu CSS'yi ancak şöyle yükleyebildim;&lt;br /&gt;&lt;br /&gt;Önce projenin settings.py dosyasına şunu ekledim;&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;STATIC_DOC_ROOT = '/home/user/django/projectname'&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Sonra urls.py dosyasını açıp settings'i import edip, sunucudan /root adında sanal bir dizini servis etmesini ve bunu STATIC_DOC_ROOT değişkenindeki adrese bağlamasını istedim.&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;from django.conf import settings&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;urlpatterns = patterns('',&lt;br /&gt;(r'^root/(?P.*)$', 'django.views.static.serve',&lt;br /&gt; {'document_root': settings.STATIC_DOC_ROOT}),&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Sonra da css dosyasını @import &quot;/root/style.css&quot; ile yükleyebildim.&lt;br /&gt;&lt;br /&gt;Aslında derdim Css dosyası değil &lt;a href=&quot;http://www.dojotoolkit.org/&quot;&gt;Dojo&lt;/a&gt; idi. Dojo javascript ile yazılmış bir Web araç takımı. Dojo'yu projenin dizinine açıp önce içindeki css temasına bir bakayım demiştim sadece. Css'yi yukarıdaki gibi halledince zaten Dojo'yu da aynı şekilde yükleyebildim.&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;&amp;lt;script type=&quot;text/javascript&quot;&lt;br /&gt;src=&quot;/root/js/dojo-release-1.2.3/dojo/dojo.js&quot;&lt;br /&gt; djConfig=&quot;parseOnLoad:true, isDebug:true&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Dojo AFL ve BSD lisansı ile geliştirilen hafif ve hızlı bir araç takımı, henüz tam olarak inceleyemedim ama sitesindeki &lt;a href=&quot;http://demos.dojotoolkit.org/demos/&quot;&gt;örneklere&lt;/a&gt; bakılırsa çok basit, şık ve kullanışlı görünüyor.&lt;br /&gt;&lt;br /&gt;Ancak günün sürprizi şu oldu; &quot;Nalet olsun içimdeki daldan dala atlayıp durma hevesine&quot; diye söylenip bunlar için gogıllama yaparken bir de karşıma &lt;a href=&quot;http://code.google.com/p/dojango/&quot;&gt;dojango&lt;/a&gt; diye bir şey çıkmasın mı! Allahım bu dünyanın çivisi çıkmış demek geldi içimden :)&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/6806075996663386433-6279411133351793386?l=armuting.blogspot.com&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Ali E. İMREK</name>
+			<email>alierkanimrek@gmail.com</email>
+			<uri>http://armuting.blogspot.com/search/label/lkd_gezegen</uri>
+		</author>
+		<source>
+			<title type="html">armut</title>
+			<subtitle type="html">Beşer, şaşar...</subtitle>
+			<link rel="self" href="http://armuting.blogspot.com/feeds/posts/default/-/lkd_gezegen"/>
+			<id>tag:blogger.com,1999:blog-6806075996663386433</id>
+			<updated>2009-03-29T15:47:50+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Javascript Testleri Ölçeklenemiyor - John Resig</title>
+		<link href="http://www.yalazi.org/index.php/archives/2009/03/21/javascript-testleri-olceklenemiyor-john-resig/"/>
+		<id>http://www.yalazi.org/?p=261</id>
+		<updated>2009-03-20T21:41:27+00:00</updated>
+		<content type="html">&lt;p&gt;Daha düm IE8 çıktı Web uygulamaları geliştirmek daha da zorlaştı demiştim. Bugün de Mozilla&amp;#8217;dan&lt;a title=&quot;John Resig&quot; href=&quot;http://ejohn.org&quot;&gt; John Resig&lt;/a&gt; (Jquery Geliştiricileri Takım Lideri) Javascript test etmenin ölçeklenememesi üzerine bir yazı yazmış. Ayrıca öneri olarak sunduğu &lt;a href=&quot;http://www.testswarm.com&quot;&gt;TestSwarm&lt;/a&gt;&amp;#8216;da dikkat edilesi bir proje..&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ejohn.org/blog/javascript-testing-does-not-scale/&quot;&gt;http://ejohn.org/blog/javascript-testing-does-not-scale/&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content>
+		<author>
+			<name>Onur Yalazı</name>
+			<uri>http://www.yalazi.org</uri>
+		</author>
+		<source>
+			<title type="html">www.yalazi.org</title>
+			<subtitle type="html">Yine bir gayrı ciddi internet günlüğü..</subtitle>
+			<link rel="self" href="http://www.yalazi.org/index.php/feed/"/>
+			<id>http://www.yalazi.org/index.php/feed/</id>
+			<updated>2009-03-29T15:47:52+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">2. Ankara Pardus Kullanıcıları Buluşması….</title>
+		<link href="http://www.ozgurkuru.net/ozgur/2009/03/20/2-ankara-pardus-kullanicilari-bulusmasi-2/"/>
+		<id>http://www.ozgurkuru.net/ozgur/?p=304</id>
+		<updated>2009-03-20T10:30:40+00:00</updated>
+		<content type="html">&lt;p&gt;Daha önce &lt;a href=&quot;http://www.ozgurkuru.net/ozgur/2009/03/10/2-ankara-pardus-kullanicilari-bulusmasi/&quot; target=&quot;_blank&quot;&gt;duyurmuş&lt;/a&gt; olduğumuz buluşmamıza sadece iki gün kaldı. İkinci kez yapacağımız buluşmamızda üzerinde duracağımız konuları daha önce &lt;a href=&quot;http://www.ozgurkuru.net/ozgur/2009/03/12/2-ankara-pardus-kullanicilari-bulusmasi-gundemi/&quot; target=&quot;_blank&quot;&gt;paylaşmıştım&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Buluşmamıza herkesi bekliyoruz&amp;#8230;..&lt;/p&gt;
+&lt;p&gt;Buluşma yeri ve kayıt için &lt;a href=&quot;http://www.ozgurkuru.net/formlar/toplanti/&quot; target=&quot;_blank&quot;&gt;http://www.ozgurkuru.net/formlar/toplanti/&lt;/a&gt; adresini kullanabilirsiniz&amp;#8230;&lt;/p&gt;</content>
+		<author>
+			<name>Özgür Kuru</name>
+			<uri>http://www.ozgurkuru.net/ozgur</uri>
+		</author>
+		<source>
+			<title type="html">Özgür Kuru » linuxgezegen</title>
+			<subtitle type="html">Balinaya kafa atan deli hamsi</subtitle>
+			<link rel="self" href="http://www.ozgurkuru.net/ozgur/category/linuxgezegen/feed/"/>
+			<id>http://www.ozgurkuru.net/ozgur/category/linuxgezegen/feed/</id>
+			<updated>2009-03-29T15:46:32+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Airplot !</title>
+		<link href="http://blog.ratonred.com/2009/03/airplot/"/>
+		<id>http://blog.ratonred.com/?p=344</id>
+		<updated>2009-03-20T06:39:51+00:00</updated>
+		<content type="html">&lt;p&gt;Biraz önce &lt;a target=&quot;_blank&quot; href=&quot;http://blogs.portakalteknoloji.com/bora/blog/&quot;&gt;Bora&lt;/a&gt;&amp;#8216;nın yeni keşfettiği &lt;a target=&quot;_blank&quot; href=&quot;http://blogs.portakalteknoloji.com/bora/blog/2009/03/20/248/&quot;&gt;blogları&lt;/a&gt; gezerken rastladım, direkt kopyalıyorum &lt;a target=&quot;_blank&quot; href=&quot;http://www.durucancelasun.info/blog/&quot;&gt;kendisinden&lt;/a&gt;;&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;“Airplot!”u duydunuz mu? Sanırım duymadınız. “Airplot!” bir &lt;a target=&quot;_blank&quot; href=&quot;http://www.durucancelasun.info/blog/www.greenpeace.org.tr&quot; target=&quot;_blank&quot;&gt;Greenpeace&lt;/a&gt; eylemi. Kısaca anlatayım; İngiliz hükümeti Londra’daki Heatrow havaalanına yeni bir pist yapmak istiyor ve Greenpeace bununla mücadele ediyor. Neden mi?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pistin yapılması için bir kasabanın yıkılması gerekiyor. Bu yaklaşık &lt;strong&gt;700 kişinin&lt;/strong&gt; evlerinden ve işlerinden olması demek.&lt;/li&gt;
+&lt;li&gt;3. pistin inşası ile Heatrow, &lt;strong&gt;İngiltere’nin küresel ısınmaya en çok katkıda bulunan varlığı&lt;/strong&gt; haline geliyor.&lt;/li&gt;
+&lt;li&gt;Bu pistin çevresinde yer alan &lt;strong&gt;114 okul&lt;/strong&gt; inip kalkan uçaklar nedeniyle işlevselliğini yitirecek ve verimsizleşecek.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;wp-caption alignleft&quot;&gt;&lt;img title=&quot;Airplot!&quot; src=&quot;http://www.greenpeace.org.uk/files/images/climate/heathrow/airplot/banners/airplot300.gif&quot; alt=&quot;Airplot!&quot; width=&quot;300&quot; height=&quot;250&quot; /&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p class=&quot;wp-caption-text&quot;&gt;Airplot!&lt;/p&gt;
+
+&lt;p&gt;Peki Greenpeace ne yaptı? 3. pisti çevreleyecek arazinin tam ortasında bir arsa satın aldı! Evet yanlış duymadınız, arazinin ortasında bir arsası var Greenpeace’in! İşin hukuksal boyutu burada devreye giriyor.  Yasal olarak tapunun üzerinde 4 gerçek veya tüzel kişinin adı yazabiliyor. Bunlar Emma Thompson, komedyen Alistair McGowan, İngiliz parlamenter adayı Zac Goldsmith ve Greenpeace UK. Bunlar dışında bir de &lt;strong&gt;“beneficiary owners”&lt;/strong&gt; diye birşey var ki biz(ler) de orada devreye giriyoruz. Bir arsanın sınırsız sayıda “hak sahibi” sahibi olabiliyor yasal olarak!&lt;/p&gt;
+&lt;p&gt;Peki hükümet bu “sorunu” nasıl çözmeyi düşünüyor? İstimlak ederek. Şanslıyız ki bu iş göründüğünden çok daha zor olacak onlar için zira bir arsanın “kamu yararına” istimlak edilebilmesi için tüm hak sahiplerine &lt;em&gt;&lt;strong&gt;bizzat&lt;/strong&gt;&lt;/em&gt; ulaşılması ve yazılı izinlerinin alınması gerekiyor. Yani siz Türkiye’den biri olarak hak sahibi olursanız oraya pist yapmak için sizin de yazılı izniniz gerekecek!&lt;/p&gt;
+&lt;p&gt;Bu durum pist inşaatının en az yıllarca ertelenmesi ve hatta iptalinin gündeme gelmesi demek!&lt;/p&gt;
+&lt;p&gt;Pek siz ne yapabilirsiniz? &lt;strong&gt;Greenpeace’in arsası üzerinde hak sahibi olabilirsiniz!&lt;/strong&gt; Bunu nasıl yapacaksınız peki? Sadece &lt;a target=&quot;_blank&quot; href=&quot;http://www.greenpeace.org.uk/climate/airplot&quot; target=&quot;_blank&quot;&gt;şu adresteki&lt;/a&gt; formu dolduracaksınız ve arsanın bir parçası sizin olacak!&lt;/p&gt;
+&lt;p&gt;Ben de arsa üzerindeki hak sahiplerinden biriyim artık :)&lt;/p&gt;</content>
+		<author>
+			<name>Gökmen Göksel</name>
+			<uri>http://blog.ratonred.com</uri>
+		</author>
+		<source>
+			<title type="html">rat on red » gezegen.linux</title>
+			<subtitle type="html">Gökmen GÖKSEL's blog.</subtitle>
+			<link rel="self" href="http://blog.ratonred.com/tag/gezegen-linux/feed/"/>
+			<id>http://blog.ratonred.com/tag/gezegen-linux/feed/</id>
+			<updated>2009-03-29T15:46:40+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Bilimsel Şüphecilik ve İlahiyat</title>
+		<link href="http://www.yalazi.org/index.php/archives/2009/03/20/bilimsel-suphecilik-ve-ilahiyat/"/>
+		<id>http://www.yalazi.org/?p=258</id>
+		<updated>2009-03-20T00:52:29+00:00</updated>
+		<content type="html">&lt;p&gt;Şimdi televizyonda banttan yayında &lt;strong&gt; Siyaset Meydanı - Din-Bilim ve Darwin&lt;/strong&gt; tartışması sürüyor.&lt;/p&gt;
+&lt;p&gt;Şu ana kadar ki öğrenim yaşamımda ve düşün yapımda bilimin temelinde &lt;em&gt;&lt;strong&gt;&amp;#8220;şüphe&amp;#8221;&lt;/strong&gt;&lt;/em&gt; yattığını öğrenip, bildim. Bü yüzden &lt;strong&gt;&amp;#8220;İlahiyat Bilimi&amp;#8221;&lt;/strong&gt; olarak değerlendirilen &lt;em&gt;disiplini&lt;/em&gt; &lt;strong&gt;bilim&lt;/strong&gt; olarak değerlendiremiyorum. Bir kitabı alıp, tarihini inceleyip, içerisinde bahsedilen insanların sosyal yaşamlarını inceleyip,  içinde yazanları &amp;#8220;&lt;strong&gt;şüphe etmeden&lt;/strong&gt;&amp;#8221; kabul eden bir anlayışa nasıl bilim denebilir? Veya &amp;#8220;burada yazan doğrudur, ne kadar çalışırsanız çalışın, içinde yazanları doğrulayacaksınız&amp;#8221; anlayışını içeren bir bilim kabul edilebilir mi?&lt;/p&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content>
+		<author>
+			<name>Onur Yalazı</name>
+			<uri>http://www.yalazi.org</uri>
+		</author>
+		<source>
+			<title type="html">www.yalazi.org</title>
+			<subtitle type="html">Yine bir gayrı ciddi internet günlüğü..</subtitle>
+			<link rel="self" href="http://www.yalazi.org/index.php/feed/"/>
+			<id>http://www.yalazi.org/index.php/feed/</id>
+			<updated>2009-03-29T15:47:52+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">IE8′de çıktı peki ya şimdi?</title>
+		<link href="http://www.yalazi.org/index.php/archives/2009/03/20/ie8de-cikti-peki-ya-simdi/"/>
+		<id>http://www.yalazi.org/?p=255</id>
+		<updated>2009-03-19T23:35:03+00:00</updated>
+		<content type="html">&lt;p&gt;Bugün 20 Mayıs 2009 ve &lt;a href=&quot;http://www.microsoft.com&quot;&gt;Microsoft&lt;/a&gt; Uzun süredir üzerinde çalıştığı &lt;a title=&quot;MS IE8&quot; href=&quot;http://www.microsoft.com/windows/internet-explorer/default.aspx&quot;&gt;Internet Explorer 8.0&lt;/a&gt; tarayıcısınız duyurdu ve dağıtımına internet sitesi üzerinden başladı.&lt;/p&gt;
+&lt;p&gt;Siz de benim gibi internet uygulamaları geliştiriyor veya yönetiyorsanız bu habere biraz temkinli yaklaşıyor olabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Internet&amp;#8217;i platform olarak tercih etmemizin sebeplerini düşündüğümüzde, - günümüzün cıvır kelimelerinden birini kullanacağım kusuruma bakmayın -  Internet&amp;#8217;in bize sağladığı &lt;em&gt;&lt;strong&gt;&amp;#8220;Bulut (Cloud)&amp;#8221;&lt;/strong&gt;&lt;/em&gt; özellikleri sağlaması olduğunu rahatlıkla söyleyebiliriz; &amp;#8220;Daha fazla kullanıcıya, daha geniş bir coğrafyaya, ucuz ve hızlı bir biçimde ulaşmak.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Ancak burada ciddi bir problem ile karşı karşıya kalıyoruz. Ulaşabildiğimiz kitle çok geniş ve farklı farklı platformlar kullanıyorlar. Farklı &lt;strong&gt;işletim sistemleri&lt;/strong&gt;, farkı &lt;strong&gt;tarayıcılar&lt;/strong&gt;, farklı &lt;strong&gt;eklentiler&lt;/strong&gt;, farklı &lt;strong&gt;internet bağlantıları&lt;/strong&gt; hatta aynı yazılımların birçok &lt;strong&gt;farklı sürümü&lt;/strong&gt;. Ayrıca kullanıcılarımızın tercihlerine saygı duymak zorundayız ve kullanıcılarımız bazen zorunluluktan bazen keyiften aklı başında davranmıyorlar.&lt;/p&gt;
+&lt;p&gt;Bu kadar geniş bir kitleye ulaşabildiğimiz bu durumda bu kadar farklı platformu da tanımak, bilmek, test etmek durumunda kalıyoruz. Bu yüzden geliştirme süreçlerimizde çok ciddi bir mühendislik problemi ile karşı karşıya kalıyoruz.Kaynaklar her zaman kısıtlıdır bu yüzden kısıtlı kaynak ile en yüksek verimi elde etmek,  Kaynak - Verim eğrimizi herkesin (kullanıcılarımızın ve kendimizin) yararına olacak biçimde ayarlamak durumundayız. Kaynaklarımız genellikle sabit ya da kısıtlı olduğu için problemlerimizi azaltarak verimi artırma yoluna gideriz. Bu da hedeflerimizi kısıtlamaktan geçiyor.&lt;/p&gt;
+&lt;p&gt;Genel tercih olarak tercih edilen 4 (IE, Firefox, Opera, Safari) tarayıcı bu tarayıcıların genel olarak kullanılan 2 şer sürümü (IE 6/7 ve artık 8, Firefox 2,3, Opera 8/9/10, Safari 3.0/3.1) olduğunu düşünürsek ve gerektiğinde çalıştıkları işletim sistemlerinde de farklılıklar gösterdiklerini göz önünde bulundurulursak, kaynaklarımız genellikle her türlü platformu destekleyebilecek kadar çok değil. (Chrome ve Chromium&amp;#8217;u da unutmadım. onlarda listeye girmek üzere). Hatta bu platformların hepsini göz önünde bulundurmaya kalkarsak kaynaklarımızı exponentel biçimde arttırmamız gerektiğini rahatlıkla söyleyebiliriz.&lt;/p&gt;
+&lt;p&gt;Peki öyleyse ne yapmak zorundayız? Bu durumda tercih yapmak zorunda kalıyoruz. Geliştirme sürecinde hedeflediğimiz platformları seçiyoruz. Bunun için de internetteki çeşitli kaynaklarda bulunan tarayıcı ve işletim sistemleri istatistiklerini göz önünde bulunduruyoruz.&lt;/p&gt;
+&lt;p&gt;Bazı Tarayıcı İstatistikleri:&lt;/p&gt;
+&lt;p&gt;W3Schools: &lt;a title=&quot;W3Schools Tarayıcı istatistikleri&quot; href=&quot;http://www.w3schools.com/browsers/browsers_stats.asp&quot;&gt;http://www.w3schools.com/browsers/browsers_stats.asp&lt;br /&gt;
+&lt;/a&gt;Wikipedia (NetApplications Stats): &lt;a href=&quot;http://www.yalazi.org/index.php/feed/ onclick=&quot;&gt;http://en.wikipedia.org/wiki/Usage_share_of_web_browsers&lt;/a&gt;&lt;br /&gt;
+W3Counter: &lt;a title=&quot;W3Schools Tarayıcı istatistikleri&quot; href=&quot;http://www.w3schools.com/browsers/browsers_stats.asp&quot;&gt;http://www.w3counter.com/globalstats.php&lt;br /&gt;
+&lt;/a&gt;TheCounter: &lt;a href=&quot;http://www.yalazi.org/index.php/feed/ onclick=&quot;&gt;http://www.thecounter.com/stats/2009/February/browser.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;İstatistiklerin ortak olarak gösterdiği, ciddi bir biçimde pastanın yarısını veya biraz daha fazlasını Internet Explorer  6 - 7 kalanın yaklaşık yarısını veya biraz daha fazlasınız Firefox 2 - 3 ve pastanın geri kalanını paylaşan yaklaşık aynı oranlarda kullanılan çeşit çeşit tarayıcı oluyor. Bu bilgilere baktığımızda ya IE ve Firefox tarayıcılarını (hatta bazılarına göre boşverin Firefox&amp;#8217;u) destekleyerek çok ciddi bir hedef kitleye ulaşabiliyoruz. Genellikle de geriye kalan tarayıcıları göz ardı ederek kaynaklarımızı boşa harcamamaya çalışıyoruz.&lt;/p&gt;
+&lt;p&gt;İşte bu noktada, her duyurulan tarayıcı her duyurulan sürüm bu gördüğümüz denklemleri bozuyor. Bu yüzden IE8&amp;#8242;in duyurulmasına temkinli yaklaşıyorum. İstatistiklerin her oynayışı kaynaklarımızı kullanırken daha fazla düşünmemize neden oluyor. Dün bir geliştirme için 2 tarayıcıda test yapıyordum, bugün 3 tarayıcıda test yapmam gerekecek. Hatta yeni duyurulan bir tarayıcı için daha önce yaptığımız testleri tekrar etmem gerekiyor.&lt;/p&gt;
+&lt;p&gt;Peki sizi her duyurulan tarayıcıda ne düşünüyorsunuz?&lt;/p&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content>
+		<author>
+			<name>Onur Yalazı</name>
+			<uri>http://www.yalazi.org</uri>
+		</author>
+		<source>
+			<title type="html">www.yalazi.org</title>
+			<subtitle type="html">Yine bir gayrı ciddi internet günlüğü..</subtitle>
+			<link rel="self" href="http://www.yalazi.org/index.php/feed/"/>
+			<id>http://www.yalazi.org/index.php/feed/</id>
+			<updated>2009-03-29T15:47:52+00:00</updated>
+		</source>
+	</entry>
+
+</feed>

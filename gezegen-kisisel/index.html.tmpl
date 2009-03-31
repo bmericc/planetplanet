@@ -7,17 +7,79 @@
 		<link rel="stylesheet" href="layout.css" type="text/css" />
 		<link rel="stylesheet" href="planet.css" type="text/css" />
 		<link rel="stylesheet" href="bloggers.css" type="text/css" />
+		<link rel="stylesheet" href="nlayout.css" type="text/css" />
 		<link rel="icon" type="image/png" href="images/planet.png" />
 		<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name>" href="rss20.xml" />
+
+                <script type="text/javascript" src="jquery.min.js"></script>
+                <script type="text/javascript" src="jquery.cookie.min.js"></script>
+
+                <script type="text/javascript">
+        function toggleFeeds() {
+                $("#feedlist").slideToggle(function() {
+                        $("#feeds h3").toggleClass("open");
+                });
+        }
+        $(document).ready(function() {
+                //$.cookie("hidden", null, {expires: -1});
+                var hidden = $.cookie("hidden") ? $.cookie("hidden").split(",") : new Array();
+                // hide posts by disabled folks
+                if (hidden.length > 0) for (i in hidden) {
+                        $("div." + hidden[i]).hide();
+                }
+                $("#feeds h3 a").click(function(e) {
+                        e.preventDefault();
+                        if ($("#feedlist ul").length == 0) {
+                                $("#feedlist").load('feeds.html', '', function(r,t,x) {
+                                        $('<input type="checkbox" checked>')
+                                                .change(function() {
+                                                        var nick = $(this).parent().attr("class");
+                                                        var i = $.inArray(nick, hidden);
+                                                        if ($(this).attr("checked")) {
+                                                                if (hidden[i]) hidden.splice(i, 1);
+                                                                $("div." + nick).show();
+                                                        } else {
+                                                                if (!hidden[i]) hidden[hidden.length] = nick;
+                                                                $("div." + nick).hide();
+                                                        }
+                                                        $.cookie("hidden", hidden.join(","),
+                                                                {expires: 365});
+                                                })
+                                                .prependTo("#feedlist ul li");
+                                        // remove checks from disabled folks
+                                        for (i in hidden) {
+                                                $("#feedlist ul li." + hidden[i] + " input")
+                                                        .removeAttr("checked");
+                                        }
+                                        toggleFeeds();
+                                });
+                        } else {
+                                toggleFeeds();
+                        }
+                });
+        });
+        </script>
+
+
 	</head>
 	<body>
+
+		<div id="gezegen-sites">
+		<ul>
+        		<li class="home"><a href="http://gezegen.linux.org.tr/" title="Gezegen">Gezegen</a></li>
+        		<li><a href="http://gezegen.linux.org.tr/kisisel/" title="Kişisel Günlükler">Kişisel Günlükler</a></li>
+        		<li><a href="http://gezegen.linux.org.tr/lkd/" title="LKD Günlükleri">LKD Günlükleri</a></li>
+        		<li><a href="http://gezegen.linux.org.tr/topluluk/" title="Topluluk Günlükleri">Topluluk Günlükleri</a></li>
+        		<li><a href="http://planet.linux.org.tr/" title="İngilizce Günlükler">İngilizce Günlükler</a></li>
+		</div> <!-- /gezegen-sites -->
+		
 		<div id="hdr">
 			<div id="banner">
-				<img src="<TMPL_VAR link>/images/spacer.png" alt="spacer" />
+				<img src="<TMPL_VAR link>/images/spacer.png" />
 			</div>
 			<div id="logo">
 				<a href="<TMPL_VAR link>/">
-					<img src="<TMPL_VAR link>/images/spacer.png" alt="Anasayfa" />
+					<img src="<TMPL_VAR link>/images/spacer.png" />
 				</a>
 			</div>
 		</div>
@@ -41,7 +103,7 @@
 							<TMPL_VAR channel_name>
 							<TMPL_IF channel_nick>
 								<br />
-								(<TMPL_VAR channel_nick>)
+								<!-- (<TMPL_VAR channel_nick>) -->
 							</TMPL_IF>
 						</a>
 					</div>
@@ -151,7 +213,6 @@ target='_blank'><img
 src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a26e76e1' 
 border='0' alt='' /></a></noscript>
 
-
 			</div>
 
 			<div class="section">
@@ -201,38 +262,19 @@ target='_blank'><img
 src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=6&cb=INSERT_RANDOM_NUMBER_HERE&n=ae096af2' 
 border='0' alt='' /></a></noscript>
 
-
 			</div>
 			
-			<div class="bloggers section" id="bloggers">
-				<h3>Üyeler</h3>
-				<ul>
-					<TMPL_LOOP Channels>
-						<li>
-							<div>
-								<TMPL_IF face>
-									<img class="head" src="images/heads/<TMPL_VAR face ESCAPE="HTML">" title="<TMPL_VAR face>" />
-								<TMPL_ELSE>
-									<img class="head" src="images/heads/nobody.png" title="<TMPL_VAR channel_name>" />
-								</TMPL_IF>
-								<div class="ircnick">&nbsp;</div>
-							</div>
-							<a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe">
-								<img src="images/feed-icon-10x10.png" alt="(feed)">
-							</a>
-			                <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>>
-								<TMPL_VAR name>
-							</a>
-						</li>
-					</TMPL_LOOP>
-				</ul>
-			</div>
+                        <div id="feeds">
+                                <h3><a href="feeds.html">Gezegen Sakinleri</a></h3>
+                                <div id="feedlist"></div>
+                        </div>
 
 			<div class="section">
 				<h3>Takip edin</h3>
 				<ul>
 					<li><a href="rss20.xml">RSS 2.0</a></li>
 					<li><a href="rss10.xml">RSS 1.0</a></li>
+					 <li><a href="atom.xml">ATOM</a></li>
 					<li><a href="foafroll.xml">FOAF</a></li>
 					<li><a href="opml.xml">OPML</a></li>
 				</ul>
@@ -248,13 +290,20 @@ border='0' alt='' /></a></noscript>
 				</p>
 			</div>
 
-			<div class="section">
-				<h3>İletişim</h3>
-				<p>
-					Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı e-posta ile iletebilirsiniz.
-				</p>
-			</div>
+                        <div class="section">
+                                <h3>İletişim</h3>
+                                <p>
+                                        Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı ve Gezegen'e iniş başvurularınızı e-posta ile iletebilirsiniz.
+                                </p>
+                                <p>
+                                        Gezegene iniş başvurularınızda <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">Gezegen Kuralları</a>'na uyan RSS/Atom beslemenizi ve gezegen içerisinde kullanmak istediğiniz (en fazla 80x80 çözünürlüklü) resminizi (bir başka deyişle hackergotchi); varsa jabber adresinizle birlikte e-posta yoluyla göndermenizi rica ediyoruz.
+                                </p>
+                        </div>
+
+
 		</div>
+		
+		<div id="footer">	
 
 		<div id="copyright">
 			Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz.
@@ -263,18 +312,33 @@ border='0' alt='' /></a></noscript>
 			<br />
 			Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.
 			<br />
-			<!-- Start of StatCounter Code -->
-			<script type="text/javascript">
-				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-			<script type="text/javascript">
-				try {
-					var pageTracker = _gat._getTracker("UA-7686552-2");
-					pageTracker._trackPageview();
-			} catch(err) {}
-			</script>
-			<!-- End of StatCounter Code -->
 		</div>
+		</div>
+
+		<!-- Start of StatCounter Code -->
+
+                        <script type="text/javascript">
+                        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                        </script>
+                        <script type="text/javascript">
+                        try {
+                                var pageTracker = _gat._getTracker("UA-7686552-2");
+                                pageTracker._trackPageview();
+                        } catch(err) {}</script>
+
+                        <script type="text/javascript">
+                                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                        </script>
+                        <script type="text/javascript">
+                                try {
+                                        var pageTracker = _gat._getTracker("UA-7686552-2");
+                                        pageTracker._trackPageview();
+                        } catch(err) {}
+                        </script>
+
+                <!-- End of StatCounter Code -->
+	
 	</body>
 </html>

@@ -1,0 +1,22 @@
+<div class="bloggers section" id="bloggers">
+				<ul>
+					<TMPL_LOOP Channels>
+						<li<TMPL_IF nick> class="<TMPL_VAR nick>"</TMPL_IF>>
+							<div>
+								<TMPL_IF face>
+									<img class="head" src="images/heads/<TMPL_VAR face ESCAPE="HTML">" title="<TMPL_VAR face>" />
+								<TMPL_ELSE>
+									<img class="head" src="images/heads/nobody.png" title="<TMPL_VAR channel_name>" />
+								</TMPL_IF>
+								<div class="ircnick">&nbsp;</div>
+							</div>
+							<a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe">
+								<img src="images/feed-icon-10x10.png" alt="(feed)">
+							</a>
+
+							<TMPL_IF link><a href="<TMPL_VAR link ESCAPE="HTML">" <TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a><TMPL_ELSE><span <TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></span></TMPL_IF>
+
+						</li>
+					</TMPL_LOOP>
+				</ul>
+</div>

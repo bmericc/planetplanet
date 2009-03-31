@@ -7,30 +7,418 @@
 		<link rel="stylesheet" href="layout.css" type="text/css" />
 		<link rel="stylesheet" href="planet.css" type="text/css" />
 		<link rel="stylesheet" href="bloggers.css" type="text/css" />
+		<link rel="stylesheet" href="nlayout.css" type="text/css" />
 		<link rel="icon" type="image/png" href="images/planet.png" />
 		<link rel="alternate" type="application/rss+xml" title="Topluluklar Gezegeni" href="rss20.xml" />
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+                <script type="text/javascript" src="jquery.cookie.min.js"></script>
+
+                <script type="text/javascript">
+        function toggleFeeds() {
+                $("#feedlist").slideToggle(function() {
+                        $("#feeds h3").toggleClass("open");
+                });
+        }
+        $(document).ready(function() {
+                // $.cookie("hidden", null, {expires: -1});
+                var hidden = $.cookie("hidden") ? $.cookie("hidden").split(",") : new Array();
+                // hide posts by disabled folks
+                if (hidden.length > 0) for (i in hidden) {
+                        $("div." + hidden[i]).hide();
+                }
+                $("#feeds h3 a").click(function(e) {
+                        e.preventDefault();
+                        if ($("#feedlist ul").length == 0) {
+                                $("#feedlist").load('feeds.html', '', function(r,t,x) {
+                                        $('<input type="checkbox" checked>')
+                                                .change(function() {
+                                                        var nick = $(this).parent().attr("class");
+                                                        var i = $.inArray(nick, hidden);
+                                                        if ($(this).attr("checked")) {
+                                                                if (hidden[i]) hidden.splice(i, 1);
+                                                                $("div." + nick).show();
+                                                        } else {
+                                                                if (!hidden[i]) hidden[hidden.length] = nick;
+                                                                $("div." + nick).hide();
+                                                        }
+                                                        $.cookie("hidden", hidden.join(","),
+                                                                {expires: 365});
+                                                })
+                                                .prependTo("#feedlist ul li");
+                                        // remove checks from disabled folks
+                                        for (i in hidden) {
+                                                $("#feedlist ul li." + hidden[i] + " input")
+                                                        .removeAttr("checked");
+                                        }
+                                        toggleFeeds();
+                                });
+                        } else {
+                                toggleFeeds();
+                        }
+                });
+        });
+        </script>
+
+
 	</head>
 	<body>
+
+	<div id="gezegen-sites">
+	<ul>
+        	<li class="home"><a href="http://gezegen.linux.org.tr/" title="Gezegen">Gezegen</a></li>
+        	<li><a href="http://gezegen.linux.org.tr/kisisel/" title="Kişisel Günlükler">Kişisel Günlükler</a></li>
+        	<li><a href="http://gezegen.linux.org.tr/lkd/" title="LKD Günlükleri">LKD Günlükleri</a></li>
+        	<li><a href="http://gezegen.linux.org.tr/topluluk/" title="Topluluk Günlükleri">Topluluk Günlükleri</a></li>
+        	<li><a href="http://planet.linux.org.tr/" title="İngilizce Günlükler">İngilizce Günlükler</a></li>
+	</div> <!-- /gezegen-sites -->
+
+
 		<div id="hdr">
 			<div id="banner">
-				<img src="http://gezegen.linux.org.tr/lkd//images/spacer.png" alt="spacer" />
+				<img src="http://gezegen.linux.org.tr/topluluk//images/spacer.png" />
 			</div>
 			<div id="logo">
-				<a href="http://gezegen.linux.org.tr/lkd//">
-					<img src="http://gezegen.linux.org.tr/lkd//images/spacer.png" alt="Anasayfa" />
+				<a href="http://gezegen.linux.org.tr/topluluk//">
+					<img src="http://gezegen.linux.org.tr/topluluk//images/spacer.png" />
 				</a>
 			</div>
 		</div>
 
 		<div id="body">
-					<h2 class="date">21 January 2009</h2>
+					<h2 class="date">28 March 2009</h2>
 
-				<div class="entry ">
+				<div class="entry ozgurlukicin">
+					<div class="person-info">
+						<a href="http://www.ozgurlukicin.com" title="Özgürlük için... - Haberler">
+								<img class="face" src="images/heads/nobody.png" title="Özgürlükiçin.com" />
+								<br />
+Özgürlükiçin.com								<br />
+								<!-- (ozgurlukicin) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/">
+Birleşik Krallık ODF'den Yana										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p><img src="http://www.ozgurlukicin.com/media/upload/image/odf-toplulugu.png" border="0" alt="ODF zaferini ilan etti." title="ODF zaferini ilan etti." align="left" />Kamusal belge ve hizmetlerde özgür standartların kullanımını tercih eden ülkelerin sayısı her geçen gün artıyor. Geçtiğimiz günlerde yayınladığımız ODF'yi kullanan <a href="http://www.ozgurlukicin.com/haber/odf-16-ulkede-kullaniliyor/">ülkeler listesine</a> Birleşik Krallık’ın da (İngiltere, İskoçya, Galler ve Kuzey İrlanda'dan oluşan yapı) katılımıyla, <a href="http://tr.pardus-wiki.org/OpenDocument">Açık Belge Biçimi</a> (Open Document Format-ODF), çok önemli bir mevzi daha kazandı.</p>
+<p><a href="http://www.odfalliance.org/">ODF Alliance</a> Başkanı <strong>Marino MARCICH</strong>, "Britanya Hükümeti tarafından yapılan açıklama, ODF'ye duyulan ve büyümekte olan talebin göstergesi" şeklinde konuşuyor ve ekliyor: "ODF aracılığıyla sağlanan birlikte çalışabilirlik esasları üzerine kurulan açık standartlar, hükümetlere kazanç ve veriye uzun vadeli erişim seçenekleri açısından büyük kazanımlar sağlıyor."</p>
+<p>Britanya Hükümeti, bir süre önce <a href="http://www.ozgurlukicin.com/haber/hukumetten-acik-kaynaga-10-adim/">haberini</a> de yaptığımız üzere, "<strong>Açık Kaynak, Açık Standartlar ve Tekrar-Kullanım: Hükümet Eylem Planı</strong>" altında, bundan sonraki tüm IT projelerinde açık standartlara ilişkin gereksinimleri belirterek, açık standartlara uygunluk talep edeceğini duyurmuştu. Hükümet bu plan çerçevesinde, ODF’nin kullanımını destekleyeceğini belirtti. Buna ek olarak, hükümet, bilgilerin açık standartlarda bulunabilirliğini güvence altına almak için çalışacak ve bu kamusal web sayfaları için bir standart haline gelecek.</p>
+<p>Hem özel hem de açık kaynaklı ODF destekli yazılımların kolay bulunabilirliğine dikkat çeken <a href="http://www.openforumeurope.org/">OpenForum Avrupa</a> başkanı <strong>Graham TAYLOR,</strong> "Britanya Hükümeti'nin tedarik yönetmeliklerinde açık standartlara işaret etmesi ve açık standartlar ile uyumluluk halindeki çözümleri tercih edecek olması, farklı platformlardaki çoklu rekabet ürünleri arasındaki yarışı güvence altına alacak önemli bir gelişme şeklinde konuştu.</p>
+<p>Birleşik Krallık ile birlikte, şu an için, 17 devlet ve sekiz özerk hükümet, belge alışverişi için resmi olarak ODF’yi kabul etmiş durumda. Tercihini ODF'den yana kullanan hükumet politikası girişimlerine dair açıklama ve daha kapsamlı bir liste için <a href="http://www.odfalliance.org/resources/Adoptions-ODF-Dec2008.pdf">buraya</a> bakabilirsiniz.</p>
+<p> </p>
+<p><strong>Kaynak</strong>: <a href="http://www.odfalliance.org/press/Release20090225-ukgovOSS.pdf">ODF Alliance</a></p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/&title=Birleşik Krallık ODF'den Yana" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/">
+28 Mar 2009 @ 08:18 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">23 March 2009</h2>
+
+				<div class="entry gnometr">
+					<div class="person-info">
+						<a href="http://www.gnome.org.tr" title="GNOME Türkiye">
+								<img class="face" src="images/heads/nobody.png" title="GNOME Türkiye" />
+								<br />
+GNOME Türkiye								<br />
+								<!-- (gnometr) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2">
+GNOME 2.26 Yayınlandı										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+GNOME Masa&uuml;st&uuml; ortamının en son s&uuml;r&uuml;m&uuml; olan GNOME 2.26 s&uuml;r&uuml;m&uuml; yayınlandı. Bu s&uuml;r&uuml;mde GNOME Masa&uuml;st&uuml; ortamı bir &ccedil;ok hata d&uuml;zeltmesi, performans artışının yanı sıra gelişmiş bir CD/DVD yazma programı olan Brasero (http://projects.gnome.org/brasero/)'yu da platforma katmış oldu. Yeni GNOME s&uuml;r&uuml;m&uuml;ndeki yenilikleri &ouml;ğrenmek ve daha fazla bilgi edinmek i&ccedil;in T&uuml;rk&ccedil;e S&uuml;r&uuml;m Notları (http://library.gnome.org/misc/release-notes/2.26/index.html.tr) sayfasına bakabilirsiniz.								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2&title=GNOME 2.26 Yayınlandı" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2">
+23 Mar 2009 @ 06:50 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">15 March 2009</h2>
+
+				<div class="entry ubuntutr">
+					<div class="person-info">
+						<a href="http://www.ubuntu-tr.org/aggregator" title="Ubuntu Türkiye toplayıcı">
+								<img class="face" src="images/heads/nobody.png" title="Ubuntu Türkiye" />
+								<br />
+Ubuntu Türkiye								<br />
+								<!-- (ubuntutr) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html">
+Mustafa ALKAN: SUDO'nun 5. sayısı yayında!										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<a href="http://www.ubuntu-tr.org/sudo/resim/sudo5.jpg"><img src="http://www.ubuntu-tr.org/sudo/resim/sudo5.jpg" border="0" alt="" /></a><br /><br /><br /><p><a href="http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html">devamını oku</a></p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html&title=Mustafa ALKAN: SUDO'nun 5. sayısı yayında!" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html">
+15 Mar 2009 @ 05:13 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">28 January 2009</h2>
+
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis">
+Ben Kimim? Başka Kim Var? En Son Ne Yapmış?										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Bu konuya başka nasıl bir başlık verilebilirdi bilemiyorum ama bence hem konuyu anlatması açısından hem de ilgi çekmesi açısından değişik  bir başlık oldu.</p>
+<p>Tabi konumuz linux ama olaya felsefi açıdan değil de teknik açıdan açıklık getireceğiz. Ama aynı başlık ile birde olayın felsefi yanına dokunup Türkiye&#8217;de Linux konusunda, ben dahil kimler var ve en son ne yapmışlar bir ara bakmak lazım :)</p>
+<p>Önünüzde açık bir linux konsolu var ve bir işlem yapmanız lazım.</p>
+<p>İlk bilmeniz gereken, sisteme o an kim olarak bağlı olduğunuzdur.</p>
+<p>Öğrenmenin yolu sormaktır. Linux&#8217;te bunu sormanın yolu da <strong>whoami</strong> komutudur.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">~$ <span>whoami</span>
+&nbsp;
+murat</pre></div></div>
+
+<p>Peki şu an sistemde bizden başka kimler var? Hemen soralım yine bu seferki komut <strong>who</strong></p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">~$ <span>who</span>
+&nbsp;
+murat    pts<span>/</span>0        <span>2009</span>-01-<span>27</span> <span>20</span>:<span>18</span> <span>&#40;</span>84.145.113.121<span>&#41;</span>
+ali      pts<span>/</span><span>1</span>        <span>2009</span>-01-<span>27</span> <span>21</span>:<span>32</span> <span>&#40;</span>84.168.127.32<span>&#41;</span></pre></div></div>
+
+<p>Bu komut sayesinde sisteme kim bağlanmış, ne zaman bağlanmış, hangi ip den bağlanmış görebiliyorsunuz.</p>
+<p>Peki bu bağlı olan kişi ne yapıyor, yada birşey yapıyor mu? Bunu öğrenmek için de <strong>w</strong> komutunu kullanıyoruz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">~$ <span>w</span>
+ <span>22</span>:00:<span>53</span> up <span>92</span> days, <span>12</span>:<span>45</span>,  <span>2</span> user,  load average: <span>0.00</span>, <span>0.07</span>, <span>0.07</span>
+USER     TTY      FROM             LOGIN<span>@</span>   IDLE     JCPU   PCPU WHAT
+murat    pts<span>/</span>0    84.145.113.121   <span>20</span>:<span>18</span>    0.00s    0.19s  0.02s <span>w</span>
+ali      pts<span>/</span><span>1</span>    84.168.127.32    <span>21</span>:<span>32</span>    118.34s  21.18s 0,03s <span>ls</span> <span>-l</span></pre></div></div>
+
+<p>Bu sonucu inceleyecek olursak.</p>
+<p>Birinci satırdaki bilgiler bağlı olduğumuz sistemin kaç gündür çalıştığını, Sisteme kaç kişinin bağlı olduğunu ve o anki yükünü gösteriyor.</p>
+<p>Daha sonra yeralan bilgiler ise sisteme o an bağlı olan kişinin;</p>
+<p><strong>USER</strong> Hangi kullanıcı adı ile bağlı olduğunu,<br />
+<strong>TTY</strong> Hangi terminal numarası ile bağlı olduğunu,<br />
+<strong>FROM</strong> Hangi ipden bağlandığını<br />
+<strong>LOGIN@</strong> Ne zaman bağlandığını<br />
+<strong>IDLE</strong> Şu an bir işlem yapıp yapmadığını. (İşlem yapıyorsa bu süre 0.00s olarak gözükür. İşlem yapmıyorsa sizin komutu çalıştırdığınız süre ile o kişinin en son komutu çalıştırdığı zaman arasındaki fark saniye olarak görüntülenir)<br />
+<strong>JCPU</strong> Bağlı olduğu süre içinde çalıştırdığı komutların harcadığı CPU zamanını<br />
+<strong>PCPU</strong> En son çalıştırdığı komutun harcadığı CPU zamanını<br />
+<strong>WHAT</strong> En son çalıştırdığı komutu gösterir</p>
+<p>Bu konudan bahsedince bir komutu daha anlatmadan geçmek olmaz.</p>
+<p>Peki son zamanlarda, sisteme kimler bağlanmış ve ne kadar bağlı kalmış. Bunun için <strong>last</strong> komutunu kullanabiliriz.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">~$ <span>last</span>
+murat    pts<span>/</span>0        84.145.113.121   Tue Jan <span>27</span> <span>20</span>:<span>18</span>   still logged <span>in</span>
+murat    pts<span>/</span>0        84.145.113.121   Mon Jan <span>26</span> <span>15</span>:<span>39</span> - <span>17</span>:02  <span>&#40;</span>01:<span>22</span><span>&#41;</span>
+ali      pts<span>/</span>0        84.168.127.32    Fri Jan <span>23</span> <span>15</span>:<span>52</span> - <span>20</span>:<span>39</span>  <span>&#40;</span>04:<span>46</span><span>&#41;</span>
+murat    pts<span>/</span>0        84.145.113.121   Fri Jan <span>23</span> 08:<span>28</span> - <span>19</span>:<span>58</span>  <span>&#40;</span><span>11</span>:<span>30</span><span>&#41;</span>
+ali      pts<span>/</span>0        84.168.127.32    Thu Jan <span>22</span> <span>20</span>:<span>34</span> - <span>15</span>:<span>44</span>  <span>&#40;</span>03:<span>16</span><span>&#41;</span>
+murat    pts<span>/</span>0        84.145.113.121   Thu Jan <span>22</span> <span>12</span>:<span>28</span> - <span>23</span>:<span>30</span>  <span>&#40;</span>02:<span>56</span><span>&#41;</span></pre></div></div>
+
+<p>Özellikle belli bir kullanıcının bağlantılarını merak ediyorsak o zaman komutun sonuna kullanıcı adını yazmak yeterli olacaktır.</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash">~$ <span>last</span> murat
+murat    pts<span>/</span>0        84.145.113.121   Tue Jan <span>27</span> <span>20</span>:<span>18</span>   still logged <span>in</span>
+murat    pts<span>/</span>0        84.145.113.121   Mon Jan <span>26</span> <span>15</span>:<span>39</span> - <span>17</span>:02  <span>&#40;</span>01:<span>22</span><span>&#41;</span>
+murat    pts<span>/</span>0        84.145.113.121   Fri Jan <span>23</span> 08:<span>28</span> - <span>19</span>:<span>58</span>  <span>&#40;</span><span>11</span>:<span>30</span><span>&#41;</span>
+murat    pts<span>/</span>0        84.145.113.121   Thu Jan <span>22</span> <span>12</span>:<span>28</span> - <span>23</span>:<span>30</span>  <span>&#40;</span>02:<span>56</span><span>&#41;</span></pre></div></div>
+
+<p>Umarım bu doküman faydalı olmuştur.</p>
+<p>İyi Çalışmalar</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis&title=Ben Kimim? Başka Kim Var? En Son Ne Yapmış?" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis">
+28 Jan 2009 @ 06:24 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">27 January 2009</h2>
+
+				<div class="entry linuxipuclari">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi">
+RPM’cinin İsviçre çakısı :)										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Belki sizlerin de başına gelmiştir - tabii ki her zaman için haklı nedenlerden dolayı ;) - bazen bir üreticinin rpm&#8217;lerinin üzerinde ufak tefek değişiklik yapmak zorunluluğunu hissedebilirsiniz.</p>
+<p>Eğer söz konusu ticari bir uygulamanın paketi ise %99.9 olasılıkla SRPM dosyalarına veya kaynak kodlarına erişiminiz olmayacaktır. Hoş, erişiminiz olsa bile bir RPM&#8217;i kendiniz tekrar paketlemeye çalıştığınızda hiç de hoş olmayan bir çok süprizle karşılaşmanız muhtemel.</p>
+<p>Şimdi karşılaştığım gerçek bir problem üzerinden yazımıza konu olan <strong><em>rpmrebuild</em></strong> programının kullanımını ve ne gibi faydaları olduğunu açılklamaya çalışalım.</p>
+<p>Bir müşterimiz için geliştirdiğimiz platformun merkezi loglama ihtiyacını Syslog-NG ile karşılama yoluna gittik. Açık kaynaklı bu  projenin ticari versiyonunu kullanan muşterimize üretici Balabit firmasında premium edition olarak etiketlenmiş yeni bir rpm ulaştı.</p>
+<p>Balabit firmasının müşterimize gönderdiği rpm kurulum bittikten sonra syslog servisinin yerine kendisini yani syslog-ng servisini ekliyor. Buraya kadar bir sorun yok fakat kurulumun son aşamasında rpm&#8217;in post install scriptinde  syslog servisini durdurup  syslog-ng servisini başlatıyor.</p>
+<p>Geliştirilen platformun mimarisi gereği syslog-ng servisinin platform tarafindan talep edilene kadar çalıştırılmaması loglamanın local syslog servisi tarafından yapılması gerekiyor. Kaldi ki syslog-ng servisinin konfigurasyonu daha ilerki bir aşamada platformun değişik bileşenleri tarafından tamamlanacak.</p>
+<p>Balabit firması açısından önemsiz bir problem olmakla birlikte müşterimizin, dolayısıyla bizim başımız bu sorundan dolayı oldukça ağrıdı. Sadece post installation scriptini değiştirebilsek yani syslog servisinin durdurulup syslog-ng servislerinin başlatıldığı iki satırı rpm&#8217;den çıkarabilirsen sorunumuz çözülecek, müşterimiz de biz de gayet mutlu olacaktık.</p>
+<p>Bu noktada internette yaptığımız araştırmalar sonucunda <em><strong>rpmrebuild</strong></em><strong> </strong>isimli programı bulduk. <em><strong>rpmrebuild</strong></em> aracılığıyla binary bir rpm paketinin içindeki dosyaları değiştirebilir, yeni dosya ekleyebilir, varolan dosyaları silebilir ve hatta rpm&#8217;in elinizde olmadığı durumlarda rpm veritabanı aracılığıyla ilgili rpm&#8217;in <em>spec</em> dosyasını tekrar oluşturabilirsiniz. Uzun lafın kısası İsviçre çakısı gibi bir uygulama. :)</p>
+
+<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>&#91;</span>sogua00<span>@</span>aliontl901 ~<span>&#93;</span>$ rpmrebuild <span>-n</span> <span>--edit-post</span> <span>-p</span> syslog-ng-premium-edition-2.1.4-1.x86_64.rpm
+&nbsp;
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+&nbsp;
+Do you want to <span>continue</span> ? <span>&#40;</span>y<span>/</span>N<span>&#41;</span> y
+&nbsp;
+Processing files: syslog-ng-premium-edition-2.1.4-<span>1</span>
+&nbsp;
+Wrote: <span>/</span>home<span>/</span>sogua00<span>/</span>rpmbuild<span>/</span>RPMS<span>/</span>x86_64<span>/</span>syslog-ng-premium-edition-2.1.4-1.x86_64.rpm
+&nbsp;
+result: <span>/</span>x86_64<span>/</span>syslog-ng-premium-edition-2.1.4-1.x86_64.rpm</pre></div></div>
+
+<p>Yukarıdaki komut satırı ve ekran çıktısı üzerinden <em><strong>rpmrebuild</strong></em> komutunun çalışmasını incelemeye çalışalım. Öncelikle kullanılan parametreler bakalım</p>
+<p><strong>-p</strong> kaynak olarak bu parametreyı takip eden paket dosyasının kullanılacağını belirtir. Eğer bu parametreyi belirtmezseniz belirtmiş olduğunuz rpm&#8217;in sisteminize kurulu olduğunu varsayıp sistem veritabanını kullanamaya çalışacaktır.</p>
+<p><strong>-n </strong>rpm paketini değiştirdikten veya yeniden oluşturduktan sonra test kurulumu yapmamasını belirtir. Genelde rpm&#8217;leri oluşturduğunuz ortamlar ile kurulum gerçekleşeceği ortamlar birbirleriyle alakasız yapılandırmaya sahiptir.</p>
+<p><strong>&#8211;edit-post</strong> post install scriptini değiştireceğimizi ifade eder.</p>
+<p>Yukarıdaki komutu çalıştırdığınızda <em><strong>rpmrebuild</strong></em> <em>syslog-ng-premium-edition-2.1.4-1.x86_64.rpm</em> isimli rpm dosyasini okuyup post install scriptini standart editörünüzde açacak. (Bizim sistemimiz için  vi). vi aracılığıyla post install scriptinde istediğimiz değişikliği gerçekleştirip vi editöründen çıktığımızda <em><strong>rpmrebuild</strong></em> işleme devam edip etmek istemediğimizi soracak. Eğer onay verirseniz macro tanımlarınız doğrultusunda rpmbuild dizininize değiştirilmiş rpm dosyasını kaydedecek.</p>
+<p>Programın birçok özelligi ve kullanabileceğiniz birçok seçeneği var. Fedora 8 ve sonrasında standart fedora depolarından <em><strong>rpmrebuild</strong></em> paketini temin etmek mümkün.</p>
+<p>Aşağıdaki makalelerden ve programın sitesinden ve man sayfalarından daha detaylı bilgi edinebilirsiniz.</p>
+<p><a href="http://rpmrebuild.sourceforge.net/" target="_blank">http://rpmrebuild.sourceforge.net/</a><br />
+<a href="http://www.redhatmagazine.com/2007/12/04/hacking-rpms-with-rpmrebuild/" target="_blank">http://www.redhatmagazine.com/2007/12/04/hacking-rpms-with-rpmrebuild/</a><br />
+<a href="http://www.linux.com/feature/62262" target="_blank">http://www.linux.com/feature/62262</a></p>
+<p>İyi çalışmalar.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi&title=RPM’cinin İsviçre çakısı :)" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi">
+27 Jan 2009 @ 06:46 AM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">21 January 2009</h2>
+
+				<div class="entry linuxipuclari">
+					<div class="person-info">
+						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
+								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
+								<br />
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -82,58 +470,16 @@ Anahtar Tabanlı SSH Bağlantısı için Açık (public) Anahtarınızı En Kola
 						</div>
 					</div>
 				</div>
-					<h2 class="date">20 January 2009</h2>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
-								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
-								<br />
-Pardus-Linux.org						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/">
-PANEL : İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-Türk Hukuk Kurumu tarafından düzenlenecek ve  Pardus Kullanıcıları Derneği Fahri Başkanı, Bilkent Üniversitesi öğretim üyesi Doç. Dr. Mustafa Akgül tarafından yöneticilecek olan  &#8220;İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması&#8221; konulu panele, Pardus Kullanıcıları Derneği Yönetim Kurulu Başkanı Av. Nihad Karslı da konuşmacı olacak katılacaktır.
-Günümüzde sık sık uygulanan İnternet yasaklarının hukuksallığının [...]								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/&title=PANEL : İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/">
-20 Jan 2009 @ 01:54 PM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
 					<h2 class="date">19 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -195,12 +541,14 @@ Linux Komut Satırında İnternetten Dosya İndirme										</a>
 				</div>
 					<h2 class="date">18 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -281,12 +629,14 @@ ali<span>@</span>ali-laptop:~<span>/</span>temp<span>/</span>scriptNot$</pre></d
 				</div>
 					<h2 class="date">16 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -346,12 +696,14 @@ Sürekli Akan Logları İzleme										</a>
 				</div>
 					<h2 class="date">15 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -417,12 +769,14 @@ Periyodik Olarak Bir Programı Çalıştırma ve Çıktısını Takip Etme						
 				</div>
 					<h2 class="date">14 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -466,12 +820,14 @@ VM Imajının Kopyasını Aldım Ethernet Bağlanmıyor										</a>
 					</div>
 				</div>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -530,12 +886,14 @@ kvm                   <span>142912</span>   <span>1</span> kvm_intel</pre></div>
 				</div>
 					<h2 class="date">13 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry linuxipuclari">
 					<div class="person-info">
 						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
 								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
 								<br />
-Linuxipuclari						</a>
+Linuxipuclari								<br />
+								<!-- (linuxipuclari) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -591,275 +949,16 @@ Sanal makinalarınızın loglarını nasıl takip ediyorsunuz? Sanallaştırman�
 						</div>
 					</div>
 				</div>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
-								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
-								<br />
-Linuxipuclari						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi">
-Dosyanın Sahipliğinin Değiştirilmesi										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-<p>Eğer sizin de benim gibi root kullanıcısıyla çalışma takıntınız varsa (tüm yetki elimde olsun diye değil sadece sürekli sudo yapmayı sevmediğim için) dosya sahipliğiyle ilgili sıkça başınız ağrıyabilir.<br />
-<span id="more-123"></span><br />
-Önce bir dosyanın sahipliğini görmek için ne yapmalıyız ona bakalım.</p>
-
-<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>ls</span> <span>-l</span> merhaba.c</pre></div></div>
-
-<p>Komutu çalıştırdığımızda aşağıdaki gibi bir sonuç elde ederiz.</p>
-<p>-rw-r&#8211;r&#8211; 1 operator web1   151 2008-02-09 14:46 merhaba.c</p>
-<p>Buradaki operator bize dosyanın kullanıcısını web1 ise dosyanın grubunu verecektir.</p>
-<p>Şimdi aynı dizindeki başka bir dosya için aynı işlemi yapalım</p>
-
-<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>ls</span> <span>-l</span> selam.c</pre></div></div>
-
-<p>Aşağıda göreceğiniz gibi bu dosyanın kullanıcısı ve grubu root:root olmuş.</p>
-<p>-rw-r&#8211;r&#8211; 1 root root   265 2008-02-09 14:56 selam.c</p>
-<p>Benden sonra bu dosyaya operator olarak ulaşmak isteyen diğer kullanıcılar yetki hatasıyla karşı karşıya kalacak ve dosyayı açamayacak yada değişiklik yapamayacaklar.</p>
-<p>Gelin şimdi bunu nasıl düzelteceğimizi görelim.</p>
-
-<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>chown</span> operator:web1 selam.c</pre></div></div>
-
-<p>Bu kadar kolay. Tekrar dosyayı kontrol ettiğimizde kullanıcısının ve grubunun değişmiş olduğunu görürüz.</p>
-
-<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>ls</span> <span>-l</span> selam.c</pre></div></div>
-
-<p>-rw-r&#8211;r&#8211; 1 operator web1   265 2008-02-09 14:56 selam.c</p>
-<p>İyi Çalışmalar</p>								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi&title=Dosyanın Sahipliğinin Değiştirilmesi" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi">
-13 Jan 2009 @ 07:53 AM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-					<h2 class="date">12 January 2009</h2>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.linuxipuclari.com" title="Linux İpuçları">
-								<img class="face" src="images/heads/linuxipuclari.png" title="Linuxipuclari" />
-								<br />
-Linuxipuclari						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu">
-pidgin ile msn protokolü sorunu ve çözümü										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-<p>15 numara MSN protokolünü kullanan tüm client&#8217;ların MSN&#8217;e bağlanamaması ile ilgili hatayı &#8220;libpurple&#8221; yerine &#8220;msn-pecan&#8221; kütüphanesini kullanarak aşabilirsiniz.</p>
-<p><strong>Ubuntu, Debian, Mint:</strong></p>
-
-<div class="wp_syntax"><div class="code"><pre class="bash bash"><span>apt-get</span> <span>install</span> msn-pecan</pre></div></div>
-
-<p><strong>Archlinux:</strong><br />
-Arch&#8217;ın depolarında yok ama AUR&#8217;da var,</p>
-
-<div class="wp_syntax"><div class="code"><pre class="bash bash">yaourt <span>-Sy</span> msn-pecan</pre></div></div>
-
-<p>Daha sonra pidgin&#8217;den MSN protokolünü WLM ile değiştirirseniz sorun çözülecektir.<br />
-Kolay Gelsin.</p>								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu&title=pidgin ile msn protokolü sorunu ve çözümü" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu">
-12 Jan 2009 @ 03:35 PM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-					<h2 class="date">10 January 2009</h2>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
-								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
-								<br />
-Pardus-Linux.org						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/">
-eDergi 5. Sayı Hazırlıkları Devam Ediyor										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-<img title="Stallman" src="http://ogrenci.hacettepe.edu.tr/~artan05/pardus/stallman.png" alt="" width="200" height="238" align="left" />
-
-Yılbaşında 4. sayısını duyurduğumuz Pardus-Linux.org eDergi'nin 5. Sayısı için hazırlıklar devam ediyor.
-İlk sürprizimiz ise hazır :
-
-Bu sayımızda Özgür Yazılım Vakfı'nın kurucusu Richard Micheal Stallman'a gittik ve bakın bize ne dedi :
-<blockquote>"<em>I've heard it(Pardus) contains and promotes non-free software. That goes against the whole purpose of GNU, which is to give users freedom; it leads users astray.</em>"</blockquote>
-İşte bu yüzden buradayız : "<em>Pardus'un Özgürleşmesi!</em>"
-
-Siz de hazırlıklara katılmak isterseniz <a href="http://forum.pardus-linux.org/viewtopic.php?f=7&t=18720">buradan</a> buyurun ;)
-Önceki sayılarımız için : <a href="http://www.pardus-edergi.org/">www.pardus-edergi.org</a>								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/&title=eDergi 5. Sayı Hazırlıkları Devam Ediyor" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/">
-10 Jan 2009 @ 04:05 PM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-					<h2 class="date">07 January 2009</h2>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
-								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
-								<br />
-Pardus-Linux.org						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/">
-Pardus 2008.2 Beta Sürümü Duyuruldu										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-Pardus 2008.2 &#8216;ye giden yolda ikinci beta sürüm duyuruldu. Kullanıcıları deneme sürümde hatalarla karşılaşabilecekleri yönünde uyarıyoruz, indirmek isteyenleri kurulan cd için [1], çalışan cd için [2] adresine yönlendiriyoruz.
-[1] ftp://ftp.pardus.org.tr/pub/pardus/kurulan/2008.2
-[2] ftp://ftp.pardus.org.tr/pub/pardus/calisan/2008.2/								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/&title=Pardus 2008.2 Beta Sürümü Duyuruldu" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/">
-07 Jan 2009 @ 09:03 PM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
-								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
-								<br />
-Pardus-Linux.org						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/">
-Forum sunucu sorunu										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-Forum sunucumuzda oluşan bir disk problemi sebebi ile forumumuz belli bir süre devre dışı kalacaktır.								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/&title=Forum sunucu sorunu" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/">
-07 Jan 2009 @ 02:34 PM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
 					<h2 class="date">03 January 2009</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -961,58 +1060,16 @@ Python
 						</div>
 					</div>
 				</div>
-					<h2 class="date">31 December 2008</h2>
-
-				<div class="entry ">
-					<div class="person-info">
-						<a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
-								<img class="face" src="images/heads/nobody.png" title="Pardus-Linux.org" />
-								<br />
-Pardus-Linux.org						</a>
-					</div>
-					
-					<div class="post">
-						<div class="post2">
-							<div class="post-header">
-									<h4 class="post-title">
-										<a href="http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/">
-Pardus-Linux.org eDergi 4. Sayı Yayımlandı										</a>
-									</h4>
-							</div>
-							<br />
-							<div class="post-contents">
-Pardus-Linux.org eDergi&#8217;lerinin 4. Sayısı uzun bir aradan sonra yayımlandı. Emeği geçen herkese teşekkür eder, dergiyi indirmek isteyenlere buradan[1] sunarız.
-[1] http://www.pardus-edergi.org								<br />
-								<br />
-								<div id="post-links" style="text-align: center;">
-										<a href="http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/#comments">
-											<img src="images/yorum.png" border="0" title="Yorumlar" />
-										</a>
-				                    <a href="http://del.icio.us/post?url=http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/&title=Pardus-Linux.org eDergi 4. Sayı Yayımlandı" target="_blank">
-										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
-									</a>
-									<a href="http://technorati.com/search/http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/" target="_blank">
-										<img src="images/technorati.png" border="0" title="technorati'de ara" />
-									</a>
-								</div>
-							</div>
-							<div class="post-footer">
-								<p>
-									<a href="http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/">
-31 Dec 2008 @ 11:28 PM									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
 					<h2 class="date">28 December 2008</h2>
 
-				<div class="entry ">
+				<div class="entry zemberek">
 					<div class="person-info">
 						<a href="http://zembereknlp.blogspot.com/" title="Zemberek NLP">
 								<img class="face" src="images/heads/nobody.png" title="Zemberek NLP" />
 								<br />
-Zemberek NLP						</a>
+Zemberek NLP								<br />
+								<!-- (zemberek) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1025,7 +1082,7 @@ Zemberek-server Firefox Türkçe yazım denetim eklentisi										</a>
 							</div>
 							<br />
 							<div class="post-contents">
-Daha önceki bir <a href="http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html">yazıda</a> Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. <a href="http://voikko.sourceforge.net/">Voikko</a> Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.<br /><br /><span>Not:</span> Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.<br /><br />1: <a href="https://addons.mozilla.org/en-US/firefox/addon/10183">https://addons.mozilla.org/en-US/firefox/addon/10183</a><br />2: <a href="http://zemberek.googlecode.com/svn/trunk/mozzemberek/">http://zemberek.googlecode.com/svn/trunk/mozzemberek/</a>								<br />
+Daha önceki bir <a href="http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html">yazıda</a> Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. <a href="http://voikko.sourceforge.net/">Voikko</a> Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.<br /><br /><span>Not:</span> Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.<br /><br />1: <a href="https://addons.mozilla.org/en-US/firefox/addon/10183">https://addons.mozilla.org/en-US/firefox/addon/10183</a><br />2: <a href="http://zemberek.googlecode.com/svn/trunk/mozzemberek/">http://zemberek.googlecode.com/svn/trunk/mozzemberek/</a><div class="blogger-post-footer"><img width="1" height="1" src="http://res1.blogblog.com/tracker/1720576558802393126-4239467354502948425?l=zembereknlp.blogspot.com" /></div>								<br />
 								<br />
 								<div id="post-links" style="text-align: center;">
 				                    <a href="http://del.icio.us/post?url=http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html&title=Zemberek-server Firefox Türkçe yazım denetim eklentisi" target="_blank">
@@ -1047,12 +1104,14 @@ Daha önceki bir <a href="http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-fi
 				</div>
 					<h2 class="date">14 July 2008</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1092,12 +1151,14 @@ If deyimi belirli bir koşul sağlandığında yapılacak işleri belirlememizi 
 				</div>
 					<h2 class="date">16 February 2008</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1160,12 +1221,14 @@ x&#8217;i   kendisinden b&#252;y&#252;k en [...]								<br />
 				</div>
 					<h2 class="date">06 November 2007</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1227,12 +1290,14 @@ Java programlama dilinde boolean, char, byte, short, int, long, float ve double 
 				</div>
 					<h2 class="date">21 September 2007</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1267,12 +1332,14 @@ Bu siteyi bitirme tezimizin konusu olan &#8220;Java ve Python Programlama Diller
 				</div>
 					<h2 class="date">05 August 2007</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1324,12 +1391,14 @@ Bir kelime giriniz:Bulut
 				</div>
 					<h2 class="date">12 July 2007</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1374,12 +1443,14 @@ a=&#8221;Muhabbet bağına girdim bu [...]								<br />
 				</div>
 					<h2 class="date">11 July 2007</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1418,12 +1489,14 @@ Burada &#8220;sinifadi&#8221; sınıf adının değişkenidir ve programcıya g�
 				</div>
 					<h2 class="date">08 July 2007</h2>
 
-				<div class="entry ">
+				<div class="entry python-tr">
 					<div class="person-info">
 						<a href="http://www.python-tr.com" title="Python - Java">
 								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
 								<br />
-Python-TR						</a>
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
 					</div>
 					
 					<div class="post">
@@ -1460,6 +1533,89 @@ k=&#8217;veli&#8217;
 								<p>
 									<a href="http://www.python-tr.com/pythonda-degisken-tanimlamak/">
 08 Jul 2007 @ 08:57 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry python-tr">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/">
+Python İle İlgili Genel Bilgiler-Python Nedir?										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Python, ilk olarak 1990 yılında Guido Van Rossum tarafından geliştirilmeye başlanmıştır ve adını Monty Python&#8217;s Flying Circus adlı programdan almıştır. Python, nesne yönelimli(object oriented), yorumlanabilen(interpreted), modüler ve etkileşimli(interactive) bir programlama dilidir. Sözdiziminin(syntax) basit olması dilin öğrenilmesini oldukça kolaylaştırmktadır. Ayrıca diğer dillerde kod bloklarını belirtmek için parantezler kullanılırken Python&#8217;da kod blokları girintiler(indentation) yoluyla anlaşılmaktadır ve bu [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/&title=Python İle İlgili Genel Bilgiler-Python Nedir?" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/">
+08 Jul 2007 @ 07:25 PM									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">07 July 2007</h2>
+
+				<div class="entry python-tr">
+					<div class="person-info">
+						<a href="http://www.python-tr.com" title="Python - Java">
+								<img class="face" src="images/heads/nobody.png" title="Python-TR" />
+								<br />
+Python-TR								<br />
+								<!-- (python-tr) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.python-tr.com/javada-degisken-tanimlamak/">
+Java&#8217;da Değişken Tanımlamak										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+Java&#8217;da değişken tanımlamak için önce tanımlayacağımız değişkenin tipini yazıyoruz. Ardından tanımlayacağımız değişkene vereceğimiz adı yazıyoruz. &#8220;=&#8221; işaretini ekliyoruz. Eşitliğin sağ tarafını isteğimize göre iki şekilde yazabiliriz. Birincisi new + değişken tipini yazıp parantez içinde çift tırnaklar kullanarak değişkenin değerini yazarak, ikincisi ise sadece çift tırnaklar içinde değişkenin başlangıç değerini yazarak. İki seçenekte aynı işi yapar. [...]								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.python-tr.com/javada-degisken-tanimlamak/&title=Java&amp;#8217;da Değişken Tanımlamak" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.python-tr.com/javada-degisken-tanimlamak/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.python-tr.com/javada-degisken-tanimlamak/">
+07 Jul 2007 @ 11:19 PM									</a>
 								</p>
 							</div>
 						</div>
@@ -1524,62 +1680,69 @@ border='0' alt='' /></a></noscript>
 
 
 			</div>
-			
-			<div class="bloggers section" id="bloggers">
-				<h3>Üyeler</h3>
-				<ul>
-						<li>
-							<div>
-									<img class="head" src="images/heads/linuxipuclari.png" title="linuxipuclari.png" />
-								<div class="ircnick">&nbsp;</div>
-							</div>
-							<a href="http://www.linuxipuclari.com/feed" title="subscribe">
-								<img src="images/feed-icon-10x10.png" alt="(feed)">
-							</a>
-			                <a href="http://www.linuxipuclari.com" title="Linux İpuçları">
-Linuxipuclari							</a>
-						</li>
-						<li>
-							<div>
-									<img class="head" src="images/heads/nobody.png" title="" />
-								<div class="ircnick">&nbsp;</div>
-							</div>
-							<a href="http://www.pardus-linux.org/feed/" title="subscribe">
-								<img src="images/feed-icon-10x10.png" alt="(feed)">
-							</a>
-			                <a href="http://www.pardus-linux.org" title="Pardus-Linux.Org">
-Pardus-Linux.org							</a>
-						</li>
-						<li>
-							<div>
-									<img class="head" src="images/heads/nobody.png" title="" />
-								<div class="ircnick">&nbsp;</div>
-							</div>
-							<a href="http://www.python-tr.com/feed/atom/" title="subscribe">
-								<img src="images/feed-icon-10x10.png" alt="(feed)">
-							</a>
-			                <a href="http://www.python-tr.com" title="Python - Java">
-Python-TR							</a>
-						</li>
-						<li>
-							<div>
-									<img class="head" src="images/heads/nobody.png" title="" />
-								<div class="ircnick">&nbsp;</div>
-							</div>
-							<a href="http://zembereknlp.blogspot.com/feeds/posts/default?alt=rss" title="subscribe">
-								<img src="images/feed-icon-10x10.png" alt="(feed)">
-							</a>
-			                <a href="http://zembereknlp.blogspot.com/" title="Zemberek NLP">
-Zemberek NLP							</a>
-						</li>
-				</ul>
+
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + 
+document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + 
+escape(document.referrer));
+   if (document.context) document.write ("&context=" + 
+escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=ae096af2&cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=6&cb=INSERT_RANDOM_NUMBER_HERE&n=ae096af2' 
+border='0' alt='' /></a></noscript>
+
+
 			</div>
 
+                        <div id="feeds">
+                                <h3><a href="feeds.html">Gezegen Sakinleri</a></h3>
+                                <div id="feedlist"></div>
+                        </div>
+
+			
 			<div class="section">
 				<h3>Takip edin</h3>
 				<ul>
 					<li><a href="rss20.xml">RSS 2.0</a></li>
 					<li><a href="rss10.xml">RSS 1.0</a></li>
+					<li><a href="atom.xml">ATOM</a></li>
 					<li><a href="foafroll.xml">FOAF</a></li>
 					<li><a href="opml.xml">OPML</a></li>
 				</ul>
@@ -1591,27 +1754,45 @@ Zemberek NLP							</a>
 				<p>
 					Son güncelleme: 
 					<br />
-21 Jan 2009 @ 10:06 PM				</p>
+29 Mar 2009 @ 06:57 PM				</p>
 			</div>
 
 			<div class="section">
-				<h3>İletişim</h3>
-				<p>
-					LKD Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı e-posta ile iletebilirsiniz.
-				</p>
-			</div>
+                                <h3>İletişim</h3>
+                                <p>
+                                        Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı ve Gezegen'e iniş başvurularınızı e-posta ile iletebilirsiniz.
+                                </p>
+                                <p>
+                                        Gezegene iniş başvurularınızda <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">Gezegen Kuralları</a>'na uyan RSS/Atom beslemenizi ve gezegen içerisinde kullanmak istediğiniz (en fazla 80x80 çözünürlüklü) resminizi (bir başka deyişle hackergotchi); varsa jabber adresinizle birlikte e-posta yoluyla göndermenizi rica ediyoruz.
+                                </p>
+                        </div>
+
 		</div>
+
+		<div id="footer">
 
 		<div id="copyright">
 			Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz.
 			<br />
 			LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.
 			<br />
-			Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/lkd//stats">buradan</a> ulaşabilirsiniz.
+			Ayrıca Gezegen istatistiklerine <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.
 			<br />
-			<!-- Start of StatCounter Code -->
-			<a href="http://www.statcounter.com/" target="_blank"><img src="http://c18.statcounter.com/counter.php?sc_project=1860933&java=0&security=e27e04a9&invisible=0" alt="free tracking" border="0"></a> 
-			<!-- End of StatCounter Code -->
 		</div>
+
+		</div>
+                        <!-- Start of Google Code -->
+                        <script type="text/javascript">
+                                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                        </script>
+                        <script type="text/javascript">
+                        try {
+                                var pageTracker = _gat._getTracker("UA-7686552-4");
+                                pageTracker._trackPageview();
+                        } catch(err) {}
+                        </script>
+                        <!-- End of Google Code -->
+
 	</body>
 </html>

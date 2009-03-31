@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Topluluklar Gezegeni</title>
+	<link rel="self" href="http://gezegen.linux.org.tr/topluluk/rss20.xml"/>
+	<link href="http://gezegen.linux.org.tr/topluluk/"/>
+	<id>http://gezegen.linux.org.tr/topluluk/rss20.xml</id>
+	<updated>2009-03-29T18:57:27+00:00</updated>
+	<generator uri="http://www.planetplanet.org/">Planet/2.0 +http://www.planetplanet.org</generator>
+
+	<entry xml:lang="tr">
+		<title type="html">Birleşik Krallık ODF'den Yana</title>
+		<link href="http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/"/>
+		<id>http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/</id>
+		<updated>2009-03-28T20:18:00+00:00</updated>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/upload/image/odf-toplulugu.png&quot; border=&quot;0&quot; alt=&quot;ODF zaferini ilan etti.&quot; title=&quot;ODF zaferini ilan etti.&quot; align=&quot;left&quot; /&gt;Kamusal belge ve hizmetlerde özgür standartların kullanımını tercih eden ülkelerin sayısı her geçen gün artıyor. Geçtiğimiz günlerde yayınladığımız ODF'yi kullanan &lt;a href=&quot;http://www.ozgurlukicin.com/haber/odf-16-ulkede-kullaniliyor/&quot;&gt;ülkeler listesine&lt;/a&gt; Birleşik Krallık’ın da (İngiltere, İskoçya, Galler ve Kuzey İrlanda'dan oluşan yapı) katılımıyla, &lt;a href=&quot;http://tr.pardus-wiki.org/OpenDocument&quot;&gt;Açık Belge Biçimi&lt;/a&gt; (Open Document Format-ODF), çok önemli bir mevzi daha kazandı.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.odfalliance.org/&quot;&gt;ODF Alliance&lt;/a&gt; Başkanı &lt;strong&gt;Marino MARCICH&lt;/strong&gt;, &quot;Britanya Hükümeti tarafından yapılan açıklama, ODF'ye duyulan ve büyümekte olan talebin göstergesi&quot; şeklinde konuşuyor ve ekliyor: &quot;ODF aracılığıyla sağlanan birlikte çalışabilirlik esasları üzerine kurulan açık standartlar, hükümetlere kazanç ve veriye uzun vadeli erişim seçenekleri açısından büyük kazanımlar sağlıyor.&quot;&lt;/p&gt;
+&lt;p&gt;Britanya Hükümeti, bir süre önce &lt;a href=&quot;http://www.ozgurlukicin.com/haber/hukumetten-acik-kaynaga-10-adim/&quot;&gt;haberini&lt;/a&gt; de yaptığımız üzere, &quot;&lt;strong&gt;Açık Kaynak, Açık Standartlar ve Tekrar-Kullanım: Hükümet Eylem Planı&lt;/strong&gt;&quot; altında, bundan sonraki tüm IT projelerinde açık standartlara ilişkin gereksinimleri belirterek, açık standartlara uygunluk talep edeceğini duyurmuştu. Hükümet bu plan çerçevesinde, ODF’nin kullanımını destekleyeceğini belirtti. Buna ek olarak, hükümet, bilgilerin açık standartlarda bulunabilirliğini güvence altına almak için çalışacak ve bu kamusal web sayfaları için bir standart haline gelecek.&lt;/p&gt;
+&lt;p&gt;Hem özel hem de açık kaynaklı ODF destekli yazılımların kolay bulunabilirliğine dikkat çeken &lt;a href=&quot;http://www.openforumeurope.org/&quot;&gt;OpenForum Avrupa&lt;/a&gt; başkanı &lt;strong&gt;Graham TAYLOR,&lt;/strong&gt; &quot;Britanya Hükümeti'nin tedarik yönetmeliklerinde açık standartlara işaret etmesi ve açık standartlar ile uyumluluk halindeki çözümleri tercih edecek olması, farklı platformlardaki çoklu rekabet ürünleri arasındaki yarışı güvence altına alacak önemli bir gelişme şeklinde konuştu.&lt;/p&gt;
+&lt;p&gt;Birleşik Krallık ile birlikte, şu an için, 17 devlet ve sekiz özerk hükümet, belge alışverişi için resmi olarak ODF’yi kabul etmiş durumda. Tercihini ODF'den yana kullanan hükumet politikası girişimlerine dair açıklama ve daha kapsamlı bir liste için &lt;a href=&quot;http://www.odfalliance.org/resources/Adoptions-ODF-Dec2008.pdf&quot;&gt;buraya&lt;/a&gt; bakabilirsiniz.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynak&lt;/strong&gt;: &lt;a href=&quot;http://www.odfalliance.org/press/Release20090225-ukgovOSS.pdf&quot;&gt;ODF Alliance&lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>Özgürlükiçin.com</name>
+			<uri>http://www.ozgurlukicin.com</uri>
+		</author>
+		<source>
+			<title type="html">Özgürlük için... - Haberler</title>
+			<subtitle type="html">Pardus için bir numaralı bilgi kaynağı</subtitle>
+			<link rel="self" href="http://www.ozgurlukicin.com/rss/haber"/>
+			<id>http://www.ozgurlukicin.com/rss/haber</id>
+			<updated>2009-03-29T15:57:21+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">GNOME 2.26 Yayınlandı</title>
+		<link href="http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2"/>
+		<id>http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2</id>
+		<updated>2009-03-23T18:50:34+00:00</updated>
+		<content type="html">GNOME Masa&amp;uuml;st&amp;uuml; ortamının en son s&amp;uuml;r&amp;uuml;m&amp;uuml; olan GNOME 2.26 s&amp;uuml;r&amp;uuml;m&amp;uuml; yayınlandı. Bu s&amp;uuml;r&amp;uuml;mde GNOME Masa&amp;uuml;st&amp;uuml; ortamı bir &amp;ccedil;ok hata d&amp;uuml;zeltmesi, performans artışının yanı sıra gelişmiş bir CD/DVD yazma programı olan Brasero (http://projects.gnome.org/brasero/)'yu da platforma katmış oldu. Yeni GNOME s&amp;uuml;r&amp;uuml;m&amp;uuml;ndeki yenilikleri &amp;ouml;ğrenmek ve daha fazla bilgi edinmek i&amp;ccedil;in T&amp;uuml;rk&amp;ccedil;e S&amp;uuml;r&amp;uuml;m Notları (http://library.gnome.org/misc/release-notes/2.26/index.html.tr) sayfasına bakabilirsiniz.</content>
+		<author>
+			<name>GNOME Türkiye</name>
+			<uri>http://www.gnome.org.tr</uri>
+		</author>
+		<source>
+			<title type="html">GNOME Türkiye</title>
+			<subtitle type="html">GNOME Türkiye haberleri</subtitle>
+			<link rel="self" href="http://gnome.org.tr/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1)"/>
+			<id>http://gnome.org.tr/index.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1)</id>
+			<updated>2009-03-29T15:57:23+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Mustafa ALKAN: SUDO'nun 5. sayısı yayında!</title>
+		<link href="http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html"/>
+		<id>http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html</id>
+		<updated>2009-03-15T05:13:00+00:00</updated>
+		<content type="html">&lt;a href=&quot;http://www.ubuntu-tr.org/sudo/resim/sudo5.jpg&quot;&gt;&lt;img src=&quot;http://www.ubuntu-tr.org/sudo/resim/sudo5.jpg&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;p&gt;&lt;a href=&quot;http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html&quot;&gt;devamını oku&lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>Ubuntu Türkiye</name>
+			<uri>http://www.ubuntu-tr.org/aggregator</uri>
+		</author>
+		<source>
+			<title type="html">Ubuntu Türkiye toplayıcı</title>
+			<subtitle type="html">Ubuntu Türkiye - toplanan beslemeler</subtitle>
+			<link rel="self" href="http://www.ubuntu-tr.org/rss/gezegen"/>
+			<id>http://www.ubuntu-tr.org/rss/gezegen</id>
+			<updated>2009-03-29T15:57:26+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Ben Kimim? Başka Kim Var? En Son Ne Yapmış?</title>
+		<link href="http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis"/>
+		<id>http://www.linuxipuclari.com/?p=255</id>
+		<updated>2009-01-28T06:24:26+00:00</updated>
+		<content type="html">&lt;p&gt;Bu konuya başka nasıl bir başlık verilebilirdi bilemiyorum ama bence hem konuyu anlatması açısından hem de ilgi çekmesi açısından değişik  bir başlık oldu.&lt;/p&gt;
+&lt;p&gt;Tabi konumuz linux ama olaya felsefi açıdan değil de teknik açıdan açıklık getireceğiz. Ama aynı başlık ile birde olayın felsefi yanına dokunup Türkiye&amp;#8217;de Linux konusunda, ben dahil kimler var ve en son ne yapmışlar bir ara bakmak lazım :)&lt;/p&gt;
+&lt;p&gt;Önünüzde açık bir linux konsolu var ve bir işlem yapmanız lazım.&lt;/p&gt;
+&lt;p&gt;İlk bilmeniz gereken, sisteme o an kim olarak bağlı olduğunuzdur.&lt;/p&gt;
+&lt;p&gt;Öğrenmenin yolu sormaktır. Linux&amp;#8217;te bunu sormanın yolu da &lt;strong&gt;whoami&lt;/strong&gt; komutudur.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;whoami&lt;/span&gt;
+&amp;nbsp;
+murat&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Peki şu an sistemde bizden başka kimler var? Hemen soralım yine bu seferki komut &lt;strong&gt;who&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;who&lt;/span&gt;
+&amp;nbsp;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        &lt;span&gt;2009&lt;/span&gt;-01-&lt;span&gt;27&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt; &lt;span&gt;&amp;#40;&lt;/span&gt;84.145.113.121&lt;span&gt;&amp;#41;&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;&lt;span&gt;1&lt;/span&gt;        &lt;span&gt;2009&lt;/span&gt;-01-&lt;span&gt;27&lt;/span&gt; &lt;span&gt;21&lt;/span&gt;:&lt;span&gt;32&lt;/span&gt; &lt;span&gt;&amp;#40;&lt;/span&gt;84.168.127.32&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bu komut sayesinde sisteme kim bağlanmış, ne zaman bağlanmış, hangi ip den bağlanmış görebiliyorsunuz.&lt;/p&gt;
+&lt;p&gt;Peki bu bağlı olan kişi ne yapıyor, yada birşey yapıyor mu? Bunu öğrenmek için de &lt;strong&gt;w&lt;/strong&gt; komutunu kullanıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;w&lt;/span&gt;
+ &lt;span&gt;22&lt;/span&gt;:00:&lt;span&gt;53&lt;/span&gt; up &lt;span&gt;92&lt;/span&gt; days, &lt;span&gt;12&lt;/span&gt;:&lt;span&gt;45&lt;/span&gt;,  &lt;span&gt;2&lt;/span&gt; user,  load average: &lt;span&gt;0.00&lt;/span&gt;, &lt;span&gt;0.07&lt;/span&gt;, &lt;span&gt;0.07&lt;/span&gt;
+USER     TTY      FROM             LOGIN&lt;span&gt;@&lt;/span&gt;   IDLE     JCPU   PCPU WHAT
+murat    pts&lt;span&gt;/&lt;/span&gt;0    84.145.113.121   &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt;    0.00s    0.19s  0.02s &lt;span&gt;w&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;&lt;span&gt;1&lt;/span&gt;    84.168.127.32    &lt;span&gt;21&lt;/span&gt;:&lt;span&gt;32&lt;/span&gt;    118.34s  21.18s 0,03s &lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bu sonucu inceleyecek olursak.&lt;/p&gt;
+&lt;p&gt;Birinci satırdaki bilgiler bağlı olduğumuz sistemin kaç gündür çalıştığını, Sisteme kaç kişinin bağlı olduğunu ve o anki yükünü gösteriyor.&lt;/p&gt;
+&lt;p&gt;Daha sonra yeralan bilgiler ise sisteme o an bağlı olan kişinin;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;USER&lt;/strong&gt; Hangi kullanıcı adı ile bağlı olduğunu,&lt;br /&gt;
+&lt;strong&gt;TTY&lt;/strong&gt; Hangi terminal numarası ile bağlı olduğunu,&lt;br /&gt;
+&lt;strong&gt;FROM&lt;/strong&gt; Hangi ipden bağlandığını&lt;br /&gt;
+&lt;strong&gt;LOGIN@&lt;/strong&gt; Ne zaman bağlandığını&lt;br /&gt;
+&lt;strong&gt;IDLE&lt;/strong&gt; Şu an bir işlem yapıp yapmadığını. (İşlem yapıyorsa bu süre 0.00s olarak gözükür. İşlem yapmıyorsa sizin komutu çalıştırdığınız süre ile o kişinin en son komutu çalıştırdığı zaman arasındaki fark saniye olarak görüntülenir)&lt;br /&gt;
+&lt;strong&gt;JCPU&lt;/strong&gt; Bağlı olduğu süre içinde çalıştırdığı komutların harcadığı CPU zamanını&lt;br /&gt;
+&lt;strong&gt;PCPU&lt;/strong&gt; En son çalıştırdığı komutun harcadığı CPU zamanını&lt;br /&gt;
+&lt;strong&gt;WHAT&lt;/strong&gt; En son çalıştırdığı komutu gösterir&lt;/p&gt;
+&lt;p&gt;Bu konudan bahsedince bir komutu daha anlatmadan geçmek olmaz.&lt;/p&gt;
+&lt;p&gt;Peki son zamanlarda, sisteme kimler bağlanmış ve ne kadar bağlı kalmış. Bunun için &lt;strong&gt;last&lt;/strong&gt; komutunu kullanabiliriz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;last&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Tue Jan &lt;span&gt;27&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt;   still logged &lt;span&gt;in&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Mon Jan &lt;span&gt;26&lt;/span&gt; &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;39&lt;/span&gt; - &lt;span&gt;17&lt;/span&gt;:02  &lt;span&gt;&amp;#40;&lt;/span&gt;01:&lt;span&gt;22&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;0        84.168.127.32    Fri Jan &lt;span&gt;23&lt;/span&gt; &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;52&lt;/span&gt; - &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;39&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;04:&lt;span&gt;46&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Fri Jan &lt;span&gt;23&lt;/span&gt; 08:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;19&lt;/span&gt;:&lt;span&gt;58&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;11&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;0        84.168.127.32    Thu Jan &lt;span&gt;22&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;34&lt;/span&gt; - &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;44&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;03:&lt;span&gt;16&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Thu Jan &lt;span&gt;22&lt;/span&gt; &lt;span&gt;12&lt;/span&gt;:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;23&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;02:&lt;span&gt;56&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Özellikle belli bir kullanıcının bağlantılarını merak ediyorsak o zaman komutun sonuna kullanıcı adını yazmak yeterli olacaktır.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;last&lt;/span&gt; murat
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Tue Jan &lt;span&gt;27&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt;   still logged &lt;span&gt;in&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Mon Jan &lt;span&gt;26&lt;/span&gt; &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;39&lt;/span&gt; - &lt;span&gt;17&lt;/span&gt;:02  &lt;span&gt;&amp;#40;&lt;/span&gt;01:&lt;span&gt;22&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Fri Jan &lt;span&gt;23&lt;/span&gt; 08:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;19&lt;/span&gt;:&lt;span&gt;58&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;11&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Thu Jan &lt;span&gt;22&lt;/span&gt; &lt;span&gt;12&lt;/span&gt;:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;23&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;02:&lt;span&gt;56&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Umarım bu doküman faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;İyi Çalışmalar&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">RPM’cinin İsviçre çakısı :)</title>
+		<link href="http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi"/>
+		<id>http://www.linuxipuclari.com/?p=244</id>
+		<updated>2009-01-27T06:46:01+00:00</updated>
+		<content type="html">&lt;p&gt;Belki sizlerin de başına gelmiştir - tabii ki her zaman için haklı nedenlerden dolayı ;) - bazen bir üreticinin rpm&amp;#8217;lerinin üzerinde ufak tefek değişiklik yapmak zorunluluğunu hissedebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Eğer söz konusu ticari bir uygulamanın paketi ise %99.9 olasılıkla SRPM dosyalarına veya kaynak kodlarına erişiminiz olmayacaktır. Hoş, erişiminiz olsa bile bir RPM&amp;#8217;i kendiniz tekrar paketlemeye çalıştığınızda hiç de hoş olmayan bir çok süprizle karşılaşmanız muhtemel.&lt;/p&gt;
+&lt;p&gt;Şimdi karşılaştığım gerçek bir problem üzerinden yazımıza konu olan &lt;strong&gt;&lt;em&gt;rpmrebuild&lt;/em&gt;&lt;/strong&gt; programının kullanımını ve ne gibi faydaları olduğunu açılklamaya çalışalım.&lt;/p&gt;
+&lt;p&gt;Bir müşterimiz için geliştirdiğimiz platformun merkezi loglama ihtiyacını Syslog-NG ile karşılama yoluna gittik. Açık kaynaklı bu  projenin ticari versiyonunu kullanan muşterimize üretici Balabit firmasında premium edition olarak etiketlenmiş yeni bir rpm ulaştı.&lt;/p&gt;
+&lt;p&gt;Balabit firmasının müşterimize gönderdiği rpm kurulum bittikten sonra syslog servisinin yerine kendisini yani syslog-ng servisini ekliyor. Buraya kadar bir sorun yok fakat kurulumun son aşamasında rpm&amp;#8217;in post install scriptinde  syslog servisini durdurup  syslog-ng servisini başlatıyor.&lt;/p&gt;
+&lt;p&gt;Geliştirilen platformun mimarisi gereği syslog-ng servisinin platform tarafindan talep edilene kadar çalıştırılmaması loglamanın local syslog servisi tarafından yapılması gerekiyor. Kaldi ki syslog-ng servisinin konfigurasyonu daha ilerki bir aşamada platformun değişik bileşenleri tarafından tamamlanacak.&lt;/p&gt;
+&lt;p&gt;Balabit firması açısından önemsiz bir problem olmakla birlikte müşterimizin, dolayısıyla bizim başımız bu sorundan dolayı oldukça ağrıdı. Sadece post installation scriptini değiştirebilsek yani syslog servisinin durdurulup syslog-ng servislerinin başlatıldığı iki satırı rpm&amp;#8217;den çıkarabilirsen sorunumuz çözülecek, müşterimiz de biz de gayet mutlu olacaktık.&lt;/p&gt;
+&lt;p&gt;Bu noktada internette yaptığımız araştırmalar sonucunda &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt; &lt;/strong&gt;isimli programı bulduk. &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; aracılığıyla binary bir rpm paketinin içindeki dosyaları değiştirebilir, yeni dosya ekleyebilir, varolan dosyaları silebilir ve hatta rpm&amp;#8217;in elinizde olmadığı durumlarda rpm veritabanı aracılığıyla ilgili rpm&amp;#8217;in &lt;em&gt;spec&lt;/em&gt; dosyasını tekrar oluşturabilirsiniz. Uzun lafın kısası İsviçre çakısı gibi bir uygulama. :)&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;&amp;#91;&lt;/span&gt;sogua00&lt;span&gt;@&lt;/span&gt;aliontl901 ~&lt;span&gt;&amp;#93;&lt;/span&gt;$ rpmrebuild &lt;span&gt;-n&lt;/span&gt; &lt;span&gt;--edit-post&lt;/span&gt; &lt;span&gt;-p&lt;/span&gt; syslog-ng-premium-edition-2.1.4-1.x86_64.rpm
+&amp;nbsp;
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+&amp;nbsp;
+Do you want to &lt;span&gt;continue&lt;/span&gt; ? &lt;span&gt;&amp;#40;&lt;/span&gt;y&lt;span&gt;/&lt;/span&gt;N&lt;span&gt;&amp;#41;&lt;/span&gt; y
+&amp;nbsp;
+Processing files: syslog-ng-premium-edition-2.1.4-&lt;span&gt;1&lt;/span&gt;
+&amp;nbsp;
+Wrote: &lt;span&gt;/&lt;/span&gt;home&lt;span&gt;/&lt;/span&gt;sogua00&lt;span&gt;/&lt;/span&gt;rpmbuild&lt;span&gt;/&lt;/span&gt;RPMS&lt;span&gt;/&lt;/span&gt;x86_64&lt;span&gt;/&lt;/span&gt;syslog-ng-premium-edition-2.1.4-1.x86_64.rpm
+&amp;nbsp;
+result: &lt;span&gt;/&lt;/span&gt;x86_64&lt;span&gt;/&lt;/span&gt;syslog-ng-premium-edition-2.1.4-1.x86_64.rpm&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yukarıdaki komut satırı ve ekran çıktısı üzerinden &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; komutunun çalışmasını incelemeye çalışalım. Öncelikle kullanılan parametreler bakalım&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-p&lt;/strong&gt; kaynak olarak bu parametreyı takip eden paket dosyasının kullanılacağını belirtir. Eğer bu parametreyi belirtmezseniz belirtmiş olduğunuz rpm&amp;#8217;in sisteminize kurulu olduğunu varsayıp sistem veritabanını kullanamaya çalışacaktır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-n &lt;/strong&gt;rpm paketini değiştirdikten veya yeniden oluşturduktan sonra test kurulumu yapmamasını belirtir. Genelde rpm&amp;#8217;leri oluşturduğunuz ortamlar ile kurulum gerçekleşeceği ortamlar birbirleriyle alakasız yapılandırmaya sahiptir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#8211;edit-post&lt;/strong&gt; post install scriptini değiştireceğimizi ifade eder.&lt;/p&gt;
+&lt;p&gt;Yukarıdaki komutu çalıştırdığınızda &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;syslog-ng-premium-edition-2.1.4-1.x86_64.rpm&lt;/em&gt; isimli rpm dosyasini okuyup post install scriptini standart editörünüzde açacak. (Bizim sistemimiz için  vi). vi aracılığıyla post install scriptinde istediğimiz değişikliği gerçekleştirip vi editöründen çıktığımızda &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; işleme devam edip etmek istemediğimizi soracak. Eğer onay verirseniz macro tanımlarınız doğrultusunda rpmbuild dizininize değiştirilmiş rpm dosyasını kaydedecek.&lt;/p&gt;
+&lt;p&gt;Programın birçok özelligi ve kullanabileceğiniz birçok seçeneği var. Fedora 8 ve sonrasında standart fedora depolarından &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; paketini temin etmek mümkün.&lt;/p&gt;
+&lt;p&gt;Aşağıdaki makalelerden ve programın sitesinden ve man sayfalarından daha detaylı bilgi edinebilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://rpmrebuild.sourceforge.net/&quot; target=&quot;_blank&quot;&gt;http://rpmrebuild.sourceforge.net/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.redhatmagazine.com/2007/12/04/hacking-rpms-with-rpmrebuild/&quot; target=&quot;_blank&quot;&gt;http://www.redhatmagazine.com/2007/12/04/hacking-rpms-with-rpmrebuild/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.linux.com/feature/62262&quot; target=&quot;_blank&quot;&gt;http://www.linux.com/feature/62262&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Anahtar Tabanlı SSH Bağlantısı için Açık (public) Anahtarınızı En Kolay Nasıl Paylaşırsınız?</title>
+		<link href="http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz"/>
+		<id>http://www.linuxipuclari.com/?p=234</id>
+		<updated>2009-01-21T05:48:55+00:00</updated>
+		<content type="html">&lt;p&gt;Eğer internette ssh bağlantıları için anahtarlama kullanımı konusunda biraz araştırma yaptıysanız karşınıza çıkacak dökümanların çoğunda açık anahtarınızın hedef makinada&lt;em&gt; ~/.ssh/authorized_keys &lt;/em&gt; dosyasına nasıl ekleneceği, bu dosyanın ve .ssh dizininin hangi kullanıcı ve grup yetkilerine sahip olacağı konusunda bilgi verildiğini göreceksiniz.&lt;/p&gt;
+&lt;p&gt;İlgili dökümanlarda bahsedilen herşey doğru olmakla birlikte &lt;em&gt;ssh&lt;/em&gt; programı bütün bu adımları sizin için layığıyla gerçekleştiren bir komut satırı programıyla birlikte geliyor. &lt;strong&gt;&lt;em&gt;ssh-copy-id&lt;/em&gt;&lt;/strong&gt; isimli bu program ne yazık ki birçoğumuzun dikkatinden kaçıyor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;ssh-copy-id&lt;/em&gt;&lt;/strong&gt; programı ne yapar?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Açık anahtarınızı hedef makinada  kullanıcı dizini altındaki yetkili anahtarlar dosyasına ekler (&lt;em&gt; ~/.ssh/authorized_keys&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;~/.ssh&lt;/em&gt; dizinini ve &lt;em&gt;~/.ssh/authorized_keys&lt;/em&gt; dosyasının yetkilerini düzenler.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Aşağıdaki örnek  komutta herhangi bir kimlik belirtmediğimiz için varsayılan açık anahtar ( &lt;em&gt;~/.ssh/id_rsa.pub &lt;/em&gt;dosyasının içeriği) &lt;em&gt;hedef.makina.com&lt;/em&gt; makinasındaki &lt;em&gt;ali&lt;/em&gt; kullanıcısının  home dizinine yüklenir.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$ssh&lt;/span&gt;-copy-id ali&lt;span&gt;@&lt;/span&gt;hedef.makina.com&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eğer birden çok anahtarınız var ise hedef makinaya göndermek istediğiniz açık anahtarı -i parametresiyle belirtebilirsiniz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$ssh&lt;/span&gt;-copy-id  -i  ~&lt;span&gt;/&lt;/span&gt;.ssh&lt;span&gt;/&lt;/span&gt;ikinci_anahtar.pub ali&lt;span&gt;@&lt;/span&gt;hedef.makina.com&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Kıssadan hisse tek bir komutla açık anahtarınızı hedef bir makinaya yükleyebilirsiniz.  :)&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Linux Komut Satırında İnternetten Dosya İndirme</title>
+		<link href="http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme"/>
+		<id>http://www.linuxipuclari.com/?p=201</id>
+		<updated>2009-01-19T09:31:50+00:00</updated>
+		<content type="html">&lt;p&gt;Linux makinanıza bir dosya indirip kuracaksınız diyelim.&lt;/p&gt;
+&lt;p&gt;Bunun için önce grafik arayüzü olan bir yerden &lt;a href=&quot;http://www.temizyazilim.org/tr/app/view/7_68.html&quot;&gt;Firefox&lt;/a&gt; gibi bir tarayıcı veya &lt;a href=&quot;http://www.temizyazilim.org/tr/app/view/7_49.html&quot;&gt;Filezilla&lt;/a&gt; gibi bir ftp istemcisi ile bağlanıp dosyayı indirip sonra bunu tekrar ftp, scp gibi bir program kullanarak dosyaya asıl ihtiyacımız olan yere kopyalamak büyük bir zaman kaybı olacaktır. (İstemci olarak linux kullanan arkadaşların kaşlarını çattıklarını görür gibiyim. Diyelimki kişi linux değil de başka bir işletim sistemi kullanıyor ve grafik arayüzü yüklü olmayan bir linux sunucusu var)&lt;/p&gt;
+&lt;p&gt;Bunun yerine wget komutunu kullanarak bu dosyayı bir web sitesinden direkt istediğimiz klasöre indirebiliriz.&lt;/p&gt;
+&lt;p&gt;En basit kullanımıyla&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;dosya.zip&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dosya gelsin ama ben bir yandan konsolu kullanıyım diyorsanız bu işlemi backgrounda atabilirsiniz. İşlemin sonucunu logdosyasi.log adlı dosyaya yazacaktır.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; &lt;span&gt;-o&lt;/span&gt; logdosyası.log http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;dosya.zip &lt;span&gt;&amp;amp;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Büyük bir dosya indiriyorsunuz ve kesiliyor o zaman aşağıdaki komut size yardımcı olacaktır.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; &lt;span&gt;-c&lt;/span&gt; http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;buyukdosya.zip&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bazen bir sitedeki toplu dosyaları indirmek istiyorsunuz diyelim. Burada dikkat etmeniz gereken şey bu komut o sayfa içinde geçen .zip isimli dosyaları indirecektir.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;downloads.html yerine bir klasör ismi yazarsanız ancak klasör gezinme (directory browsing) yetkisi sunucuda açıksa o şekilde dosyaları indirebilirsiniz aksi taktirde ya o klasörde bir index.html dosyası varsa o dosyada geçen ilgili dosyaları indirmeye kalkar yada &amp;#8220;&lt;strong&gt;ERROR 403: Forbidden&lt;/strong&gt;&amp;#8221; şeklinde bir hata ile karşılaşırsınız.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; &lt;span&gt;-r&lt;/span&gt; &lt;span&gt;-nd&lt;/span&gt; &lt;span&gt;-np&lt;/span&gt; &lt;span&gt;-l1&lt;/span&gt; &lt;span&gt;-A&lt;/span&gt; &lt;span&gt;'*.zip'&lt;/span&gt; http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;downloads.html&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Şu an hattınız yavaş diyelim yada çalışırken indirme işlemi yüzünden yavaşlamasını istemiyorsunuz. Tamam bizde yattıktan sonra başlayacak şekilde ayarlarız, mesela saat 1&amp;#8242;de başlayacak şekilde.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;echo&lt;/span&gt; &lt;span&gt;'wget http://www.ornekwebsite.com/dosya.zip'&lt;/span&gt; | at 01:00&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tahmin edeceğiniz gibi &lt;strong&gt;at&lt;/strong&gt; aslında bir zamanlama komutu bunu kullanarak birçok işinizi cron&amp;#8217;a yazmadan zamanlayabilir ve zamanı geldiğinde çalışmasını sağlayabilirsiniz. En kısa sürede &lt;strong&gt;at&lt;/strong&gt; komutu ile ilgili de bir ipucu hazırlayacağım.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Oturumumuz Süresinde Kullandığımız Komutları ve Sonuçlarını Otomatik Olarak Nasıl Kaydedebiliriz?</title>
+		<link href="http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz"/>
+		<id>http://www.linuxipuclari.com/?p=204</id>
+		<updated>2009-01-18T12:22:27+00:00</updated>
+		<content type="html">&lt;p&gt;Hepimizin başına gelmiştir. Bir problemle uğraşırken veya yeni bir program kurarken not almaya çalışırız. Ama bir noktadan sonra kendimizi yaptığımız işe kaptırır işi bitirdiğimizde;&lt;/p&gt;
+&lt;p&gt;Tüh bak yaptıklarımı not almayı unuttum. Ne yapmıştık? Hangi komutları kullanmıştık? Karşımıza hangi mesajlar çıktı ve biz neyi seçtik?&lt;/p&gt;
+&lt;p&gt;diye hayıflanırız.&lt;/p&gt;
+&lt;p&gt;Kendimizi işimize vermişken bizim adımıza birisinin tüm komutlarımızı ve bu komutların ürettiği mesajları, terminalimize yansıyan çıktıları otomatik olarak kaydetmesi hoş olmaz mıydı?&lt;/p&gt;
+&lt;p&gt;Linux &lt;strong&gt;script&lt;/strong&gt; komutu bu konuda derdimize derman oluyor. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;script&lt;/strong&gt; komutu aracılığıyla terminalize yansıyan tüm çıktıları bir dosyaya kaydedip daha sonra tekrar inceleyebilirsiniz. &lt;/p&gt;
+&lt;p&gt;Bir örnek ile nasıl çalıştığına bakalım;&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ script &lt;span&gt;-f&lt;/span&gt; otomatikDokumantasyon
+Script started, &lt;span&gt;file&lt;/span&gt; is otomatikDokumantasyon
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;pwd&lt;/span&gt;
+&lt;span&gt;/&lt;/span&gt;home&lt;span&gt;/&lt;/span&gt;ali&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;whoami&lt;/span&gt;
+ali
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;ls&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;tmp&lt;span&gt;/&lt;/span&gt;
+domains genel.xls  gdl              kde-alisPik0Fj  
+ksocket-alisSBnyBl  orbit-root  plugtmp-&lt;span&gt;1&lt;/span&gt;   
+Registration_Form_WBG.pdf  Tracker-alis.7358
+fbug               hsperfdata_alis  keyring-YXOiJM  
+&amp;nbsp;
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;exit&lt;/span&gt;
+Script &lt;span&gt;done&lt;/span&gt;, &lt;span&gt;file&lt;/span&gt; is otomatikDokumantasyon&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yukarıda &lt;strong&gt;script&lt;/strong&gt; komutunu başlattığımız nokta ile komutu &lt;strong&gt;CTRL+D&lt;/strong&gt; tuş kombinasyonu aracılığıyla sonlandırdığımız nokta arasında oluşan ekran görüntülerini görüyorsunuz. Şimdi &lt;strong&gt;script&lt;/strong&gt; komutunun yukarıdaki etkileşim sonucunda bizim için oluşturduğu otomatikDokumantasyon dosyasına bakalım.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;more&lt;/span&gt; otomatikDokumantasyon
+Script started, &lt;span&gt;file&lt;/span&gt; is otomatikDokumantasyon
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;pwd&lt;/span&gt;
+&lt;span&gt;/&lt;/span&gt;home&lt;span&gt;/&lt;/span&gt;ali&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;whoami&lt;/span&gt;
+ali
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;ls&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;tmp&lt;span&gt;/&lt;/span&gt;
+domains genel.xls  gdl              kde-alisPik0Fj  
+ksocket-alisSBnyBl  orbit-root  plugtmp-&lt;span&gt;1&lt;/span&gt;   
+Registration_Form_WBG.pdf  Tracker-alis.7358
+fbug               hsperfdata_alis  keyring-YXOiJM  
+&amp;nbsp;
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;exit&lt;/span&gt;
+&amp;nbsp;
+Script &lt;span&gt;done&lt;/span&gt; on Sun &lt;span&gt;18&lt;/span&gt; Jan &lt;span&gt;2009&lt;/span&gt; 01:&lt;span&gt;59&lt;/span&gt;:&lt;span&gt;44&lt;/span&gt; PM CET
+ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yukarıda gördünüz gibi &lt;strong&gt;script&lt;/strong&gt; komutu terminalimize yazılan herşeyi bizim için kaydetti. Bir problemle uğraşırkan ayrıca kopyala&amp;amp;yapıştır aksiyonlarıyla kendimizi germemize gerek yok.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Sürekli Akan Logları İzleme</title>
+		<link href="http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme"/>
+		<id>http://www.linuxipuclari.com/?p=156</id>
+		<updated>2009-01-16T08:17:05+00:00</updated>
+		<content type="html">&lt;p&gt;Eğer birşeyler ters gidiyorsa hemen loglara bakarız çünkü soruna ait bütün ipuçları oradadır.&lt;/p&gt;
+&lt;p&gt;Bazen bu logları oluştukları anda anında izlemek istediğimizde her linux kullanıcısının ilk öğrendiği komutlardan birini kullanırız&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;tail&lt;/span&gt; &lt;span&gt;-f&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ama bu komutun şöyle bir dezavantajı var loglar orda akıp giderken birşey gözünüze takıldı ne yapacaksınız ctrl+c ve logun akmasını keseceksiniz ya ekranda kalan kısımdan logun gördüğünüz kısmına bakmaya çalışacaksınız yada more yada vi gibi komutları kullanarak dosyanın içine girip o satırı aramaya çalışacaksınız.&lt;/p&gt;
+&lt;p&gt;Peki size bunun daha kolay bir yolu var desem. Evet less komutu. Nasıl mı kullanacağız? Çok basit.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;less&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Shift+F&lt;/strong&gt; tail -f ile aynı işi görür loglar akmaya başlar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; ile istediğiniz yerde logun akmasını durdurabilirsiniz&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;B&lt;/strong&gt; ve &lt;strong&gt;F&lt;/strong&gt; tuşları logun içinde ileri geri gitmenizi sağlar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt; ile işiniz bittiğinde logdan çıkarsınız&lt;/p&gt;
+&lt;p&gt;Logların siz komutu yazdığınızda direk akarak başlamasını istiyorsanız komutu aşağıdaki gibi kullanabilirsiniz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;less&lt;/span&gt; +F &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yada daha önce yazdığımız &lt;a href=&quot;http://www.linuxipuclari.com/genel/kendi-komutunuzu-olusturun&quot;&gt;Kendi Komutunuzu Oluşturun&lt;/a&gt; ipucumuzu kullanarak &lt;strong&gt;less +F&lt;/strong&gt; için &lt;strong&gt;akanlog&lt;/strong&gt; diye bir alias yaratabilir ve komutu direkt olarak&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;akanlog &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;şeklinde de kullanabilirsiniz ;)&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Periyodik Olarak Bir Programı Çalıştırma ve Çıktısını Takip Etme</title>
+		<link href="http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme"/>
+		<id>http://www.linuxipuclari.com/?p=155</id>
+		<updated>2009-01-15T07:29:49+00:00</updated>
+		<content type="html">&lt;p&gt;Sizin de hiç ihtiyacınız oldu mu bilmem ama bu tür bir şeye çok sık ihtiyacım olunca biraz araştırdım ve bu komutu buldum o günden beri de en sevdiğim linux komutlarından biri oldu.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nasıl kullanılır?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;watch [seçenekler] komut&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-n&lt;/strong&gt; Komutun kaç saniyede bir tekrar edileceğini, ekran çıktısının kaç saniyede bir yenileneceğini belirtir. Kullanılmazsa her 2 saniyede bir anlamına gelir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-d&lt;/strong&gt; Ekran çıktısında oluşan değişiklikleri beyaz olarak boyar böylece değişim olan yerleri daha rahat gözlersiniz&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ne için mi kullanıyorum?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bir klasördeki dosya sayısındaki değişimi gözlemlemek için örn: postfix aktif kuyruktaki mail sayısını
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'wc -l | ls -l'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Disklerin doluluk oranlarını gözlemlemek için örn: Kapasite sıkıntısı olan bir diskte log yazma oranı dengesiz bir proses çalıştırdığımda diskte yer sıkıntısı oluşmasın diye
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'df -k'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Hafıza kullanım oranını gözlemlemek için
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'free -m'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Bir klasöre muratz kullanıcısı ile eklenen yada silinen dosyaları gözlemlemek için
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'ls -l | fgrep muratz'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Başka nerelerde kullandığınızı sizde bizimle paylaşırsanız sevirim.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">VM Imajının Kopyasını Aldım Ethernet Bağlanmıyor</title>
+		<link href="http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor"/>
+		<id>http://www.linuxipuclari.com/?p=153</id>
+		<updated>2009-01-14T13:54:55+00:00</updated>
+		<content type="html">&lt;p&gt;Bu sıkça başıma gelen konulardan biri sizinle paylaşmak istedim. Bazen kullandığım vm imajını bir vmware serverdan (gsx) başka bir vmware servera taşıdığımda veya aynı vmware server üzerinde kopyasını aldığımda yeni imajın ethernet bağlantısı çalışmayabiliyor.&lt;/p&gt;
+&lt;p&gt;Bunun genelde sebebi ethernet kartının vmware tarafından yeniden yaratılmasıdır.&lt;/p&gt;
+&lt;p&gt;Eski kartı silip yeni kartı eklediğinden kartın id&amp;#8217;si eth0&amp;#8242;dan eth1&amp;#8242;e değişiyor. Eğer ip tanımlarınız statik yapılmışsa &lt;strong&gt;/etc/network/interfaces&lt;/strong&gt; dosyanızda da yeni ethernet id sine göre düzenleme yapmanız gerecektir.&lt;/p&gt;
+&lt;p&gt;O anki id&amp;#8217;yi bulmanın en pratik yollarından biri de &lt;strong&gt;/proc/net/dev&lt;/strong&gt; dosyasının içine bakmak. &lt;/p&gt;
+&lt;p&gt;Bu dosyanın içi aşağıdaki gibi.&lt;/p&gt;
+&lt;pre&gt;  Interface	Receive bytes	packets errs drop fifo frame
+  eth0:		161543042	916321    0    0    0     0&lt;/pre&gt;
+&lt;p&gt;Unutmayın eğer bu sorunla karşı karşıya iseniz; &lt;strong&gt;ifconfig&lt;/strong&gt; komutu sisteme &lt;strong&gt;/etc/network/interfaces&lt;/strong&gt; dosyasında tanıttığınız kartları gösterecektir. O yüzden siz &lt;strong&gt;ifconfig&lt;/strong&gt; diye baktığınızda eth0&amp;#8242;ı görürken &lt;strong&gt;/proc/net/dev&lt;/strong&gt; altında eth1 görüyor olacaksınız.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Ubuntu VirtualBox ve KVM çakışma problemi</title>
+		<link href="http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi"/>
+		<id>http://www.linuxipuclari.com/?p=150</id>
+		<updated>2009-01-14T06:41:49+00:00</updated>
+		<content type="html">&lt;p&gt;Virtualbox sanallaştırma uygulamasının son versiyonunu kurduysanız KVM çekirdek modulleri  yüklü makinalarda Virtualbox sanal makinalarınızı  ayağa kaldırmak istediğinizde aşağıdaki hatayı verip kapanacaktır.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;VirtualBox can&amp;#8217;t operate in VMX root mode. Please disable the KVM kernel extension, recompile your kernel and reboot.&lt;br /&gt;
+VBox status code: -4011 (VERR_VMX_IN_VMX_ROOT_MODE).&lt;/p&gt;
+&lt;p&gt;Result Code:&lt;br /&gt;
+0&amp;#215;80004005&lt;br /&gt;
+Component:&lt;br /&gt;
+Console&lt;br /&gt;
+Interface:&lt;br /&gt;
+IConsole {d5a1cbda-f5d7-4824-9afe-d640c94c7dcf}&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Problemlemin çözümü için VirtualBox kullanacağınız zaman KVM çekirdek modullerini hafızadan kaldırmanız gerekecek.&lt;/p&gt;
+&lt;p&gt;Öncelikle hafızada hangi kvm modülünün yüklü olduğuna bakıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$lsmod&lt;/span&gt; | &lt;span&gt;grep&lt;/span&gt; kvm
+kvm_intel              &lt;span&gt;49728&lt;/span&gt;  0
+kvm                   &lt;span&gt;142912&lt;/span&gt;   &lt;span&gt;1&lt;/span&gt; kvm_intel&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hafızada yüklü olan kvm modülü işlemcinize bağlı olarak değişecektir. Intel tabanlı sistemimizde yüklu olan modül &lt;em&gt;kvm_intel&lt;/em&gt; isimli modül.. Aşağıdaki komutla kvm modülünü hafızadan kaldırıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;sudo&lt;/span&gt; rmmod kvm_intel&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eğer VirtualBox&amp;#8217;ı tekrar başlatırsanız sanal makinalarınızın sorunsuz olarak çalışmaya başladığını göreçeksiniz.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Sanallaştırma ve Beraberinde Getirdiği Sürprizler</title>
+		<link href="http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler"/>
+		<id>http://www.linuxipuclari.com/?p=119</id>
+		<updated>2009-01-13T09:55:49+00:00</updated>
+		<content type="html">&lt;p&gt;Trendleri takip eden herkes yakından tecrübe ediyordur ki sanallaştırma ve faydaları her düzeyde konuşuluyor tartışılıyor. Son yılların en sıcak konularından biri, son 2 senedir de Türkiyenin gündemindeki ağırlığını her geçen gün arttırıyor.&lt;/p&gt;
+&lt;p&gt;Hemen hemen her şirkette  AR-GE çalışması, test sistemi olarak sanal makinalar uzun yıllardır kullanılıyor.  Son dönemdeki tartışmaların farklı boyutu sanal makinaların artık üretim ortamlarında kullanılmaya  başlanması.&lt;/p&gt;
+&lt;p&gt;Ne yazık ki heyecan dalgasına kapılıp sörf yapmaya başlayan IT yöneticilerimiz sadece artı eksi hesabının artı boyutuna bakıyorlar. Fakat madalyonun bir de diğer yüzü var.&lt;/p&gt;
+&lt;p&gt;&lt;span id=&quot;more-119&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Sanallaştırma sayesinde çok kolay yeni bir sistemi ayağa kaldırabiliyorsunuz. Var olan bir sistemin yeni bir kopyasını alabiliyorsunuz. Eğer belli bir planlama ve kontrol olmazsa (ki baslangıçta hiç bir sanallaştırma projesinde ne yazik ki olmuyor) göz açıp kapayana kadar organizayonun yapısına gore 10 larla veya 100 lerle ölçülen sanal makinalara ulaşmanız hiç de şaşırtıcı olmaz.&lt;/p&gt;
+&lt;p&gt;Sanallaştırma her fiziksel makinanın nerdeyse ayrı bir datacenter gibi davranmasına imkan sağlıyor.&lt;/p&gt;
+&lt;p&gt;Bu noktada sanallaştırma projesi gerçekleştiren veya gerçekleştirmeyi planlayan IT yöneticilerimizin kendilerine aklıma ilk gelen şu soruları sormaları gerekiyor.&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Sanal makinalarınızın yama yönetimini nasıl yapacaksınız?&lt;br /&gt;
+&lt;/strong&gt;Eskiden Sanal makinaları barındıran fiziksel makinenin yamalarını yapmak zorunda kalırken sanallaştırma sonrasında bu fiziksel makine üzerindeki her bir sanal makinanın ayrı olarak yamanması gerekiyor.&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Sanal ortamlarda veri güvenliği konusunda ne kadar bilgi sahibisiniz?&lt;/strong&gt;&lt;br /&gt;
+Fiziksel makinanızı datacenter&amp;#8217;a kilitliyorsunuz ama sanal makinanız ağ üzerinden datacenter dışına kaçabilir.&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Sanal makinaların loglarını nasıl takip edeceksiniz?&lt;/strong&gt;&lt;br /&gt;
+Sanal makinalarınızın loglarını nasıl takip ediyorsunuz? Sanallaştırmanın sistem yöneticilerine getirdiği ekstra yük nedir? Yeni yasal düzenlemelere uyum kapsamında sanal makinaların kullanımı size ne gibi yükümlülükler getiriyor?&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Her bir sanal makinadaki kullanıcı ve yetki yönetimini nasıl yapacaksınız?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Sanal makinalarınızın kaynak kullanımlarını nasıl izliyorsunuz?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Lisansların yönetimi nasıl yapacaksınız?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;Yedekleme için ne tür bir altyapı düşünüyorsunuz?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Takip eden yazılarda her bir başlık için linux platformunda çalışan açık kaynak kodlu veya ücretsiz çözümleri, alternatif senaryoları incelemeye çalışacağız.&lt;/p&gt;
+&lt;p&gt;Sizlerin de bu konudaki görüş ve tecrübelerini duymaktan mutluluk duyarız.&lt;/p&gt;
+&lt;p&gt;Sanallaştırma tecrübelerinizi, ürettiginiz yaratıcı çözümleri duymak için sabırsızlanıyoruz.&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content>
+		<author>
+			<name>Linuxipuclari</name>
+			<uri>http://www.linuxipuclari.com</uri>
+		</author>
+		<source>
+			<title type="html">Linux İpuçları</title>
+			<subtitle type="html">Linux Hakkında Pratik İpuçları</subtitle>
+			<link rel="self" href="http://www.linuxipuclari.com/feed"/>
+			<id>http://www.linuxipuclari.com/feed</id>
+			<updated>2009-03-29T15:57:19+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Operatörler</title>
+		<link href="http://www.python-tr.com/operatorler/"/>
+		<id>http://www.python-tr.com/operatorler/</id>
+		<updated>2009-01-03T12:12:55+00:00</updated>
+		<content type="html">Operat&amp;#246;rler aritmetik operat&amp;#246;rler, ilişkisel operat&amp;#246;rler ve mantıksal operat&amp;#246;rler olarak &amp;#252;&amp;#231;e ayrılır.
+Aritmetik operat&amp;#246;rler matematiksel işlemlerde kullanılır. Ayrıca toplama (+) operat&amp;#246;r&amp;#252; string değerleri birleştirir. Aşağıdaki tabloda Java ve Python programlama dillerine ait aritmetik operat&amp;#246;rler bulunmaktadır.
+
+&amp;#160;
+&amp;#160;
+
+
+
+
+&amp;#160;
+
+
+Toplama
+
+
+&amp;#199;ıkarma
+
+
+&amp;#199;arpma
+
+
+B&amp;#246;lme
+
+
+Mod   Alma
+
+
+
+
+Java
+
+
++
+
+
+-
+
+
+*
+
+
+/
+
+
+%
+
+
+
+
+Python
+
+
++
+
+
+-
+
+
+*
+
+
+/
+
+
+%
+
+
+
+
+&amp;#160;&amp;#160;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160; İlişkisel operat&amp;#246;rler programdaki iki değeri karşılaştırmak i&amp;#231;in kullanılır. Aşağıdaki tabloda Java ve Python programlama dillerine ait ilişkisel operat&amp;#246;rler [...]</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Zemberek-server Firefox Türkçe yazım denetim eklentisi</title>
+		<link href="http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html"/>
+		<id>tag:blogger.com,1999:blog-1720576558802393126.post-4239467354502948425</id>
+		<updated>2008-12-28T13:12:00+00:00</updated>
+		<content type="html">Daha önceki bir &lt;a href=&quot;http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html&quot;&gt;yazıda&lt;/a&gt; Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. &lt;a href=&quot;http://voikko.sourceforge.net/&quot;&gt;Voikko&lt;/a&gt; Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.&lt;br /&gt;&lt;br /&gt;&lt;span&gt;Not:&lt;/span&gt; Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.&lt;br /&gt;&lt;br /&gt;1: &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/10183&quot;&gt;https://addons.mozilla.org/en-US/firefox/addon/10183&lt;/a&gt;&lt;br /&gt;2: &lt;a href=&quot;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&quot;&gt;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&lt;/a&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/1720576558802393126-4239467354502948425?l=zembereknlp.blogspot.com&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Serkan Kaba</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://zembereknlp.blogspot.com/</uri>
+		</author>
+		<source>
+			<title type="html">Zemberek NLP</title>
+			<subtitle type="html">Bu sayfada Zemberek, NZemberek ve Doğal Dil İşleme (NLP - Natural Language Processing) ile ilgili konulardan bahsedilir. Nörolinguistik Programming isimli tuhaflıkla ilgisi yoktur.</subtitle>
+			<link rel="self" href="http://zembereknlp.blogspot.com/feeds/posts/default?alt=rss"/>
+			<id>tag:blogger.com,1999:blog-1720576558802393126</id>
+			<updated>2009-03-29T15:57:26+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Denetim Deyimleri</title>
+		<link href="http://www.python-tr.com/denetim-deyimleri/"/>
+		<id>http://www.python-tr.com/denetim-deyimleri/</id>
+		<updated>2008-07-14T20:30:04+00:00</updated>
+		<content type="html">3.5. DENETİM VE D&amp;#214;NG&amp;#220; DEYİMLERİ
+3.5.1. Denetim Deyimleri
+&amp;#160;
+Denetim deyimleri, koşulun mantıksal durumuna g&amp;#246;re programın akışını değiştiren yapılardır.
+3.5.1.1. If deyimi
+If deyimi belirli bir koşul sağlandığında yapılacak işleri belirlememizi sağlar. Java ve Python programlama dillerinde if deyiminin kullanımı [...]</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Matematiksel Fonksiyonlar</title>
+		<link href="http://www.python-tr.com/matematiksel-fonksiyonlar/"/>
+		<id>http://www.python-tr.com/matematiksel-fonksiyonlar/</id>
+		<updated>2008-02-16T08:07:48+00:00</updated>
+		<content type="html">&amp;#160;&amp;#160;&amp;#160; Uzun zamandır blog&amp;#8217;umuza yazı eklemiyorduk. Tezimizin i&amp;#231;eirği hazır sayılır fakat t&amp;#252;m tezi siteye hemen ekleyemiyoruz. Ama matematiksel fonksiyonlar b&amp;#246;l&amp;#252;m&amp;#252;n&amp;#252; eklemenin zamanı geldi.
+&amp;#160;&amp;#160;&amp;#160; Matematiksel fonksiyonlar programlama yaparken &amp;#231;eşitli matematik işlemlerini yapmamızı kolaylaştırırlar. Aşağıdaki tabloda Java ve Python programlama dillerine ait matematiksel fonksiyonlar yer almaktadır.
+
+
+
+
+İşlevi
+
+
+Java
+
+
+Python
+
+
+
+
+x arg&amp;#252;manının   mutlak değerini hesaplama
+
+
+abs(x)
+
+
+fabs(x)
+
+
+
+
+x&amp;#8217;i   kendisinden b&amp;#252;y&amp;#252;k en [...]</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Değişkenler ve Temel Veri Tipleri</title>
+		<link href="http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/"/>
+		<id>http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/</id>
+		<updated>2007-11-06T22:17:51+00:00</updated>
+		<content type="html">Değişkenler, programlarda saklamak istediğimiz değerleri tutarlar. Programlama dillerinde değişkenler tutabilecekleri veri
+cinslerine g&amp;#246;re sınıflandırılmıştır.
+Java&amp;#8217;da değişken tanımlamak i&amp;#231;in eşitliğin sol tarafına değişkenin veri tipi ve değişkenin adı, sağ tarafına ise değeri yazılır. 
+
+
+
+
+
+A&amp;#231;ıklama :
+
+
+&amp;#214;rnek :
+
+
+
+
+int degiskenadi = değer;
+
+
+int a=4;
+
+
+
+
+
+
+
+Java programlama dilinde boolean, char, byte, short, int, long, float ve double temel veri tipleridir. Boolean mantık değişkenidir ve [...]</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">2 Kere &amp;#8220;Merhaba Dünya&amp;#8221;</title>
+		<link href="http://www.python-tr.com/2-kere-merhaba-dunya/"/>
+		<id>http://www.python-tr.com/2-kere-merhaba-dunya/</id>
+		<updated>2007-09-21T21:59:50+00:00</updated>
+		<content type="html">Bu siteyi bitirme tezimizin konusu olan &amp;#8220;Java ve Python Programlama Dillerinin Karşılaştırılması&amp;#8221; için oluşturduk. Arkadaşım Emel OKAY (japanese) ve ben Uğur SAMSA (JaMaL), bizler gelişme gösterdikçe, gelişmeleri buraya aktarıyor olacağız. Sitenin adresinin python-tr.com olmasına aldanmayın. Bu sitede Java da anlatılacaktır, Python da. Tezimizi erken bitirebilirsek Python ile bir uygulama yapmayı düşünüyoruz. Tabi bunlar zamanla olacak [...]</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Python&amp;#8217;da Klavye Girişleri</title>
+		<link href="http://www.python-tr.com/pythonda-klavye-girisleri/"/>
+		<id>http://www.python-tr.com/pythonda-klavye-girisleri/</id>
+		<updated>2007-08-05T10:35:31+00:00</updated>
+		<content type="html">Her programlama dilinde olduğu gibi klavye girişleri, kullanıcıdan bilgi alınmak istendiğinde kullanılır.
+Python&amp;#8217;daki kullanımı şöyledir: karakter girişlerinde &amp;#8220;raw_input&amp;#8221;, sayısal değer girişlerinde &amp;#8220;input&amp;#8221; kullanılır. Şimdi de bunu örnekler üstünde görelim.
+Örnek 1 :
+
+&amp;#8211;&gt;raw_input(&amp;#8221;yaz bir şeyler:&amp;#8221;)
+yaz bir şeyler:Bugün hava çok güzel
+
+veya
+
+
+&amp;#8211;&gt;kelime=raw_input(&amp;#8221;Bir kelime giriniz:&amp;#8221;) #Kullanıcının yazdığını kelime adlı değişkene atadık
+Bir kelime giriniz:Bulut
+&amp;#8211;&gt;kelime #kelime adlı değişkenin değerini istiyoruz
+&amp;#8220;bulut&amp;#8221;
+
+Örnek 2 :
+
+&amp;#8211;&gt;input(&amp;#8221;Bir sayı [...]</content>
+		<author>
+			<name>japanese</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Python&amp;#8217;da Karakter Dizilerini Birden Fazla Satırda Yazmak</title>
+		<link href="http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/"/>
+		<id>http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/</id>
+		<updated>2007-07-12T13:06:03+00:00</updated>
+		<content type="html">Yazımızı satırlar halinde yazarak görsellik kazandırmak istediğimiz durumlar vardır. İşte bunu yaparken Python&amp;#8217;un bize sunduğu bir çok yoldan birini kullanabiliriz. Bunun nasıl yapıldığını her biri için örneklerle görelim.
+a =&gt; değişken olsun (Python&amp;#8217;da değişkenleri kullanırken önceden tanımlama yapmamıza gerek olmadığını hatırlayalım)
+Örnek 1 :
+
+a=&amp;#8221;Muhabbet bağına girdim bu gece\
+Açılmış gülleri derdim bu gece&amp;#8221;
+
+Örnek 2 :
+
+
+a=&amp;#8221;Muhabbet bağına girdim bu [...]</content>
+		<author>
+			<name>japanese</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Java&amp;#8217;da Sınıf Oluşturma</title>
+		<link href="http://www.python-tr.com/javada-sinif-olusturma/"/>
+		<id>http://www.python-tr.com/javada-sinif-olusturma/</id>
+		<updated>2007-07-11T15:52:18+00:00</updated>
+		<content type="html">Java Programlama Dili&amp;#8217;nde sınıf oluşturmak çok basittir. Tabi önemli olan bu sınıfı ne şekilde ve nasıl kullanacağımızdır. Aşağıda Java&amp;#8217;da sınıf oluşturma kodunu görüyorsunuz.
+public class sinifadi{
+//gerekli tanımlar
+}
+Burada &amp;#8220;sinifadi&amp;#8221; sınıf adının değişkenidir ve programcıya göre şekillendirilir. &amp;#8220;public&amp;#8221; komutunun buradaki amacı ise bilgilerin diğer sınıflar tarafından da kullanılabilmesidir.</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Python&amp;#8217;da Değişken Tanımlamak</title>
+		<link href="http://www.python-tr.com/pythonda-degisken-tanimlamak/"/>
+		<id>http://www.python-tr.com/pythonda-degisken-tanimlamak/</id>
+		<updated>2007-07-08T20:57:10+00:00</updated>
+		<content type="html">Aslında bu başlık yanlış, doğrusu &amp;#8220;Python&amp;#8217;da Değişken Tanımlamamak&amp;#8221; olacaktı. Çünkü Python&amp;#8217;da değişken tanımlanmıyor, değişkenlerin tipleri atandıkları ilk değere göre belirleniyor. Bu da bize kullanım rahatlığı sağlıyor.
+Değişkene değer atama yaparken sayıları direkt, string ifadeleri ise tırnak içinde yazıyoruz. Tek ya da çift tırnak kullanabiliriz, aynı anlama geliyor.
+Örnek 1 :
+
+değişken=değer
+a=5
+b=&amp;#8221;ali&amp;#8221;
+k=&amp;#8217;veli&amp;#8217;
+
+Örnekten anlaşılacağı gibi program a&amp;#8217;yı integer, b ve [...]</content>
+		<author>
+			<name>japanese</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Python İle İlgili Genel Bilgiler-Python Nedir?</title>
+		<link href="http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/"/>
+		<id>http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/</id>
+		<updated>2007-07-08T19:25:53+00:00</updated>
+		<content type="html">Python, ilk olarak 1990 yılında Guido Van Rossum tarafından geliştirilmeye başlanmıştır ve adını Monty Python&amp;#8217;s Flying Circus adlı programdan almıştır. Python, nesne yönelimli(object oriented), yorumlanabilen(interpreted), modüler ve etkileşimli(interactive) bir programlama dilidir. Sözdiziminin(syntax) basit olması dilin öğrenilmesini oldukça kolaylaştırmktadır. Ayrıca diğer dillerde kod bloklarını belirtmek için parantezler kullanılırken Python&amp;#8217;da kod blokları girintiler(indentation) yoluyla anlaşılmaktadır ve bu [...]</content>
+		<author>
+			<name>japanese</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+	<entry xml:lang="en">
+		<title type="html">Java&amp;#8217;da Değişken Tanımlamak</title>
+		<link href="http://www.python-tr.com/javada-degisken-tanimlamak/"/>
+		<id>http://www.python-tr.com/javada-degisken-tanimlamak/</id>
+		<updated>2007-07-07T23:19:11+00:00</updated>
+		<content type="html">Java&amp;#8217;da değişken tanımlamak için önce tanımlayacağımız değişkenin tipini yazıyoruz. Ardından tanımlayacağımız değişkene vereceğimiz adı yazıyoruz. &amp;#8220;=&amp;#8221; işaretini ekliyoruz. Eşitliğin sağ tarafını isteğimize göre iki şekilde yazabiliriz. Birincisi new + değişken tipini yazıp parantez içinde çift tırnaklar kullanarak değişkenin değerini yazarak, ikincisi ise sadece çift tırnaklar içinde değişkenin başlangıç değerini yazarak. İki seçenekte aynı işi yapar. [...]</content>
+		<author>
+			<name>Uğur Samsa</name>
+			<uri>http://www.python-tr.com</uri>
+		</author>
+		<source>
+			<title type="html">Python - Java</title>
+			<subtitle type="html">Java ve Python Programlama Dillerinin Karşılaştırılması - Python-Tr.com</subtitle>
+			<link rel="self" href="http://www.python-tr.com/feed/atom/"/>
+			<id>http://www.python-tr.com/feed/atom/</id>
+			<updated>2009-03-29T15:57:20+00:00</updated>
+		</source>
+	</entry>
+
+</feed>

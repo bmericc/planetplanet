@@ -3,10 +3,159 @@
 
 <channel>
 	<title>Topluluklar Gezegeni</title>
-	<link>http://gezegen.linux.org.tr/lkd/</link>
+	<link>http://gezegen.linux.org.tr/topluluk/</link>
 	<language>en</language>
-	<description>Topluluklar Gezegeni - http://gezegen.linux.org.tr/lkd/</description>
+	<description>Topluluklar Gezegeni - http://gezegen.linux.org.tr/topluluk/</description>
 
+<item>
+	<title>Özgürlükiçin.com: Birleşik Krallık ODF'den Yana</title>
+	<guid>http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/</guid>
+	<link>http://www.ozgurlukicin.com/haber/birlesikkrallik-odfden-yana/</link>
+	<description>
+&lt;p&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/upload/image/odf-toplulugu.png&quot; border=&quot;0&quot; alt=&quot;ODF zaferini ilan etti.&quot; title=&quot;ODF zaferini ilan etti.&quot; align=&quot;left&quot; /&gt;Kamusal belge ve hizmetlerde özgür standartların kullanımını tercih eden ülkelerin sayısı her geçen gün artıyor. Geçtiğimiz günlerde yayınladığımız ODF'yi kullanan &lt;a href=&quot;http://www.ozgurlukicin.com/haber/odf-16-ulkede-kullaniliyor/&quot;&gt;ülkeler listesine&lt;/a&gt; Birleşik Krallık’ın da (İngiltere, İskoçya, Galler ve Kuzey İrlanda'dan oluşan yapı) katılımıyla, &lt;a href=&quot;http://tr.pardus-wiki.org/OpenDocument&quot;&gt;Açık Belge Biçimi&lt;/a&gt; (Open Document Format-ODF), çok önemli bir mevzi daha kazandı.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.odfalliance.org/&quot;&gt;ODF Alliance&lt;/a&gt; Başkanı &lt;strong&gt;Marino MARCICH&lt;/strong&gt;, &quot;Britanya Hükümeti tarafından yapılan açıklama, ODF'ye duyulan ve büyümekte olan talebin göstergesi&quot; şeklinde konuşuyor ve ekliyor: &quot;ODF aracılığıyla sağlanan birlikte çalışabilirlik esasları üzerine kurulan açık standartlar, hükümetlere kazanç ve veriye uzun vadeli erişim seçenekleri açısından büyük kazanımlar sağlıyor.&quot;&lt;/p&gt;
+&lt;p&gt;Britanya Hükümeti, bir süre önce &lt;a href=&quot;http://www.ozgurlukicin.com/haber/hukumetten-acik-kaynaga-10-adim/&quot;&gt;haberini&lt;/a&gt; de yaptığımız üzere, &quot;&lt;strong&gt;Açık Kaynak, Açık Standartlar ve Tekrar-Kullanım: Hükümet Eylem Planı&lt;/strong&gt;&quot; altında, bundan sonraki tüm IT projelerinde açık standartlara ilişkin gereksinimleri belirterek, açık standartlara uygunluk talep edeceğini duyurmuştu. Hükümet bu plan çerçevesinde, ODF’nin kullanımını destekleyeceğini belirtti. Buna ek olarak, hükümet, bilgilerin açık standartlarda bulunabilirliğini güvence altına almak için çalışacak ve bu kamusal web sayfaları için bir standart haline gelecek.&lt;/p&gt;
+&lt;p&gt;Hem özel hem de açık kaynaklı ODF destekli yazılımların kolay bulunabilirliğine dikkat çeken &lt;a href=&quot;http://www.openforumeurope.org/&quot;&gt;OpenForum Avrupa&lt;/a&gt; başkanı &lt;strong&gt;Graham TAYLOR,&lt;/strong&gt; &quot;Britanya Hükümeti'nin tedarik yönetmeliklerinde açık standartlara işaret etmesi ve açık standartlar ile uyumluluk halindeki çözümleri tercih edecek olması, farklı platformlardaki çoklu rekabet ürünleri arasındaki yarışı güvence altına alacak önemli bir gelişme şeklinde konuştu.&lt;/p&gt;
+&lt;p&gt;Birleşik Krallık ile birlikte, şu an için, 17 devlet ve sekiz özerk hükümet, belge alışverişi için resmi olarak ODF’yi kabul etmiş durumda. Tercihini ODF'den yana kullanan hükumet politikası girişimlerine dair açıklama ve daha kapsamlı bir liste için &lt;a href=&quot;http://www.odfalliance.org/resources/Adoptions-ODF-Dec2008.pdf&quot;&gt;buraya&lt;/a&gt; bakabilirsiniz.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynak&lt;/strong&gt;: &lt;a href=&quot;http://www.odfalliance.org/press/Release20090225-ukgovOSS.pdf&quot;&gt;ODF Alliance&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sat, 28 Mar 2009 20:18:00 +0000</pubDate>
+</item>
+<item>
+	<title>GNOME Türkiye: GNOME 2.26 Yayınlandı</title>
+	<guid>http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2</guid>
+	<link>http://www.gnome.org.tr/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=2</link>
+	<description>
+GNOME Masa&amp;uuml;st&amp;uuml; ortamının en son s&amp;uuml;r&amp;uuml;m&amp;uuml; olan GNOME 2.26 s&amp;uuml;r&amp;uuml;m&amp;uuml; yayınlandı. Bu s&amp;uuml;r&amp;uuml;mde GNOME Masa&amp;uuml;st&amp;uuml; ortamı bir &amp;ccedil;ok hata d&amp;uuml;zeltmesi, performans artışının yanı sıra gelişmiş bir CD/DVD yazma programı olan Brasero (http://projects.gnome.org/brasero/)'yu da platforma katmış oldu. Yeni GNOME s&amp;uuml;r&amp;uuml;m&amp;uuml;ndeki yenilikleri &amp;ouml;ğrenmek ve daha fazla bilgi edinmek i&amp;ccedil;in T&amp;uuml;rk&amp;ccedil;e S&amp;uuml;r&amp;uuml;m Notları (http://library.gnome.org/misc/release-notes/2.26/index.html.tr) sayfasına bakabilirsiniz.</description>
+	<pubDate>Mon, 23 Mar 2009 18:50:34 +0000</pubDate>
+</item>
+<item>
+	<title>Ubuntu Türkiye: Mustafa ALKAN: SUDO'nun 5. sayısı yayında!</title>
+	<guid>http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html</guid>
+	<link>http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html</link>
+	<description>
+&lt;a href=&quot;http://www.ubuntu-tr.org/sudo/resim/sudo5.jpg&quot;&gt;&lt;img src=&quot;http://www.ubuntu-tr.org/sudo/resim/sudo5.jpg&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;p&gt;&lt;a href=&quot;http://www.hakperest.org/2009/03/sudo-5-say-geliyor.html&quot;&gt;devamını oku&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Sun, 15 Mar 2009 05:13:00 +0000</pubDate>
+</item>
+<item>
+	<title>Linuxipuclari: Ben Kimim? Başka Kim Var? En Son Ne Yapmış?</title>
+	<guid>http://www.linuxipuclari.com/?p=255</guid>
+	<link>http://www.linuxipuclari.com/genel/ben-kimim-baska-kim-var-en-son-ne-yapmis</link>
+	<description>
+	<![CDATA[<img src="http://gezegen.linux.org.tr/images/heads/linuxipuclari.png" align="right" width="64" height="">]]>
+&lt;p&gt;Bu konuya başka nasıl bir başlık verilebilirdi bilemiyorum ama bence hem konuyu anlatması açısından hem de ilgi çekmesi açısından değişik  bir başlık oldu.&lt;/p&gt;
+&lt;p&gt;Tabi konumuz linux ama olaya felsefi açıdan değil de teknik açıdan açıklık getireceğiz. Ama aynı başlık ile birde olayın felsefi yanına dokunup Türkiye&amp;#8217;de Linux konusunda, ben dahil kimler var ve en son ne yapmışlar bir ara bakmak lazım :)&lt;/p&gt;
+&lt;p&gt;Önünüzde açık bir linux konsolu var ve bir işlem yapmanız lazım.&lt;/p&gt;
+&lt;p&gt;İlk bilmeniz gereken, sisteme o an kim olarak bağlı olduğunuzdur.&lt;/p&gt;
+&lt;p&gt;Öğrenmenin yolu sormaktır. Linux&amp;#8217;te bunu sormanın yolu da &lt;strong&gt;whoami&lt;/strong&gt; komutudur.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;whoami&lt;/span&gt;
+&amp;nbsp;
+murat&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Peki şu an sistemde bizden başka kimler var? Hemen soralım yine bu seferki komut &lt;strong&gt;who&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;who&lt;/span&gt;
+&amp;nbsp;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        &lt;span&gt;2009&lt;/span&gt;-01-&lt;span&gt;27&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt; &lt;span&gt;&amp;#40;&lt;/span&gt;84.145.113.121&lt;span&gt;&amp;#41;&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;&lt;span&gt;1&lt;/span&gt;        &lt;span&gt;2009&lt;/span&gt;-01-&lt;span&gt;27&lt;/span&gt; &lt;span&gt;21&lt;/span&gt;:&lt;span&gt;32&lt;/span&gt; &lt;span&gt;&amp;#40;&lt;/span&gt;84.168.127.32&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bu komut sayesinde sisteme kim bağlanmış, ne zaman bağlanmış, hangi ip den bağlanmış görebiliyorsunuz.&lt;/p&gt;
+&lt;p&gt;Peki bu bağlı olan kişi ne yapıyor, yada birşey yapıyor mu? Bunu öğrenmek için de &lt;strong&gt;w&lt;/strong&gt; komutunu kullanıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;w&lt;/span&gt;
+ &lt;span&gt;22&lt;/span&gt;:00:&lt;span&gt;53&lt;/span&gt; up &lt;span&gt;92&lt;/span&gt; days, &lt;span&gt;12&lt;/span&gt;:&lt;span&gt;45&lt;/span&gt;,  &lt;span&gt;2&lt;/span&gt; user,  load average: &lt;span&gt;0.00&lt;/span&gt;, &lt;span&gt;0.07&lt;/span&gt;, &lt;span&gt;0.07&lt;/span&gt;
+USER     TTY      FROM             LOGIN&lt;span&gt;@&lt;/span&gt;   IDLE     JCPU   PCPU WHAT
+murat    pts&lt;span&gt;/&lt;/span&gt;0    84.145.113.121   &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt;    0.00s    0.19s  0.02s &lt;span&gt;w&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;&lt;span&gt;1&lt;/span&gt;    84.168.127.32    &lt;span&gt;21&lt;/span&gt;:&lt;span&gt;32&lt;/span&gt;    118.34s  21.18s 0,03s &lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bu sonucu inceleyecek olursak.&lt;/p&gt;
+&lt;p&gt;Birinci satırdaki bilgiler bağlı olduğumuz sistemin kaç gündür çalıştığını, Sisteme kaç kişinin bağlı olduğunu ve o anki yükünü gösteriyor.&lt;/p&gt;
+&lt;p&gt;Daha sonra yeralan bilgiler ise sisteme o an bağlı olan kişinin;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;USER&lt;/strong&gt; Hangi kullanıcı adı ile bağlı olduğunu,&lt;br /&gt;
+&lt;strong&gt;TTY&lt;/strong&gt; Hangi terminal numarası ile bağlı olduğunu,&lt;br /&gt;
+&lt;strong&gt;FROM&lt;/strong&gt; Hangi ipden bağlandığını&lt;br /&gt;
+&lt;strong&gt;LOGIN@&lt;/strong&gt; Ne zaman bağlandığını&lt;br /&gt;
+&lt;strong&gt;IDLE&lt;/strong&gt; Şu an bir işlem yapıp yapmadığını. (İşlem yapıyorsa bu süre 0.00s olarak gözükür. İşlem yapmıyorsa sizin komutu çalıştırdığınız süre ile o kişinin en son komutu çalıştırdığı zaman arasındaki fark saniye olarak görüntülenir)&lt;br /&gt;
+&lt;strong&gt;JCPU&lt;/strong&gt; Bağlı olduğu süre içinde çalıştırdığı komutların harcadığı CPU zamanını&lt;br /&gt;
+&lt;strong&gt;PCPU&lt;/strong&gt; En son çalıştırdığı komutun harcadığı CPU zamanını&lt;br /&gt;
+&lt;strong&gt;WHAT&lt;/strong&gt; En son çalıştırdığı komutu gösterir&lt;/p&gt;
+&lt;p&gt;Bu konudan bahsedince bir komutu daha anlatmadan geçmek olmaz.&lt;/p&gt;
+&lt;p&gt;Peki son zamanlarda, sisteme kimler bağlanmış ve ne kadar bağlı kalmış. Bunun için &lt;strong&gt;last&lt;/strong&gt; komutunu kullanabiliriz.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;last&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Tue Jan &lt;span&gt;27&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt;   still logged &lt;span&gt;in&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Mon Jan &lt;span&gt;26&lt;/span&gt; &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;39&lt;/span&gt; - &lt;span&gt;17&lt;/span&gt;:02  &lt;span&gt;&amp;#40;&lt;/span&gt;01:&lt;span&gt;22&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;0        84.168.127.32    Fri Jan &lt;span&gt;23&lt;/span&gt; &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;52&lt;/span&gt; - &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;39&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;04:&lt;span&gt;46&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Fri Jan &lt;span&gt;23&lt;/span&gt; 08:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;19&lt;/span&gt;:&lt;span&gt;58&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;11&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+ali      pts&lt;span&gt;/&lt;/span&gt;0        84.168.127.32    Thu Jan &lt;span&gt;22&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;34&lt;/span&gt; - &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;44&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;03:&lt;span&gt;16&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Thu Jan &lt;span&gt;22&lt;/span&gt; &lt;span&gt;12&lt;/span&gt;:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;23&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;02:&lt;span&gt;56&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Özellikle belli bir kullanıcının bağlantılarını merak ediyorsak o zaman komutun sonuna kullanıcı adını yazmak yeterli olacaktır.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;~$ &lt;span&gt;last&lt;/span&gt; murat
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Tue Jan &lt;span&gt;27&lt;/span&gt; &lt;span&gt;20&lt;/span&gt;:&lt;span&gt;18&lt;/span&gt;   still logged &lt;span&gt;in&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Mon Jan &lt;span&gt;26&lt;/span&gt; &lt;span&gt;15&lt;/span&gt;:&lt;span&gt;39&lt;/span&gt; - &lt;span&gt;17&lt;/span&gt;:02  &lt;span&gt;&amp;#40;&lt;/span&gt;01:&lt;span&gt;22&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Fri Jan &lt;span&gt;23&lt;/span&gt; 08:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;19&lt;/span&gt;:&lt;span&gt;58&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;11&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+murat    pts&lt;span&gt;/&lt;/span&gt;0        84.145.113.121   Thu Jan &lt;span&gt;22&lt;/span&gt; &lt;span&gt;12&lt;/span&gt;:&lt;span&gt;28&lt;/span&gt; - &lt;span&gt;23&lt;/span&gt;:&lt;span&gt;30&lt;/span&gt;  &lt;span&gt;&amp;#40;&lt;/span&gt;02:&lt;span&gt;56&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Umarım bu doküman faydalı olmuştur.&lt;/p&gt;
+&lt;p&gt;İyi Çalışmalar&lt;/p&gt;</description>
+	<pubDate>Wed, 28 Jan 2009 06:24:26 +0000</pubDate>
+</item>
+<item>
+	<title>Linuxipuclari: RPM’cinin İsviçre çakısı :)</title>
+	<guid>http://www.linuxipuclari.com/?p=244</guid>
+	<link>http://www.linuxipuclari.com/genel/rpm-cinin-isvicre-cakisi</link>
+	<description>
+	<![CDATA[<img src="http://gezegen.linux.org.tr/images/heads/linuxipuclari.png" align="right" width="64" height="">]]>
+&lt;p&gt;Belki sizlerin de başına gelmiştir - tabii ki her zaman için haklı nedenlerden dolayı ;) - bazen bir üreticinin rpm&amp;#8217;lerinin üzerinde ufak tefek değişiklik yapmak zorunluluğunu hissedebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Eğer söz konusu ticari bir uygulamanın paketi ise %99.9 olasılıkla SRPM dosyalarına veya kaynak kodlarına erişiminiz olmayacaktır. Hoş, erişiminiz olsa bile bir RPM&amp;#8217;i kendiniz tekrar paketlemeye çalıştığınızda hiç de hoş olmayan bir çok süprizle karşılaşmanız muhtemel.&lt;/p&gt;
+&lt;p&gt;Şimdi karşılaştığım gerçek bir problem üzerinden yazımıza konu olan &lt;strong&gt;&lt;em&gt;rpmrebuild&lt;/em&gt;&lt;/strong&gt; programının kullanımını ve ne gibi faydaları olduğunu açılklamaya çalışalım.&lt;/p&gt;
+&lt;p&gt;Bir müşterimiz için geliştirdiğimiz platformun merkezi loglama ihtiyacını Syslog-NG ile karşılama yoluna gittik. Açık kaynaklı bu  projenin ticari versiyonunu kullanan muşterimize üretici Balabit firmasında premium edition olarak etiketlenmiş yeni bir rpm ulaştı.&lt;/p&gt;
+&lt;p&gt;Balabit firmasının müşterimize gönderdiği rpm kurulum bittikten sonra syslog servisinin yerine kendisini yani syslog-ng servisini ekliyor. Buraya kadar bir sorun yok fakat kurulumun son aşamasında rpm&amp;#8217;in post install scriptinde  syslog servisini durdurup  syslog-ng servisini başlatıyor.&lt;/p&gt;
+&lt;p&gt;Geliştirilen platformun mimarisi gereği syslog-ng servisinin platform tarafindan talep edilene kadar çalıştırılmaması loglamanın local syslog servisi tarafından yapılması gerekiyor. Kaldi ki syslog-ng servisinin konfigurasyonu daha ilerki bir aşamada platformun değişik bileşenleri tarafından tamamlanacak.&lt;/p&gt;
+&lt;p&gt;Balabit firması açısından önemsiz bir problem olmakla birlikte müşterimizin, dolayısıyla bizim başımız bu sorundan dolayı oldukça ağrıdı. Sadece post installation scriptini değiştirebilsek yani syslog servisinin durdurulup syslog-ng servislerinin başlatıldığı iki satırı rpm&amp;#8217;den çıkarabilirsen sorunumuz çözülecek, müşterimiz de biz de gayet mutlu olacaktık.&lt;/p&gt;
+&lt;p&gt;Bu noktada internette yaptığımız araştırmalar sonucunda &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt; &lt;/strong&gt;isimli programı bulduk. &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; aracılığıyla binary bir rpm paketinin içindeki dosyaları değiştirebilir, yeni dosya ekleyebilir, varolan dosyaları silebilir ve hatta rpm&amp;#8217;in elinizde olmadığı durumlarda rpm veritabanı aracılığıyla ilgili rpm&amp;#8217;in &lt;em&gt;spec&lt;/em&gt; dosyasını tekrar oluşturabilirsiniz. Uzun lafın kısası İsviçre çakısı gibi bir uygulama. :)&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;&amp;#91;&lt;/span&gt;sogua00&lt;span&gt;@&lt;/span&gt;aliontl901 ~&lt;span&gt;&amp;#93;&lt;/span&gt;$ rpmrebuild &lt;span&gt;-n&lt;/span&gt; &lt;span&gt;--edit-post&lt;/span&gt; &lt;span&gt;-p&lt;/span&gt; syslog-ng-premium-edition-2.1.4-1.x86_64.rpm
+&amp;nbsp;
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+warning: syslog-ng-premium-edition-2.1.4-1.x86_64.rpm: Header V3 DSA signature: NOKEY, key ID f5297614
+&amp;nbsp;
+Do you want to &lt;span&gt;continue&lt;/span&gt; ? &lt;span&gt;&amp;#40;&lt;/span&gt;y&lt;span&gt;/&lt;/span&gt;N&lt;span&gt;&amp;#41;&lt;/span&gt; y
+&amp;nbsp;
+Processing files: syslog-ng-premium-edition-2.1.4-&lt;span&gt;1&lt;/span&gt;
+&amp;nbsp;
+Wrote: &lt;span&gt;/&lt;/span&gt;home&lt;span&gt;/&lt;/span&gt;sogua00&lt;span&gt;/&lt;/span&gt;rpmbuild&lt;span&gt;/&lt;/span&gt;RPMS&lt;span&gt;/&lt;/span&gt;x86_64&lt;span&gt;/&lt;/span&gt;syslog-ng-premium-edition-2.1.4-1.x86_64.rpm
+&amp;nbsp;
+result: &lt;span&gt;/&lt;/span&gt;x86_64&lt;span&gt;/&lt;/span&gt;syslog-ng-premium-edition-2.1.4-1.x86_64.rpm&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yukarıdaki komut satırı ve ekran çıktısı üzerinden &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; komutunun çalışmasını incelemeye çalışalım. Öncelikle kullanılan parametreler bakalım&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-p&lt;/strong&gt; kaynak olarak bu parametreyı takip eden paket dosyasının kullanılacağını belirtir. Eğer bu parametreyi belirtmezseniz belirtmiş olduğunuz rpm&amp;#8217;in sisteminize kurulu olduğunu varsayıp sistem veritabanını kullanamaya çalışacaktır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-n &lt;/strong&gt;rpm paketini değiştirdikten veya yeniden oluşturduktan sonra test kurulumu yapmamasını belirtir. Genelde rpm&amp;#8217;leri oluşturduğunuz ortamlar ile kurulum gerçekleşeceği ortamlar birbirleriyle alakasız yapılandırmaya sahiptir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#8211;edit-post&lt;/strong&gt; post install scriptini değiştireceğimizi ifade eder.&lt;/p&gt;
+&lt;p&gt;Yukarıdaki komutu çalıştırdığınızda &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;syslog-ng-premium-edition-2.1.4-1.x86_64.rpm&lt;/em&gt; isimli rpm dosyasini okuyup post install scriptini standart editörünüzde açacak. (Bizim sistemimiz için  vi). vi aracılığıyla post install scriptinde istediğimiz değişikliği gerçekleştirip vi editöründen çıktığımızda &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; işleme devam edip etmek istemediğimizi soracak. Eğer onay verirseniz macro tanımlarınız doğrultusunda rpmbuild dizininize değiştirilmiş rpm dosyasını kaydedecek.&lt;/p&gt;
+&lt;p&gt;Programın birçok özelligi ve kullanabileceğiniz birçok seçeneği var. Fedora 8 ve sonrasında standart fedora depolarından &lt;em&gt;&lt;strong&gt;rpmrebuild&lt;/strong&gt;&lt;/em&gt; paketini temin etmek mümkün.&lt;/p&gt;
+&lt;p&gt;Aşağıdaki makalelerden ve programın sitesinden ve man sayfalarından daha detaylı bilgi edinebilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://rpmrebuild.sourceforge.net/&quot; target=&quot;_blank&quot;&gt;http://rpmrebuild.sourceforge.net/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.redhatmagazine.com/2007/12/04/hacking-rpms-with-rpmrebuild/&quot; target=&quot;_blank&quot;&gt;http://www.redhatmagazine.com/2007/12/04/hacking-rpms-with-rpmrebuild/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.linux.com/feature/62262&quot; target=&quot;_blank&quot;&gt;http://www.linux.com/feature/62262&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</description>
+	<pubDate>Tue, 27 Jan 2009 06:46:01 +0000</pubDate>
+</item>
 <item>
 	<title>Linuxipuclari: Anahtar Tabanlı SSH Bağlantısı için Açık (public) Anahtarınızı En Kolay Nasıl Paylaşırsınız?</title>
 	<guid>http://www.linuxipuclari.com/?p=234</guid>
@@ -31,15 +180,6 @@
 &lt;p&gt;Kıssadan hisse tek bir komutla açık anahtarınızı hedef bir makinaya yükleyebilirsiniz.  :)&lt;/p&gt;
 &lt;p&gt;İyi çalışmalar&lt;/p&gt;</description>
 	<pubDate>Wed, 21 Jan 2009 05:48:55 +0000</pubDate>
-</item>
-<item>
-	<title>Pardus-Linux.org: PANEL : İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması</title>
-	<guid>http://www.pardus-linux.org/?p=144</guid>
-	<link>http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/</link>
-	<description>
-Türk Hukuk Kurumu tarafından düzenlenecek ve  Pardus Kullanıcıları Derneği Fahri Başkanı, Bilkent Üniversitesi öğretim üyesi Doç. Dr. Mustafa Akgül tarafından yöneticilecek olan  &amp;#8220;İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması&amp;#8221; konulu panele, Pardus Kullanıcıları Derneği Yönetim Kurulu Başkanı Av. Nihad Karslı da konuşmacı olacak katılacaktır.
-Günümüzde sık sık uygulanan İnternet yasaklarının hukuksallığının [...]</description>
-	<pubDate>Tue, 20 Jan 2009 13:54:49 +0000</pubDate>
 </item>
 <item>
 	<title>Linuxipuclari: Linux Komut Satırında İnternetten Dosya İndirme</title>
@@ -270,96 +410,6 @@ Sanal makinalarınızın loglarını nasıl takip ediyorsunuz? Sanallaştırman�
 	<pubDate>Tue, 13 Jan 2009 09:55:49 +0000</pubDate>
 </item>
 <item>
-	<title>Linuxipuclari: Dosyanın Sahipliğinin Değiştirilmesi</title>
-	<guid>http://www.linuxipuclari.com/?p=123</guid>
-	<link>http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi</link>
-	<description>
-	<![CDATA[<img src="http://gezegen.linux.org.tr/images/heads/linuxipuclari.png" align="right" width="64" height="">]]>
-&lt;p&gt;Eğer sizin de benim gibi root kullanıcısıyla çalışma takıntınız varsa (tüm yetki elimde olsun diye değil sadece sürekli sudo yapmayı sevmediğim için) dosya sahipliğiyle ilgili sıkça başınız ağrıyabilir.&lt;br /&gt;
-&lt;span id=&quot;more-123&quot;&gt;&lt;/span&gt;&lt;br /&gt;
-Önce bir dosyanın sahipliğini görmek için ne yapmalıyız ona bakalım.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt; merhaba.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Komutu çalıştırdığımızda aşağıdaki gibi bir sonuç elde ederiz.&lt;/p&gt;
-&lt;p&gt;-rw-r&amp;#8211;r&amp;#8211; 1 operator web1   151 2008-02-09 14:46 merhaba.c&lt;/p&gt;
-&lt;p&gt;Buradaki operator bize dosyanın kullanıcısını web1 ise dosyanın grubunu verecektir.&lt;/p&gt;
-&lt;p&gt;Şimdi aynı dizindeki başka bir dosya için aynı işlemi yapalım&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt; selam.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Aşağıda göreceğiniz gibi bu dosyanın kullanıcısı ve grubu root:root olmuş.&lt;/p&gt;
-&lt;p&gt;-rw-r&amp;#8211;r&amp;#8211; 1 root root   265 2008-02-09 14:56 selam.c&lt;/p&gt;
-&lt;p&gt;Benden sonra bu dosyaya operator olarak ulaşmak isteyen diğer kullanıcılar yetki hatasıyla karşı karşıya kalacak ve dosyayı açamayacak yada değişiklik yapamayacaklar.&lt;/p&gt;
-&lt;p&gt;Gelin şimdi bunu nasıl düzelteceğimizi görelim.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;chown&lt;/span&gt; operator:web1 selam.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Bu kadar kolay. Tekrar dosyayı kontrol ettiğimizde kullanıcısının ve grubunun değişmiş olduğunu görürüz.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt; selam.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;-rw-r&amp;#8211;r&amp;#8211; 1 operator web1   265 2008-02-09 14:56 selam.c&lt;/p&gt;
-&lt;p&gt;İyi Çalışmalar&lt;/p&gt;</description>
-	<pubDate>Tue, 13 Jan 2009 07:53:34 +0000</pubDate>
-</item>
-<item>
-	<title>Linuxipuclari: pidgin ile msn protokolü sorunu ve çözümü</title>
-	<guid>http://www.linuxipuclari.com/?p=120</guid>
-	<link>http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu</link>
-	<description>
-	<![CDATA[<img src="http://gezegen.linux.org.tr/images/heads/linuxipuclari.png" align="right" width="64" height="">]]>
-&lt;p&gt;15 numara MSN protokolünü kullanan tüm client&amp;#8217;ların MSN&amp;#8217;e bağlanamaması ile ilgili hatayı &amp;#8220;libpurple&amp;#8221; yerine &amp;#8220;msn-pecan&amp;#8221; kütüphanesini kullanarak aşabilirsiniz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ubuntu, Debian, Mint:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;apt-get&lt;/span&gt; &lt;span&gt;install&lt;/span&gt; msn-pecan&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Archlinux:&lt;/strong&gt;&lt;br /&gt;
-Arch&amp;#8217;ın depolarında yok ama AUR&amp;#8217;da var,&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;yaourt &lt;span&gt;-Sy&lt;/span&gt; msn-pecan&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Daha sonra pidgin&amp;#8217;den MSN protokolünü WLM ile değiştirirseniz sorun çözülecektir.&lt;br /&gt;
-Kolay Gelsin.&lt;/p&gt;</description>
-	<pubDate>Mon, 12 Jan 2009 15:35:37 +0000</pubDate>
-</item>
-<item>
-	<title>Pardus-Linux.org: eDergi 5. Sayı Hazırlıkları Devam Ediyor</title>
-	<guid>http://www.pardus-linux.org/?p=123</guid>
-	<link>http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/</link>
-	<description>
-&lt;img title=&quot;Stallman&quot; src=&quot;http://ogrenci.hacettepe.edu.tr/~artan05/pardus/stallman.png&quot; alt=&quot;&quot; width=&quot;200&quot; height=&quot;238&quot; align=&quot;left&quot; /&gt;
-
-Yılbaşında 4. sayısını duyurduğumuz Pardus-Linux.org eDergi'nin 5. Sayısı için hazırlıklar devam ediyor.
-İlk sürprizimiz ise hazır :
-
-Bu sayımızda Özgür Yazılım Vakfı'nın kurucusu Richard Micheal Stallman'a gittik ve bakın bize ne dedi :
-&lt;blockquote&gt;&quot;&lt;em&gt;I've heard it(Pardus) contains and promotes non-free software. That goes against the whole purpose of GNU, which is to give users freedom; it leads users astray.&lt;/em&gt;&quot;&lt;/blockquote&gt;
-İşte bu yüzden buradayız : &quot;&lt;em&gt;Pardus'un Özgürleşmesi!&lt;/em&gt;&quot;
-
-Siz de hazırlıklara katılmak isterseniz &lt;a href=&quot;http://forum.pardus-linux.org/viewtopic.php?f=7&amp;t=18720&quot;&gt;buradan&lt;/a&gt; buyurun ;)
-Önceki sayılarımız için : &lt;a href=&quot;http://www.pardus-edergi.org/&quot;&gt;www.pardus-edergi.org&lt;/a&gt;</description>
-	<pubDate>Sat, 10 Jan 2009 16:05:01 +0000</pubDate>
-</item>
-<item>
-	<title>Pardus-Linux.org: Pardus 2008.2 Beta Sürümü Duyuruldu</title>
-	<guid>http://www.pardus-linux.org/?p=119</guid>
-	<link>http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/</link>
-	<description>
-Pardus 2008.2 &amp;#8216;ye giden yolda ikinci beta sürüm duyuruldu. Kullanıcıları deneme sürümde hatalarla karşılaşabilecekleri yönünde uyarıyoruz, indirmek isteyenleri kurulan cd için [1], çalışan cd için [2] adresine yönlendiriyoruz.
-[1] ftp://ftp.pardus.org.tr/pub/pardus/kurulan/2008.2
-[2] ftp://ftp.pardus.org.tr/pub/pardus/calisan/2008.2/</description>
-	<pubDate>Wed, 07 Jan 2009 21:03:49 +0000</pubDate>
-</item>
-<item>
-	<title>Pardus-Linux.org: Forum sunucu sorunu</title>
-	<guid>http://www.pardus-linux.org/?p=116</guid>
-	<link>http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/</link>
-	<description>
-Forum sunucumuzda oluşan bir disk problemi sebebi ile forumumuz belli bir süre devre dışı kalacaktır.</description>
-	<pubDate>Wed, 07 Jan 2009 14:34:38 +0000</pubDate>
-</item>
-<item>
 	<title>Python-TR: Operatörler</title>
 	<guid>http://www.python-tr.com/operatorler/</guid>
 	<link>http://www.python-tr.com/operatorler/</link>
@@ -437,20 +487,11 @@ Python
 	<pubDate>Sat, 03 Jan 2009 12:12:55 +0000</pubDate>
 </item>
 <item>
-	<title>Pardus-Linux.org: Pardus-Linux.org eDergi 4. Sayı Yayımlandı</title>
-	<guid>http://www.pardus-linux.org/?p=105</guid>
-	<link>http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/</link>
-	<description>
-Pardus-Linux.org eDergi&amp;#8217;lerinin 4. Sayısı uzun bir aradan sonra yayımlandı. Emeği geçen herkese teşekkür eder, dergiyi indirmek isteyenlere buradan[1] sunarız.
-[1] http://www.pardus-edergi.org</description>
-	<pubDate>Wed, 31 Dec 2008 23:28:59 +0000</pubDate>
-</item>
-<item>
 	<title>Zemberek NLP: Zemberek-server Firefox Türkçe yazım denetim eklentisi</title>
 	<guid>tag:blogger.com,1999:blog-1720576558802393126.post-4239467354502948425</guid>
 	<link>http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html</link>
 	<description>
-Daha önceki bir &lt;a href=&quot;http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html&quot;&gt;yazıda&lt;/a&gt; Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. &lt;a href=&quot;http://voikko.sourceforge.net/&quot;&gt;Voikko&lt;/a&gt; Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.&lt;br /&gt;&lt;br /&gt;&lt;span&gt;Not:&lt;/span&gt; Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.&lt;br /&gt;&lt;br /&gt;1: &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/10183&quot;&gt;https://addons.mozilla.org/en-US/firefox/addon/10183&lt;/a&gt;&lt;br /&gt;2: &lt;a href=&quot;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&quot;&gt;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&lt;/a&gt;</description>
+Daha önceki bir &lt;a href=&quot;http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html&quot;&gt;yazıda&lt;/a&gt; Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. &lt;a href=&quot;http://voikko.sourceforge.net/&quot;&gt;Voikko&lt;/a&gt; Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.&lt;br /&gt;&lt;br /&gt;&lt;span&gt;Not:&lt;/span&gt; Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.&lt;br /&gt;&lt;br /&gt;1: &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/10183&quot;&gt;https://addons.mozilla.org/en-US/firefox/addon/10183&lt;/a&gt;&lt;br /&gt;2: &lt;a href=&quot;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&quot;&gt;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&lt;/a&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/1720576558802393126-4239467354502948425?l=zembereknlp.blogspot.com&quot; /&gt;&lt;/div&gt;</description>
 	<pubDate>Sun, 28 Dec 2008 13:12:00 +0000</pubDate>
 </item>
 <item>
@@ -616,6 +657,22 @@ k=&amp;#8217;veli&amp;#8217;
 
 Örnekten anlaşılacağı gibi program a&amp;#8217;yı integer, b ve [...]</description>
 	<pubDate>Sun, 08 Jul 2007 20:57:10 +0000</pubDate>
+</item>
+<item>
+	<title>Python-TR: Python İle İlgili Genel Bilgiler-Python Nedir?</title>
+	<guid>http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/</guid>
+	<link>http://www.python-tr.com/python-ile-ilgili-genel-bilgiler-python-nedir/</link>
+	<description>
+Python, ilk olarak 1990 yılında Guido Van Rossum tarafından geliştirilmeye başlanmıştır ve adını Monty Python&amp;#8217;s Flying Circus adlı programdan almıştır. Python, nesne yönelimli(object oriented), yorumlanabilen(interpreted), modüler ve etkileşimli(interactive) bir programlama dilidir. Sözdiziminin(syntax) basit olması dilin öğrenilmesini oldukça kolaylaştırmktadır. Ayrıca diğer dillerde kod bloklarını belirtmek için parantezler kullanılırken Python&amp;#8217;da kod blokları girintiler(indentation) yoluyla anlaşılmaktadır ve bu [...]</description>
+	<pubDate>Sun, 08 Jul 2007 19:25:53 +0000</pubDate>
+</item>
+<item>
+	<title>Python-TR: Java&#8217;da Değişken Tanımlamak</title>
+	<guid>http://www.python-tr.com/javada-degisken-tanimlamak/</guid>
+	<link>http://www.python-tr.com/javada-degisken-tanimlamak/</link>
+	<description>
+Java&amp;#8217;da değişken tanımlamak için önce tanımlayacağımız değişkenin tipini yazıyoruz. Ardından tanımlayacağımız değişkene vereceğimiz adı yazıyoruz. &amp;#8220;=&amp;#8221; işaretini ekliyoruz. Eşitliğin sağ tarafını isteğimize göre iki şekilde yazabiliriz. Birincisi new + değişken tipini yazıp parantez içinde çift tırnaklar kullanarak değişkenin değerini yazarak, ikincisi ise sadece çift tırnaklar içinde değişkenin başlangıç değerini yazarak. İki seçenekte aynı işi yapar. [...]</description>
+	<pubDate>Sat, 07 Jul 2007 23:19:11 +0000</pubDate>
 </item>
 
 </channel>

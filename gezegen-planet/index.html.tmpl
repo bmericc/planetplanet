@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/transitional.dtd">
+<html>
+	<head>
+		<title><TMPL_VAR name></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="generic.css" type="text/css" />
+		<link rel="stylesheet" href="layout.css" type="text/css" />
+		<link rel="stylesheet" href="planet.css" type="text/css" />
+		<link rel="stylesheet" href="bloggers.css" type="text/css" />
+		<link rel="stylesheet" href="nlayout.css" type="text/css" />
+		<link rel="icon" type="image/png" href="images/planet.png" />
+		<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name>" href="rss20.xml" />
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+        	<script type="text/javascript" src="jquery.cookie.min.js"></script>
+
+		<script type="text/javascript">
+        function toggleFeeds() {
+                $("#feedlist").slideToggle(function() {
+                        $("#feeds h3").toggleClass("open");
+                });
+        }
+        $(document).ready(function() {
+		// $.cookie("hidden", null, {expires: -1});
+                var hidden = $.cookie("hidden") ? $.cookie("hidden").split(",") : new Array();
+                // hide posts by disabled folks
+                if (hidden.length > 0) for (i in hidden) {
+                        $("div." + hidden[i]).hide();
+                }
+                $("#feeds h3 a").click(function(e) {
+                        e.preventDefault();
+                        if ($("#feedlist ul").length == 0) {
+                                $("#feedlist").load('feeds.html', '', function(r,t,x) {
+                                        $('<input type="checkbox" checked>')
+                                                .change(function() {
+                                                        var nick = $(this).parent().attr("class");
+                                                        var i = $.inArray(nick, hidden);
+                                                        if ($(this).attr("checked")) {
+                                                                if (hidden[i]) hidden.splice(i, 1);
+                                                                $("div." + nick).show();
+                                                        } else {
+                                                                if (!hidden[i]) hidden[hidden.length] = nick;
+                                                                $("div." + nick).hide();
+                                                        }
+                                                        $.cookie("hidden", hidden.join(","),
+                                                                {expires: 365});
+                                                })
+                                                .prependTo("#feedlist ul li");
+                                        // remove checks from disabled folks
+                                        for (i in hidden) {
+                                                $("#feedlist ul li." + hidden[i] + " input")
+                                                        .removeAttr("checked");
+                                        }
+                                        toggleFeeds();
+                                });
+                        } else {
+                                toggleFeeds();
+                        }
+                });
+        });
+        </script>
+
+
+	</head>
+	<body>
+
+		
+<div id="gezegen-sites">
+<ul>
+	<li class="home"><a href="http://planet.linux.org.tr/" title="Planet">Planet</a></li>
+	<li><a href="http://gezegen.linux.org.tr/kisisel/" title="Personal Blogs">Personal Blog</a></li>
+	<li><a href="http://gezegen.linux.org.tr/lkd/" title="LKD Blogs">LKD Blogs</a></li>
+	<li><a href="http://gezegen.linux.org.tr/topluluk/" title="Community Blogs">Community Blogs</a></li>
+	<li><a href="http://planet.linux.org.tr/" title="Blogs in Engilish">Blogs in English</a></li>
+</div> <!-- /gezegen-sites -->
+
+		<div id="hdr">
+			<div id="banner">
+				<img src="<TMPL_VAR link>/images/spacer.png" />
+			</div>
+			<div id="logo">
+				<a href="<TMPL_VAR link>/">
+					<img src="<TMPL_VAR link>/images/spacer.png" />
+				</a>
+			</div>
+		</div>
+
+
+		<div id="body">
+			<TMPL_LOOP Items>
+				<TMPL_IF new_date>
+					<h2 class="date"><TMPL_VAR new_date></h2>
+				</TMPL_IF>
+
+				<div class="entry <TMPL_IF channel_nick><TMPL_VAR channel_nick></TMPL_IF>">
+					<div class="person-info">
+						<a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">">
+							<TMPL_IF channel_face>
+								<img class="face" src="images/heads/<TMPL_VAR channel_face ESCAPE="HTML">" title="<TMPL_VAR channel_name>" />
+								<br />
+							<TMPL_ELSE>
+								<img class="face" src="images/heads/nobody.png" title="<TMPL_VAR channel_name>" />
+								<br />
+							</TMPL_IF>
+							<TMPL_VAR channel_name>
+							<TMPL_IF channel_nick>
+								<br />
+								<!-- (<TMPL_VAR channel_nick>) -->
+							</TMPL_IF>
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+								<TMPL_IF title>
+									<h4 class="post-title">
+										<a href="<TMPL_VAR link ESCAPE="HTML">">
+											<TMPL_VAR title>
+										</a>
+									</h4>
+								<TMPL_ELSE>
+									<div class="post-title">
+										<span>&nbsp;</span>
+									</div>
+								</TMPL_IF>
+							</div>
+							<br />
+							<div class="post-contents">
+								<TMPL_VAR content>
+								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+									<TMPL_IF comments>
+										<a href="<TMPL_VAR comments ESCAPE="HTML">">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+									</TMPL_IF>
+				                    <a href="http://del.icio.us/post?url=<TMPL_VAR link ESCAPE="HTML">&title=<TMPL_VAR title ESCAPE="HTML">" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/<TMPL_VAR link ESCAPE="HTML">" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="<TMPL_VAR link ESCAPE="HTML">">
+										<TMPL_VAR date>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</TMPL_LOOP>
+		</div>
+		
+		<div id="sidebar">
+			<div class="section">
+				<h3>Gezegen Hakkında</h3>
+					<p>
+						LKD Planet is the face of people who are working on Linux and Free Software and who are Turkish speakers but write also in English in their blogs. 
+
+					<p>
+						Planet is brought to you by  using <a href="http://www.planetplanet.org/">Planet</a> and <a href="http://www.actsofvolition.com/">Steven Garrity</a>'s main template design.
+					</p>
+			</div>
+			
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=2");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=a26e76e1&amp;cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a26e76e1' 
+border='0' alt='' /></a></noscript>
+
+
+			</div>
+
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + 
+document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + 
+escape(document.referrer));
+   if (document.context) document.write ("&context=" + 
+escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=ae096af2&cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=6&cb=INSERT_RANDOM_NUMBER_HERE&n=ae096af2' 
+border='0' alt='' /></a></noscript>
+
+
+			</div>			
+
+			
+			<div id="feeds">
+        			<h3><a href="feeds.html">Members</a></h3>
+        			<div id="feedlist"></div>
+			</div>
+
+			<div class="section">
+				<h3>Follow</h3>
+				<ul>
+					<li><a href="rss20.xml">RSS 2.0</a></li>
+					<li><a href="rss10.xml">RSS 1.0</a></li>
+					<li><a href="atom.xml">ATOM</a></li>
+					<li><a href="foafroll.xml">FOAF</a></li>
+					<li><a href="opml.xml">OPML</a></li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Other Planets</h3>
+				<ul>
+					<li><a href="http://gezegen.pardus.org.tr/">Pardus</a></li>
+					<li><a href="http://www.kernelplanet.org/">Kernel</a></li>
+					<li><a href="http://www.planetkde.org/">KDE</a></li>
+					<li><a href="http://planet.gnome.org">Gnome</a></li>
+					<li><a href="http://www.planetsuse.org/">SuSE</a></li>
+					<li><a href="http://planet.python.org">Python</a></li>
+					<li><a href="http://planet.gentoo.org">Gentoo</a></li>
+					<li><a href="http://www.go-mono.com/monologue/">MONOlogue</a></li>
+					<li><a href="http://planetjava.org">Java</a></li>
+					<li><a href="http://planet.lisp.org">LISP</a></li>
+					<li><a href="http://planet.perl.org">Perl</a></li>
+					<li><a href="http://fedoraproject.org/people/">Fedora</a></li>
+					<li><a href="http://planet.ubuntu.com/">Ubuntu</a></li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Update</h3>
+				<p>Planet is updated every 10 minutes.</p>
+				<p>
+					Last update time: 
+					<br />
+					<TMPL_VAR date>
+				</p>
+			</div>
+
+			<div class="section">
+				<h3>İletişim</h3>
+				<p>
+					LKD Planet is administered by <a href="mailto:gezegen [at] linux.org.tr">LKD Planet Team</a>. For questions related with Planet, please send an email to them.	
+					
+				</p>
+				<p>
+
+					If you want to register your blog rss to this planet please send your RSS/Atom address via email to us. You may also want to add your hackergotchi and jabber adress also.
+				</p>
+			</div>
+		</div>
+
+		<div id="footer">
+
+		<div id="copyright">
+
+			The written information at this page can not cause <a href="http://www.lkd.org.tr/english">Turkish Linux Users Group</a> to have a responsibility from them. <br />
+			Turkish Linux Users Group only support server, software and band width fot the planet. <br />
+
+			You can reach the planet stats from <a href="<TMPL_VAR link>/stats">here</a> .
+			<br />
+		</div>
+
+		</div>		
+
+	</body>
+</html>

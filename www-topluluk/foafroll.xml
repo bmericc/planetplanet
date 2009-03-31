@@ -8,9 +8,22 @@
 >
 <foaf:Group>
 	<foaf:name>Topluluklar Gezegeni</foaf:name>
-	<foaf:homepage>http://gezegen.linux.org.tr/lkd/</foaf:homepage>
+	<foaf:homepage>http://gezegen.linux.org.tr/topluluk/</foaf:homepage>
 	<rdfs:seeAlso rdf:resource="" />
 
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>GNOME Türkiye</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.gnome.org.tr">
+					<dc:title>GNOME Türkiye</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
 	<foaf:member>
 		<foaf:Agent>
 			<foaf:name>Linuxipuclari</foaf:name>
@@ -28,8 +41,8 @@
 		<foaf:Agent>
 			<foaf:name>Pardus-Linux.org</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.pardus-linux.org">
-					<dc:title>Pardus-Linux.Org</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -52,10 +65,36 @@
 	</foaf:member>
 	<foaf:member>
 		<foaf:Agent>
+			<foaf:name>Ubuntu Türkiye</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.ubuntu-tr.org/aggregator">
+					<dc:title>Ubuntu Türkiye toplayıcı</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
 			<foaf:name>Zemberek NLP</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://zembereknlp.blogspot.com/">
 					<dc:title>Zemberek NLP</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Özgürlükiçin.com</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.ozgurlukicin.com">
+					<dc:title>Özgürlük için... - Haberler</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>

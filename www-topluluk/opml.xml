@@ -2,16 +2,19 @@
 <opml version="1.1">
 	<head>
 		<title>Topluluklar Gezegeni</title>
-		<dateCreated>Wed, 21 Jan 2009 22:06:49 +0000</dateCreated>
-		<dateModified>Wed, 21 Jan 2009 22:06:49 +0000</dateModified>
+		<dateCreated>Sun, 29 Mar 2009 18:57:27 +0000</dateCreated>
+		<dateModified>Sun, 29 Mar 2009 18:57:27 +0000</dateModified>
 		<ownerName>Gezegen Ekibi</ownerName>
 		<ownerEmail>gezegen@linux.org.tr</ownerEmail>
 	</head>
 	
 	<body>
+		<outline text="GNOME Türkiye" xmlUrl=""/>
 		<outline text="Linuxipuclari" xmlUrl=""/>
 		<outline text="Pardus-Linux.org" xmlUrl=""/>
 		<outline text="Python-TR" xmlUrl=""/>
+		<outline text="Ubuntu Türkiye" xmlUrl=""/>
 		<outline text="Zemberek NLP" xmlUrl=""/>
+		<outline text="Özgürlükiçin.com" xmlUrl=""/>
 	</body>
 </opml>

@@ -6,591 +6,368 @@
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	xmlns="http://purl.org/rss/1.0/"
 >
-<channel rdf:about="http://gezegen.linux.org.tr/lkd/">
-	<title>Topluluklar Gezegeni</title>
-	<link>http://gezegen.linux.org.tr/lkd/</link>
-	<description>Topluluklar Gezegeni - http://gezegen.linux.org.tr/lkd/</description>
+<channel rdf:about="http://gezegen.linux.org.tr">
+	<title>Kişisel Günlükler Gezegeni</title>
+	<link>http://gezegen.linux.org.tr</link>
+	<description>Kişisel Günlükler Gezegeni - http://gezegen.linux.org.tr</description>
 
 	<items>
 		<rdf:Seq>
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=234" />
-			<rdf:li rdf:resource="http://www.pardus-linux.org/?p=144" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=201" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=204" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=156" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=155" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=153" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=150" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=119" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=123" />
-			<rdf:li rdf:resource="http://www.linuxipuclari.com/?p=120" />
-			<rdf:li rdf:resource="http://www.pardus-linux.org/?p=123" />
-			<rdf:li rdf:resource="http://www.pardus-linux.org/?p=119" />
-			<rdf:li rdf:resource="http://www.pardus-linux.org/?p=116" />
-			<rdf:li rdf:resource="http://www.python-tr.com/operatorler/" />
-			<rdf:li rdf:resource="http://www.pardus-linux.org/?p=105" />
-			<rdf:li rdf:resource="tag:blogger.com,1999:blog-1720576558802393126.post-4239467354502948425" />
-			<rdf:li rdf:resource="http://www.python-tr.com/denetim-deyimleri/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/matematiksel-fonksiyonlar/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/2-kere-merhaba-dunya/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/pythonda-klavye-girisleri/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/javada-sinif-olusturma/" />
-			<rdf:li rdf:resource="http://www.python-tr.com/pythonda-degisken-tanimlamak/" />
+			<rdf:li rdf:resource="http://www.erhanekici.com/blog/2009/03/19/wall-streetde-bir-dedikodu/" />
+			<rdf:li rdf:resource="http://blogs.portakalteknoloji.com/bora/blog/2009/03/29/258/" />
+			<rdf:li rdf:resource="http://raptiye.org/blog/2009/03/29/virtualbox-22-semineri/" />
+			<rdf:li rdf:resource="http://blog.gunduz.org/index.php?/archives/30-guid.html" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/ozgur/?p=316" />
+			<rdf:li rdf:resource="http://blog.arsln.org/?p=603" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-6806075996663386433.post-2812661079688866968" />
+			<rdf:li rdf:resource="http://www.murekkep.org/?p=1667" />
+			<rdf:li rdf:resource="http://www.okanakyuz.com/?p=270" />
+			<rdf:li rdf:resource="http://www.yalazi.org/?p=263" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-4680162149707281285.post-9013440262584406750" />
+			<rdf:li rdf:resource="http://www.cankavaklioglu.name.tr/guncelgunce/archives/2009/03/24/index.html#e2009-03-24T22_48_28.txt" />
+			<rdf:li rdf:resource="http://zzz.fisek.com.tr/seyir-defteri/?p=642" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-20350364.post-1896909439767442581" />
+			<rdf:li rdf:resource="http://www.hakanuygun.com/blog/?p=195" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-4680162149707281285.post-3384749633201696030" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/ozgur/?p=308" />
+			<rdf:li rdf:resource="http://www.okanakyuz.com/?p=267" />
+			<rdf:li rdf:resource="http://kivi.com.tr/blog/2009/03/22/alanadi-yonetimi-odtuden-alindi/" />
+			<rdf:li rdf:resource="tag:blogger.com,1999:blog-6806075996663386433.post-6279411133351793386" />
+			<rdf:li rdf:resource="http://www.yalazi.org/?p=261" />
+			<rdf:li rdf:resource="http://www.ozgurkuru.net/ozgur/?p=304" />
+			<rdf:li rdf:resource="http://blog.ratonred.com/?p=344" />
+			<rdf:li rdf:resource="http://www.yalazi.org/?p=258" />
+			<rdf:li rdf:resource="http://www.yalazi.org/?p=255" />
 		</rdf:Seq>
 	</items>
 </channel>
 
-<item rdf:about="http://www.linuxipuclari.com/?p=234">
-	<title>Linuxipuclari: Anahtar Tabanlı SSH Bağlantısı için Açık (public) Anahtarınızı En Kolay Nasıl Paylaşırsınız?</title>
-	<link>http://www.linuxipuclari.com/genel/anahtar-tabanli-ssh-baglantisi-icin-acik-public-anahtarinizi-en-kolay-nasil-paylasirsiniz</link>
-	<content:encoded>&lt;p&gt;Eğer internette ssh bağlantıları için anahtarlama kullanımı konusunda biraz araştırma yaptıysanız karşınıza çıkacak dökümanların çoğunda açık anahtarınızın hedef makinada&lt;em&gt; ~/.ssh/authorized_keys &lt;/em&gt; dosyasına nasıl ekleneceği, bu dosyanın ve .ssh dizininin hangi kullanıcı ve grup yetkilerine sahip olacağı konusunda bilgi verildiğini göreceksiniz.&lt;/p&gt;
-&lt;p&gt;İlgili dökümanlarda bahsedilen herşey doğru olmakla birlikte &lt;em&gt;ssh&lt;/em&gt; programı bütün bu adımları sizin için layığıyla gerçekleştiren bir komut satırı programıyla birlikte geliyor. &lt;strong&gt;&lt;em&gt;ssh-copy-id&lt;/em&gt;&lt;/strong&gt; isimli bu program ne yazık ki birçoğumuzun dikkatinden kaçıyor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;ssh-copy-id&lt;/em&gt;&lt;/strong&gt; programı ne yapar?&lt;/p&gt;
+<item rdf:about="http://www.erhanekici.com/blog/2009/03/19/wall-streetde-bir-dedikodu/">
+	<title>Erhan Ekici: Wall Street’de Bir Dedikodu…</title>
+	<link>http://www.erhanekici.com/blog/2009/03/19/wall-streetde-bir-dedikodu/</link>
+	<content:encoded>Oliver Stone&amp;#8216;un Wall Street adlı filmiydi. Yanlış hatırlamıyorsam sahne şöyleydi: Wall Street&amp;#8217;in paradan para kazanma uzmanı Mr. Gekko (Michael Douglos), geleceği parlak görünen yeni yetme broker Bud Fox&amp;#8217;a (Charlie Sheen) Wall Street&amp;#8217;e hisse senetlerinin değerlerinin günübirlik nasıl arttıracağına dair işin püf noktalarını gösteriyordu. Önce hedef şirketin düşük seviyelerdeki hisse senetlerinden bol miktarda alınıyor, ardından bir [...]</content:encoded>
+	<dc:date>Sun, 29 Mar 2009 15:48:37 +0000</dc:date>
+</item>
+<item rdf:about="http://blogs.portakalteknoloji.com/bora/blog/2009/03/29/258/">
+	<title>Bora Güngören: Ubuntu 8.04 Server üzerinde Sun xVM kurulumu</title>
+	<link>http://blogs.portakalteknoloji.com/bora/blog/2009/03/29/258/</link>
+	<content:encoded>&lt;p&gt;Sanallaştırma dediğimiz zaman değişik ev sahibi (host) ve misafir kombinasyonları dışında, değişik sanallaştırma alt yapılarını da değerlendirmek gerekli. Artık &lt;a href=&quot;http://www.sun.com/software/products/virtualbox/&quot;&gt;Sun xVM&lt;/a&gt; olarak adlandırdığımız Virtualbox da bunlardan birisi. Virtualbox'ın hemen her dağıtım için paketleri olduğundan özellikle &lt;a href=&quot;http://www.pardus.org.tr/&quot;&gt;Pardus&lt;/a&gt; ve &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; kullanıcıları yoğun biçimde masa üstü sanallaştırma ihtiyaçlarını VirtualBox ile gideriyor. Artık bir Sun ürünü olduğu için Solaris sürümlerine de çok daha iyi destek veriyor. &lt;/p&gt;
+&lt;p&gt;Bu hafta sonu &lt;a href=&quot;http://www.intel.com/&quot;&gt;Intel&lt;/a&gt;'den kurcalamamız için ödünç gelen &lt;a href=&quot;http://ark.intel.com/cpu.aspx?groupId=35641&quot;&gt;Atom 330&lt;/a&gt; (45 nm) işlemcili bir mini-itx kart ile bazı denemeler yaptım. Bu denemeler sırasında bu karta kurmadığım alt yapı kalmadı gibi bir şey. Karttan ve üzerindeki donanımdan ayrı bir girdi ile bahsedeceğimiz düşünüyorum ama şunu söyleyebilirim ki Atom serisi kesinlikle düşünüldüğünden daha kapasiteli bir işlemci serisi. &lt;/p&gt;
+&lt;p&gt;Bugün aynı Atom anakarta, Ubuntu 8.04 Server (x64) sürümünü de kurdum. Anakarttaki Gbe çıkışını eth1, ek kart ile eklediğimiz 100 Mbit çıkışını ise eth0 olarak tanıyarak, normal Ubuntu kurulumunu sorunsuz hallettik. Daha sonra apt-get ile önce depodaki paket listesini güncelledim, sonra da kurulu paketleri güncel hale getirdim. Bunlar hep rutin şeyler. Bu arada http://tr.archieve.ubuntu.com/ adresindeki yansının performansından da çok memnun kaldığımı belirtmek istiyorum tabi.&lt;/p&gt;
+&lt;p&gt;Gel gelelim Sun xVM'i nasıl kuracağımıza ve kullanacağımıza. Malum Ubuntu Server sürümünde X yok, dolayısı ile cicili bicili ara yüzler de yok. Ancak endişeye gerek de yok. Hem Linux kabuğu hem de xVM'in komut satırı araçları son derece becerikli. &lt;/p&gt;
+&lt;p&gt;Öncelikle &lt;a href=&quot;http://www.sun.com/software/products/virtualbox/get.jsp&quot;&gt;Sun indirme sitesinden&lt;/a&gt; xVM'in güncel sürümünü indirmek gerekli. Burada özgür yazılım olan sürüm (open source edition  - OSE) ile kapalı kodları olan bazı bileşenlerin entegre edildiği sürüm arasında kararsız kalabilirsiniz. Kapalı kodları olan sürümü de istediğiniz gibi kullanmanıza izin var ancak kodları kapalı. Sonuç olarak ben kapalı kodları olan sürümünü indirmeye karar verdim. &lt;a href=&quot;http://dlc.sun.com/virtualbox/2.1.4/virtualbox-2.1_2.1.4-42893_Ubuntu_hardy_amd64.deb&quot;&gt;Buradan&lt;/a&gt; doğrudan doğruya .deb paketini indirdim. Her ne kadar Sun .deb paketini hazırlamış olsa da, bunun kendisinden indirilmesini bekliyor. Dağıtımlar depolarına koyacakları zaman ise Sun ile iletişime geçiyorlar. Özgür yazılım sürüm olan OSE için ise bu tür bir kısıtlama haliyle yok. Daha sonra da &lt;strong&gt;dpkg&lt;/strong&gt; ile bu paketi kuruyoruz.
+&lt;/p&gt;
+&lt;p&gt;
+root@kobigos-proto# dpkg -i virtualbox-2.1_2.1.4-42893_Ubuntu_hardy_amd64.deb&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Ne yazık ki kurulum bundan ibaret değil. Çünkü şu anda bu paket birden fazla (benim için 46 tane) bağımlılık da içeriyor. Kurulum sırasında bir dizi hata mesajı almanızın nedeni de bu. Bu bağımlılıkların kurulması için yine apt-get&lt;/p&gt;'e başvuracağız. 
+
+&lt;p&gt;
+root@kobigos-proto# apt-get -f upgrade  
+&lt;/p&gt;
+&lt;p&gt;Bağımlılıklardan dolayı, benim sistemime 18.9 MB dosya indirildi, bu ADSL bağlantı ile 5-6 dakika sürdü sürmedi. Yani bağımlılık sayısı çok olsa da indirilen dosyalar küçük olduğu için çok büyük bir dert değil. Kurulum sırasında sizden &lt;strong&gt;vboxusers&lt;/strong&gt; adında bir grubun yaratılması için onay vermeniz istenecek. Bu onayı da verin.&lt;/p&gt;
+&lt;p&gt;Böylece Ubuntu Server üzerinde Sun xVM paketini bağımlılıkları ile birliktekurmuş olduk. Elbette sistemin ayağa kaldırılması ve sanal makinelerin yaratılması farklı bir şey.&lt;/p&gt;
+&lt;p&gt;Bir yazılımın kurulumu bazen sadece paket kurulumu ile bitmeyebiliyor. Sun xVM için, yazılımı çalıştıracak ek bir de kullanıcı hesabı gerekli. Bu amaçla var olan bir kullanıcıyı veya yeni yaratacağınız bir kullanıcıyı az önce yaratılmasına onay verdiğiniz &lt;strong&gt;vboxusers&lt;/strong&gt; grubuna dahil etmelisiniz. Ben bu sistemde atom adında bir kullanıcı yaratmıştım ve Sun xVM için de bu kullanıcıyı kullanmaya karar verdim.&lt;/p&gt;
+&lt;p&gt;
+root@kobigos-proto# usermod --append --groups vboxusers atom&lt;br /&gt;
+root@kobigos-proto# &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Siz isterseniz adı vbox, virtualbox, vs olan bir kullanıcı yaratabilirsiniz de. &lt;/p&gt;</content:encoded>
+	<dc:date>Sun, 29 Mar 2009 13:48:00 +0000</dc:date>
+</item>
+<item rdf:about="http://raptiye.org/blog/2009/03/29/virtualbox-22-semineri/">
+	<title>Alper Kanat: Virtualbox 2.2 Semineri</title>
+	<link>http://feedproxy.google.com/~r/raptiye_linux_gezegeni/~3/Q_nvDgWo_UI/</link>
+	<content:encoded>&lt;img height=&quot;128&quot; width=&quot;108&quot; align=&quot;left&quot; src=&quot;http://raptiye.org/media/images/upload/virtualbox.png&quot; alt=&quot;virtualbox&quot; /&gt;&lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt;, sanallaştırma dünyasında istediği yeri henüz tam olarak bulamamış; Parallels, VMware gibi yazılımların popülerliği nedeniyle pek de dikkate alınmayan bir sanallaştırma yazılımı.. Geliştirilmesi Sun tarafından devam eden yazılımın açık kaynak kodlu ve kapalı kaynak kodlu olmak üzere 2 farklı sürümü bulunuyor ve tüm platformlarda (Unix, Mac OS X ve Windows) çalışabiliyor.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt; ile diğer ücretli alternatiflerin yapabildiği bir çok şeyi sorunsuzca yapabiliyorsunuz. Grafik hızlandırma vb. konularda hala gelişmeye devam etse de örneğin &quot;&lt;em&gt;Seamless Mode&lt;/em&gt;&quot; (örneğin Linux üzerinde Windows yazılımlarını sanki gerçek birer Linux uygulaması gibi kullanabiliyorsunuz, Linux ve Windows masaüstünüz birbirine karışıyor gibi  &lt;img src=&quot;http://raptiye.org/media/images/smiley/face-smile.png&quot; align=&quot;absmiddle&quot; /&gt; ) gibi özellikleri var. Özellikle misafir eklentilerini kurduğunuzda performans ve diğer özellikler açısından çok daha verimli bir şekilde kullanabiliyorsunuz işletim sistemlerini.. Kısaca bir örnek vermek gerekirse.. Günlük hayatta Macbook Pro üzerinde Mac OS X kullanıyorum. Ancak işim (ve hobilerim) gereği Linux'a ve Windows'a ihtiyacım olabiliyor. Linux'a geliştirme ortamımı çok daha rahat yönetebildiğim ve çok daha hakim olduğum için, Windows'a ise Internet Explorer testleri için ihtiyacım var. (Deneme amaçlı bir de Windows 7 kurulu..) Bu işletim sistemlerinin, &lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt;'ın Host Interface özelliği sayesinde mevcut ağda birer bilgisayarmış gibi IP almalarını sağlıyorum. Böylece üzerlerinde çalışan sunuculara da rahatlıkla erişebiliyorum.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.virtualbox.org/&quot; target=&quot;_blank&quot; title=&quot;virtualbox hakkında daha fazla bilgi almak için tıklayın..&quot;&gt;Virtualbox&lt;/a&gt; cephesinde bir süredir sessizlik var. 2.1.4 sürümünün çıkışıyla birlikte 2.2 sürümünün hazırlıklarına başlanmış ve 2.2 sürümü, muhtemelen 1 Nisan günü tanıtılacağı bir internet semineriyle duyurulacak. Bu sürümle birlikte özellikle aşağıdaki özellikler tanıtılacakmış:&lt;br /&gt;
 &lt;ul&gt;
-&lt;li&gt;Açık anahtarınızı hedef makinada  kullanıcı dizini altındaki yetkili anahtarlar dosyasına ekler (&lt;em&gt; ~/.ssh/authorized_keys&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;~/.ssh&lt;/em&gt; dizinini ve &lt;em&gt;~/.ssh/authorized_keys&lt;/em&gt; dosyasının yetkilerini düzenler.&lt;/li&gt;
+ &lt;li&gt;Sanal sunuculara ait disk imajlarının OVF&amp;#160;standardı sayesinde içe ve dışa aktarılabilmesi&lt;/li&gt;
+ &lt;li&gt;Linux ve Solaris misafir işletim sistemleri için 3B desteği&lt;/li&gt;
+ &lt;li&gt;Yalnızca İstemci adı verilen yeni bir bağlantı seçeneği&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Aşağıdaki örnek  komutta herhangi bir kimlik belirtmediğimiz için varsayılan açık anahtar ( &lt;em&gt;~/.ssh/id_rsa.pub &lt;/em&gt;dosyasının içeriği) &lt;em&gt;hedef.makina.com&lt;/em&gt; makinasındaki &lt;em&gt;ali&lt;/em&gt; kullanıcısının  home dizinine yüklenir.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$ssh&lt;/span&gt;-copy-id ali&lt;span&gt;@&lt;/span&gt;hedef.makina.com&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Eğer birden çok anahtarınız var ise hedef makinaya göndermek istediğiniz açık anahtarı -i parametresiyle belirtebilirsiniz.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$ssh&lt;/span&gt;-copy-id  -i  ~&lt;span&gt;/&lt;/span&gt;.ssh&lt;span&gt;/&lt;/span&gt;ikinci_anahtar.pub ali&lt;span&gt;@&lt;/span&gt;hedef.makina.com&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Kıssadan hisse tek bir komutla açık anahtarınızı hedef bir makinaya yükleyebilirsiniz.  :)&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar&lt;/p&gt;</content:encoded>
-	<dc:date>Wed, 21 Jan 2009 05:48:55 +0000</dc:date>
+Seminer TSİ&amp;#160;18:00'de başlayacak. Kayıt yaptırmak için &lt;a href=&quot;https://www2.sun.de/dct/forms/reg_us_2503_883_0.jsp&quot; target=&quot;_blank&quot; title=&quot;sanal seminere katılmak için tıklayın..&quot;&gt;buraya&lt;/a&gt; tıklayabilirsiniz.&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://feedads.googleadservices.com/~a/ONDgHrrIHRx0ZJcw2QRGHqKI14Y/a&quot;&gt;&lt;img src=&quot;http://feedads.googleadservices.com/~a/ONDgHrrIHRx0ZJcw2QRGHqKI14Y/i&quot; border=&quot;0&quot; ismap=&quot;true&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=yIl2AUoC8zA&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:YwkR-u9nhCs&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=YwkR-u9nhCs&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:F7zBnMyn0Lo&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?i=Q_nvDgWo_UI:bBFTrijEVEg:F7zBnMyn0Lo&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:7Q72WNTAKBA&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=7Q72WNTAKBA&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:V_sGLiPBpWU&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?i=Q_nvDgWo_UI:bBFTrijEVEg:V_sGLiPBpWU&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?d=qj6IDK7rITs&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?a=Q_nvDgWo_UI:bBFTrijEVEg:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~ff/raptiye_linux_gezegeni?i=Q_nvDgWo_UI:bBFTrijEVEg:gIN9vFwOqvQ&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src=&quot;http://feeds2.feedburner.com/~r/raptiye_linux_gezegeni/~4/Q_nvDgWo_UI&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</content:encoded>
+	<dc:date>Sun, 29 Mar 2009 10:37:12 +0000</dc:date>
 </item>
-<item rdf:about="http://www.pardus-linux.org/?p=144">
-	<title>Pardus-Linux.org: PANEL : İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması</title>
-	<link>http://www.pardus-linux.org/2009/01/20/panel-insan-haklari-ve-anayasa-acisindan-internet-yasaklari-ve-iletisim-ozgurlugunun-kisitlanmasi/</link>
-	<content:encoded>Türk Hukuk Kurumu tarafından düzenlenecek ve  Pardus Kullanıcıları Derneği Fahri Başkanı, Bilkent Üniversitesi öğretim üyesi Doç. Dr. Mustafa Akgül tarafından yöneticilecek olan  &amp;#8220;İnsan Hakları ve Anayasa Açısından İnternet Yasakları ve İletişim Özgürlüğünün Kısıtlanması&amp;#8221; konulu panele, Pardus Kullanıcıları Derneği Yönetim Kurulu Başkanı Av. Nihad Karslı da konuşmacı olacak katılacaktır.
-Günümüzde sık sık uygulanan İnternet yasaklarının hukuksallığının [...]</content:encoded>
-	<dc:date>Tue, 20 Jan 2009 13:54:49 +0000</dc:date>
+<item rdf:about="http://blog.gunduz.org/index.php?/archives/30-guid.html">
+	<title>Devrim Gündüz: Cuma gecesi heyecanı</title>
+	<link>http://blog.gunduz.org/index.php?/archives/30-Cuma-gecesi-heyecan.html</link>
+	<content:encoded>&lt;p&gt;Hafta sonuna yaklaşmışım; sakin bir gece bekliyorum. Önce Firefox'un Nagios eklentisi bağırdı, ardından da e-posta geldi:&lt;/p&gt;&lt;br /&gt;
+ &lt;br /&gt;&lt;a href=&quot;http://blog.gunduz.org/index.php?/archives/30-Cuma-gecesi-heyecan.html#extended&quot;&gt;Continue reading &quot;Cuma gecesi heyecanı&quot;&lt;/a&gt;</content:encoded>
+	<dc:date>Sun, 29 Mar 2009 08:28:50 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=201">
-	<title>Linuxipuclari: Linux Komut Satırında İnternetten Dosya İndirme</title>
-	<link>http://www.linuxipuclari.com/genel/linux-komut-satirinda-internetten-dosya-indirme</link>
-	<content:encoded>&lt;p&gt;Linux makinanıza bir dosya indirip kuracaksınız diyelim.&lt;/p&gt;
-&lt;p&gt;Bunun için önce grafik arayüzü olan bir yerden &lt;a href=&quot;http://www.temizyazilim.org/tr/app/view/7_68.html&quot;&gt;Firefox&lt;/a&gt; gibi bir tarayıcı veya &lt;a href=&quot;http://www.temizyazilim.org/tr/app/view/7_49.html&quot;&gt;Filezilla&lt;/a&gt; gibi bir ftp istemcisi ile bağlanıp dosyayı indirip sonra bunu tekrar ftp, scp gibi bir program kullanarak dosyaya asıl ihtiyacımız olan yere kopyalamak büyük bir zaman kaybı olacaktır. (İstemci olarak linux kullanan arkadaşların kaşlarını çattıklarını görür gibiyim. Diyelimki kişi linux değil de başka bir işletim sistemi kullanıyor ve grafik arayüzü yüklü olmayan bir linux sunucusu var)&lt;/p&gt;
-&lt;p&gt;Bunun yerine wget komutunu kullanarak bu dosyayı bir web sitesinden direkt istediğimiz klasöre indirebiliriz.&lt;/p&gt;
-&lt;p&gt;En basit kullanımıyla&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;dosya.zip&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Dosya gelsin ama ben bir yandan konsolu kullanıyım diyorsanız bu işlemi backgrounda atabilirsiniz. İşlemin sonucunu logdosyasi.log adlı dosyaya yazacaktır.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; &lt;span&gt;-o&lt;/span&gt; logdosyası.log http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;dosya.zip &lt;span&gt;&amp;amp;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Büyük bir dosya indiriyorsunuz ve kesiliyor o zaman aşağıdaki komut size yardımcı olacaktır.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; &lt;span&gt;-c&lt;/span&gt; http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;buyukdosya.zip&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Bazen bir sitedeki toplu dosyaları indirmek istiyorsunuz diyelim. Burada dikkat etmeniz gereken şey bu komut o sayfa içinde geçen .zip isimli dosyaları indirecektir.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;downloads.html yerine bir klasör ismi yazarsanız ancak klasör gezinme (directory browsing) yetkisi sunucuda açıksa o şekilde dosyaları indirebilirsiniz aksi taktirde ya o klasörde bir index.html dosyası varsa o dosyada geçen ilgili dosyaları indirmeye kalkar yada &amp;#8220;&lt;strong&gt;ERROR 403: Forbidden&lt;/strong&gt;&amp;#8221; şeklinde bir hata ile karşılaşırsınız.&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;wget&lt;/span&gt; &lt;span&gt;-r&lt;/span&gt; &lt;span&gt;-nd&lt;/span&gt; &lt;span&gt;-np&lt;/span&gt; &lt;span&gt;-l1&lt;/span&gt; &lt;span&gt;-A&lt;/span&gt; &lt;span&gt;'*.zip'&lt;/span&gt; http:&lt;span&gt;//&lt;/span&gt;www.ornekwebsite.com&lt;span&gt;/&lt;/span&gt;downloads.html&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Şu an hattınız yavaş diyelim yada çalışırken indirme işlemi yüzünden yavaşlamasını istemiyorsunuz. Tamam bizde yattıktan sonra başlayacak şekilde ayarlarız, mesela saat 1&amp;#8242;de başlayacak şekilde.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;echo&lt;/span&gt; &lt;span&gt;'wget http://www.ornekwebsite.com/dosya.zip'&lt;/span&gt; | at 01:00&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Tahmin edeceğiniz gibi &lt;strong&gt;at&lt;/strong&gt; aslında bir zamanlama komutu bunu kullanarak birçok işinizi cron&amp;#8217;a yazmadan zamanlayabilir ve zamanı geldiğinde çalışmasını sağlayabilirsiniz. En kısa sürede &lt;strong&gt;at&lt;/strong&gt; komutu ile ilgili de bir ipucu hazırlayacağım.&lt;/p&gt;</content:encoded>
-	<dc:date>Mon, 19 Jan 2009 09:31:50 +0000</dc:date>
+<item rdf:about="http://www.ozgurkuru.net/ozgur/?p=316">
+	<title>Özgür Kuru: Uçurtma Avcısı…</title>
+	<link>http://www.ozgurkuru.net/ozgur/2009/03/27/ucurtma-avcisi/</link>
+	<content:encoded>&lt;p&gt;Yollar kısa, Ankara trafiği ise uzun :). Bu uzun trafik süresince boş durmak doğru olmaz diyerek kitap okuma işlerine ağırlık verdim. Son dönemlerde kitaplarla pek haşır neşir olamıyordum.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://tr.wikipedia.org/wiki/Jules_Verne&quot; target=&quot;_blank&quot;&gt;Jules Verne&lt;/a&gt;&amp;#8216;nin &lt;a href=&quot;http://kitap.antoloji.com/iki-yil-okul-tatili-8-kitabi/&quot; target=&quot;_blank&quot;&gt;İki Yıl Okul Tatil&lt;/a&gt;&lt;a href=&quot;http://kitap.antoloji.com/iki-yil-okul-tatili-8-kitabi/&quot; target=&quot;_blank&quot;&gt;i&lt;/a&gt; adlı kitabını orta okul dönemlerinden beri okumak istiyordum :). Ve bir ay önce bu kitabı okuyarak otobüste kitap talimlerine başladım. Şimdi herkes &amp;#8220;yaş yirmi oldu hala Jules Verne mi okuyorsun?&amp;#8221; diye sorabilir ama bir türlü bırakamıyorum bu Fransızı.&lt;/p&gt;
+&lt;p&gt;Bu kitabı bitirdikten sonra, kitap okumaya bir hafta ara verdim fakat bir hafta önce &lt;a href=&quot;http://www.khaledhosseini.com/&quot; target=&quot;_blank&quot;&gt;Khaled Hosseini&lt;/a&gt;&amp;#8216;nin &lt;a href=&quot;http://tr.wikipedia.org/wiki/U%C3%A7urtma_Avc%C4%B1s%C4%B1_(roman)&quot; target=&quot;_blank&quot;&gt;Uçurtma Avcısı&lt;/a&gt; adlı kitabını okumaya başladı. Aslında uzun bir süredir bu kitabı alıp okumayı planlıyordum. Umduğumdan daha güzel bir kitap. Henüz yarısına bile gelmemişken oldukça beğendim. Kitap hakkında ayrıntılı bilgi vermeyeceğim. Fakat dostluk adına işlediği konu oldukça ilgimi çekti doğrusu.&lt;/p&gt;
+&lt;p&gt;Kitapta savaş dönemi iki dostun hayatını anlatıyor. Etnik çatışmaların arasında kalan iki küçük çocuk. Birisi hizmetkar, diğeri efendi. Küçük yaşta belki de bizlerin hiç yaşamayacağı duyguları yaşıyorlar kitapta. Herkese okumasını tavsiye ederim&amp;#8230;. Ayrıca bu kitabın bir &lt;a href=&quot;http://beyazperde.mynet.com/film/3881&quot; target=&quot;_blank&quot;&gt;filmi&lt;/a&gt; de çekilmiş&amp;#8230;&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 27 Mar 2009 19:02:54 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=204">
-	<title>Linuxipuclari: Oturumumuz Süresinde Kullandığımız Komutları ve Sonuçlarını Otomatik Olarak Nasıl Kaydedebiliriz?</title>
-	<link>http://www.linuxipuclari.com/genel/oturumumuz-suresinde-kullandigimiz-komutlari-ve-sonuclarini-otomatik-olarak-nasil-kaydedebiliriz</link>
-	<content:encoded>&lt;p&gt;Hepimizin başına gelmiştir. Bir problemle uğraşırken veya yeni bir program kurarken not almaya çalışırız. Ama bir noktadan sonra kendimizi yaptığımız işe kaptırır işi bitirdiğimizde;&lt;/p&gt;
-&lt;p&gt;Tüh bak yaptıklarımı not almayı unuttum. Ne yapmıştık? Hangi komutları kullanmıştık? Karşımıza hangi mesajlar çıktı ve biz neyi seçtik?&lt;/p&gt;
-&lt;p&gt;diye hayıflanırız.&lt;/p&gt;
-&lt;p&gt;Kendimizi işimize vermişken bizim adımıza birisinin tüm komutlarımızı ve bu komutların ürettiği mesajları, terminalimize yansıyan çıktıları otomatik olarak kaydetmesi hoş olmaz mıydı?&lt;/p&gt;
-&lt;p&gt;Linux &lt;strong&gt;script&lt;/strong&gt; komutu bu konuda derdimize derman oluyor. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;script&lt;/strong&gt; komutu aracılığıyla terminalize yansıyan tüm çıktıları bir dosyaya kaydedip daha sonra tekrar inceleyebilirsiniz. &lt;/p&gt;
-&lt;p&gt;Bir örnek ile nasıl çalıştığına bakalım;&lt;/p&gt;
+<item rdf:about="http://blog.arsln.org/?p=603">
+	<title>Fatih Arslan: Pandora’yı tek tıkla dinlemek</title>
+	<link>http://blog.arsln.org/pandorayi-tek-tikla-dinlemek/</link>
+	<content:encoded>&lt;p&gt;Başlık bulma konusunda pek iyi değilim, artık bu şekilde idare edin. Demek istediğim aslında şu, Pandora Türkiye&amp;#8217;de dinlenemiyor, bir aralar oluyordu fakat kapattılar. Sonraları &lt;strong&gt;globalpandora&lt;/strong&gt; diye bir şey çıktı fakat onun da sonu çabuk geldi. Proxy üzerinden dinleyebiliyoruz artık sadece. Bunun için de tarayıcımızdaki proxy ayarları değiştirmek lazım.&lt;/p&gt;
+&lt;p&gt;Bunun da  dezavantajları var, tüm şifreleriniz ve özel bilgileriniz proxy üzerinden iletileceği için pek güvenli sayılmayabilir. Ne yapabilirdik peki, site&amp;#8217;ye özel proxy yapabilirdik, yani www.pandora.com sitesine girdiğimizde bizim proxy devre&amp;#8217;ye girecekti. Bunu &lt;a href=&quot;http://foxyproxy.mozdev.org/&quot;&gt;FoxyProxy&lt;/a&gt; ile yapabildiğini öğrendim. Sonra da bu şekilde kullandım, ama müzik dinlemek için Firefox&amp;#8217;u açmak pek hoşuma gitmedi. Last.Fm gibi istemci olsa tadından yenmezdi.&lt;/p&gt;
+&lt;p&gt;Burada yapabileceğim bir şey var, oda &lt;a href=&quot;http://labs.mozilla.com/projects/prism/&quot;&gt;Mozilla Prism&lt;/a&gt; kullanmaktı. Sayesinde web sitelerine uygulama gibi çalıştırabilecektik. Her ne kadar uygulama olmasa bile güzel bir şey bence. Benim yaptığım ise, Mozilla Prism&amp;#8217;de proxy&amp;#8217;ı devreye sokmaktı.  Şimdi aşağıda gördüğünüz gibi simge&amp;#8217;ye tıkladığım an Pandora&amp;#8217;yı dinleyebiliyorum&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.arsln.org/wp-content/uploads/pandora.png&quot;&gt;&lt;img src=&quot;http://blog.arsln.org/wp-content/uploads/pandora-300x221.png&quot; alt=&quot;pandora&quot; title=&quot;pandora&quot; width=&quot;300&quot; height=&quot;221&quot; class=&quot;aligncenter size-medium wp-image-604&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tüm bunları şu şekilde yaptım:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mozilla Prism sayfasından, Prism&amp;#8217;in &lt;a href=&quot;http://people.mozilla.com/%7Emfinkle/prism/prism-0.9.en-US.linux-i686.tar.bz2&quot;&gt;standalone uygulamasını&lt;/a&gt; indiriyoruz&lt;/li&gt;
+&lt;li&gt;Bu uygulamayı  /opt dizinine açıyoruz. Orada /opt/prism diye bir klasör oluşacak&lt;/li&gt;
+&lt;li&gt;En son&lt;a href=&quot;http://get.adobe.com/flashplayer/&quot;&gt; flash sürümünü indiriyoruz&lt;/a&gt; , içinden çıkan &lt;strong&gt;libflashplayer.so&lt;/strong&gt; dosyasını  &lt;strong&gt;/opt/prism/plugins&lt;/strong&gt; klasörüne atıyoruz(eğer plugins klasörü yoksa oluşturuyoruz onu)&lt;/li&gt;
+&lt;li&gt;İstediğiniz bir metin editörü ile &lt;strong&gt;/opt/prism/xulrunner/greprefs/all.js&lt;/strong&gt; dosyasını açıyoruz ve aşağıdaki satırları &lt;strong&gt;
+&lt;p&gt;pref(&amp;#8221;network.proxy.type&amp;#8221;,                  0);&lt;br /&gt;
+pref(&amp;#8221;network.proxy.autoconfig_url&amp;#8221;, &amp;#8220;&amp;#8221;);&lt;/p&gt;&lt;/strong&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;şu şekile çeviriyoruz&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pref(&amp;#8221;network.proxy.type&amp;#8221;,                  2);&lt;br /&gt;
+pref(&amp;#8221;network.proxy.autoconfig_url&amp;#8221;, &amp;#8220;http://pac.byterelay.com/&amp;#8221;);&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bu satırlar 750&amp;#8242;ini satırda ve birbirinden ayrı yerdeler, biraz aramanız gerekecek&lt;/p&gt;
+&lt;li&gt; İşimiz bitti sayılır, şimdi konsoldan &lt;strong&gt;/opt/prism/prism&lt;/strong&gt; açıyoruz ve &lt;a href=&quot;http://www.pandora.com&quot;&gt;www.pandora.com&lt;/a&gt; ve Desktop seçeneğini tıklıyoruz&lt;/li&gt;
+&lt;li&gt;Başka adım yok &lt;img src=&quot;http://blog.arsln.org/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt; &lt;/li&gt;
 
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ script &lt;span&gt;-f&lt;/span&gt; otomatikDokumantasyon
-Script started, &lt;span&gt;file&lt;/span&gt; is otomatikDokumantasyon
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;pwd&lt;/span&gt;
-&lt;span&gt;/&lt;/span&gt;home&lt;span&gt;/&lt;/span&gt;ali&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;whoami&lt;/span&gt;
-ali
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;ls&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;tmp&lt;span&gt;/&lt;/span&gt;
-domains genel.xls  gdl              kde-alisPik0Fj  
-ksocket-alisSBnyBl  orbit-root  plugtmp-&lt;span&gt;1&lt;/span&gt;   
-Registration_Form_WBG.pdf  Tracker-alis.7358
-fbug               hsperfdata_alis  keyring-YXOiJM  
-&amp;nbsp;
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;exit&lt;/span&gt;
-Script &lt;span&gt;done&lt;/span&gt;, &lt;span&gt;file&lt;/span&gt; is otomatikDokumantasyon&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Yukarıda &lt;strong&gt;script&lt;/strong&gt; komutunu başlattığımız nokta ile komutu &lt;strong&gt;CTRL+D&lt;/strong&gt; tuş kombinasyonu aracılığıyla sonlandırdığımız nokta arasında oluşan ekran görüntülerini görüyorsunuz. Şimdi &lt;strong&gt;script&lt;/strong&gt; komutunun yukarıdaki etkileşim sonucunda bizim için oluşturduğu otomatikDokumantasyon dosyasına bakalım.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;more&lt;/span&gt; otomatikDokumantasyon
-Script started, &lt;span&gt;file&lt;/span&gt; is otomatikDokumantasyon
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;pwd&lt;/span&gt;
-&lt;span&gt;/&lt;/span&gt;home&lt;span&gt;/&lt;/span&gt;ali&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;whoami&lt;/span&gt;
-ali
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;ls&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;tmp&lt;span&gt;/&lt;/span&gt;
-domains genel.xls  gdl              kde-alisPik0Fj  
-ksocket-alisSBnyBl  orbit-root  plugtmp-&lt;span&gt;1&lt;/span&gt;   
-Registration_Form_WBG.pdf  Tracker-alis.7358
-fbug               hsperfdata_alis  keyring-YXOiJM  
-&amp;nbsp;
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$ &lt;span&gt;exit&lt;/span&gt;
-&amp;nbsp;
-Script &lt;span&gt;done&lt;/span&gt; on Sun &lt;span&gt;18&lt;/span&gt; Jan &lt;span&gt;2009&lt;/span&gt; 01:&lt;span&gt;59&lt;/span&gt;:&lt;span&gt;44&lt;/span&gt; PM CET
-ali&lt;span&gt;@&lt;/span&gt;ali-laptop:~&lt;span&gt;/&lt;/span&gt;temp&lt;span&gt;/&lt;/span&gt;scriptNot$&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Yukarıda gördünüz gibi &lt;strong&gt;script&lt;/strong&gt; komutu terminalimize yazılan herşeyi bizim için kaydetti. Bir problemle uğraşırkan ayrıca kopyala&amp;amp;yapıştır aksiyonlarıyla kendimizi germemize gerek yok.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content:encoded>
-	<dc:date>Sun, 18 Jan 2009 12:22:27 +0000</dc:date>
+	&lt;p&gt;&lt;/p&gt;
+	&lt;hr noshade=&quot;noshade&quot; /&gt;
+	&lt;small&gt;&lt;p&gt;Copyleft - Fatih Arslan - &lt;a href=&quot;http://blog.arsln.org&quot;&gt;Arslanlar Şehri&lt;/a&gt;, 2009. |
+	&lt;a href=&quot;http://blog.arsln.org/pandorayi-tek-tikla-dinlemek/&quot;&gt;Permalink&lt;/a&gt; |
+	&lt;a href=&quot;http://blog.arsln.org/pandorayi-tek-tikla-dinlemek/#comments&quot;&gt;Yorum(3)&lt;/a&gt;&lt;/p&gt;&lt;/small&gt;</content:encoded>
+	<dc:date>Fri, 27 Mar 2009 18:28:08 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=156">
-	<title>Linuxipuclari: Sürekli Akan Logları İzleme</title>
-	<link>http://www.linuxipuclari.com/genel/surekli-akan-loglari-izleme</link>
-	<content:encoded>&lt;p&gt;Eğer birşeyler ters gidiyorsa hemen loglara bakarız çünkü soruna ait bütün ipuçları oradadır.&lt;/p&gt;
-&lt;p&gt;Bazen bu logları oluştukları anda anında izlemek istediğimizde her linux kullanıcısının ilk öğrendiği komutlardan birini kullanırız&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;tail&lt;/span&gt; &lt;span&gt;-f&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ama bu komutun şöyle bir dezavantajı var loglar orda akıp giderken birşey gözünüze takıldı ne yapacaksınız ctrl+c ve logun akmasını keseceksiniz ya ekranda kalan kısımdan logun gördüğünüz kısmına bakmaya çalışacaksınız yada more yada vi gibi komutları kullanarak dosyanın içine girip o satırı aramaya çalışacaksınız.&lt;/p&gt;
-&lt;p&gt;Peki size bunun daha kolay bir yolu var desem. Evet less komutu. Nasıl mı kullanacağız? Çok basit.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;less&lt;/span&gt; &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Shift+F&lt;/strong&gt; tail -f ile aynı işi görür loglar akmaya başlar&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ctrl+C&lt;/strong&gt; ile istediğiniz yerde logun akmasını durdurabilirsiniz&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;B&lt;/strong&gt; ve &lt;strong&gt;F&lt;/strong&gt; tuşları logun içinde ileri geri gitmenizi sağlar&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt; ile işiniz bittiğinde logdan çıkarsınız&lt;/p&gt;
-&lt;p&gt;Logların siz komutu yazdığınızda direk akarak başlamasını istiyorsanız komutu aşağıdaki gibi kullanabilirsiniz.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;less&lt;/span&gt; +F &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Yada daha önce yazdığımız &lt;a href=&quot;http://www.linuxipuclari.com/genel/kendi-komutunuzu-olusturun&quot;&gt;Kendi Komutunuzu Oluşturun&lt;/a&gt; ipucumuzu kullanarak &lt;strong&gt;less +F&lt;/strong&gt; için &lt;strong&gt;akanlog&lt;/strong&gt; diye bir alias yaratabilir ve komutu direkt olarak&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;akanlog &lt;span&gt;/&lt;/span&gt;var&lt;span&gt;/&lt;/span&gt;log&lt;span&gt;/&lt;/span&gt;messages&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;şeklinde de kullanabilirsiniz ;)&lt;/p&gt;</content:encoded>
-	<dc:date>Fri, 16 Jan 2009 08:17:05 +0000</dc:date>
+<item rdf:about="tag:blogger.com,1999:blog-6806075996663386433.post-2812661079688866968">
+	<title>Ali Erkan İMREK: MS Office XLSX Dosyalarında Güvenlik Açığı</title>
+	<link>http://armuting.blogspot.com/2009/03/ms-office-xlsx-dosyalarnda-guvenlik-acg.html</link>
+	<content:encoded>&lt;a href=&quot;http://www.ozgurlukicin.com/media/ooxml/ooxmlekarsi.png&quot;&gt;&lt;img src=&quot;http://www.ozgurlukicin.com/media/ooxml/ooxmlekarsi.png&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;div&gt;Özgürlükiçin.com'un OOXML'e karşı yürüttüğü imza kampanyasında son 20 imza kalmış, haydi buyrun; &lt;a href=&quot;http://www.ozgurlukicin.com/ooxml/&quot;&gt;http://www.ozgurlukicin.com/ooxml/&lt;/a&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div&gt;Bu konuda neler olup bitiyor diye &lt;a href=&quot;http://www.noooxml.org/&quot;&gt;uluslararası kampanya sitesine&lt;/a&gt; baktığımda da hiç şaşırmadığım şeyler okudum, mesela xlsx dosyalarındaki &lt;a href=&quot;http://www.noooxml.org/forum/t-133339/xlsx-files-as-a-security-risk&quot;&gt;güvenlik açığı&lt;/a&gt; nedeniyle uzaktan kod çalıştırmak bile mümkünmüş.&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/6806075996663386433-2812661079688866968?l=armuting.blogspot.com&quot; /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>Fri, 27 Mar 2009 15:57:52 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=155">
-	<title>Linuxipuclari: Periyodik Olarak Bir Programı Çalıştırma ve Çıktısını Takip Etme</title>
-	<link>http://www.linuxipuclari.com/genel/periyodik-olarak-bir-programi-calistirma-ve-ciktisini-takip-etme</link>
-	<content:encoded>&lt;p&gt;Sizin de hiç ihtiyacınız oldu mu bilmem ama bu tür bir şeye çok sık ihtiyacım olunca biraz araştırdım ve bu komutu buldum o günden beri de en sevdiğim linux komutlarından biri oldu.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nasıl kullanılır?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;watch [seçenekler] komut&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;-n&lt;/strong&gt; Komutun kaç saniyede bir tekrar edileceğini, ekran çıktısının kaç saniyede bir yenileneceğini belirtir. Kullanılmazsa her 2 saniyede bir anlamına gelir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;-d&lt;/strong&gt; Ekran çıktısında oluşan değişiklikleri beyaz olarak boyar böylece değişim olan yerleri daha rahat gözlersiniz&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ne için mi kullanıyorum?&lt;/strong&gt;&lt;/p&gt;
+<item rdf:about="http://www.murekkep.org/?p=1667">
+	<title>Alper Orus: Ubuntu 9.04 Jaunty Jackalope Beta Hazır</title>
+	<link>http://www.murekkep.org/ubuntu-904-jaunty-jackalope-beta-hazir</link>
+	<content:encoded>&lt;p&gt;Kod adı Jaunty Jackalope olan Ubuntu&amp;#8217;nun 9.04 sürümü için Beta duyurusu yapıldı. &lt;a href=&quot;http://www.ubuntu.com/testing/jaunty/beta&quot;&gt;Ubuntu 9.04 Beta&lt;/a&gt; birçok hatanın giderildiği ve test edebileceğiniz oranda kararlı bir sürümdür. Yani eğer &lt;strong&gt;Ubuntu 9.04&lt;/strong&gt; ile gelen yenilikleri merak ediyorsanız Beta sürümü indirip kurabilir ya da halihazırda kullandığınız &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; 8.10 masaüstünüzden yükseltme işlemi yapabilirsiniz. &lt;/p&gt;
+&lt;p&gt;Kullandığınız Ubuntu 8.10 masaüstü üzerinden Ubuntu 9.04 Beta&amp;#8217;ya  yükseltme yapmak isterseniz &lt;strong&gt;Alt+F2&lt;/strong&gt; ile açtığınız komut kutusuna &amp;#8220;&lt;strong&gt;update-manager -d&lt;/strong&gt;&amp;#8221; yazmanız yeterli olacaktır. Güncelleme Yöneticisi karşınıza gelecek ve yeni dağıtım 9.04&amp;#8242;ün kullanılabilir olduğu bilgisini verecektir. Bu bölümden &amp;#8220;&lt;strong&gt;yükselt&lt;/strong&gt;&amp;#8221; (upgrade) dedikten sonra kolayca &lt;strong&gt;Ubuntu 9.04 Beta&lt;/strong&gt;&amp;#8216;ya terfi edebilirsiniz. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu 9.04 ile gelen özelliklere kısaca bakmak istersek;&lt;/strong&gt;&lt;br /&gt;
+&lt;span id=&quot;more-1667&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bir klasördeki dosya sayısındaki değişimi gözlemlemek için örn: postfix aktif kuyruktaki mail sayısını
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'wc -l | ls -l'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;/li&gt;
-&lt;li&gt;Disklerin doluluk oranlarını gözlemlemek için örn: Kapasite sıkıntısı olan bir diskte log yazma oranı dengesiz bir proses çalıştırdığımda diskte yer sıkıntısı oluşmasın diye
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'df -k'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;/li&gt;
-&lt;li&gt;Hafıza kullanım oranını gözlemlemek için
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'free -m'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;/li&gt;
-&lt;li&gt;Bir klasöre muratz kullanıcısı ile eklenen yada silinen dosyaları gözlemlemek için
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;watch &lt;span&gt;-d&lt;/span&gt; &lt;span&gt;'ls -l | fgrep muratz'&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;/li&gt;
+&lt;li&gt;Gnome 2.26 - 18 Mart 2009&amp;#8242;da final sürümü duyurulan &lt;a href=&quot;http://library.gnome.org/misc/release-notes/2.26/index.html.tr&quot;&gt;Gnome 2.26 özelliklerine&lt;/a&gt; göz atmak isteyebilirsiniz.&lt;/li&gt;
+&lt;li&gt;Geliştirilmiş çoklu monitör desteği&lt;/li&gt;
+&lt;li&gt;X.Org sunucu 1.6&lt;/li&gt;
+&lt;li&gt;Uyarılar ve uyarı özelliklerine eklenmiş yeni stiller. Örnek olması açısından buradaki &lt;a href=&quot;http://www.markshuttleworth.com/wp-content/uploads/2008/12/jaunty904_notifications_example1_web_092.swf&quot;&gt;videoya&lt;/a&gt; bakılabilir. &lt;/li&gt;
+&lt;li&gt;Daha hızlı başlama süresi (boot performansı) - Ubuntu 9.04 başlangıç süresinde belirgin şekilde geliştirmeler yapılmış. &lt;/li&gt;
+&lt;li&gt;Ext4 dosya sistemi desteği ile başlangıç süresinde iyileştirmeler ve genel olarak dosya sistemi performansı artışı. &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Başka nerelerde kullandığınızı sizde bizimle paylaşırsanız sevirim.&lt;/p&gt;</content:encoded>
-	<dc:date>Thu, 15 Jan 2009 07:29:49 +0000</dc:date>
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.murekkep.org/mini/ubuntuust.jpg&quot; title=&quot;Ubuntu&quot; class=&quot;alignnone&quot; width=&quot;520&quot; height=&quot;200&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu 9.04 Jaunty Jackalope&lt;/strong&gt; için kararlı final sürümü beklediğimiz üzere &lt;strong&gt;23 Nisan 2009&lt;/strong&gt; tarihinde duyurulacak. &lt;a href=&quot;http://www.ubuntu.com/testing/jaunty/beta&quot;&gt;Ubuntu 9.04 Beta&lt;/a&gt; sayfasında hem beta için duyurulan özelliklere hem de indirme adreslerine ulaşabilirsiniz. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu 9.04&lt;/strong&gt; sonrasında bizi bekleyen sürüm ise kod adı Karmic Koala olarak duyurulan &lt;a href=&quot;http://www.murekkep.org/ubuntu-910-karmic-koala&quot;&gt;Ubuntu 9.10 Karmic Koala&lt;/a&gt;.&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 27 Mar 2009 09:04:51 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=153">
-	<title>Linuxipuclari: VM Imajının Kopyasını Aldım Ethernet Bağlanmıyor</title>
-	<link>http://www.linuxipuclari.com/genel/vm-imajinin-kopyasini-aldim-ethernet-baglanmiyor</link>
-	<content:encoded>&lt;p&gt;Bu sıkça başıma gelen konulardan biri sizinle paylaşmak istedim. Bazen kullandığım vm imajını bir vmware serverdan (gsx) başka bir vmware servera taşıdığımda veya aynı vmware server üzerinde kopyasını aldığımda yeni imajın ethernet bağlantısı çalışmayabiliyor.&lt;/p&gt;
-&lt;p&gt;Bunun genelde sebebi ethernet kartının vmware tarafından yeniden yaratılmasıdır.&lt;/p&gt;
-&lt;p&gt;Eski kartı silip yeni kartı eklediğinden kartın id&amp;#8217;si eth0&amp;#8242;dan eth1&amp;#8242;e değişiyor. Eğer ip tanımlarınız statik yapılmışsa &lt;strong&gt;/etc/network/interfaces&lt;/strong&gt; dosyanızda da yeni ethernet id sine göre düzenleme yapmanız gerecektir.&lt;/p&gt;
-&lt;p&gt;O anki id&amp;#8217;yi bulmanın en pratik yollarından biri de &lt;strong&gt;/proc/net/dev&lt;/strong&gt; dosyasının içine bakmak. &lt;/p&gt;
-&lt;p&gt;Bu dosyanın içi aşağıdaki gibi.&lt;/p&gt;
-&lt;pre&gt;  Interface	Receive bytes	packets errs drop fifo frame
-  eth0:		161543042	916321    0    0    0     0&lt;/pre&gt;
-&lt;p&gt;Unutmayın eğer bu sorunla karşı karşıya iseniz; &lt;strong&gt;ifconfig&lt;/strong&gt; komutu sisteme &lt;strong&gt;/etc/network/interfaces&lt;/strong&gt; dosyasında tanıttığınız kartları gösterecektir. O yüzden siz &lt;strong&gt;ifconfig&lt;/strong&gt; diye baktığınızda eth0&amp;#8242;ı görürken &lt;strong&gt;/proc/net/dev&lt;/strong&gt; altında eth1 görüyor olacaksınız.&lt;/p&gt;</content:encoded>
-	<dc:date>Wed, 14 Jan 2009 13:54:55 +0000</dc:date>
+<item rdf:about="http://www.okanakyuz.com/?p=270">
+	<title>Okan Akyüz: comp.os.minix’in Ağlatan haline ağıt.</title>
+	<link>http://www.okanakyuz.com/?p=270</link>
+	<content:encoded>&lt;p&gt;Hello everybody out there using minix -&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m doing a (free) operating system (just a hobby, won&amp;#8217;t be big and&lt;br /&gt;
+professional like gnu) for 386(486) AT clones.  This has been brewing&lt;br /&gt;
+since april, and is starting to get ready.  I&amp;#8217;d like any feedback on&lt;br /&gt;
+things people like/dislike in minix, as my OS resembles it somewhat&lt;br /&gt;
+(same physical layout of the file-system (due to practical reasons)&lt;br /&gt;
+among other things).&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve currently ported bash(1.08) and gcc(1.40), and things seem to work.&lt;br /&gt;
+This implies that I&amp;#8217;ll get something practical within a few months, and&lt;br /&gt;
+I&amp;#8217;d like to know what features most people would want.  Any suggestions&lt;br /&gt;
+are welcome, but I won&amp;#8217;t promise I&amp;#8217;ll implement them &lt;img src=&quot;http://www.okanakyuz.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:-)&quot; class=&quot;wp-smiley&quot; title=&quot;comp.os.minixin Ağlatan haline ağıt.&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;Linus (torvalds@kruuna.helsinki.fi)&lt;/p&gt;
+&lt;p&gt;PS.  Yes - it&amp;#8217;s free of any minix code, and it has a multi-threaded fs.&lt;br /&gt;
+It is NOT protable (uses 386 task switching etc), and it probably never&lt;br /&gt;
+will support anything other than AT-harddisks, as that&amp;#8217;s all I have :-(.&lt;/p&gt;
+&lt;p&gt;Yukardaki satırlar  comp.os.minix de ilk yazıldı ve linux dünyada tanınan bir işletim sistemi olmaya adım attı. Fakat bugunlerde comp.os.minix&amp;#8217;de yazan tek şey bilmemne marka ayakkabıyı şurdan alabilirsiniz hem de pay-pal ile. İşte bir dev (işletim sistemini öğreten işletim sistemi) şuan acınası halde. Bu yüzden ben evimde bir dakika saygı duruşu yapıyorum.&lt;/p&gt;
+&lt;p&gt;İyi günler.&lt;/p&gt;</content:encoded>
+	<dc:date>Wed, 25 Mar 2009 17:10:29 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=150">
-	<title>Linuxipuclari: Ubuntu VirtualBox ve KVM çakışma problemi</title>
-	<link>http://www.linuxipuclari.com/genel/ubuntu-virtualbox-ve-kvm-cakisma-problemi</link>
-	<content:encoded>&lt;p&gt;Virtualbox sanallaştırma uygulamasının son versiyonunu kurduysanız KVM çekirdek modulleri  yüklü makinalarda Virtualbox sanal makinalarınızı  ayağa kaldırmak istediğinizde aşağıdaki hatayı verip kapanacaktır.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;VirtualBox can&amp;#8217;t operate in VMX root mode. Please disable the KVM kernel extension, recompile your kernel and reboot.&lt;br /&gt;
-VBox status code: -4011 (VERR_VMX_IN_VMX_ROOT_MODE).&lt;/p&gt;
-&lt;p&gt;Result Code:&lt;br /&gt;
-0&amp;#215;80004005&lt;br /&gt;
-Component:&lt;br /&gt;
-Console&lt;br /&gt;
-Interface:&lt;br /&gt;
-IConsole {d5a1cbda-f5d7-4824-9afe-d640c94c7dcf}&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;Problemlemin çözümü için VirtualBox kullanacağınız zaman KVM çekirdek modullerini hafızadan kaldırmanız gerekecek.&lt;/p&gt;
-&lt;p&gt;Öncelikle hafızada hangi kvm modülünün yüklü olduğuna bakıyoruz.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;$lsmod&lt;/span&gt; | &lt;span&gt;grep&lt;/span&gt; kvm
-kvm_intel              &lt;span&gt;49728&lt;/span&gt;  0
-kvm                   &lt;span&gt;142912&lt;/span&gt;   &lt;span&gt;1&lt;/span&gt; kvm_intel&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Hafızada yüklü olan kvm modülü işlemcinize bağlı olarak değişecektir. Intel tabanlı sistemimizde yüklu olan modül &lt;em&gt;kvm_intel&lt;/em&gt; isimli modül.. Aşağıdaki komutla kvm modülünü hafızadan kaldırıyoruz.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;sudo&lt;/span&gt; rmmod kvm_intel&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Eğer VirtualBox&amp;#8217;ı tekrar başlatırsanız sanal makinalarınızın sorunsuz olarak çalışmaya başladığını göreçeksiniz.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content:encoded>
-	<dc:date>Wed, 14 Jan 2009 06:41:49 +0000</dc:date>
+<item rdf:about="http://www.yalazi.org/?p=263">
+	<title>Onur Yalazı: uzayüssünden mir-uzayistaysonuna</title>
+	<link>http://www.yalazi.org/index.php/archives/2009/03/25/uzayussunden-mir-uzayistaysonuna/</link>
+	<content:encoded>&lt;div class=&quot;wp-caption alignleft&quot;&gt;&lt;a href=&quot;http://tr.wikipedia.org/wiki/Mir&quot;&gt;&lt;img title=&quot;Mir Görev Nişanı&quot; src=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f5/Mir_insignia.jpg&quot; alt=&quot;Mir Uzay İstasyonu Görev Nişanı&quot; width=&quot;200&quot; height=&quot;141&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;Mir Uzay İstasyonu Görev Nişanı&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;&amp;#8220;Linux masaüstüne hazır değil&amp;#8221; diyenler utansın.. Ubuntu Intrepid Ibex 8.10 ile yeni aldığım Acer Extensa 5630EZ-421G16 tak kullan biçimde çalıştı. Hatta üzerindeki kameranın Skype ile test et dediğimde görüntü vermesi anı - kamera ile pek işim olmasa da - benim için çok önemliydi. Buradan tek kötü bir haber çıkıyor, çalışmayan bir kısmını henüz bulamadığım için &amp;#8220;bakın bu da böyle çözülür&amp;#8221; gibi bir yazı yazamayacağım.&lt;/p&gt;
+&lt;p&gt;Yeni dizüstüme mir-uzayistasyonu adını verdim.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Linux mir-uzayistasyonu 2.6.27-11-generic #1 SMP Thu Jan 29 19:24:39 UTC 2009 i686 GNU/Linux&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Not: Ayrıca Linpus Linux ile geldiği için bazı gereksiz vergilerden de muaf.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a title=&quot;Mir uzay istasyonu wikipedia&quot; href=&quot;http://en.wikipedia.org/wiki/Mir&quot;&gt;Mir Uzay İstasyonu İngilizce - Wikipedia &lt;/a&gt; &lt;a title=&quot;Mir uzay istasyonu wikipedia&quot; href=&quot;http://tr.wikipedia.org/wiki/Mir&quot;&gt; Turkçe - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Ubuntu&quot; href=&quot;http://www.ubuntu.com&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a title=&quot;Acer&quot; href=&quot;http://www.yalazi.org/index.php/feed/www.acer.com.tr&quot;&gt;Acer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content:encoded>
+	<dc:date>Wed, 25 Mar 2009 15:50:07 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=119">
-	<title>Linuxipuclari: Sanallaştırma ve Beraberinde Getirdiği Sürprizler</title>
-	<link>http://www.linuxipuclari.com/genel/sanallastirma-ve-beraberinde-getirdigi-surprizler</link>
-	<content:encoded>&lt;p&gt;Trendleri takip eden herkes yakından tecrübe ediyordur ki sanallaştırma ve faydaları her düzeyde konuşuluyor tartışılıyor. Son yılların en sıcak konularından biri, son 2 senedir de Türkiyenin gündemindeki ağırlığını her geçen gün arttırıyor.&lt;/p&gt;
-&lt;p&gt;Hemen hemen her şirkette  AR-GE çalışması, test sistemi olarak sanal makinalar uzun yıllardır kullanılıyor.  Son dönemdeki tartışmaların farklı boyutu sanal makinaların artık üretim ortamlarında kullanılmaya  başlanması.&lt;/p&gt;
-&lt;p&gt;Ne yazık ki heyecan dalgasına kapılıp sörf yapmaya başlayan IT yöneticilerimiz sadece artı eksi hesabının artı boyutuna bakıyorlar. Fakat madalyonun bir de diğer yüzü var.&lt;/p&gt;
-&lt;p&gt;&lt;span id=&quot;more-119&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Sanallaştırma sayesinde çok kolay yeni bir sistemi ayağa kaldırabiliyorsunuz. Var olan bir sistemin yeni bir kopyasını alabiliyorsunuz. Eğer belli bir planlama ve kontrol olmazsa (ki baslangıçta hiç bir sanallaştırma projesinde ne yazik ki olmuyor) göz açıp kapayana kadar organizayonun yapısına gore 10 larla veya 100 lerle ölçülen sanal makinalara ulaşmanız hiç de şaşırtıcı olmaz.&lt;/p&gt;
-&lt;p&gt;Sanallaştırma her fiziksel makinanın nerdeyse ayrı bir datacenter gibi davranmasına imkan sağlıyor.&lt;/p&gt;
-&lt;p&gt;Bu noktada sanallaştırma projesi gerçekleştiren veya gerçekleştirmeyi planlayan IT yöneticilerimizin kendilerine aklıma ilk gelen şu soruları sormaları gerekiyor.&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Sanal makinalarınızın yama yönetimini nasıl yapacaksınız?&lt;br /&gt;
-&lt;/strong&gt;Eskiden Sanal makinaları barındıran fiziksel makinenin yamalarını yapmak zorunda kalırken sanallaştırma sonrasında bu fiziksel makine üzerindeki her bir sanal makinanın ayrı olarak yamanması gerekiyor.&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Sanal ortamlarda veri güvenliği konusunda ne kadar bilgi sahibisiniz?&lt;/strong&gt;&lt;br /&gt;
-Fiziksel makinanızı datacenter&amp;#8217;a kilitliyorsunuz ama sanal makinanız ağ üzerinden datacenter dışına kaçabilir.&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Sanal makinaların loglarını nasıl takip edeceksiniz?&lt;/strong&gt;&lt;br /&gt;
-Sanal makinalarınızın loglarını nasıl takip ediyorsunuz? Sanallaştırmanın sistem yöneticilerine getirdiği ekstra yük nedir? Yeni yasal düzenlemelere uyum kapsamında sanal makinaların kullanımı size ne gibi yükümlülükler getiriyor?&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Her bir sanal makinadaki kullanıcı ve yetki yönetimini nasıl yapacaksınız?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Sanal makinalarınızın kaynak kullanımlarını nasıl izliyorsunuz?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Lisansların yönetimi nasıl yapacaksınız?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Yedekleme için ne tür bir altyapı düşünüyorsunuz?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Takip eden yazılarda her bir başlık için linux platformunda çalışan açık kaynak kodlu veya ücretsiz çözümleri, alternatif senaryoları incelemeye çalışacağız.&lt;/p&gt;
-&lt;p&gt;Sizlerin de bu konudaki görüş ve tecrübelerini duymaktan mutluluk duyarız.&lt;/p&gt;
-&lt;p&gt;Sanallaştırma tecrübelerinizi, ürettiginiz yaratıcı çözümleri duymak için sabırsızlanıyoruz.&lt;/p&gt;
-&lt;p&gt;İyi çalışmalar.&lt;/p&gt;</content:encoded>
-	<dc:date>Tue, 13 Jan 2009 09:55:49 +0000</dc:date>
+<item rdf:about="tag:blogger.com,1999:blog-4680162149707281285.post-9013440262584406750">
+	<title>Ceyhun Alyeşil: Ekonomik Kriz ve Yeni Fırsatlar - 2</title>
+	<link>http://devador.blogspot.com/2009/03/ekonomik-kriz-ve-yeni-frsatlar-2.html</link>
+	<content:encoded>&lt;a href=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/ScqfGKPxMSI/AAAAAAAAASc/gCHcFD-4EzQ/s1600-h/open_source.gif&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/ScqfGKPxMSI/AAAAAAAAASc/gCHcFD-4EzQ/s400/open_source.gif&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5317237238242816290&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Bir önceki yazıda ekonomik krize giriş yapmış ardından bunun özgür projeler üzerine etkisinden bahsetmiştik. Bu yazıda ise yeni fırsatlar neler olabilir neler yapılmalıdır onun üzerine duracağız. Sabah saatlerinde ekonomide önlem olarak açıklanan paketlerden beşincisi duyuruldu. Yine vergi indirimleri geldi. İçlerinden bizi ilgilendiren Bilgisayar, Bilişim ve Büro makinalarında alınan verginin %8'e indirilmesi. Bana göre bu oran bile çok. Kabul ediyorum belki dünyanın en pahalı ülkesi değiliz ama en pahalılardan birisi olduğumuzu söyleyebiliriz. En pahalı interneti kullandığımız yönündeki haberlerden sonra biraz araştırma yapmıştım doğru hatırlıyorsam birinci Kazakistan'dı. Ülkemiz ihracatını ne kadar geliştirirse geliştirsin kazancımız düşük oluyor. Özellikle elektronik ürünlerde, elektrikli ev aletlerinde hatta taşıt sektöründe ana parçaları biz üretmediğimiz için sadece ufak bir paya sahip oluyoruz. Yurt dışından gelen parçaları birleştirip satmayla elde edilen kazanç ile ürünün ilk maddesine sahip olup satma arasında fark var.&lt;br /&gt;&lt;br /&gt;Küreselleşen dünyada Çin, Hindistan gibi yeni güçlere karşı yüksek vergi oranları ve işçilik ücretleri ile rekabet etmek imkansız. Yüksek nüfusları sayesinde işçilik o kadar ucuzki onlarla rekabet etmek için ya kendi işçilerimizin maaşlarını kesecez ya da üretilen malın kalitesinden vazgeçecez. İki hareketin sonucuda acıtır. Büyük düşünen bir Türkiye kaliteli mallar üretmeli ve işçilerine hak ettikleri yüksek geliri sağlamalıdır. Bunu başarabilmek içinde öncelikle maliyetler kısılmalı ardından gerekli teknik eğitim verilmeli. Şu alınan vergilere bakın, %18 üstüne ÖTV falan... Böyle maliyetler varken küresel aktörler Türkiye ye niye yatırım yapsın? Serbest Ticaret Bölgeleri, Tekno Kentler bir yere kadar...&lt;br /&gt;&lt;br /&gt;Kriz acıda olsa zayıf şirketleri götürecek. Yapılan yanlışları düzeltmek zorunda kalan küresel ekonomi yeni bir yapılanmaya gidiyor. Tahminimce düşük-orta kalite ürünlerin üretimi giderek doğuya kayarken yüksek kaliteli ürünleri dünyanın batı kesimi üretecek. Türkiye bu iki kutuplu dünyanın yine tam ortasında yer alacak ama önlem alınmazsa ikisine de katılamayabilir.  Teknoloji gerektiren kaliteli ürünleri ortaya çıkarabilmek için teşvikler arttırılmalı. Özgür yazılımlarda bu noktada gittikçe önem kazanacak ama içlerinden sadece en iyi olanları ayakta kalacak. Batı devletlerinin ufak adımlarlada olsa özgür yazılımlara geçtiklerinin haberleri geliyor. Çoğu kurum, göç işlemlerinin maliyetlerini düşünmeden gelecek için özgür yazılımlara geçecek. Bu kurumlar özgür yazılımlara geçmek için bu alanda uzman firmalara ihtiyaç duyacak. Yeni fırsatlar dediğim bu :) Özgür yazılımlara geçtikçe bu alanda ki ihtiyacı karşılamak için yeni firmalar doğacak. Linux nedir bilmeyen, hayatında windowstan başka işletim sistemi kullanmamış firmalar bu ihtiyaçları gidermede yetersiz kalacaktır. Geçiş işlemlerinin tamamlanmasından sonra bu sefer kurumsal destek ihtiyacı doğacak ve bu ihtiyacı gidermek için yine özgür firmalar aranacaktır. Elemanlarını özgür yazılımlar için hazırlamak isteyen firmalar bu konularda onları eğitecek yeni kurumları arayacak! &quot;Linux sertifikası verilir&quot; gibi ilanlara hazır olun.&lt;br /&gt;&lt;br /&gt;Kısaca Göç, Destek ve Eğitim başlıklarında yeni fırsatlar ortaya çıkacak diyebilirim. Bunun yanında ülkeler yazılım sektörüne daha fazla yoğunlaşacaktır. Yazıya başlarken direkt ilk maddeyi dışarıdan aldığımız için kazancımızın az olduğundan bahsetmiştim. Yazılım sektöründe ise eğer özgür yazılımları kullanıyorsanız böyle bir gideriniz olmayacaktır. Tamamen kendi ürettiğiniz, dışa bağımlı olmayan modüllerden oluşan yazılımların pazarlaması araba ve buz dolabı satmaktan daha kazançlı olacak. Bu aşamada kaliteli eleman bulmak için eğitim sektörümüzde değişikliklere gidilebilir. Bunun yanında firmaların bilgisayar, elektrik, internet bağlantısı gibi ihtiyaçlarını karşılarken ödedikleri vergiler düşürülerek gerekli olan hammadde üzerinde ki yükler azaltılırsa türk yazılımcıların batıdaki meslektaşları ile kıyasıya bir mücadeleye gireceğinden eminim.&lt;br /&gt;&lt;br /&gt;Kendi açımdan özel olarak oyun sektörünede özel olarak ilgi gösterebilirim. Ne kadar kriz olursa olsun, oyunlar oynanmaya devam ediyor. Şimdilik oyun satışlarıyla ilgili bir rapor görmesemde online oyunların tartışıldığı forumlar hala hareketli. Ülkemizde oyun sektörü yeni yeni oluşuyor... Mount &amp;amp; Blade gibi türk yapımı oyunların çoğalması yazılımcılarımız için gerekli tecrübeyi sağlayacaktır. Ondan sonra belki Blizzard'a kafa tutacak oyunlar çıkarabiliriz(zor :D)&lt;br /&gt;Oyun sektörüde başka bir yazının konusu olsun.&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/4680162149707281285-9013440262584406750?l=devador.blogspot.com&quot; /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>Wed, 25 Mar 2009 14:16:22 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=123">
-	<title>Linuxipuclari: Dosyanın Sahipliğinin Değiştirilmesi</title>
-	<link>http://www.linuxipuclari.com/genel/dosyanin-sahipliginin-degistirilmesi</link>
-	<content:encoded>&lt;p&gt;Eğer sizin de benim gibi root kullanıcısıyla çalışma takıntınız varsa (tüm yetki elimde olsun diye değil sadece sürekli sudo yapmayı sevmediğim için) dosya sahipliğiyle ilgili sıkça başınız ağrıyabilir.&lt;br /&gt;
-&lt;span id=&quot;more-123&quot;&gt;&lt;/span&gt;&lt;br /&gt;
-Önce bir dosyanın sahipliğini görmek için ne yapmalıyız ona bakalım.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt; merhaba.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Komutu çalıştırdığımızda aşağıdaki gibi bir sonuç elde ederiz.&lt;/p&gt;
-&lt;p&gt;-rw-r&amp;#8211;r&amp;#8211; 1 operator web1   151 2008-02-09 14:46 merhaba.c&lt;/p&gt;
-&lt;p&gt;Buradaki operator bize dosyanın kullanıcısını web1 ise dosyanın grubunu verecektir.&lt;/p&gt;
-&lt;p&gt;Şimdi aynı dizindeki başka bir dosya için aynı işlemi yapalım&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt; selam.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Aşağıda göreceğiniz gibi bu dosyanın kullanıcısı ve grubu root:root olmuş.&lt;/p&gt;
-&lt;p&gt;-rw-r&amp;#8211;r&amp;#8211; 1 root root   265 2008-02-09 14:56 selam.c&lt;/p&gt;
-&lt;p&gt;Benden sonra bu dosyaya operator olarak ulaşmak isteyen diğer kullanıcılar yetki hatasıyla karşı karşıya kalacak ve dosyayı açamayacak yada değişiklik yapamayacaklar.&lt;/p&gt;
-&lt;p&gt;Gelin şimdi bunu nasıl düzelteceğimizi görelim.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;chown&lt;/span&gt; operator:web1 selam.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Bu kadar kolay. Tekrar dosyayı kontrol ettiğimizde kullanıcısının ve grubunun değişmiş olduğunu görürüz.&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;ls&lt;/span&gt; &lt;span&gt;-l&lt;/span&gt; selam.c&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;-rw-r&amp;#8211;r&amp;#8211; 1 operator web1   265 2008-02-09 14:56 selam.c&lt;/p&gt;
-&lt;p&gt;İyi Çalışmalar&lt;/p&gt;</content:encoded>
-	<dc:date>Tue, 13 Jan 2009 07:53:34 +0000</dc:date>
+<item rdf:about="http://www.cankavaklioglu.name.tr/guncelgunce/archives/2009/03/24/index.html#e2009-03-24T22_48_28.txt">
+	<title>Can Kavaklıoğlu: amixer' ın dayanılmaz hafifliği</title>
+	<link>http://www.cankavaklioglu.name.tr/guncelgunce/archives/2009/03/24/index.html#e2009-03-24T22_48_28.txt</link>
+	<content:encoded>Bir pencerede her zaman bir adet alsamixer açık tutardım. Ancak az önceki bir dakika itibariyle artık buna ihtiyacım yok. Yaşasın amixer!
+&lt;br /&gt;&lt;br /&gt;
+Sesi kapatmak (mute) (mesela ctrl+alt+aşağı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;amixer set Master mute&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Sesi açmak (unmute) (mesela ctrl+alt+yukarı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;amixer set Master unmute&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Sesi artırmak (mesela ctrl+yukarı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;
+KEK=$(amixer get Master | grep 'Front Left:' | cut -d ' ' -f 6) &lt;br /&gt;
+amixer set Master $[$KEK+1]
+&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Sesi azaltmak (mesela ctrl+aşağı)
+&lt;br /&gt;&lt;br /&gt;
+&lt;code&gt;
+KEK=$(amixer get Master | grep 'Front Left:' | cut -d ' ' -f 6) &lt;br /&gt;
+amixer set Master $[$KEK-1]
+&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Bu komutlari birer betiğe yazıp, bir de klavye kısayolu verdi mi, dadından yenmiyor. Şiddet ile tavsiye olunur.</content:encoded>
+	<dc:date>Tue, 24 Mar 2009 20:48:28 +0000</dc:date>
 </item>
-<item rdf:about="http://www.linuxipuclari.com/?p=120">
-	<title>Linuxipuclari: pidgin ile msn protokolü sorunu ve çözümü</title>
-	<link>http://www.linuxipuclari.com/ag/pidgin-ile-msn-protokolu-sorunu-ve-cozumu</link>
-	<content:encoded>&lt;p&gt;15 numara MSN protokolünü kullanan tüm client&amp;#8217;ların MSN&amp;#8217;e bağlanamaması ile ilgili hatayı &amp;#8220;libpurple&amp;#8221; yerine &amp;#8220;msn-pecan&amp;#8221; kütüphanesini kullanarak aşabilirsiniz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ubuntu, Debian, Mint:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;&lt;span&gt;apt-get&lt;/span&gt; &lt;span&gt;install&lt;/span&gt; msn-pecan&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Archlinux:&lt;/strong&gt;&lt;br /&gt;
-Arch&amp;#8217;ın depolarında yok ama AUR&amp;#8217;da var,&lt;/p&gt;
-
-&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;bash bash&quot;&gt;yaourt &lt;span&gt;-Sy&lt;/span&gt; msn-pecan&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Daha sonra pidgin&amp;#8217;den MSN protokolünü WLM ile değiştirirseniz sorun çözülecektir.&lt;br /&gt;
-Kolay Gelsin.&lt;/p&gt;</content:encoded>
-	<dc:date>Mon, 12 Jan 2009 15:35:37 +0000</dc:date>
+<item rdf:about="http://zzz.fisek.com.tr/seyir-defteri/?p=642">
+	<title>Doruk Fişek: fdupes ile Hylafax docq dizini temizliği</title>
+	<link>http://zzz.fisek.com.tr/seyir-defteri/?p=642</link>
+	<content:encoded>&lt;p&gt;Dün az kullanılan bir faks sunucusunu taşırken acı bir gerçek ile karşılaştım, gönderilen belgeler dizini gigabyte&amp;#8217;lara ulaşmıştı. Bundan bihaber biçimde yeni diski bölümlendirmiş, üzerine kurulum yapmış, hemen her servisi de taşımıştım. /var dizininde o kadar yerim yoktu (lvm kullansaydın ya dediğinizi duyaar gibi oluyorum).&lt;/p&gt;
+&lt;p&gt;Ne var canım, diskler çok büyüdü, Hylafax dizinini /home disk bölümüne taşıyıp oradan linkleyiveririm olur biter diye düşündüm. Düşünmez olaydım, Hylafax dizinlerin farklı disk bölümlerine sembolik bağlanmasından pek hoşlanmıyormuş. Faks servisi hiç çalışmadı, yazması gereken dizinleri bulamadı. Servisi sembolik bağlama öncesi çalışır hale getirmediğimden problem kullanıcı yetkilendirmelerinde falan zannettim &amp;#8212; bir süre debelendim.&lt;/p&gt;
+&lt;p&gt;Farklı disk bölümüne taşıyamayacağım belli olunca, gönderilen belgelerin saklandığı docq dizinine daha bir alıcı gözüyle baktım. Bir sürü boyutları aynı dosya vardı. Faks sayısına bakınca jeton düştü. Bunların çoğu toplu faks gönderimlerinden dolayı oluşmuştu. &amp;#8220;Tüm müşterilerimize şunu fakslayalım&amp;#8221;, &amp;#8220;basına bunu fakslayalım&amp;#8221; cümlelerinin sonucu aynı belgenin gönderim sayısı kadar kaydedilmesine yol açmıştı. Evet, az ama öz bir kullanım söz konusu :)&lt;/p&gt;
+&lt;p&gt;Tabii optimize motorize birlikler direkt harekete geçti, ne demek efendim buna disk yeri mi yetişir, ayrıca ne kadar saçma, zaten yerim de yok ve benzeri (5 bahane daha ekleyin buraya) düşüncelerle kolları sıvadım. Önce çift dosyaları ayıklayacak bir yazılım bulmam gerekliydi, komut satırından çalışan &lt;a href=&quot;http://netdial.caribe.net/~adrian2/fdupes.html&quot;&gt;fdupes&lt;/a&gt; tam olarak işimi görüyordu. Önce dosya boyutuna, sonra MD5 toplamına baktıktan sonra tek tek byte&amp;#8217;larını da karşılaştırıyordu.&lt;/p&gt;
+&lt;p&gt;Çift olanları sildim silmesine ama bu sefer de iki problemle karşılaştım. Hylafax arayüzünde ilgili faksa tıklandığında dosyayı bulamadığı için gösteremiyordu. Hadi bu beklenen bişidi. Ama bir de ikincisi çıktı, Hylafax istemcisi sunucuyu her sorguladığında &amp;#8220;bu dosyalar yok&amp;#8221; diye yüzlerce hata satırı loga düşüyordu. Hylafax loglarını sistem loglarından ayır, logları gün sonunda silebilirdim ama iki kirli çözüm birden can sıkıcı bir hale gelmişti.&lt;/p&gt;
+&lt;p&gt;Sonra aklıma geldi, yaav ben bu çift olan dosyaları bir tanesi dışında siliyorum ama sildiklerimi o sakladığım tek kopyaya sembolik linklesem? Hylafax dizinlerin farklı disk bölümünde olmasından hoşlanmamış olabilirdi ama aynı disk bölümünde, hem de aynı dizinde birbirine linkli dosyalardan nem kapmayabilrdi. O zaman birçok yerde uygulanabilir mükemmel bir çözüm elde etmiş olurdum.&lt;/p&gt;
+&lt;p&gt;fdupes&amp;#8217;un -1 parametresi, her bir çift dosyalar grubu birer satıra denk gelecek şekilde çiftleri birbirinden boşlukla, grupları da birbirinden yeni satırla ayrılmış bir halde sıralıyordu. Bu çıktıyı kullanacak &lt;a href=&quot;http://zzz.fisek.com.tr/files/fdupes_delete_then_symlink.sh&quot;&gt;basit bir betik&lt;/a&gt; yazdım, çıktının her satırında 2. dosyadan başlayarak hepsini önce silip sonra 1. dosyaya sembolik linkledi.&lt;/p&gt;
+&lt;p&gt;Sonuç : Bir anda docq dizininin boyutu 1/10&amp;#8242;una indi. Uğraşmamak için cron&amp;#8217;a yerleştirdim, her gece faks dizinini kontrol edip, aynı fakstan n tane varsa biri dışında hepsini silip o tek dosyaya linkliyor. Hylafax da mutlu, ben de :)&lt;/p&gt;</content:encoded>
+	<dc:date>Tue, 24 Mar 2009 18:32:58 +0000</dc:date>
 </item>
-<item rdf:about="http://www.pardus-linux.org/?p=123">
-	<title>Pardus-Linux.org: eDergi 5. Sayı Hazırlıkları Devam Ediyor</title>
-	<link>http://www.pardus-linux.org/2009/01/10/edergi-5-sayi-hazirliklari-devam-ediyor/</link>
-	<content:encoded>&lt;img title=&quot;Stallman&quot; src=&quot;http://ogrenci.hacettepe.edu.tr/~artan05/pardus/stallman.png&quot; alt=&quot;&quot; width=&quot;200&quot; height=&quot;238&quot; align=&quot;left&quot; /&gt;
-
-Yılbaşında 4. sayısını duyurduğumuz Pardus-Linux.org eDergi'nin 5. Sayısı için hazırlıklar devam ediyor.
-İlk sürprizimiz ise hazır :
-
-Bu sayımızda Özgür Yazılım Vakfı'nın kurucusu Richard Micheal Stallman'a gittik ve bakın bize ne dedi :
-&lt;blockquote&gt;&quot;&lt;em&gt;I've heard it(Pardus) contains and promotes non-free software. That goes against the whole purpose of GNU, which is to give users freedom; it leads users astray.&lt;/em&gt;&quot;&lt;/blockquote&gt;
-İşte bu yüzden buradayız : &quot;&lt;em&gt;Pardus'un Özgürleşmesi!&lt;/em&gt;&quot;
-
-Siz de hazırlıklara katılmak isterseniz &lt;a href=&quot;http://forum.pardus-linux.org/viewtopic.php?f=7&amp;t=18720&quot;&gt;buradan&lt;/a&gt; buyurun ;)
-Önceki sayılarımız için : &lt;a href=&quot;http://www.pardus-edergi.org/&quot;&gt;www.pardus-edergi.org&lt;/a&gt;</content:encoded>
-	<dc:date>Sat, 10 Jan 2009 16:05:01 +0000</dc:date>
+<item rdf:about="tag:blogger.com,1999:blog-20350364.post-1896909439767442581">
+	<title>Necdet Yücel: Document Freedom Day</title>
+	<link>http://nyucel.blogspot.com/2009/03/document-freedom-day.html</link>
+	<content:encoded>&lt;a href=&quot;http://documentfreedom.org/&quot;&gt;&lt;img src=&quot;http://www.documentfreedom.org/images/7/75/Dfd09w.png&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/20350364-1896909439767442581?l=nyucel.blogspot.com&quot; /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>Tue, 24 Mar 2009 16:48:42 +0000</dc:date>
 </item>
-<item rdf:about="http://www.pardus-linux.org/?p=119">
-	<title>Pardus-Linux.org: Pardus 2008.2 Beta Sürümü Duyuruldu</title>
-	<link>http://www.pardus-linux.org/2009/01/08/pardus-20082-beta-surumu-duyuruldu/</link>
-	<content:encoded>Pardus 2008.2 &amp;#8216;ye giden yolda ikinci beta sürüm duyuruldu. Kullanıcıları deneme sürümde hatalarla karşılaşabilecekleri yönünde uyarıyoruz, indirmek isteyenleri kurulan cd için [1], çalışan cd için [2] adresine yönlendiriyoruz.
-[1] ftp://ftp.pardus.org.tr/pub/pardus/kurulan/2008.2
-[2] ftp://ftp.pardus.org.tr/pub/pardus/calisan/2008.2/</content:encoded>
-	<dc:date>Wed, 07 Jan 2009 21:03:49 +0000</dc:date>
+<item rdf:about="http://www.hakanuygun.com/blog/?p=195">
+	<title>Hakan Uygun: 8. Linux ve Özgür Yazılım Şenliği</title>
+	<link>http://www.hakanuygun.com/blog/?p=195</link>
+	<content:encoded>&lt;p&gt;&lt;a href=&quot;http://senlik.linux.org.tr/2009/&quot;&gt;&lt;img class=&quot;alignnone&quot; src=&quot;http://senlik.linux.org.tr/2009/banner/banner300250-2.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;8. Linux ve Özgür Yazılım Şenliği, bu sene İstanbul Bilgi Üniversitesinde 17-18 Nisan  tarihlerinde gerçekleştiriliyor.&lt;/p&gt;
+&lt;p&gt;Bu sene şenlik sırasında &lt;a href=&quot;http://seamframework.org/&quot; target=&quot;_blank&quot;&gt;JBoss Seam&lt;/a&gt; konusunda bir atölye çalışması yapıyor olacağım. İlgilenen herkesi beklerim&amp;#8230;&lt;/p&gt;</content:encoded>
+	<dc:date>Tue, 24 Mar 2009 13:07:25 +0000</dc:date>
 </item>
-<item rdf:about="http://www.pardus-linux.org/?p=116">
-	<title>Pardus-Linux.org: Forum sunucu sorunu</title>
-	<link>http://www.pardus-linux.org/2009/01/07/forum-sunucu-sorunu/</link>
-	<content:encoded>Forum sunucumuzda oluşan bir disk problemi sebebi ile forumumuz belli bir süre devre dışı kalacaktır.</content:encoded>
-	<dc:date>Wed, 07 Jan 2009 14:34:38 +0000</dc:date>
+<item rdf:about="tag:blogger.com,1999:blog-4680162149707281285.post-3384749633201696030">
+	<title>Ceyhun Alyeşil: Ekonomik Kriz ve Yeni Fırsatlar</title>
+	<link>http://devador.blogspot.com/2009/03/ekonomik-kriz-ve-yeni-frsatlar.html</link>
+	<content:encoded>&lt;a href=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/Scjt6et2tDI/AAAAAAAAASU/x4Tm_E5weSk/s1600-h/crisis_440.jpg&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_jV_yENp-_Zk/Scjt6et2tDI/AAAAAAAAASU/x4Tm_E5weSk/s400/crisis_440.jpg&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5316760949044458546&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Amerikada başlayan ve dünyaya yayılan kriz belki de yeni bir döneme girmemizi sağlayacak. Öncelikle firmaların bu kadar özgür bırakılamayacağı anlaşıldı. Prim, komisyon gibi kimi çıkarlar için firmaların kötü durumlarını gizlediği, bazı şeylerin görmezden gelindiği anlaşıldı. İnsanlar varolmayan paralarıyla çok büyük harcamalar yaptılar ve sıkıştıklarında herşeylerini kaybettiler. Burada tek suçlu kriz değil. Taksitle ev alıp daha taksidini bitirmediği evin senetleriyle oyun oynayan birisi banka batıp işten çıkarılınca emekliliği dahil herşeyi kaybetmişse suçlu olarak sadece banka ile işçisini işten çıkaran firmayı gösteremeyiz. Bunun yanında AIG'de yaşanan saçmalıklardan sonra devletlerin daha sert bir yaklaşım sergilemesinin gerekli olduğuda ortaya çıktı.&lt;br /&gt;&lt;br /&gt;Başbakanın beceriksizler batıyor açıklaması kısmen doğru. İş, hesap-kitap bilmeyen kişilerin yönetiminde ki şirketlerin iflas süreçleri bilenlere göre daha çabuk oluyor. Yanlış hatırlamıyorsam &lt;a href=&quot;http://blogs.portakalteknoloji.com/bora/blog/&quot;&gt;Bora Güngören&lt;/a&gt; buna benzer bir olayı IT sektörü için örneklendirmişti. Gerçekte işleri yürütmek o kadar zordurki sipariş vermeden önce yaptığınız ufak bir hesap hatası sizi bitirebilir. Esas nokta burada kendi hataları sonucu batanlarla kriz karşısında çaresiz kalanları ayırmakta. Beceriksiz patronlar batabilir ama onların işçilerinin bunda bir suçu yok. İşsizlik fonundan yapılan ödemeler bu insanları bir iki yıl idare eder. Eğer kriz 2009 yılında son bulmazsa(son bulmaya başlamazsa diyelim) bu fondaki paralarda suyunu çekmeye başlayacaktır.&lt;br /&gt;&lt;br /&gt;Kriz ve Linux bağlantısını araştırırken gözüme &lt;b&gt;Cédric Godart'ın&lt;/b&gt; &lt;a href=&quot;http://linuxgazette.net/issue67/caruso.html&quot;&gt;röpörtajında&lt;/a&gt; ki bir söz ilişti,&lt;br /&gt;&lt;span&gt;OLinux:&lt;/span&gt;&lt;span&gt; Do you think that economic crisis which also involves open source enterprises will be reflected in Linux and open source news sites?       &lt;/span&gt;&lt;br /&gt;&lt;span&gt;Cédric Godart:&lt;/span&gt;&lt;span&gt; Of course. The Linux market is not mature yet. These are bad       times for the whole IT economy. Only a limited number of companies focusing on Linux and Open Source solutions may claim to be profitable. Time will tell.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Bizler sürekli kriz sayesinde lisanslara ödenen bedellerin insanlara fazla geleceğini, bu yüzden özgür yazılım kullanan firmaların sayısının artacağını düşünüyoruz. Oysa kriz özgür yazılımı destekleyen firmaları da(bizde devleti) vuruyor. Düşünün Ubuntu'nun arkasında ki en büyük güç ne? Pardus'a Tübitak'ın desteği olmasa proje ne kadar devam eder? Büyük olduklarını düşündüğümüz dağıtımlar, açık projeler sponsorlarını kaybederlerse neler olabilir? Benzer bir tartışma&lt;a href=&quot;http://news.slashdot.org/article.pl?sid=08/10/22/1354207&amp;from=rss&quot;&gt; şurada&lt;/a&gt; yapılmış. Wikipedia gibi projelerin finansmanını sağlayan bağışçılar ortadan kalktığı takdirde devam edemeyeceği söylenen birisinin sözleri üzerine uzun uzun konuşulmuş. Her ne kadar insanlar içeriği gönüllü olarak sağlasada küresel krize girdiğimiz şu zamanlarda bu tarz oluşumların hayatlarını sürdürmesi oldukça zorlaşıyor. Yazıya burada ara veriyorum, buna kısa bir giriş diyelim. Daha çok kriz üzerine durdum devamında yeni fırsatlar üzerine bir beyin jimlastiği yapacağım. İşletme derslerine çalışınca böyle yönetim süreçleri hakkında yazasım geliyor.&lt;br /&gt;&lt;br /&gt;Bir sonraki yazıda görüşmek dileğiyle... Öptüm :D&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/4680162149707281285-3384749633201696030?l=devador.blogspot.com&quot; /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>Tue, 24 Mar 2009 07:28:00 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/operatorler/">
-	<title>Python-TR: Operatörler</title>
-	<link>http://www.python-tr.com/operatorler/</link>
-	<content:encoded>Operat&amp;#246;rler aritmetik operat&amp;#246;rler, ilişkisel operat&amp;#246;rler ve mantıksal operat&amp;#246;rler olarak &amp;#252;&amp;#231;e ayrılır.
-Aritmetik operat&amp;#246;rler matematiksel işlemlerde kullanılır. Ayrıca toplama (+) operat&amp;#246;r&amp;#252; string değerleri birleştirir. Aşağıdaki tabloda Java ve Python programlama dillerine ait aritmetik operat&amp;#246;rler bulunmaktadır.
-
-&amp;#160;
-&amp;#160;
-
-
-
-
-&amp;#160;
-
-
-Toplama
-
-
-&amp;#199;ıkarma
-
-
-&amp;#199;arpma
-
-
-B&amp;#246;lme
-
-
-Mod   Alma
-
-
-
-
-Java
-
-
-+
-
-
--
-
-
-*
-
-
-/
-
-
-%
-
-
-
-
-Python
-
-
-+
-
-
--
-
-
-*
-
-
-/
-
-
-%
-
-
-
-
-&amp;#160;&amp;#160;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160; İlişkisel operat&amp;#246;rler programdaki iki değeri karşılaştırmak i&amp;#231;in kullanılır. Aşağıdaki tabloda Java ve Python programlama dillerine ait ilişkisel operat&amp;#246;rler [...]</content:encoded>
-	<dc:date>Sat, 03 Jan 2009 12:12:55 +0000</dc:date>
+<item rdf:about="http://www.ozgurkuru.net/ozgur/?p=308">
+	<title>Özgür Kuru: İkiyide devirdik….</title>
+	<link>http://www.ozgurkuru.net/ozgur/2009/03/23/ikiyide-devirdik/</link>
+	<content:encoded>&lt;p&gt;Evet duyurduk, üniversiteleri topladık ve tam 21 kişi Pardus konuştuk&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Güzel bir katılım ve istek vardı. Pardus kullanan kullanmayan herkes bu alana destek olmak istediklerini fakat nasıl olacaklarını bilmediklerini vurguladı. Hiç kullanmayanlara kullanması için birer kurulum cd si verdik :)&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Neyse uzatmayacağım. Seval arkadaşım &lt;a href=&quot;http://sevalunver.blogspot.com/2009/03/2-ankara-pardus-kullanclar-bulusmas_22.html&quot; target=&quot;_blank&quot;&gt;blogunda&lt;/a&gt; uzun uzun belirtmiş zaten&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Gelen herkese teşekkür ediyorum.&lt;/p&gt;
+&lt;p&gt;Üçüncüsünde buluşmak üzere&amp;#8230;.&lt;/p&gt;</content:encoded>
+	<dc:date>Mon, 23 Mar 2009 17:23:52 +0000</dc:date>
 </item>
-<item rdf:about="http://www.pardus-linux.org/?p=105">
-	<title>Pardus-Linux.org: Pardus-Linux.org eDergi 4. Sayı Yayımlandı</title>
-	<link>http://www.pardus-linux.org/2009/01/01/pardus-linuxorg-edergi-4-sayi-yayimlandi/</link>
-	<content:encoded>Pardus-Linux.org eDergi&amp;#8217;lerinin 4. Sayısı uzun bir aradan sonra yayımlandı. Emeği geçen herkese teşekkür eder, dergiyi indirmek isteyenlere buradan[1] sunarız.
-[1] http://www.pardus-edergi.org</content:encoded>
-	<dc:date>Wed, 31 Dec 2008 23:28:59 +0000</dc:date>
+<item rdf:about="http://www.okanakyuz.com/?p=267">
+	<title>Okan Akyüz: Linus’tan Yeni Logo</title>
+	<link>http://www.okanakyuz.com/?p=267</link>
+	<content:encoded>&lt;p&gt;Linuxun yazarı Linus yeni bir öneride bulunmuş. Efendim daha çıkmamış olan 2.6.29 sürümü için tazmanya şeytanını düşünelim ve onu koruyalım diyor. Birde şöyle bir logo öngörmüş.&lt;img class=&quot;aligncenter size-medium wp-image-268&quot; title=&quot;tuz&quot; src=&quot;http://www.okanakyuz.com/wp-content/uploads/2009/03/tuz-300x224.png&quot; alt=&quot;tuz-300x224 Linustan Yeni Logo&quot; width=&quot;300&quot; height=&quot;224&quot; /&gt;&lt;br /&gt;
+İyi bir tasarıma sahip ve tasarım harikası denemeyecek olsada bir tux. &lt;a href=&quot;http://torvalds-family.blogspot.com/2009/03/new-logo.html&quot; rel=&quot;nofollow&quot;&gt;Linus&amp;#8217;un bloğu &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tabi bu durum adamı sakalından eder &lt;img src=&quot;http://www.okanakyuz.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; title=&quot;Linustan Yeni Logo&quot; /&gt; &lt;a href=&quot;http://www.computerworld.com.au/article/274149/slideshow_linus_torvalds_shaves_bdale_garbee_beard?fp=4194304&amp;fpid=1&quot; rel=&quot;nofollow&quot; target=&quot;_self&quot;&gt;İşte adresi &lt;/a&gt;&lt;/p&gt;</content:encoded>
+	<dc:date>Mon, 23 Mar 2009 10:14:53 +0000</dc:date>
 </item>
-<item rdf:about="tag:blogger.com,1999:blog-1720576558802393126.post-4239467354502948425">
-	<title>Zemberek NLP: Zemberek-server Firefox Türkçe yazım denetim eklentisi</title>
-	<link>http://zembereknlp.blogspot.com/2008/12/zemberek-server-trke-yazm-denetim.html</link>
-	<content:encoded>Daha önceki bir &lt;a href=&quot;http://zembereknlp.blogspot.com/2008/10/tr-spell-ve-firefox-turkce-imla-denetim.html&quot;&gt;yazıda&lt;/a&gt; Ahmet hunspell sözlükleri oluşturarak Firefox'ta yazım denetimi yapılabilmesi için olan çalışmalarından bahsetmişti. Şimdi ise uzun zamandır düşündüğüm ve yapılabileceğini bildiğim bir çalışma Rail ALİEV tarafından başlatıldı. Firefox, Thunderbird 3 ve Xulrunner 1.9 yeni yazım denetim motorlarının yazılabilmesine ve eklenti olarak paketlenebilmesine olanak veriyor. Bu alanda yapılmış olan örnek bir çalışma da var aslında. &lt;a href=&quot;http://voikko.sourceforge.net/&quot;&gt;Voikko&lt;/a&gt; Fince yazım denetim kütüphanesi için mozvoikko adında bir eklenti var. Ancak bunun yapılabileceği bilinmesine rağmen daha önceden uğraşan olmamıştı. Rail ise tam da bu boşluğu doldurdu. Eklenti kodu şu anda Pardus ekibi tarafından geliştirilen ve Zemberek-server kullanan yamayı baz alıyor ve üstüne eklenti eklenti olarak paketlenebilmesi için gereken altyapıyı ekliyor. Şu an deneysel aşamada olsa da çalışır durumda. Eklenti Firefox eklenti sitesinden[1] indirilebilir, eklentinin kodlarına da SVN deposundan[2] erişilebilir. Rail'e eline sağlık diyor, Zemberek şemsiyesi altındaki çalışmalarının devamını bekliyoruz.&lt;br /&gt;&lt;br /&gt;&lt;span&gt;Not:&lt;/span&gt; Eklenti şu anda tamamen deneysel aşamada olduğundan testiniz ve geri bildirimleriniz ciddi katkı sağlayacaktır.&lt;br /&gt;&lt;br /&gt;1: &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/10183&quot;&gt;https://addons.mozilla.org/en-US/firefox/addon/10183&lt;/a&gt;&lt;br /&gt;2: &lt;a href=&quot;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&quot;&gt;http://zemberek.googlecode.com/svn/trunk/mozzemberek/&lt;/a&gt;</content:encoded>
-	<dc:date>Sun, 28 Dec 2008 13:12:00 +0000</dc:date>
+<item rdf:about="http://kivi.com.tr/blog/2009/03/22/alanadi-yonetimi-odtuden-alindi/">
+	<title>Murat Koç: Alan Adı Yönetimi ODTÜ’den Alındı.</title>
+	<link>http://kivi.com.tr/blog/2009/03/22/alanadi-yonetimi-odtuden-alindi/</link>
+	<content:encoded>&lt;p&gt;Birkaç yerde gördüm aslında haberi ama &lt;a href=&quot;http://www.cumhuriyet.com.tr/?im=yhs&amp;hn=45220&quot;&gt;burayı&lt;/a&gt; link olarak vereyim.&lt;/p&gt;
+&lt;p&gt;Sonunda sanırım dünyanın en rezil alan adı yönetim sistem ve politikalarından birine sahip olmaktan duyduğumuz utanç azalacak herhalde.&lt;/p&gt;
+&lt;p&gt;Şu anda olandan daha kötüsünün yapılabileceğini sanmıyorum, yine de belli olmaz tabii.&lt;/p&gt;</content:encoded>
+	<dc:date>Sun, 22 Mar 2009 16:10:25 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/denetim-deyimleri/">
-	<title>Python-TR: Denetim Deyimleri</title>
-	<link>http://www.python-tr.com/denetim-deyimleri/</link>
-	<content:encoded>3.5. DENETİM VE D&amp;#214;NG&amp;#220; DEYİMLERİ
-3.5.1. Denetim Deyimleri
-&amp;#160;
-Denetim deyimleri, koşulun mantıksal durumuna g&amp;#246;re programın akışını değiştiren yapılardır.
-3.5.1.1. If deyimi
-If deyimi belirli bir koşul sağlandığında yapılacak işleri belirlememizi sağlar. Java ve Python programlama dillerinde if deyiminin kullanımı [...]</content:encoded>
-	<dc:date>Mon, 14 Jul 2008 20:30:04 +0000</dc:date>
+<item rdf:about="tag:blogger.com,1999:blog-6806075996663386433.post-6279411133351793386">
+	<title>Ali Erkan İMREK: Django sunucusunda statik dosyalar ve Dojo</title>
+	<link>http://armuting.blogspot.com/2009/03/django-sunucusunda-statik-dosyalar-ve.html</link>
+	<content:encoded>&lt;div align=&quot;justify&quot;&gt;&lt;br /&gt;&lt;a href=&quot;http://static.uxebu.com/img/dojango_logo.jpg&quot;&gt;&lt;img src=&quot;http://static.uxebu.com/img/dojango_logo.jpg&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;Biliyorsunuz django'nun &quot;manage.py runserver&quot; komutuyla çalıştırdığımız basit bir Http sunucusu var, bu sunucu ile test ettiğim küçük uygulamama bir CSS dosyası yüklemek istedim. Css dosyasını proje dizinine kaydettim her zamanki gibi yüklenmesini bekledim;&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;&amp;lt; style type=&quot;text/css&quot;&amp;gt;&lt;br /&gt;@import &quot;style.css&quot;;&lt;br /&gt;&amp;lt;/style&amp;gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Ancak django sunucusunun root dizini projenin olduğu dizin değilmiş. Yani Css icin HTTP 400 kodu aldım :) Bu CSS'yi ancak şöyle yükleyebildim;&lt;br /&gt;&lt;br /&gt;Önce projenin settings.py dosyasına şunu ekledim;&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;STATIC_DOC_ROOT = '/home/user/django/projectname'&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Sonra urls.py dosyasını açıp settings'i import edip, sunucudan /root adında sanal bir dizini servis etmesini ve bunu STATIC_DOC_ROOT değişkenindeki adrese bağlamasını istedim.&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;from django.conf import settings&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;urlpatterns = patterns('',&lt;br /&gt;(r'^root/(?P.*)$', 'django.views.static.serve',&lt;br /&gt; {'document_root': settings.STATIC_DOC_ROOT}),&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;.&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Sonra da css dosyasını @import &quot;/root/style.css&quot; ile yükleyebildim.&lt;br /&gt;&lt;br /&gt;Aslında derdim Css dosyası değil &lt;a href=&quot;http://www.dojotoolkit.org/&quot;&gt;Dojo&lt;/a&gt; idi. Dojo javascript ile yazılmış bir Web araç takımı. Dojo'yu projenin dizinine açıp önce içindeki css temasına bir bakayım demiştim sadece. Css'yi yukarıdaki gibi halledince zaten Dojo'yu da aynı şekilde yükleyebildim.&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;&amp;lt;script type=&quot;text/javascript&quot;&lt;br /&gt;src=&quot;/root/js/dojo-release-1.2.3/dojo/dojo.js&quot;&lt;br /&gt; djConfig=&quot;parseOnLoad:true, isDebug:true&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;br /&gt;&lt;/code&gt;&lt;br /&gt;&lt;br /&gt;Dojo AFL ve BSD lisansı ile geliştirilen hafif ve hızlı bir araç takımı, henüz tam olarak inceleyemedim ama sitesindeki &lt;a href=&quot;http://demos.dojotoolkit.org/demos/&quot;&gt;örneklere&lt;/a&gt; bakılırsa çok basit, şık ve kullanışlı görünüyor.&lt;br /&gt;&lt;br /&gt;Ancak günün sürprizi şu oldu; &quot;Nalet olsun içimdeki daldan dala atlayıp durma hevesine&quot; diye söylenip bunlar için gogıllama yaparken bir de karşıma &lt;a href=&quot;http://code.google.com/p/dojango/&quot;&gt;dojango&lt;/a&gt; diye bir şey çıkmasın mı! Allahım bu dünyanın çivisi çıkmış demek geldi içimden :)&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img width=&quot;1&quot; height=&quot;1&quot; src=&quot;http://res1.blogblog.com/tracker/6806075996663386433-6279411133351793386?l=armuting.blogspot.com&quot; /&gt;&lt;/div&gt;</content:encoded>
+	<dc:date>Sat, 21 Mar 2009 15:23:26 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/matematiksel-fonksiyonlar/">
-	<title>Python-TR: Matematiksel Fonksiyonlar</title>
-	<link>http://www.python-tr.com/matematiksel-fonksiyonlar/</link>
-	<content:encoded>&amp;#160;&amp;#160;&amp;#160; Uzun zamandır blog&amp;#8217;umuza yazı eklemiyorduk. Tezimizin i&amp;#231;eirği hazır sayılır fakat t&amp;#252;m tezi siteye hemen ekleyemiyoruz. Ama matematiksel fonksiyonlar b&amp;#246;l&amp;#252;m&amp;#252;n&amp;#252; eklemenin zamanı geldi.
-&amp;#160;&amp;#160;&amp;#160; Matematiksel fonksiyonlar programlama yaparken &amp;#231;eşitli matematik işlemlerini yapmamızı kolaylaştırırlar. Aşağıdaki tabloda Java ve Python programlama dillerine ait matematiksel fonksiyonlar yer almaktadır.
-
-
-
-
-İşlevi
-
-
-Java
-
-
-Python
-
-
-
-
-x arg&amp;#252;manının   mutlak değerini hesaplama
-
-
-abs(x)
-
-
-fabs(x)
-
-
-
-
-x&amp;#8217;i   kendisinden b&amp;#252;y&amp;#252;k en [...]</content:encoded>
-	<dc:date>Sat, 16 Feb 2008 08:07:48 +0000</dc:date>
+<item rdf:about="http://www.yalazi.org/?p=261">
+	<title>Onur Yalazı: Javascript Testleri Ölçeklenemiyor - John Resig</title>
+	<link>http://www.yalazi.org/index.php/archives/2009/03/21/javascript-testleri-olceklenemiyor-john-resig/</link>
+	<content:encoded>&lt;p&gt;Daha düm IE8 çıktı Web uygulamaları geliştirmek daha da zorlaştı demiştim. Bugün de Mozilla&amp;#8217;dan&lt;a title=&quot;John Resig&quot; href=&quot;http://ejohn.org&quot;&gt; John Resig&lt;/a&gt; (Jquery Geliştiricileri Takım Lideri) Javascript test etmenin ölçeklenememesi üzerine bir yazı yazmış. Ayrıca öneri olarak sunduğu &lt;a href=&quot;http://www.testswarm.com&quot;&gt;TestSwarm&lt;/a&gt;&amp;#8216;da dikkat edilesi bir proje..&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ejohn.org/blog/javascript-testing-does-not-scale/&quot;&gt;http://ejohn.org/blog/javascript-testing-does-not-scale/&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content:encoded>
+	<dc:date>Fri, 20 Mar 2009 21:41:27 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/">
-	<title>Python-TR: Değişkenler ve Temel Veri Tipleri</title>
-	<link>http://www.python-tr.com/degiskenler-ve-temel-veri-tipleri/</link>
-	<content:encoded>Değişkenler, programlarda saklamak istediğimiz değerleri tutarlar. Programlama dillerinde değişkenler tutabilecekleri veri
-cinslerine g&amp;#246;re sınıflandırılmıştır.
-Java&amp;#8217;da değişken tanımlamak i&amp;#231;in eşitliğin sol tarafına değişkenin veri tipi ve değişkenin adı, sağ tarafına ise değeri yazılır. 
-
-
-
-
-
-A&amp;#231;ıklama :
-
-
-&amp;#214;rnek :
-
-
-
-
-int degiskenadi = değer;
-
-
-int a=4;
-
-
-
-
-
-
-
-Java programlama dilinde boolean, char, byte, short, int, long, float ve double temel veri tipleridir. Boolean mantık değişkenidir ve [...]</content:encoded>
-	<dc:date>Tue, 06 Nov 2007 22:17:51 +0000</dc:date>
+<item rdf:about="http://www.ozgurkuru.net/ozgur/?p=304">
+	<title>Özgür Kuru: 2. Ankara Pardus Kullanıcıları Buluşması….</title>
+	<link>http://www.ozgurkuru.net/ozgur/2009/03/20/2-ankara-pardus-kullanicilari-bulusmasi-2/</link>
+	<content:encoded>&lt;p&gt;Daha önce &lt;a href=&quot;http://www.ozgurkuru.net/ozgur/2009/03/10/2-ankara-pardus-kullanicilari-bulusmasi/&quot; target=&quot;_blank&quot;&gt;duyurmuş&lt;/a&gt; olduğumuz buluşmamıza sadece iki gün kaldı. İkinci kez yapacağımız buluşmamızda üzerinde duracağımız konuları daha önce &lt;a href=&quot;http://www.ozgurkuru.net/ozgur/2009/03/12/2-ankara-pardus-kullanicilari-bulusmasi-gundemi/&quot; target=&quot;_blank&quot;&gt;paylaşmıştım&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Buluşmamıza herkesi bekliyoruz&amp;#8230;..&lt;/p&gt;
+&lt;p&gt;Buluşma yeri ve kayıt için &lt;a href=&quot;http://www.ozgurkuru.net/formlar/toplanti/&quot; target=&quot;_blank&quot;&gt;http://www.ozgurkuru.net/formlar/toplanti/&lt;/a&gt; adresini kullanabilirsiniz&amp;#8230;&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 20 Mar 2009 10:30:40 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/2-kere-merhaba-dunya/">
-	<title>Python-TR: 2 Kere &#8220;Merhaba Dünya&#8221;</title>
-	<link>http://www.python-tr.com/2-kere-merhaba-dunya/</link>
-	<content:encoded>Bu siteyi bitirme tezimizin konusu olan &amp;#8220;Java ve Python Programlama Dillerinin Karşılaştırılması&amp;#8221; için oluşturduk. Arkadaşım Emel OKAY (japanese) ve ben Uğur SAMSA (JaMaL), bizler gelişme gösterdikçe, gelişmeleri buraya aktarıyor olacağız. Sitenin adresinin python-tr.com olmasına aldanmayın. Bu sitede Java da anlatılacaktır, Python da. Tezimizi erken bitirebilirsek Python ile bir uygulama yapmayı düşünüyoruz. Tabi bunlar zamanla olacak [...]</content:encoded>
-	<dc:date>Fri, 21 Sep 2007 21:59:50 +0000</dc:date>
+<item rdf:about="http://blog.ratonred.com/?p=344">
+	<title>Gökmen Göksel: Airplot !</title>
+	<link>http://blog.ratonred.com/2009/03/airplot/</link>
+	<content:encoded>&lt;p&gt;Biraz önce &lt;a target=&quot;_blank&quot; href=&quot;http://blogs.portakalteknoloji.com/bora/blog/&quot;&gt;Bora&lt;/a&gt;&amp;#8216;nın yeni keşfettiği &lt;a target=&quot;_blank&quot; href=&quot;http://blogs.portakalteknoloji.com/bora/blog/2009/03/20/248/&quot;&gt;blogları&lt;/a&gt; gezerken rastladım, direkt kopyalıyorum &lt;a target=&quot;_blank&quot; href=&quot;http://www.durucancelasun.info/blog/&quot;&gt;kendisinden&lt;/a&gt;;&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;“Airplot!”u duydunuz mu? Sanırım duymadınız. “Airplot!” bir &lt;a target=&quot;_blank&quot; href=&quot;http://www.durucancelasun.info/blog/www.greenpeace.org.tr&quot; target=&quot;_blank&quot;&gt;Greenpeace&lt;/a&gt; eylemi. Kısaca anlatayım; İngiliz hükümeti Londra’daki Heatrow havaalanına yeni bir pist yapmak istiyor ve Greenpeace bununla mücadele ediyor. Neden mi?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pistin yapılması için bir kasabanın yıkılması gerekiyor. Bu yaklaşık &lt;strong&gt;700 kişinin&lt;/strong&gt; evlerinden ve işlerinden olması demek.&lt;/li&gt;
+&lt;li&gt;3. pistin inşası ile Heatrow, &lt;strong&gt;İngiltere’nin küresel ısınmaya en çok katkıda bulunan varlığı&lt;/strong&gt; haline geliyor.&lt;/li&gt;
+&lt;li&gt;Bu pistin çevresinde yer alan &lt;strong&gt;114 okul&lt;/strong&gt; inip kalkan uçaklar nedeniyle işlevselliğini yitirecek ve verimsizleşecek.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;wp-caption alignleft&quot;&gt;&lt;img title=&quot;Airplot!&quot; src=&quot;http://www.greenpeace.org.uk/files/images/climate/heathrow/airplot/banners/airplot300.gif&quot; alt=&quot;Airplot!&quot; width=&quot;300&quot; height=&quot;250&quot; /&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p class=&quot;wp-caption-text&quot;&gt;Airplot!&lt;/p&gt;
+
+&lt;p&gt;Peki Greenpeace ne yaptı? 3. pisti çevreleyecek arazinin tam ortasında bir arsa satın aldı! Evet yanlış duymadınız, arazinin ortasında bir arsası var Greenpeace’in! İşin hukuksal boyutu burada devreye giriyor.  Yasal olarak tapunun üzerinde 4 gerçek veya tüzel kişinin adı yazabiliyor. Bunlar Emma Thompson, komedyen Alistair McGowan, İngiliz parlamenter adayı Zac Goldsmith ve Greenpeace UK. Bunlar dışında bir de &lt;strong&gt;“beneficiary owners”&lt;/strong&gt; diye birşey var ki biz(ler) de orada devreye giriyoruz. Bir arsanın sınırsız sayıda “hak sahibi” sahibi olabiliyor yasal olarak!&lt;/p&gt;
+&lt;p&gt;Peki hükümet bu “sorunu” nasıl çözmeyi düşünüyor? İstimlak ederek. Şanslıyız ki bu iş göründüğünden çok daha zor olacak onlar için zira bir arsanın “kamu yararına” istimlak edilebilmesi için tüm hak sahiplerine &lt;em&gt;&lt;strong&gt;bizzat&lt;/strong&gt;&lt;/em&gt; ulaşılması ve yazılı izinlerinin alınması gerekiyor. Yani siz Türkiye’den biri olarak hak sahibi olursanız oraya pist yapmak için sizin de yazılı izniniz gerekecek!&lt;/p&gt;
+&lt;p&gt;Bu durum pist inşaatının en az yıllarca ertelenmesi ve hatta iptalinin gündeme gelmesi demek!&lt;/p&gt;
+&lt;p&gt;Pek siz ne yapabilirsiniz? &lt;strong&gt;Greenpeace’in arsası üzerinde hak sahibi olabilirsiniz!&lt;/strong&gt; Bunu nasıl yapacaksınız peki? Sadece &lt;a target=&quot;_blank&quot; href=&quot;http://www.greenpeace.org.uk/climate/airplot&quot; target=&quot;_blank&quot;&gt;şu adresteki&lt;/a&gt; formu dolduracaksınız ve arsanın bir parçası sizin olacak!&lt;/p&gt;
+&lt;p&gt;Ben de arsa üzerindeki hak sahiplerinden biriyim artık :)&lt;/p&gt;</content:encoded>
+	<dc:date>Fri, 20 Mar 2009 06:39:51 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/pythonda-klavye-girisleri/">
-	<title>Python-TR: Python&#8217;da Klavye Girişleri</title>
-	<link>http://www.python-tr.com/pythonda-klavye-girisleri/</link>
-	<content:encoded>Her programlama dilinde olduğu gibi klavye girişleri, kullanıcıdan bilgi alınmak istendiğinde kullanılır.
-Python&amp;#8217;daki kullanımı şöyledir: karakter girişlerinde &amp;#8220;raw_input&amp;#8221;, sayısal değer girişlerinde &amp;#8220;input&amp;#8221; kullanılır. Şimdi de bunu örnekler üstünde görelim.
-Örnek 1 :
-
-&amp;#8211;&gt;raw_input(&amp;#8221;yaz bir şeyler:&amp;#8221;)
-yaz bir şeyler:Bugün hava çok güzel
-
-veya
-
-
-&amp;#8211;&gt;kelime=raw_input(&amp;#8221;Bir kelime giriniz:&amp;#8221;) #Kullanıcının yazdığını kelime adlı değişkene atadık
-Bir kelime giriniz:Bulut
-&amp;#8211;&gt;kelime #kelime adlı değişkenin değerini istiyoruz
-&amp;#8220;bulut&amp;#8221;
-
-Örnek 2 :
-
-&amp;#8211;&gt;input(&amp;#8221;Bir sayı [...]</content:encoded>
-	<dc:date>Sun, 05 Aug 2007 10:35:31 +0000</dc:date>
+<item rdf:about="http://www.yalazi.org/?p=258">
+	<title>Onur Yalazı: Bilimsel Şüphecilik ve İlahiyat</title>
+	<link>http://www.yalazi.org/index.php/archives/2009/03/20/bilimsel-suphecilik-ve-ilahiyat/</link>
+	<content:encoded>&lt;p&gt;Şimdi televizyonda banttan yayında &lt;strong&gt; Siyaset Meydanı - Din-Bilim ve Darwin&lt;/strong&gt; tartışması sürüyor.&lt;/p&gt;
+&lt;p&gt;Şu ana kadar ki öğrenim yaşamımda ve düşün yapımda bilimin temelinde &lt;em&gt;&lt;strong&gt;&amp;#8220;şüphe&amp;#8221;&lt;/strong&gt;&lt;/em&gt; yattığını öğrenip, bildim. Bü yüzden &lt;strong&gt;&amp;#8220;İlahiyat Bilimi&amp;#8221;&lt;/strong&gt; olarak değerlendirilen &lt;em&gt;disiplini&lt;/em&gt; &lt;strong&gt;bilim&lt;/strong&gt; olarak değerlendiremiyorum. Bir kitabı alıp, tarihini inceleyip, içerisinde bahsedilen insanların sosyal yaşamlarını inceleyip,  içinde yazanları &amp;#8220;&lt;strong&gt;şüphe etmeden&lt;/strong&gt;&amp;#8221; kabul eden bir anlayışa nasıl bilim denebilir? Veya &amp;#8220;burada yazan doğrudur, ne kadar çalışırsanız çalışın, içinde yazanları doğrulayacaksınız&amp;#8221; anlayışını içeren bir bilim kabul edilebilir mi?&lt;/p&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content:encoded>
+	<dc:date>Fri, 20 Mar 2009 00:52:29 +0000</dc:date>
 </item>
-<item rdf:about="http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/">
-	<title>Python-TR: Python&#8217;da Karakter Dizilerini Birden Fazla Satırda Yazmak</title>
-	<link>http://www.python-tr.com/pythonda-birden-fazla-satir-olusturmak/</link>
-	<content:encoded>Yazımızı satırlar halinde yazarak görsellik kazandırmak istediğimiz durumlar vardır. İşte bunu yaparken Python&amp;#8217;un bize sunduğu bir çok yoldan birini kullanabiliriz. Bunun nasıl yapıldığını her biri için örneklerle görelim.
-a =&gt; değişken olsun (Python&amp;#8217;da değişkenleri kullanırken önceden tanımlama yapmamıza gerek olmadığını hatırlayalım)
-Örnek 1 :
-
-a=&amp;#8221;Muhabbet bağına girdim bu gece\
-Açılmış gülleri derdim bu gece&amp;#8221;
-
-Örnek 2 :
-
-
-a=&amp;#8221;Muhabbet bağına girdim bu [...]</content:encoded>
-	<dc:date>Thu, 12 Jul 2007 13:06:03 +0000</dc:date>
-</item>
-<item rdf:about="http://www.python-tr.com/javada-sinif-olusturma/">
-	<title>Python-TR: Java&#8217;da Sınıf Oluşturma</title>
-	<link>http://www.python-tr.com/javada-sinif-olusturma/</link>
-	<content:encoded>Java Programlama Dili&amp;#8217;nde sınıf oluşturmak çok basittir. Tabi önemli olan bu sınıfı ne şekilde ve nasıl kullanacağımızdır. Aşağıda Java&amp;#8217;da sınıf oluşturma kodunu görüyorsunuz.
-public class sinifadi{
-//gerekli tanımlar
-}
-Burada &amp;#8220;sinifadi&amp;#8221; sınıf adının değişkenidir ve programcıya göre şekillendirilir. &amp;#8220;public&amp;#8221; komutunun buradaki amacı ise bilgilerin diğer sınıflar tarafından da kullanılabilmesidir.</content:encoded>
-	<dc:date>Wed, 11 Jul 2007 15:52:18 +0000</dc:date>
-</item>
-<item rdf:about="http://www.python-tr.com/pythonda-degisken-tanimlamak/">
-	<title>Python-TR: Python&#8217;da Değişken Tanımlamak</title>
-	<link>http://www.python-tr.com/pythonda-degisken-tanimlamak/</link>
-	<content:encoded>Aslında bu başlık yanlış, doğrusu &amp;#8220;Python&amp;#8217;da Değişken Tanımlamamak&amp;#8221; olacaktı. Çünkü Python&amp;#8217;da değişken tanımlanmıyor, değişkenlerin tipleri atandıkları ilk değere göre belirleniyor. Bu da bize kullanım rahatlığı sağlıyor.
-Değişkene değer atama yaparken sayıları direkt, string ifadeleri ise tırnak içinde yazıyoruz. Tek ya da çift tırnak kullanabiliriz, aynı anlama geliyor.
-Örnek 1 :
-
-değişken=değer
-a=5
-b=&amp;#8221;ali&amp;#8221;
-k=&amp;#8217;veli&amp;#8217;
-
-Örnekten anlaşılacağı gibi program a&amp;#8217;yı integer, b ve [...]</content:encoded>
-	<dc:date>Sun, 08 Jul 2007 20:57:10 +0000</dc:date>
+<item rdf:about="http://www.yalazi.org/?p=255">
+	<title>Onur Yalazı: IE8′de çıktı peki ya şimdi?</title>
+	<link>http://www.yalazi.org/index.php/archives/2009/03/20/ie8de-cikti-peki-ya-simdi/</link>
+	<content:encoded>&lt;p&gt;Bugün 20 Mayıs 2009 ve &lt;a href=&quot;http://www.microsoft.com&quot;&gt;Microsoft&lt;/a&gt; Uzun süredir üzerinde çalıştığı &lt;a title=&quot;MS IE8&quot; href=&quot;http://www.microsoft.com/windows/internet-explorer/default.aspx&quot;&gt;Internet Explorer 8.0&lt;/a&gt; tarayıcısınız duyurdu ve dağıtımına internet sitesi üzerinden başladı.&lt;/p&gt;
+&lt;p&gt;Siz de benim gibi internet uygulamaları geliştiriyor veya yönetiyorsanız bu habere biraz temkinli yaklaşıyor olabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Internet&amp;#8217;i platform olarak tercih etmemizin sebeplerini düşündüğümüzde, - günümüzün cıvır kelimelerinden birini kullanacağım kusuruma bakmayın -  Internet&amp;#8217;in bize sağladığı &lt;em&gt;&lt;strong&gt;&amp;#8220;Bulut (Cloud)&amp;#8221;&lt;/strong&gt;&lt;/em&gt; özellikleri sağlaması olduğunu rahatlıkla söyleyebiliriz; &amp;#8220;Daha fazla kullanıcıya, daha geniş bir coğrafyaya, ucuz ve hızlı bir biçimde ulaşmak.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Ancak burada ciddi bir problem ile karşı karşıya kalıyoruz. Ulaşabildiğimiz kitle çok geniş ve farklı farklı platformlar kullanıyorlar. Farklı &lt;strong&gt;işletim sistemleri&lt;/strong&gt;, farkı &lt;strong&gt;tarayıcılar&lt;/strong&gt;, farklı &lt;strong&gt;eklentiler&lt;/strong&gt;, farklı &lt;strong&gt;internet bağlantıları&lt;/strong&gt; hatta aynı yazılımların birçok &lt;strong&gt;farklı sürümü&lt;/strong&gt;. Ayrıca kullanıcılarımızın tercihlerine saygı duymak zorundayız ve kullanıcılarımız bazen zorunluluktan bazen keyiften aklı başında davranmıyorlar.&lt;/p&gt;
+&lt;p&gt;Bu kadar geniş bir kitleye ulaşabildiğimiz bu durumda bu kadar farklı platformu da tanımak, bilmek, test etmek durumunda kalıyoruz. Bu yüzden geliştirme süreçlerimizde çok ciddi bir mühendislik problemi ile karşı karşıya kalıyoruz.Kaynaklar her zaman kısıtlıdır bu yüzden kısıtlı kaynak ile en yüksek verimi elde etmek,  Kaynak - Verim eğrimizi herkesin (kullanıcılarımızın ve kendimizin) yararına olacak biçimde ayarlamak durumundayız. Kaynaklarımız genellikle sabit ya da kısıtlı olduğu için problemlerimizi azaltarak verimi artırma yoluna gideriz. Bu da hedeflerimizi kısıtlamaktan geçiyor.&lt;/p&gt;
+&lt;p&gt;Genel tercih olarak tercih edilen 4 (IE, Firefox, Opera, Safari) tarayıcı bu tarayıcıların genel olarak kullanılan 2 şer sürümü (IE 6/7 ve artık 8, Firefox 2,3, Opera 8/9/10, Safari 3.0/3.1) olduğunu düşünürsek ve gerektiğinde çalıştıkları işletim sistemlerinde de farklılıklar gösterdiklerini göz önünde bulundurulursak, kaynaklarımız genellikle her türlü platformu destekleyebilecek kadar çok değil. (Chrome ve Chromium&amp;#8217;u da unutmadım. onlarda listeye girmek üzere). Hatta bu platformların hepsini göz önünde bulundurmaya kalkarsak kaynaklarımızı exponentel biçimde arttırmamız gerektiğini rahatlıkla söyleyebiliriz.&lt;/p&gt;
+&lt;p&gt;Peki öyleyse ne yapmak zorundayız? Bu durumda tercih yapmak zorunda kalıyoruz. Geliştirme sürecinde hedeflediğimiz platformları seçiyoruz. Bunun için de internetteki çeşitli kaynaklarda bulunan tarayıcı ve işletim sistemleri istatistiklerini göz önünde bulunduruyoruz.&lt;/p&gt;
+&lt;p&gt;Bazı Tarayıcı İstatistikleri:&lt;/p&gt;
+&lt;p&gt;W3Schools: &lt;a title=&quot;W3Schools Tarayıcı istatistikleri&quot; href=&quot;http://www.w3schools.com/browsers/browsers_stats.asp&quot;&gt;http://www.w3schools.com/browsers/browsers_stats.asp&lt;br /&gt;
+&lt;/a&gt;Wikipedia (NetApplications Stats): &lt;a href=&quot;http://www.yalazi.org/index.php/feed/ onclick=&quot;&gt;http://en.wikipedia.org/wiki/Usage_share_of_web_browsers&lt;/a&gt;&lt;br /&gt;
+W3Counter: &lt;a title=&quot;W3Schools Tarayıcı istatistikleri&quot; href=&quot;http://www.w3schools.com/browsers/browsers_stats.asp&quot;&gt;http://www.w3counter.com/globalstats.php&lt;br /&gt;
+&lt;/a&gt;TheCounter: &lt;a href=&quot;http://www.yalazi.org/index.php/feed/ onclick=&quot;&gt;http://www.thecounter.com/stats/2009/February/browser.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;İstatistiklerin ortak olarak gösterdiği, ciddi bir biçimde pastanın yarısını veya biraz daha fazlasını Internet Explorer  6 - 7 kalanın yaklaşık yarısını veya biraz daha fazlasınız Firefox 2 - 3 ve pastanın geri kalanını paylaşan yaklaşık aynı oranlarda kullanılan çeşit çeşit tarayıcı oluyor. Bu bilgilere baktığımızda ya IE ve Firefox tarayıcılarını (hatta bazılarına göre boşverin Firefox&amp;#8217;u) destekleyerek çok ciddi bir hedef kitleye ulaşabiliyoruz. Genellikle de geriye kalan tarayıcıları göz ardı ederek kaynaklarımızı boşa harcamamaya çalışıyoruz.&lt;/p&gt;
+&lt;p&gt;İşte bu noktada, her duyurulan tarayıcı her duyurulan sürüm bu gördüğümüz denklemleri bozuyor. Bu yüzden IE8&amp;#8242;in duyurulmasına temkinli yaklaşıyorum. İstatistiklerin her oynayışı kaynaklarımızı kullanırken daha fazla düşünmemize neden oluyor. Dün bir geliştirme için 2 tarayıcıda test yapıyordum, bugün 3 tarayıcıda test yapmam gerekecek. Hatta yeni duyurulan bir tarayıcı için daha önce yaptığımız testleri tekrar etmem gerekiyor.&lt;/p&gt;
+&lt;p&gt;Peki sizi her duyurulan tarayıcıda ne düşünüyorsunuz?&lt;/p&gt;
+&lt;br /&gt;&lt;strong&gt;Etiketler:&lt;/strong&gt; &lt;a href=&quot;http://www.yalazi.org/index.php/archives/category/havadansudan/&quot; title=&quot;Browse for Havadan Sudan&quot; rel=&quot;tag&quot;&gt;Havadan Sudan&lt;/a&gt;</content:encoded>
+	<dc:date>Thu, 19 Mar 2009 23:35:03 +0000</dc:date>
 </item>
 
 </rdf:RDF>
