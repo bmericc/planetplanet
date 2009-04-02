@@ -1,0 +1,103 @@
+#!/bin/bash
+# sync.sh
+# 
+# this script is written to syncronize the lkd planet..
+#
+# author: Alper KANAT <alper.kanat@linux.org.tr>
+
+PLANET_DIR="${HOME}/public_html/gezegen"
+LOG_DIR="$PLANET_DIR/logs"
+LOG_FILE="planet-$(date +"%d.%m.%Y")-PLANET.log"
+LOCK_FILE="planet-sync-planet.lck"
+VERBOSE=0
+
+usage() {
+	cat << EOF
+Synchronizes the planet by invoking the necessary commands and logges everything.
+
+Options:
+	-h, --help         this help
+	-p, --planetdir    useful if the planet dir is somewhere else than the 
+	                   default one
+	-v, --verbose      print the log instead of writing it to the log file..
+
+Usage: $(basename $0) [--help] [--planetdir /path/to/planet]
+EOF
+}
+
+while (( $# > 0 )); do
+	case "$1" in
+		--help|-h)
+			usage
+			shift
+			exit 0
+			;;
+
+		--planetdir|-p)
+			case "$2" in
+				[a-zA-Z0-9\/]*)
+					PLANET_DIR="$2"
+					LOG_DIR="$PLANET_DIR/logs"
+					;;
+
+				*)
+					usage
+					exit 1
+					;;
+			esac
+			shift 2
+			;;
+
+		--verbose|-v)
+			VERBOSE=1
+			shift
+			;;
+
+		-*)
+			usage
+			exit 1
+			;;
+
+		?*)
+			usage
+			exit 1
+			;;
+	esac
+done
+
+# checking planet dir
+if [[ ! -d "$PLANET_DIR" ]]; then
+	echo "invalid planet directory.. please specify the correct planet dir with --planetdir /path/to/planet"
+	exit 1
+fi
+
+# checking if the log file created for the current date
+if [[ ! -f "$LOG_DIR/$LOG_FILE" ]]; then
+	touch "$LOG_DIR/$LOG_FILE"
+fi
+
+if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
+	echo "there's a sync process running behind, please try again later.."
+	exit 1
+else
+	touch "$PLANET_DIR/$LOCK_FILE"
+
+	cd "$PLANET_DIR"
+
+	if (( $VERBOSE == 0 )); then
+		echo >> "$LOG_DIR/$LOG_FILE" 2>&1
+		echo "starting new sync ($(date +"%d.%m.%Y, %H:%M"))" >> "$LOG_DIR/$LOG_FILE" 2>&1
+		echo "-----------------------------------------------------------" >> "$LOG_DIR/$LOG_FILE" 2>&1
+		"$PLANET_DIR/planet.py" "$PLANET_DIR/gezegen-planet/config.ini" >> "$LOG_DIR/$LOG_FILE" 2>&1
+		echo "-----------------------------------------------------------" >> "$LOG_DIR/$LOG_FILE" 2>&1
+	else
+		echo
+		echo "starting new sync ($(date +"%d.%m.%Y, %H:%M"))"
+		echo "-----------------------------------------------------------"
+		"$PLANET_DIR/planet.py" "$PLANET_DIR/gezegen-planet/config.ini"
+		echo "-----------------------------------------------------------"
+	fi
+fi
+
+# if ended successfully delete the lock file
+rm "$PLANET_DIR/$LOCK_FILE"

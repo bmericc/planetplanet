@@ -13,6 +13,8 @@
 
 	<items>
 		<rdf:Seq>
+			<rdf:li rdf:resource="http://enveraltin.com/mobile/0204090829" />
+			<rdf:li rdf:resource="http://enveraltin.com/mobile/0204090821" />
 			<rdf:li rdf:resource="http://enveraltin.com/2101090838" />
 			<rdf:li rdf:resource="http://pinguar.org/blog/?p=53" />
 			<rdf:li rdf:resource="http://enveraltin.com/politics/0501090824" />
@@ -40,6 +42,27 @@
 	</items>
 </channel>
 
+<item rdf:about="http://enveraltin.com/mobile/0204090829">
+	<title>Enver Altın: Mobile World Congress Peer Awards finalinde bir diğer Türk şirketi: Aradiom</title>
+	<link>http://enveraltin.com/blog/mobile/0204090829.html</link>
+	<content:encoded>&lt;p&gt;MWC ve 4Play'den bahsedip Aradiom'un başarısından bahsetmemek olmaz. Aradiom'un basın duyurusundan:&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;h4&gt;ARADIOM MOBILE PEER AWARDS YARIŞMASINDA FİNALE KALDI&lt;/h4&gt;
+	&lt;p&gt;&lt;a href=&quot;http://www.aradiom.com&quot;&gt;Aradiom&lt;/a&gt; dünyanın 46 farklı noktasından mobil sektörde hizmet veren 163 firmanın katıldığı Mobile Peer Awards yarışmasında finalistler arasına giren ilk Türk firma oldu.&lt;/p&gt;
+	&lt;p&gt;Istanbul – 26 Ocak 2009 – Mobil sektörde yarattığı farklı ve yenilikçi çözümlerle tüm dünyada ses getiren Aradiom sahip olduğu mobil yazılım geliştirme platformu Aradiom Mobile Framework&lt;sup&gt;TM&lt;/sup&gt; ile Mobile Peer Awards yarışmasında finallerde yarışmaya hak kazandı. IBB Mobil ve Global Mobil gibi farklı sektörlerden birçok mobil uygulamanın da yaratıcısı olan Aradiom 16 Şubat’ta Barselona’da Türkiye’yi temsil edecek.&lt;/p&gt;
+	&lt;p&gt;&lt;i&gt;Aradiom Hakkında&lt;/i&gt;&lt;/p&gt;
+	&lt;p&gt;Yenilikçi yaklaşımıyla sektörde farklılık yaratan ve çözüm ürettiği tüm iş dallarında öncü olan Aradiom 2001 yılında kuruldu. Aradiom geliştirmiş olduğu Aradiom Mobile Framework ile marka ile müşterinin her an etkileşim içerisinde olmasını sağlayan mobil uygulamalar ve şirketlerin çalışanlarına yönelik iş verimliliğini artıran kurumsal mobil  çözümler sunuyor. RIM’in Türkiye’deki ilk çözüm ortağı olan Aradiom, yetkinliği ve tecrübesi ile Kurumsal BlackBerry Uygulamaları alanında da liderliğini koruyor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Emeği geçen herkesi tebrik ediyor, başarılarını kutluyorum.&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 02 Apr 2009 12:39:00 +0000</dc:date>
+</item>
+<item rdf:about="http://enveraltin.com/mobile/0204090821">
+	<title>Enver Altın: Mobile World Congress sonrası</title>
+	<link>http://enveraltin.com/blog/mobile/0204090821.html</link>
+	<content:encoded>&lt;p&gt;Çok geç kaldığımı biliyorum ama yine de haberi paylaşmak istedim, yapılacaklar listesini temizlemek gerek.&lt;/p&gt;
+&lt;p&gt;Her yıl Barcelona'da GSMA tarafından düzenlenen Mobile World Congress'de &lt;a href=&quot;http://www.turkcell.com.tr/&quot;&gt;Turkcell&lt;/a&gt; ve &lt;a href=&quot;http://www.4play.com.tr&quot;&gt;4play&lt;/a&gt; birlikte geliştirdikleri TonlaKazan ile &lt;i&gt;En iyi mobil pazarlama servisi&lt;/i&gt; ödülünü &lt;a href=&quot;http://blog.tonlakazan.com/en/&quot;&gt;aldılar&lt;/a&gt;. Hem Turkcell'de bu fikre inanıp destekleyen ekibi, hem de Refik Çağlayan başta 4play ekibini tebrik ediyorum.&lt;/p&gt;</content:encoded>
+	<dc:date>Thu, 02 Apr 2009 12:29:00 +0000</dc:date>
+</item>
 <item rdf:about="http://enveraltin.com/2101090838">
 	<title>Enver Altın: FriendFeed and Twitter</title>
 	<link>http://enveraltin.com/blog/2101090838.html</link>
