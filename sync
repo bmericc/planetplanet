@@ -77,10 +77,23 @@ if [[ ! -f "$LOG_DIR/$LOG_FILE" ]]; then
 fi
 
 if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
-	echo "there's a sync process running behind, please try again later.."
-	exit 1
-else
+
+    cur_date=`date +%Y%m%d%H%M`
+    file_date=`cat "$PLANET_DIR/$LOCK_FILE"`
+    sub=$((cur_date - file_date))
+    #if the difference is bigger than the 10 minutes interval of cron job, that means we have lock file that requires delete
+    if [ $sub -gt 15 ]; then
+        echo "Removing the lock file" >> "$LOG_DIR/$LOG_FILE" 2>&1
+        rm -f "$PLANET_DIR/$LOCK_FILE"
+    else
+	    echo "there's a sync process running behind, please try again later.."
+	    exit 1
+    fi
+fi
 	touch "$PLANET_DIR/$LOCK_FILE"
+
+    # lets add the runtime of the script to the lock file
+    echo "$(date +"%Y%m%d%H%M")" > "$PLANET_DIR/$LOCK_FILE"
 
 	cd "$PLANET_DIR"
 
@@ -97,7 +110,6 @@ else
 		"$PLANET_DIR/planet.py" "$PLANET_DIR/gezegen/config.ini"
 		echo "-----------------------------------------------------------"
 	fi
-fi
 
 # if ended successfully delete the lock file
 rm "$PLANET_DIR/$LOCK_FILE"
