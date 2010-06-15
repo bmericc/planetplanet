@@ -87,6 +87,8 @@ if [[ -f "$PLANET_DIR/$LOCK_FILE" ]]; then
     else
 	    echo "there's a sync process running behind, please try again later.."
 	    exit 1
+    fi
+
 fi
 
 	touch "$PLANET_DIR/$LOCK_FILE"
