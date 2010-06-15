@@ -109,7 +109,6 @@ fi
 		"$PLANET_DIR/planet.py" "$PLANET_DIR/gezegen-planet/config.ini"
 		echo "-----------------------------------------------------------"
 	fi
-fi
 
 # if ended successfully delete the lock file
 rm "$PLANET_DIR/$LOCK_FILE"
