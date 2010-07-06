@@ -1,0 +1,11 @@
+{% extends "main/base.html" %}
+{% block body %}
+<form action='{{ BASE_URL }}/archive				' method='GET'> 
+    <b>Yazar<br> Adı:</b><input type="text" name="q_author_name"> 
+    ve/veya
+    <b>Soyadı:</b><input type="text" name="q_author_surname"><br>
+    veya<br>
+    <b>Aradığınız Metin:</b><input type="text" name="q_text"> 
+    <input type="submit" value="Listele"> 
+</form> 
+{% endblock %}

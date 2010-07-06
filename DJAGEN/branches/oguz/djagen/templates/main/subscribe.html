@@ -1,0 +1,42 @@
+{% extends "main/base.html" %}
+
+    {% block body %}    
+		<p>
+			Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı ve Gezegen'e iniş başvurularınızı e-posta ile iletebilirsiniz.
+        </p>
+
+        <br>
+        
+		<p>
+			Gezegene iniş başvurularınızda <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">Gezegen Kuralları</a>'na uyan RSS/Atom beslemenizi ve gezegen içerisinde kullanmak istediğiniz (en fazla 80x80 çözünürlüklü) fotoğrafınızı (bir başka deyişle hackergotchi); varsa jabber adresini aşağıdaki formu kullanarak göndermenizi rica ediyoruz.
+        </p>
+
+        <br>
+
+        {% ifnotequal submit 'done' %}   
+
+        <h1>Üye Başvuru Formu</h1> 
+        <form action="/djagen/subscribe/" method="post" enctype="multipart/form-data">
+            {% for field in form %}
+                <div class="fieldWrapper">
+                    {% if field.errors %}
+                    <span class="error">{{ field.errors }}</span>
+                    {% endif %}
+                    {{ field.label_tag }}
+                    {% if field.help_text %}
+                    <span class="small">{{ field.help_text }}</span>
+                    {% endif %}
+                    {{ field }}
+                </div>
+            {% endfor %}
+        <div class="spacer"></div>
+        <input type="submit" value="Mesaj Gönder" />
+        </form>
+        {% else %}
+        <p>
+            Kaydınız alındı.
+        </p>
+        {% endifnotequal %}
+
+    {% endblock %}
+		

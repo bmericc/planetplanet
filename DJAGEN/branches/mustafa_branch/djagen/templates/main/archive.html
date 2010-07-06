@@ -1,0 +1,65 @@
+{% extends "main/base.html" %}
+
+
+    {% block body %}
+
+        {% for entry in p_entries_list.object_list|slice:items_per_page %}
+        {% autoescape off %}
+
+        {% ifequal entry.entry_id.is_approved 1 %}
+        
+        {% ifchanged entry.date.day entry.date.month entry.date.year %}<div class="separator"></div>{% endifchanged %}
+
+        {% ifchanged %}<h2 class="date">{{ entry.date|date:"d F Y" }}</h2>{% endifchanged %}
+
+        <div class="innercontent">
+
+            <a href="{{ entry.entry_id.channel_link }}" title="{{ entry.entry_id.channel_title }}"><img class="face" src="/djagenmedia/images/heads/{{ entry.entry_id.author_face|default:"nobody.png" }}" title="{{ entry.entry_id.author_name }}" width="80" height="80" /></a>
+            <h1 class="title"><a href="{{ entry.link }} ">{{ entry.title }}</a></h1>
+            <p class="yazaneden">
+                Yazar:&nbsp;<a href="{{ entry.entry_id.channel_link }}" title="{{ entry.entry_id.channel_title }}">{{ entry.entry_id.author_name }}</a>
+                Tarih:&nbsp;<span class="blogdate">{{ entry.date|date:"d F Y H:i" }}</span>
+            </p>
+            <div class="blogcontent">
+                {{ entry.content_html|truncatewords_html:truncate_words }}
+            </div>
+        {% endifequal %}
+        {% endautoescape %}
+
+        </div>
+        
+
+        {% endfor %}
+        
+		<div class="pagination">
+	    <span class="step-links">
+		
+		<span class="current">
+            Sayfa <b>{{ p_entries_list.number }}</b> / <b>{{ p_entries_list.paginator.num_pages }}</b>
+        </span>
+        <div class="pagelist" style="text-align:center">
+		{% if p_entries_list.has_previous %}
+            <a href="?page={{ p_entries_list.previous_page_number }}">Geri</a>
+        {% endif %}
+        | 
+        
+        {% for pNum in p_entries_list.paginator.page_range %}
+          {% ifequal pNum p_entries_list.number %}
+          {{ pNum }}
+          {% else %}
+          <a href="?page={{ pNum }}">{{ pNum }}</a>
+          {% endifequal %}
+        {% endfor %}
+        
+        |
+        {% if p_entries_list.has_next %}
+            <a href="?page={{ p_entries_list.next_page_number }}">İleri</a>
+        {% endif %}
+        </div>
+        
+        
+    </span>
+</div>
+
+    {% endblock %}
+

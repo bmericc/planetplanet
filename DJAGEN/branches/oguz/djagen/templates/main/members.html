@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+
+    {% block body %}
+
+
+    <ul>
+
+    {% for member in members %}
+
+    <li><a href="{{ member.channel_link }}">{{ member.author_name }}&nbsp;{{ member.author_surname }}</a><a href="{{ member.channel_url }}"><img src="/djagenmedia/images/feed-icon-10x10.png" /></a></li>
+
+    {% endfor %}
+
+    </ul>
+
+    {% endblock %}

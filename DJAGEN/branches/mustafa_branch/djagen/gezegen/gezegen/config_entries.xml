@@ -1,0 +1,17 @@
+<planet>
+    <entry>
+        <feed>[http://www.bugunlinux.com/?feed=rss2]</feed>
+        <name>Ahmet Yıldız</name>
+        <nick>ayildiz</nick>
+        <label>Personal</label>
+        <id>1</id>
+    </entry>
+    
+    <entry>
+        <feed>[http://www.bugunlinux.com/?feed=rss3]</feed>
+        <name>Ahmet Yıldızz</name>
+        <nick>ayildizz</nick>
+        <label>LKD</label>
+        <id>2</id>
+    </entry>
+</planet>

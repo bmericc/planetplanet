@@ -1,0 +1,915 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/transitional.dtd">
+<html>
+	<head>
+		<title>Linux Gezegeni</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="generic.css" type="text/css" />
+		<link rel="stylesheet" href="layout.css" type="text/css" />
+		<link rel="stylesheet" href="planet.css" type="text/css" />
+		<link rel="stylesheet" href="bloggers.css" type="text/css" />
+		<link rel="stylesheet" href="nlayout.css" type="text/css" />
+		<link rel="icon" type="image/png" href="images/planet.png" />
+		<link rel="alternate" type="application/rss+xml" title="Linux Gezegeni" href="rss20.xml" />
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+        	<script type="text/javascript" src="jquery.cookie.min.js"></script>
+
+		<script type="text/javascript">
+        function toggleFeeds() {
+                $("#feedlist").slideToggle(function() {
+                        $("#feeds h3").toggleClass("open");
+                });
+        }
+        $(document).ready(function() {
+		//$.cookie("hidden", null, {expires: -1});
+                var hidden = $.cookie("hidden") ? $.cookie("hidden").split(",") : new Array();
+                // hide posts by disabled folks
+                if (hidden.length > 0) for (i in hidden) {
+                        $("div." + hidden[i]).hide();
+                }
+                $("#feeds h3 a").click(function(e) {
+                        e.preventDefault();
+                        if ($("#feedlist ul").length == 0) {
+                                $("#feedlist").load('feeds.html', '', function(r,t,x) {
+                                        $('<input type="checkbox" checked>')
+                                                .change(function() {
+                                                        var nick = $(this).parent().attr("class");
+                                                        var i = $.inArray(nick, hidden);
+                                                        if ($(this).attr("checked")) {
+                                                                if (hidden[i]) hidden.splice(i, 1);
+                                                                $("div." + nick).show();
+                                                        } else {
+                                                                if (!hidden[i]) hidden[hidden.length] = nick;
+                                                                $("div." + nick).hide();
+                                                        }
+                                                        $.cookie("hidden", hidden.join(","),
+                                                                {expires: 365});
+                                                })
+                                                .prependTo("#feedlist ul li");
+                                        // remove checks from disabled folks
+                                        for (i in hidden) {
+                                                $("#feedlist ul li." + hidden[i] + " input")
+                                                        .removeAttr("checked");
+                                        }
+                                        toggleFeeds();
+                                });
+                        } else {
+                                toggleFeeds();
+                        }
+                });
+        });
+        </script>
+
+
+	</head>
+	<body>
+
+		
+<div id="gezegen-sites">
+<ul>
+	<li class="home"><a href="http://gezegen.linux.org.tr/" title="Gezegen">Gezegen</a><a href="http://haber.linux.org.tr" title="Linux Haber">Linux Haber</a></li>
+	<li><a href="http://gezegen.linux.org.tr/kisisel/" title="Kişisel Günlükler">Kişisel Günlükler</a></li>
+	<li><a href="http://gezegen.linux.org.tr/lkd/" title="LKD Günlükleri">LKD Günlükleri</a></li>
+	<li><a href="http://gezegen.linux.org.tr/topluluk/" title="Topluluk Günlükleri">Topluluk Günlükleri</a></li>
+	<li><a href="http://planet.linux.org.tr/" title="İngilizce Günlükler">İngilizce Günlükler</a></li>
+</div> <!-- /gezegen-sites -->
+
+		<div id="hdr">
+			<div id="banner">
+				<img src="http://gezegen.linux.org.tr/images/spacer.png" />
+			</div>
+			<div id="logo">
+				<a href="http://gezegen.linux.org.tr/">
+					<img src="http://gezegen.linux.org.tr/images/spacer.png" />
+				</a>
+			</div>
+		</div>
+
+
+		<div id="body">
+					<h2 class="date">16 Mart 2010</h2>
+
+				<div class="entry oyarimtepe">
+					<div class="person-info">
+						<a href="http://www.loopbacking.info/blog" title="import me » Gezegen">
+								<img class="face" src="images/heads/oguzyarimtepe.png" title="Oğuz Yarımtepe" />
+								<br />
+Oğuz Yarımtepe								<br />
+								<!-- (oyarimtepe) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://feedproxy.google.com/~r/oguzy-gezegen/~3/dmDtp8fRToI/">
+Yakın Doğu’da Seminer Rüzgarları										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Geçen haftadan beri Yakın Doğu Üniversitesi&#8217;nde Linux ve Özgür Yazılım seminerleri düzenliyoruz. İlk seminerimiz Linux Nedir? idi. Uzun zamandan beri dinlediğin en eğlenceli Linux Nedir&#8217;lerden birisi idi. 3.30 saat sürmesine rağmen konuşmacı Ali Erdinç Köroğlu&#8217;nun eğlenceli anlatımı ile zaman su gibi aktı denebilir.</p>
+<p>Yakın Doğu&#8217;ya ilk geldiğim zamanlarda ben de bir Linux Nedir semineri vermiştim. O zamanki katılımcı durumu işte aşağıdaki gibi idi.</p>
+<p><a href="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0697.jpg"><img class="alignnone size-medium wp-image-99" title="Linux Nedir Semineri" src="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0697-300x199.jpg" alt="" width="300" height="199" /></a></p>
+<p>Aslında çoğunluğunu öğretmenlerin oluşturması gereken katılımcı kitlesini, öğrenciler oluşturuyor idi. 1.30 saatlik bir anlatım ile katılımcılara Linux Nedir anlatmıştım. Seminer süresince hiç soru gelmemişti. Seminerden sonra yanıma gelip soru soranlar da olunca, epey mutlu olmuştum.</p>
+<p><a href="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0704.jpg"><img class="alignnone size-medium wp-image-100" title="Linux Nedir Seminer" src="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0704-300x199.jpg" alt="" width="300" height="199" /></a></p>
+<p>Şimdiki durumda katılımcı sayısı azımsanmayacak kadar olması yanında, daha ilgili bir kalabalığın katıldığını düşünüyorum.</p>
+<p><a href="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0757.jpg"><img class="alignnone size-medium wp-image-101" title="YDU AEK Internet'in Yapı Taşları Semineri" src="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0757-300x199.jpg" alt="" width="300" height="199" /></a></p>
+<p>Ali Erdinc&#8217;in de epey bir eğlenceli anlatımı olduğunu, dinleyicinin dikkatini çekmek için onları arada dürttüğünü de belirtmek lazım.</p>
+<p><a href="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0759.jpg"><img class="alignnone size-medium wp-image-102" title="Internet'in Yapı Taşları" src="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0759-300x199.jpg" alt="" width="300" height="199" /></a></p>
+<p>Bu seminerler dizisi Mayıs ayına kadar devam edecek. Meraklısı için üniversite <a href="http://duyuru.neu.edu.tr">duyuru sayfası</a>, <a href="http://www.facebook.com/NearEastUniversity">Facebook</a> ve <a href="http://twitter.com/NearEastUniv">Twitter</a>&#8216;dan takip edebileceklerini söyleyelim. Hatta Kıbrıs&#8217;ta olanlar için üniversitede her Cuma akşamları ve Cumartesi günleri sinema gösterimleri yaptığımızı da belirtelim. Biz izlerken eğleniyoruz. Bekleriz.</p>
+<p>Lefkoşa&#8217;ya bahar geldi denebilir. Oğuz Yarımtepe Kıbrıs&#8217;tan bildirdi.</p>
+<p><a href="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0770.jpg"><img class="alignnone size-medium wp-image-103" title="Inovasyon Merkezi, tarla" src="http://www.loopbacking.info/blog/wp-content/uploads/2010/03/DSC_0770-300x199.jpg" alt="" width="300" height="199" /></a></p>
+<img src="http://feeds.feedburner.com/~r/oguzy-gezegen/~4/dmDtp8fRToI" height="1" width="1" />								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.loopbacking.info/blog/2010/03/16/yakin-doguda-seminer-ruzgarlari/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://feedproxy.google.com/~r/oguzy-gezegen/~3/dmDtp8fRToI/&title=Yakın Doğu’da Seminer Rüzgarları" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://feedproxy.google.com/~r/oguzy-gezegen/~3/dmDtp8fRToI/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://feedproxy.google.com/~r/oguzy-gezegen/~3/dmDtp8fRToI/">
+16 Mar 2010 @ 05:40 ÖS									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">05 Şubat 2010</h2>
+
+				<div class="entry oyarimtepe">
+					<div class="person-info">
+						<a href="http://www.loopbacking.info/blog" title="import me » Gezegen">
+								<img class="face" src="images/heads/oguzyarimtepe.png" title="Oğuz Yarımtepe" />
+								<br />
+Oğuz Yarımtepe								<br />
+								<!-- (oyarimtepe) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://feedproxy.google.com/~r/oguzy-gezegen/~3/nubepmpaYEk/">
+100 ml										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>1 Ocak 2010 tarihinden itibaren uçuşlarda sıvı kısıtlaması uygulanıyor. El bagajlarında 100 mlyi geçen sıvılara, jel, krem vb. el konuyor. Yılbaşında Kıbrıs&#8217;a dönerken başıma bir olay gelince ne menem bir şeydir diye araştırdığım bir konu oldu. Sırt çantamda 150 ml Dove krem var idi. Kremi epeydir kullanıyordum. Saat 5.30 gibi uçağa binmek için son kontrol noktasında bekliyorduk. Kontrol için güvenlik gelebilirsiniz dedikten sonra ben de  çantayı cihaza bırakıp geçtim. Cihazın başındaki görevli bu çantada sıvı bir şey var diye seslendi bana. Ön gözde dedi. Evet krem var dedim. Açtı. Baktı 150 ml bir krem. 100 ml üzerini alamıyoruz dedi. Ben de uyku sersemi, o kullanılmış bir kutu, içindeki belki 100 mlnin altındadır dedim. Görevli gülümsedi. O da görevini yapıyordu. Ayakta duran bayan sert bir şekilde kutuyu aldı, baktı, bizim için bunu hacmi önemli dedi. Açıkcası tartışmanın bir anlamı yoktu. Onlar da bir kuralı uyguluyorlardı. Elimle söylendiği gibi para verip aldığım kremi çöpe attım.</p>
+<p>Şimdi olayın benim açımdan garip noktalarına gelelim</p>
+<p>* Güvenlik görevlisi kutunun kaç ml olduğuna üzerine bakarak karar verdi. Yani bir dahaki sefere sırf sistemi denemek için, aynı kremden alıp, üzerindeki 150 yi 100 yaparsam geçer muhtemelen.</p>
+<p>* Görevli içine açıp bakmadı bile. Bana sordu ne var diye. Yani içine şu epeydir ortalarda olmayan domuz gribi koysam dahi bilgisi olamazdı.</p>
+<p>* Elimle çöpe attım, o çok koydu.</p>
+<p>Ben de bunun üzerine Ulaştırma Bakanlığı&#8217;na bir eposta attım. Epostam Sivil Havacılık Dairesine yönlendirilmiş ve bir yanıt geldi. Kısaca, bu 100 ml uygulaması 10 Ağustos 2006&#8242;da İngiltere&#8217;de ortaya çıkan terörist plan sonrasında sivil havacılık gündemine girmiş. 6 Kasım 2006&#8242;da çıkarılan 1546/2006 tüzüğü ile tüm AB üyesi ülkelerde ve İsviçre, İzlanda ve Norveç&#8217;te, ABD ve Kanada&#8217;da uygulanmaya başlamış. Türkiye de ECAC üyesi bir devlet olduğundan tavsiye kararına uyarak bu uygulamayı diğer devletlerdeki gibi aynı kurallar dahilinde uygulamaya başlamış. Neden 100 ml peki? Birleşmiş Milletler bünyesindeki Patlayıcılar Çalışma Grubunda yapılan araştırma, testler ve risk değerlendirmesi neticesinde sıvıların 100 ml lik kaplarda 1 litreklik poşette taşınması halinde (1 lt&#8217;lik poşete yaklaşık 6 adet kap sığmaktaymış) uçuşun emniyetini tehlikeye düşürmeyeceği sonucuna varılmış. Bilim adamları araştırmış bulmuş, bir şey diyemeyecem bu konuda. Peki bizde 100 ml olduğu nasıl anlaşılıyor? Baya, ya size soruyorlar ya da üzerindeki yazıları okuyorlar. Yani ben teroristlik yapmak istesem, alırım 200 ml sıvı patlayıcı, koyarım Dove krem kutusuna, yazıları bir güzel 100 diye düzenlerim, sorarlarsa da 100 der geçerim. Peki biz neden illa 100 diye uyguluyoruz? E çünkü diğer ülkelerde de öyle de ondan. Epostadaki şu satırlara bakalım:</p>
+<p>&#8220;Ülkemiz yukarıda adı geçen uluslarası kuruluşların aldığı kararları  ve berlilediği standartları uygulamakla yükümlüdür.&#8221;</p>
+<p>Bu konudaki uygulama diğer ülkelerde hangi standartlarda uygulanıyor bilmiyorum. Belki de sadece Kıbrıs uçuşlarında bir acayiplik vardır. Standart denilen kavram sadece 100 sayısına bağlı bir şeydir diye de anlaşılıyor olabilir.</p>
+<p>Siz siz olun, uçağa binerken el bagajınızda üzerinde 100 ml üzeri bir şey yazan herhangi bir kap bulundurmayın. İçi boş dolu farketmez.</p>
+<img src="http://feeds.feedburner.com/~r/oguzy-gezegen/~4/nubepmpaYEk" height="1" width="1" />								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="http://www.loopbacking.info/blog/2010/02/05/100-ml/#comments">
+											<img src="images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url=http://feedproxy.google.com/~r/oguzy-gezegen/~3/nubepmpaYEk/&title=100 ml" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://feedproxy.google.com/~r/oguzy-gezegen/~3/nubepmpaYEk/" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://feedproxy.google.com/~r/oguzy-gezegen/~3/nubepmpaYEk/">
+05 Şub 2010 @ 12:19 ÖS									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">29 Ocak 2010</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=432">
+Artık Sun yok!										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>iP<a href="http://www.hakanuygun.com/blog/wp-content/uploads/2010/01/sunoracle.gif"><img class="alignleft size-full wp-image-434" title="sunoracle" src="http://www.hakanuygun.com/blog/wp-content/uploads/2010/01/sunoracle.gif" alt="sunoracle" width="202" height="122" /></a>ad haberleri arasında kaybolup gidiyor ama Oracle uzun süren Sun&#8217;ı satın alma işlemini bitirdi. Artık <a href="http://www.sun.com" target="_blank">www.sun.com</a> adresine girdiğinizde sizi doğrudan Oracle sitesine yönlendiriyor.</p>
+<p>Beni en çok ilgilendiren konular ise Sun&#8217;ın özgür yazılım projelerine devam edilip edilmeyeceği konularında ise şimdilik olumlu haberler geliyor. Bütün bu projeler içerisinde devam edilmeyeceği açıklanan tek proje şimdilik Kenai.</p>
+<p>Umarım hepimiz için mutlu son olur&#8230;</p>
+<p><strong>Ek</strong>: <a href="http://www.kulturmantari.org/" target="_blank">Kültür Mantarı</a>&#8216;nın yönlendirmesi ile <a href="http://blogs.sun.com/jag/entry/so_long_old_friend" target="_blank">James Gosling&#8217;</a>in bu konu ile ilgili blogunu gördüm ve ordaki görselin de burada saklanmasının iyi olacağını düşünüp buraya kopyaladım&#8230;</p>
+<p><a href="http://www.hakanuygun.com/blog/wp-content/uploads/2010/01/sunrip.jpg"><img class="aligncenter size-medium wp-image-445" title="sunrip" src="http://www.hakanuygun.com/blog/wp-content/uploads/2010/01/sunrip-300x234.jpg" alt="sunrip" width="300" height="234" /></a></p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=432&title=Artık Sun yok!" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=432" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=432">
+29 Oca 2010 @ 09:28 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">24 Aralık 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=381">
+EMO 13. Ulusal Kongresi										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>EMO&#8217;nun 23-26 Aralıkta ODTÜ de gerçekleşecek olan <a href="http://www.ulusalkongre.org" target="_blank">13. Ulusal Kongre</a>si kapsamında 25 Aralık Cuma günü 9:30-11:15 arasında Özgür Yazılım başlılklı özel oturumda &#8220;Özgür Yazılımların Uygulama Geliştirme Modeline Etkisi; Tekir’den Öğrendiklerimiz&#8221; ve 11.30-12.30 arasında da &#8220;Özgür Yazılımın Ekonomik ve Sosyal Yönleri” sunumlarını yapıyorum.</p>
+<p>Genel olarak yüklü bir programı olan bu etkinlikte çeşitli <a href="http://haber.linux.org.tr/2009/12/23-26-aralik-emo-ulusal-kongre-ankara-linux-seminerleri/" target="_blank">LKD seminerleri</a> de olacak. Buyrunuz geliniz!</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=381&title=EMO 13. Ulusal Kongresi" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=381" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=381">
+24 Ara 2009 @ 03:45 ÖS									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">24 Eylül 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=338">
+Intel, Atom, Moblin										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Intel Atom işlemcileri ile hayatın her yerinde yer alamak istiyor. x86 tabanlı Atom işlemciler programcılara normal bilgisayarlar için yazılmış uygulamalarını çok fazla değişikliğe uğratmaya gerek kalmadan mobil cihazlarda çalıştırabilmesine olanak sağlıyor. Bu da Intel&#8217;e önemli avantajlar sağlıyor. Bu avantajını daha da arttırmak için cihazar üzerinde performansı arttıracak işletim sistemi için de kolları sıvayıp Moblin&#8217;i geliştirmeye başlamışlardı. Dün bu konular üzerine Intel&#8217;den üç önemli açıklama oldu&#8230;</p>
+<p>Atom işlemcili cihazlarda uygulama performansını arttırmak için yeni bir geliştirici programı başlattılar. <a href="http://appdeveloper.intel.com/en-us/">Atom Developer Program</a>&#8216;ı teşvik etmek içinde bir yarışma başlattılar. Bence bir göz atmakta fayda var&#8230; ( Ben kayıt olacağım <img src="http://www.hakanuygun.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> )</p>
+<p>İkinci ve üçüncü açıklamalar ise bir arada geldi, Moblin&#8217;in yeni sürümü 2.1 yayınlandı ve Atom işlemcili bir <a href="http://www.engadget.com/2009/09/22/intel-announces-moblin-2-1-for-phones/#continued">akıllı telefon</a> üzerinde sunuldu. Intel bir çırpıda bir dolu firmaya rakip oldu <img src="http://www.hakanuygun.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> Geçenlerde de <a href="http://www.hakanuygun.com/blog/?p=279">yazmıştım</a>,  önümüzdeki yıl içerisinde mobil dünyada bir dolu ilginç gelişmeler bekliyorum. Umarım bu rekabetten özgür yazılım ve biz kullanıcılar kazançlı çıkarız&#8230;</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=338&title=Intel, Atom, Moblin" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=338" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=338">
+24 Eyl 2009 @ 09:00 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">25 Ağustos 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=330">
+Teknik Destek Kopya Kağıtı										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>xkcd&#8217;de geçen gün yayınlanan <a href="http://xkcd.com/627/">bu</a> teknik destek kopya kağıdını pek beğendim ve Türkçe bir sürümünü yapayım dedim.</p>
+<p><img class="aligncenter size-full wp-image-331" title="teknikdestek" src="http://www.hakanuygun.com/blog/wp-content/uploads/2009/08/teknikdestek.png" alt="teknikdestek" width="468" height="461" /><br />
+İsteyenler için ODF hali de <a href="http://www.hakanuygun.com/blog/wp-content/uploads/2009/08/teknikdestek.odg">burada</a></p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=330&title=Teknik Destek Kopya Kağıtı" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=330" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=330">
+25 Ağu 2009 @ 07:28 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">18 Ağustos 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=312">
+Korsan Değil &#8220;Fikir Hırsızı&#8221;										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Kültür ve Turizm Bakanlığı, Fikir ve Sanat Eserleri Kanunu&#8217;nda değişiklik yapılarak İnternet üzerinden müzik, film, kitap ve benzeri şeyleri indirenlerinde ceza almasını sağlamak için çalışma <a href="http://www.ntv.com.tr/id/24992251/" target="_blank">başlatmış</a>. Bu denetimi yapabilmek için de internet servis sağlayıcıları ile birlikte çalışacaklarmış.</p>
+<p>Her köşe başında kurulan tezgahlarda kitap, cd, dvd satan arkadaşlar hiç bir sorun ile karşılaşmadan bu işi yaparken, bunun için bildiğim kadarıyla yasal düzenlemeler zaten var, onlarla mücadele etmek yerine, internetten akan tarfiği denetleyecekler. Bu denetim sırasında da müzik mi yoksa sevilinizden gelen e-postanızı mı indirdiğiniz fark etmeyecek, dinleyecekler. Ayrıca indirdiğiniz müziğin yasal mı yoksa yasa dışımı olduğunu bir çırpıda anlayacaklar. Bu arada, haberden eğer yanlış okumadıysam,  yapılan operasyonda makinenizde çıkan parça sayısı kadar da görevlilere prim verilecek <img src="http://www.hakanuygun.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> Yani büyük birader izlemeye ve istediğinde yasaklamaya olanak sağlayacak yeni yollar arıyor&#8230;</p>
+<p>Bütün bunlardan fikir haklarına saygı duymadığım anlaşılmasın tam tersine korsana, fikir hırsızlığına kesinlikle karşıyım. Fakat bütün bunların bahane edilerek kişisel iletişimin ihlal edilmesine daha çok karşıyım.</p>
+<p>Son olarak bir haber daha verelim Pirate Bay&#8217;in 23 GB&#8217;lik arşivi de <a href="http://thepiratebay.org/torrent/5053827" target="_blank">paylaşıma</a> açılmış. Bu arşiv içerisinde yasal olmayan şeyler olabilir ama yasal olarak paylaşılan da bir çok eser var. Sizler yasal olanlarını indirin <img src="http://www.hakanuygun.com/blog/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> Korsan değil özgür yazılım kullanın!</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=312&title=Korsan Değil &amp;#8220;Fikir Hırsızı&amp;#8221;" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=312" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=312">
+18 Ağu 2009 @ 08:07 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">07 Temmuz 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=279">
+Mobil Cihazlar Dünyasında Neler Oluyor?										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p><img class="aligncenter size-full wp-image-282" title="moblin" src="http://www.hakanuygun.com/blog/wp-content/uploads/2009/07/moblin.jpg" alt="moblin" width="280" height="151" />Bir süredir mobil cihazlar dünyası hareketlenmiş durumda. Apple iPhone ile birlikte mobil telefon dünyasında ciddi bir hareketlenme olmuştu. Palm, Nokia, Sony-Ericson, BlackBerry gibi sektörün önde gelen firmalarına Apple ciddi bir rakip olarak ortaya çıkmış ardından da Google Android ile bir platform olarak henüz yeterince destekleyen donanım olmasa bile vaadettikleri ile dikkatleri üzerine çekmişti. <a href="http://en.wikipedia.org/wiki/Android_os" target="_blank">Android</a>, <a href="http://en.wikipedia.org/wiki/WebOS" target="_blank">WebOS</a> ve <a href="http://en.wikipedia.org/wiki/IPhone_OS" target="_blank">iPhone OS</a>&#8216;a  karşı <a href="http://en.wikipedia.org/wiki/Symbian_OS" target="_blank">Symbian</a>&#8216;ı savunmaya devam eden Nokia, elinde olmayan hisselerini de alarak,  bir vakıf kurup Symbiyan&#8217;ı açık kaynak kodlu olarak  bu vakfa devretmişti.</p>
+<p>Tam da bu esnada Intel Atom işlemcisi ile düşük kaynak kullanan PC&#8217;lerin geliştirilmesine olanak sağladı ve NetBook&#8217;lar geçtiğimiz yıl içinde popüler cihazlar arasına girdiler.</p>
+<p>Bu yıl ise Intel, Mobile Internet Device ( MID - Mobil Internet Aracı ) üzerine ciddi yatırımlar yapmaya başladı. Hatta bu cihazların cazibesini arttırmak için özel bir linux dağıtımına bile başladı : <a href="http://en.wikipedia.org/wiki/Moblin" target="_blank">Moblin</a>.</p>
+<p>Moblin&#8217;e destek konusunda Intel önce Canonical ile anlaşmıştı. Daha sonra Canonical NetBook dağıtımı olarak Nokia&#8217;nın kendi tabletlerinde kullanmak amacıyla ürettiği <a href="http://en.wikipedia.org/wiki/Maemo_%28operating_system%29" target="_blank">Maemo</a>&#8216;yu desteklemeye karar verdiğini açıkladı. Intel&#8217;de Moblin&#8217;i Linux Vakfı&#8217;na devrettiğini ve destek konusunda da Novell&#8217;le anlaştığını ilan etti. İki hafta önce detayları belirtilmeyen bir Nokia - Intel anlaşması ilan edildi. Genel olarak yorumlanan ise  Nokia&#8217;nın daha becerikli telefonlar üretmek için Intel teknolojilerini kullanacağı bu arada da Moblin ile Maemo arasında bir seçim yapıp güçlerini birleştirecekleri yönündeydi. Bugün Nokia, Android temelli telefonlar üretmeyeceğini ve GTK+ temelli olan Maemo&#8217;yu Qt&#8217;ye taşıyacağını ilan etti.</p>
+<p>İşte benim sorularımın temelini de burası oluşturuyor. Qt temelli bir Maemo&#8217;yu Canonical desteklemeye devam edecek mi? Nokia Intel işlemcili MID&#8217;ler üretip bunlarda Mameo&#8217;mu koşturacak yoksa Intel işlemcili telefonlar üretip Symbian&#8217;ı rakipleri kadar becerikli yepyeni bir hale mi dönüştürecek? Intel MID&#8217;ler konusunda neler planlıyor? Bu planları içerisinde Moblin&#8217;i desteklemeye devam etmek var mı yoksa Nokia ile birlikte Maemo&#8217;ya yatırım mı yapacaklar? NetBook&#8217;larda da kullanılmaya başlayan Android de bu üretilecek donanımlar için bir alternatif olacaklar mı?</p>
+<p>Hepsinden önemlisi bütün bunların sonucunda ortaya çıkacak olan, biz tüketiciler için ucuz ve becerikli donanımlar mı yoksa; bir biri ile uyumsuz bir dolu daha oyuncak mı?</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=279&title=Mobil Cihazlar Dünyasında Neler Oluyor?" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=279" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=279">
+07 Tem 2009 @ 11:04 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">17 Haziran 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=259">
+LKD Genel Kurulu için Ankara&#8217;ya										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Bu hafta sonu gerçekleştirilecek LKD Genel Kurulu için Ankara&#8217;ya gidiyoruz. Aşağıdaki yazı bu yolculuk için organizasyon yapmaya çalışan  Volkan&#8217;dan&#8230;</p>
+<p>***</p>
+<p>Ankara yerine Bağdata gitsem bu kadar koştururdum herhalde,</p>
+<p>TCDD : en teknolojik YHT çalıştıran, 5 saaat 28 dk Ankaraya ulaştıran koskoca<br />
+kurum.<br />
+Evet bu kurum malesef bilet satmak istemiyor.</p>
+<p>1- web sitesi windows ve Internet explorer bağımlısı. Öncelikle böyle bir<br />
+sisteme sahip olmanız gerekli. (MAC ve Linux kullanıcıları tren yolcuları<br />
+portföyünde yer almıyor. Onlar uçak veya otobüs severler.!)</p>
+<p>2- web sitesindeki bilet <span id="OBJ_PREFIX_DWT255" class="Object"><span id="OBJ_PREFIX_DWT256" class="Object">sat</span></span>ış uygulamasında banka sıra makinelerinin bir<br />
+türevi sadece. Sıradan boş koltuk veriyor. Pulman vagonlarında ilk 6 koltuk<br />
+karşılıklı bakar durumda, son 3 koltukda geriye yatamaz durumda. Bilin<br />
+bakalım verdiği ilk koltuklar nereleri ? Evet bildiniz bunlar. Farklı bir<br />
+koltuk veya vagon seçemiyorsunuz. Seçilebilecek şeyler bayan yanı ve<br />
+internet. Onlarında ne kadar gerçek seçimlere izin verildiği şüpheli.<br />
+(İnternet olsun dedim, sonuç yok dedi.)</p>
+<p>3- PTT şubeleri tren bilet satacak acenteler olarak duyuruluyor. Gidiyorsunuz,<br />
+veee&#8230; Evet, biz <span id="OBJ_PREFIX_DWT257" class="Object"><span id="OBJ_PREFIX_DWT258" class="Object">sat</span></span>ıyoruz, ama siteye girebilirsek diyorlar. Ne oldu, tabii<br />
+ki giremediler. 10dk sıra beklediniğiniz için teşekkür ederiz.</p>
+<p>4- Acente, komisyon karşılığı TCDD bileti satanlar. Gidiyoruz birine, bize<br />
+bilet lazım satabiliyor musunuz? diye soruyorum. Tabii buyrun diyorlar. Gidiş<br />
+dönüş 1 tam 1 öğrenci istiyorum. <span id="OBJ_PREFIX_DWT259" class="Object"><span id="OBJ_PREFIX_DWT260" class="Object">Sat</span></span>ıcı önce<br />
+- G/D kesmiyorum diyor buradan.!<br />
+- Nasıl yani?<br />
+- Fark yok zaten,ayrı ayrı keseyim. Fiyatı farklı mı ki?<br />
+Başka bir arkadaşı düzeltiyor, aynı express olursa kesebilirsin.<br />
+- Elbette G/D niye alayım indirim var diyorum.<br />
+Neyse girip deniyor, gelen koltuk numaralarını soruyorum.<br />
+- 4,5 diyor. (İlk altı koltuk içinden boş olanlar)<br />
+- Değiştiremiyor musunuz?<br />
+- Malesef.<br />
+- Internet sürümüne mi giriyorsunuz diyorum ister istemez.<br />
+- Hayır biz acente olarak giriyoruz ama fark yok. cevabı geliyor. (Tahmininen<br />
+üzerine ek komisyon ekleniyor sadece.)<br />
+- Kim koltuk seçtiriyor bana ?<br />
+- Gardan alabilirsiniz, Haydarpaşa veya Sirkeci.</p>
+<p>5- Rotamız Sirkeci garı. Bir otobüs ve tramvay ile ulaşıyorum.<br />
+Bende dil yandı ya, ilk soru Fatih expresine bilet istiyorum, ama koltuk<br />
+seçebiliyor musunuz?<br />
+- Bakalım yer boş olursa seçebiliriz diyor <span id="OBJ_PREFIX_DWT261" class="Object"><span id="OBJ_PREFIX_DWT262" class="Object">sat</span></span>ıcı bu kez.<br />
+- Ohh nihayet.<br />
+- 1 tam 1 öğrenci G/D istiyorum, artı 1 öğrenci sadece gidiş.<br />
+- Öğrencide G/D farkı yok cevabı geliyor.<br />
+- Biliyorum, tam da var onun için söylüyorum.(Bilgi: Tam bileti G/D alırsanız<br />
+öğrenci bileti ile aynı fiyat, garip.G/D alacaksanız öğrenciliğiniz işe<br />
+yaramıyor. Yani pasoya gerek yok. Tespit: Öğrenciler hep tek yö seyahat<br />
+eder.)<br />
+- Kredi kartımı, peşin mi?<br />
+- DIINN ! kredi kartı.. var dimi?<br />
+- Evet, 112 TL<br />
+- Buyrun, zııttt pıırtt iki tak tak bi laklak biletler ve pos slipi elimde.</p>
+<p>Gişenin önünden ayrılmadan biletleri tren, tarih, yer vs. doğru mu diye<br />
+kontrol ediyorum. Elimde biletler teşekkür edip ayrılırken, 1,5 saatte ancak<br />
+bir alış veriş yapmış oluyorum.  Daha bir de geri dönüş yolu var.</p>
+<p>Velhasıl,<br />
+Gidiş : 18/06/2009 Perşembe 23:30 Haydarpaşa Vagon:X Koltuk: XX-XX-XX<br />
+Gidiş : 20/06/2009 Cumartesi 23:30 Ankara Vagon:X Koltuk: XX-XX</p>
+<p>Hayırlı yolculuklar.</p>
+<p>=====================<br />
+Dipnot-1: Bu yerleri aldığım 1. vagon haricinde 2 vagon tamamen boş görünüyor<br />
+daha. 2-3 nolarda <span id="OBJ_PREFIX_DWT263" class="Object"><span id="OBJ_PREFIX_DWT264" class="Object">sat</span></span>ılan yerler var.</p>
+<p>Dipnot-2: Ben telefonla iş yapmaya alışamamış biri olarak, rezervasyon veya<br />
+<span id="OBJ_PREFIX_DWT265" class="Object">sat</span>ış işlemi var mı diye hiç peşine düşmedim. Orada da farklı bir macera sizi<br />
+bekliyor olabilir, kimbilir?</p>
+<p>Dipnot-3: Yataklı vagonlarda alt-üst yatak seçme şansınız olabilir mi sizce?</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=259&title=LKD Genel Kurulu için Ankara&amp;#8217;ya" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=259" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=259">
+17 Haz 2009 @ 09:33 ÖS									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">16 Haziran 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=248">
+IE, WTW ve Gıda Yardımı										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p><a href="http://walktheweb.wfp.org/" target="_blank"><img class="aligncenter size-full wp-image-252" title="wfp-wtw" src="http://www.hakanuygun.com/blog/wp-content/uploads/2009/06/wfp-wtw.png" alt="wfp-wtw" width="512" height="240" /></a>Bugünlerde dünya üzerindeki açlık, gıda yardımları ve bunlara ait haberler her zamankinden daha fazla ilgimi çekiyor. Dolayısıyla Microsoft&#8217;un yeni kampanyası ilgimi çekti. Microsoft İnternet Tarayıcısının yeni sürümünü daha iyi duyurabilmek için gıda yardımı üzerine kurulu bir kampanya başlatmış. IE8&#8242;in her tam indirilmesine karşılık 8 öğün yemek bağışında bulunacakmış. Detaylara <a href="http://www.browserforthebetter.com/download.html" target="_blank">buradan</a> ulaşabilirsiniz&#8230;</p>
+<p>Bu konu ile ilgili de bir dolu tartışma gündeme geldi tabii ki, örneğin <a href="http://www.techcrunch.com/" target="_blank">TechCrunch</a>&#8216;da kampanyaya dair bir dolu yazı ve tartışma var. Ben kendi adıma Linux üzerinde zaten çalışmayan bu tarayıcıyı indirip biraz ağ zamanı harcayıp bağışta bulunsam mı,  zaten IE kullananların hatalı çalışan eski sürümler yerine CSS ve JS ile ilgili bir dolu hatanın düzeltildiği bu yeni sürüme geçmelerini teşvik etsem mi, yoksa hiç sesimi çıkarmasam mı bilemedim. Ardından da bu haberi bahane edip daha fazlası ile yazayım dedim.</p>
+<p>İster IE8 indirin isterseniz aşağıdaki organizasyonların sitelerini ziyaret edip dünya üzerindeki açlık ve fakirlikle mücadeleye katkıda bulunmak için yapabileceklerinizi öğrenin&#8230; Bunların içerisinde özellikle Birleşmiş Milletler Dünya Gıda Programı&#8217;nın <a href="http://walktheweb.wfp.org/" target="_blank">Walk The Web</a> kampanyasına bir göz atmanızı öneririm&#8230;</p>
+<ul>
+<li><a href="http://www.wfp.org/" target="_blank">www.wfp.org</a></li>
+<li><a href="http://www.actionagainsthunger.org/" target="_blank">www.actionagainsthunger.org</a></li>
+<li><a href="http://www.hakanuygun.com/blog/www.makepovertyhistory.org" target="_blank">www.makepovertyhistory.org</a></li>
+<li><a href="http://www.standagainstpoverty.org" target="_blank">www.standagainstpoverty.org</a></li>
+<li><a href="http://www.engineersagainstpoverty.org" target="_blank">www.engineersagainstpoverty.org</a></li>
+<li><a href="http://www.whiteband.org" target="_blank">www.whiteband.org</a></li>
+</ul>
+<p>Son olarak da bugünlerde herkese önerdiğim gibi  <a href="http://www.facebook.com/ext/share.php?sid=107634228486&h=FwnnE&u=6crnv&ref=mf" target="_blank">Yuva</a> ( Home ) belgeselini izlemenizi şiddetle tavsiye ederim.</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=248&title=IE, WTW ve Gıda Yardımı" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=248" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=248">
+16 Haz 2009 @ 11:38 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">28 Mayıs 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=244">
+TBD Bilişim Kongresi&#8217;nde Özgür Yazılım Paneli										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>TBD&#8217;nin bu yıl 3.sünü düzenlediği <a href="http://www.istanbulbilisimkongresi.org.tr/" target="_blank">İstanbul Bilişim Kongresi</a>&#8216;nde Pazar günü saat 14:00&#8242;de Özgür Yazılım Paneli olacaktır. Panel&#8217;de özgür yazılım ve iş modelleri üzerinde durulacaktır. İlgilenenlere duyurulur&#8230;</p>
+<p><strong> Yer:</strong> Marmara Üniversitesi Nişantaşı Kampüsü<br />
+Erdal İnönü Bilim ve Kültür Merkezi<br />
+<strong>Tarih:</strong> 31 Mayıs Pazar, 14:00 - 15:20<br />
+<strong>Oturum başkanı:</strong> Görkem Çetin<br />
+<strong>Konuşmacılar:</strong> Enver Altın, Hakan Uygun, Cahit Cengizhan</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=244&title=TBD Bilişim Kongresi&amp;#8217;nde Özgür Yazılım Paneli" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=244" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=244">
+28 May 2009 @ 04:22 ÖS									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					<h2 class="date">13 Nisan 2009</h2>
+
+				<div class="entry huygun">
+					<div class="person-info">
+						<a href="http://www.hakanuygun.com/blog" title="hakan.uygun.yazıyor.* » Gezegen">
+								<img class="face" src="images/heads/nobody.png" title="Hakan Uygun" />
+								<br />
+Hakan Uygun								<br />
+								<!-- (huygun) -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href="http://www.hakanuygun.com/blog/?p=231">
+Sıralama Algoritmaları										</a>
+									</h4>
+							</div>
+							<br />
+							<div class="post-contents">
+<p>Sıralama algoritmaları, programcılığa girişi oluşturan en temel şeylerdendir. Özellikle aynı problemin çözümü için farklı yöntemlerin nasıl farklı sonuçlar verdiğini görmek için şahane örneklerdir. Daha da iyisi bu farklı algoritmaların görsel olarak karşılaştırmasıdır. İşte tam da bu işi başarıyla yapan bu <a href="http://www.sorting-algorithms.com/" target="_blank">siteye</a> bakmanızı şiddetle tavsiye ederim. Sadece farklı algoritmaları görsel karşılaştırmasını değil, her algoritmanın farklı veri kümelerinde davranış biçimini ve detaylı karşılaştırmalarını da bulabilirsiniz&#8230;</p>								<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+				                    <a href="http://del.icio.us/post?url=http://www.hakanuygun.com/blog/?p=231&title=Sıralama Algoritmaları" target="_blank">
+										<img src="images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/http://www.hakanuygun.com/blog/?p=231" target="_blank">
+										<img src="images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href="http://www.hakanuygun.com/blog/?p=231">
+13 Nis 2009 @ 08:20 ÖÖ									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		<div id="sidebar">
+			<div class="section">
+				<h3>Gezegen Hakkında</h3>
+					<p>
+						Linux Gezegeni, Türkiye'de Linux ve Özgür Yazılım konusunda çalışmalar yapan arkadaşlarımızın internet üzerindeki günlüklerini bir tek sayfadan okumamızı ve kendi dünyalarına ulaşmamızı sağlayan basit bir web sitesidir.
+					</p>
+					<p>
+						Gezegen kurallarına ulaşmak için <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">tıklayın</a>..
+					</p>
+					<p>
+						Gezegeni <a href="http://www.planetplanet.org/">Planet</a> ile oluşturuyoruz, tasarım <a href="http://www.actsofvolition.com/">Steven Garrity</a>'nin eseri.
+					</p>
+			</div>
+			
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=2");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=a26e76e1&amp;cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a26e76e1' 
+border='0' alt='' /></a></noscript>
+
+
+			</div>
+
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + 
+document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + 
+escape(document.referrer));
+   if (document.context) document.write ("&context=" + 
+escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=ae096af2&cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=6&cb=INSERT_RANDOM_NUMBER_HERE&n=ae096af2' 
+border='0' alt='' /></a></noscript>
+
+
+			</div>			
+
+			
+			<div id="feeds">
+        			<h3><a href="feeds.html">Gezegen Sakinleri</a></h3>
+        			<div id="feedlist"></div>
+			</div>
+
+			<div class="section">
+				<h3>Takip edin</h3>
+				<ul>
+					<li><a href="rss20.xml">RSS 2.0</a></li>
+					<li><a href="rss10.xml">RSS 1.0</a></li>
+					<li><a href="atom.xml">ATOM</a></li>
+					<li><a href="foafroll.xml">FOAF</a></li>
+					<li><a href="opml.xml">OPML</a></li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Diğer Gezegenler</h3>
+				<ul>
+					<li><a href="http://gezegen.pardus.org.tr/">Pardus</a></li>
+					<li><a href="http://www.kernelplanet.org/">Kernel</a></li>
+					<li><a href="http://www.planetkde.org/">KDE</a></li>
+					<li><a href="http://planet.gnome.org">Gnome</a></li>
+					<li><a href="http://www.planetsuse.org/">SuSE</a></li>
+					<li><a href="http://planet.python.org">Python</a></li>
+					<li><a href="http://planet.gentoo.org">Gentoo</a></li>
+					<li><a href="http://www.go-mono.com/monologue/">MONOlogue</a></li>
+					<li><a href="http://planetjava.org">Java</a></li>
+					<li><a href="http://planet.lisp.org">LISP</a></li>
+					<li><a href="http://planet.perl.org">Perl</a></li>
+					<li><a href="http://fedoraproject.org/people/">Fedora</a></li>
+					<li><a href="http://planet.ubuntu.com/">Ubuntu</a></li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Güncelleme</h3>
+				<p>Gezegen her 10 dakikada bir yenilenir.</p>
+				<p>
+					Son güncelleme: 
+					<br />
+11 Nis 2010 @ 11:16 ÖS				</p>
+			</div>
+
+			<div class="section">
+				<h3>İletişim</h3>
+				<p>
+					Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı ve Gezegen'e iniş başvurularınızı e-posta ile iletebilirsiniz.
+				</p>
+				<p>
+					Gezegene iniş başvurularınızda <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">Gezegen Kuralları</a>'na uyan RSS/Atom beslemenizi ve gezegen içerisinde kullanmak istediğiniz (en fazla 80x80 çözünürlüklü) resminizi (bir başka deyişle hackergotchi); varsa jabber adresinizle birlikte e-posta yoluyla göndermenizi rica ediyoruz.
+				</p>
+			</div>
+		</div>
+
+		<div id="footer">
+
+		<div id="copyright">
+			Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz.
+			<br />
+			LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.
+			<br />
+			Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.
+			<br />
+		</div>
+
+		</div>		
+
+		<!-- Start of Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7686552-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+               <!-- End of Google Analytics Code -->
+
+
+
+	</body>
+</html>

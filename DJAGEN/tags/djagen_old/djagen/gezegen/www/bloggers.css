@@ -1,0 +1,55 @@
+#bloggers {
+	/* position: absolute; */
+	top: 115px;
+	right: 15px;
+	width: 230px;
+}
+
+#bloggers h2 {
+	margin-left: 0;
+	font-size: 12px;
+}
+#bloggers ul {
+	padding:0;
+	margin: 0 0 1.5em 0;
+	list-style-type:none;
+}
+
+#bloggers ul li {
+	padding: 1px;
+}
+
+#bloggers ul li div img {
+
+}
+
+#bloggers ul li div {
+	display: none;
+}
+
+#bloggers ul li:hover > a {
+	font-weight: bold;
+}
+#bloggers ul li div img.head {
+	float: right;
+	padding: 0px;
+}
+
+#bloggers ul li:hover > div {
+	display: inline;
+}
+
+#bloggers ul li:hover {
+	padding: 0 0 10px 0;
+	background-color: #cfcfcf;
+}
+
+#bloggers .ircnick {
+	display: block;
+	color: #000000;
+	font-style: italic;
+	padding: 2px;
+}
+#bloggers a:visited {
+    color: #5a7ac7 !important;
+} 

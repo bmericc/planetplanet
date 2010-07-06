@@ -1,0 +1,90 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    {% block head %}
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% trans "Linux Gezegeni" %}</title>
+        <link rel="stylesheet" type="text/css" href="/djagenmedia/layout.css" />
+        <!-- <link rel="stylesheet" href="/djagenmedia/form.css" type="text/css" />-->
+        <link rel="icon" type="image/png" href="djagenmedia/images/planet.png" />
+        <link rel="alternate" type="application/rss+xml" title="{% trans 'Linux Gezegeni' %}" href="/djagenmedia/rss20.xml" />
+        <script src="/djagenmedia/BrowserCompatible.js" type="text/javascript" ></script>
+        <script type="text/javascript">
+            BrowserCompatible.check();
+            BrowserCompatible.allowCancel = true;
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+        <script src="/djagenmedia/script.js" type="text/javascript"></script>
+    </head>
+
+    {% endblock %}
+    <body onload="BrowserCompatible.check()">
+    <div class="wrapper">
+        <div class="icons">
+            <a href="#"><img src="/djagenmedia/img/Newsfeed-RSS-icon.png" alt="RSS" width="16" height="16" /></a>
+            <a href="#"><img src="/djagenmedia/img/Newsfeed-Atom-icon.png" alt="Atom" width="16" height="16" /></a>
+        </div>
+        <div class="hdr">
+            <div class="logo"></div>
+        </div>
+
+        <div class="top">
+        {% block menu %}
+        <ul class="toplist1">
+            <li class="home">
+            {% blocktrans %}<a href="http://gezegen.linux.org.tr">Gezegen</a>{% endblocktrans %}
+            {% blocktrans %}<a href="http://haber.linux.org.tr">Linux Haber</a>{% endblocktrans %}
+            {% blocktrans %}<a href="{{ BASE_URL }}/subscribe">Üye Başvurusu</a>{% endblocktrans %}
+            </li>
+            {% blocktrans %}<li><a href="{{ BASE_URL }}/kisisel">Kişisel Günlükler</a></li>{% endblocktrans %}
+            {% blocktrans %}<li><a href="{{ BASE_URL }}/lkd">LKD Günlükleri</a></li>{% endblocktrans %}
+            {% blocktrans %}<li><a href="{{ BASE_URL }}/topluluk">Topluluk Günlükleri</a></li>{% endblocktrans %}
+            {% blocktrans %}<li><a href="{{ BASE_URL }}/english">İngilizce Günlükler</a></li>{% endblocktrans %}
+            <li><a href="#" id="arsiv">Arşiv</a>
+            <ul class="navlist">
+                {% for dt in last_date_li %}
+                <li><a href="{{ BASE_URL }}/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
+                {% endfor %}
+                <li><a href="#">{% trans "Tümü" %}</a></li>
+            </ul>
+        </li>
+        </ul>
+        </ul>
+        {% endblock %}
+        </div>
+
+        <div class="contenttop"><p>Gezegen her 10 dakikada bir yenilenir. Son güncelleme: {{ run_time.get_run_time }}</p></div>
+
+        <div class="content">
+
+            {% block body %}
+            {% endblock %}
+
+
+        </div>
+
+        {% block footer%}
+        <div id="footer">
+            {% blocktrans %}<p>Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz</p>{% endblocktrans %}
+            {% blocktrans %}<p>LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.</p>{% endblocktrans %}
+            {% blocktrans %}<p>Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.</p>{% endblocktrans %}
+        </div>
+        {% endblock %}
+
+        <!-- Start of Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7686552-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+               <!-- End of Google Analytics Code -->
+    </div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+
+{% for entry in entries_list %}
+
+{% ifchanged %}<h2 class="date">{{ entry.date|date:"d F Y" }}</h2>{% endifchanged %}
+<li>{{ entry.title }}</li>
+{{ entry.content_html }}
+{% endfor %}

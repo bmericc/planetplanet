@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/transitional.dtd">
+<html>
+	<head>
+		<title>Linux Gezegeni</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="/djagenmedia/generic.css" type="text/css" />
+		<link rel="stylesheet" href="/djagenmedia/layout.css" type="text/css" />
+		<link rel="stylesheet" href="/djagenmedia/planet.css" type="text/css" />
+		<link rel="stylesheet" href="/djagenmedia/bloggers.css" type="text/css" />
+		<link rel="stylesheet" href="/djagenmedia/nlayout.css" type="text/css" />
+		<link rel="icon" type="image/png" href="djagenmedia/images/planet.png" />
+		<link rel="alternate" type="application/rss+xml" title="Linux Gezegeni" href="/djagenmedia/rss20.xml" />
+
+	</head>
+	<body>
+
+		
+<div id="gezegen-sites">
+<ul>
+	<li class="home"><a href="http://gezegen.linux.org.tr/" title="Gezegen">Gezegen</a><a href="http://haber.linux.org.tr" title="Linux Haber">Linux Haber</a><a href="/archive/" title="Gezegen Arşivi">Gezegen Arşivi</a></li>
+	<li><a href="http://gezegen.linux.org.tr/kisisel/" title="Kişisel Günlükler">Kişisel Günlükler</a></li>
+	<li><a href="http://gezegen.linux.org.tr/lkd/" title="LKD Günlükleri">LKD Günlükleri</a></li>
+	<li><a href="http://gezegen.linux.org.tr/topluluk/" title="Topluluk Günlükleri">Topluluk Günlükleri</a></li>
+	<li><a href="http://planet.linux.org.tr/" title="İngilizce Günlükler">İngilizce Günlükler</a></li>
+</div> <!-- /gezegen-sites -->
+
+		<div id="hdr">
+			<div id="banner">
+				<img src="http://gezegen.linux.org.tr/images/spacer.png" />
+			</div>
+			<div id="logo">
+				<a href="http://gezegen.linux.org.tr/">
+					<img src="http://gezegen.linux.org.tr/images/spacer.png" />
+				</a>
+			</div>
+		</div>
+
+
+
+        <div id="body">
+        {% if error %}
+        <img src="/djagenmedia/img/blinkingstop.gif" />
+        <td align="center" style="color:#ffffff" bgcolor="#ff0000">Bir hata oluşu!</td>
+        {% endif %}
+        <H1>{{ archive_year }} yılı {% if archive_month %} {{ archive_month }}. ay, {% endif %}gezegen arşivi:</H1>
+        {% ifnotequal p_entries_list.paginator.num_pages 1 %}
+        
+{% comment %}      
+<div class="pagination">
+    <span class="step-links">
+		<div class="pagelist" style="text-align:center">
+		{% if p_entries_list.has_previous %}
+            <a href="?page={{ p_entries_list.previous_page_number }}">Geri</a>
+        {% endif %}
+        | 
+        
+        {% for pNum in p_entries_list.paginator.page_range %}
+          {% ifequal pNum p_entries_list.number %}
+          {{ pNum }}
+          {% else %}
+          <a href="?page={{ pNum }}">{{ pNum }}</a>
+          {% endifequal %}
+        {% endfor %}
+        
+        |
+        {% if p_entries_list.has_next %}
+            <a href="?page={{ p_entries_list.next_page_number }}">İleri</a>
+        {% endif %}
+        </div>
+        <br><span class="current">
+            Sayfa <b>{{ p_entries_list.number }}</b> / <b>{{ p_entries_list.paginator.num_pages }}</b>
+        </span>
+        
+        
+    </span>
+</div>
+{% endcomment %}
+{% endifnotequal %}
+
+<hr> 
+        
+            		{% if not entries_list %}
+			        <img src="/djagenmedia/img/blinkingstop.gif" />
+			        <b><td align="center" style="color:#ffffff" bgcolor="#ff0000">Gösterecek veri yok!</td></b>
+			        <br><br><br>
+			        {% endif %}
+			        
+            {% for entry in p_entries_list.object_list|slice:items_per_page %}
+            {% autoescape off %}
+
+            {% ifequal entry.entry_id.is_approved 1 %}
+
+            {% ifchanged %}<h2 class="date">{{ entry.date|date:"d F Y" }}</h2>{% endifchanged %}
+            		
+
+				<div class="entry {{ entry.entry_id.author_name|lower }}">
+					<div class="person-info">
+						<a href=" {{ entry.entry_id.channel_link }}" title=" {{ entry.entry_id.channel_title }} "> 
+								<img class="face" src="/djagenmedia/images/heads/{{ entry.entry_id.author_face|default:"nobody.png" }}" title="{{ entry.entry_id.author_name }}"/>
+                                <br />
+                                {{ entry.entry_id.author_name }}
+                                <br />
+								<!-- {{ entry.entry_id.author_name|lower }} -->
+						</a>
+					</div>
+					
+					<div class="post">
+						<div class="post2">
+							<div class="post-header">
+									<h4 class="post-title">
+										<a href=" {{ entry.link }} "> {{ entry.title }}	</a>
+									</h4>
+							</div>
+							<br />
+                            <div class="post-contents"> 
+
+                                
+                                {{ entry.content_html|truncatewords_html:truncate_words }}
+                                
+							<br />
+								<br />
+								<div id="post-links" style="text-align: center;">
+										<a href="{{ entry.link }}/#comments">
+											<img src="/djagenmedia/images/yorum.png" border="0" title="Yorumlar" />
+										</a>
+				                    <a href="http://del.icio.us/post?url={{ entry.link }}&title={{ entry.title }}" target="_blank">
+										<img src="/djagenmedia/images/delicious.png" border="0" title="del.icio.us'a gönder" />
+									</a>
+									<a href="http://technorati.com/search/{{ entry.link }}" target="_blank">
+										<img src="/djagenmedia/images/technorati.png" border="0" title="technorati'de ara" />
+									</a>
+								</div>
+							</div>
+							<div class="post-footer">
+								<p>
+									<a href=" {{ entry.link }} ">{{ entry.date|date:"d M Y @ h:m" }}</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+                {% endifequal %}
+                
+            {% endautoescape %}
+
+		{% endfor %}
+		
+		<div id="sidebar">
+			<div class="section">
+				<h3>Gezegen Hakkında</h3>
+					<p>
+						Linux Gezegeni, Türkiye'de Linux ve Özgür Yazılım konusunda çalışmalar yapan arkadaşlarımızın internet üzerindeki günlüklerini bir tek sayfadan okumamızı ve kendi dünyalarına ulaşmamızı sağlayan basit bir web sitesidir.
+					</p>
+					<p>
+						Gezegen kurallarına ulaşmak için <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">tıklayın</a>..
+					</p>
+					<p>
+						Gezegeni <a href="http://www.planetplanet.org/">Planet</a> ile oluşturuyoruz, tasarım <a href="http://www.actsofvolition.com/">Steven Garrity</a>'nin eseri.
+					</p>
+			</div>
+			
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.8.5 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u =
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=7");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" +
+document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset :
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" +
+escape(document.referrer));
+   if (document.context) document.write ("&context=" +
+escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=afbafcd3&amp;cb=INSERT_RANDOM_NUMBER_HERE'
+target='_blank'><img
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=7&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=afbafcd3'
+border='0' alt='' /></a></noscript>
+
+			</div>
+
+			<div class="section">
+
+<!--/* OpenX Javascript Tag v2.6.3 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://reklam.lkd.org.tr/www/delivery/...'
+  * to
+  *   'https://reklam.lkd.org.tr/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = 
+(location.protocol=='https:'?'https://reklam.lkd.org.tr/www/delivery/ajs.php':'http://reklam.lkd.org.tr/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + 
+document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : 
+(document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + 
+escape(document.referrer));
+   if (document.context) document.write ("&context=" + 
+escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a 
+href='http://reklam.lkd.org.tr/www/delivery/ck.php?n=ae096af2&cb=INSERT_RANDOM_NUMBER_HERE' 
+target='_blank'><img 
+src='http://reklam.lkd.org.tr/www/delivery/avw.php?zoneid=6&cb=INSERT_RANDOM_NUMBER_HERE&n=ae096af2' 
+border='0' alt='' /></a></noscript>
+
+
+			</div>			
+			<div class="section">
+				<h3>Gezegen Arşivi</h3>
+								
+				{% if not archive_month %}
+				Gezegen arşivinde <b>{{ archive_year }}</b> yılına ait toplam, <b>{{ entries_list|length }}</b> adet girdi mevcuttur.<br><br>
+				<b>Aylar:</b><br>
+				{% for entry in entries_list %}
+{% ifchanged %}
+|<a href=/archive/{{ archive_year }}/{{ entry.date|date:"m" }}>{{ entry.date|date:"F" }}</a>|
+<br>
+{% endifchanged %}
+
+{% endfor %}
+{% else %}
+Gezegen arşivinde <b>{{ archive_year }}</b> yılı, <b>{{ archive_month }}</b>. ayına ait toplam, <b>{{ entries_list|length }}</b> adet girdi mevcuttur.<br><br>
+{% endif %}
+				
+			</div>
+			{% comment %}
+			
+			<div id="feeds">
+        			<h3><a href="feeds.html">Gezegen Sakinleri</a></h3>
+        			<div id="feedlist"></div>
+			</div>
+            {% endcomment %}
+			
+			<div class="section">
+				<h3>Takip edin</h3>
+				<ul>
+					<li><a href="rss20.xml">RSS 2.0</a></li>
+					<li><a href="rss10.xml">RSS 1.0</a></li>
+					<li><a href="atom.xml">ATOM</a></li>
+					<li><a href="foafroll.xml">FOAF</a></li>
+					<li><a href="opml.xml">OPML</a></li>
+				</ul>
+			</div>
+			
+
+
+			<div class="section">
+				<h3>Diğer Gezegenler</h3>
+				<ul>
+					<li><a href="http://gezegen.pardus.org.tr/">Pardus</a></li>
+					<li><a href="http://www.kernelplanet.org/">Kernel</a></li>
+					<li><a href="http://www.planetkde.org/">KDE</a></li>
+					<li><a href="http://planet.gnome.org">Gnome</a></li>
+					<li><a href="http://www.planetsuse.org/">SuSE</a></li>
+					<li><a href="http://planet.python.org">Python</a></li>
+					<li><a href="http://planet.gentoo.org">Gentoo</a></li>
+					<li><a href="http://www.go-mono.com/monologue/">MONOlogue</a></li>
+					<li><a href="http://planetjava.org">Java</a></li>
+					<li><a href="http://planet.lisp.org">LISP</a></li>
+					<li><a href="http://planet.perl.org">Perl</a></li>
+					<li><a href="http://fedoraproject.org/people/">Fedora</a></li>
+					<li><a href="http://planet.ubuntu.com/">Ubuntu</a></li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>Güncelleme</h3>
+				<p>Gezegen her 10 dakikada bir yenilenir.</p>
+				<p>
+					Son güncelleme: 
+					<br />
+                    {{ run_time.get_run_time }}				</p>
+			</div>
+
+			<div class="section">
+				<h3>İletişim</h3>
+				<p>
+					Linux Gezegeni <a href="mailto:gezegen [at] linux.org.tr">Gezegen Ekibi</a> tarafından yönetilmektedir, Gezegen hakkındaki sorularınızı ve Gezegen'e iniş başvurularınızı e-posta ile iletebilirsiniz.
+				</p>
+				<p>
+					Gezegene iniş başvurularınızda <a href="http://gunluk.lkd.org.tr/gezegen/2008/10/27/gezegene-inis-ve-gezegen-kurallari/" title="Linux Gezegeni kurallarını okumak için tıklayın.." target="_blank">Gezegen Kuralları</a>'na uyan RSS/Atom beslemenizi ve gezegen içerisinde kullanmak istediğiniz (en fazla 80x80 çözünürlüklü) resminizi (bir başka deyişle hackergotchi); varsa jabber adresinizle birlikte e-posta yoluyla göndermenizi rica ediyoruz.
+				</p>
+			</div>
+		</div>
+		{% ifnotequal p_entries_list.paginator.num_pages 1 %}
+        <div class="pagination">
+    <span class="step-links">
+		
+		<span class="current">
+            Sayfa <b>{{ p_entries_list.number }}</b> / <b>{{ p_entries_list.paginator.num_pages }}</b>
+        </span>
+        <div class="pagelist" style="text-align:center">
+		{% if p_entries_list.has_previous %}
+            <a href="?page={{ p_entries_list.previous_page_number }}">Geri</a>
+        {% endif %}
+        | 
+        
+        {% for pNum in p_entries_list.paginator.page_range %}
+          {% ifequal pNum p_entries_list.number %}
+          {{ pNum }}
+          {% else %}
+          <a href="?page={{ pNum }}">{{ pNum }}</a>
+          {% endifequal %}
+        {% endfor %}
+        
+        |
+        {% if p_entries_list.has_next %}
+            <a href="?page={{ p_entries_list.next_page_number }}">İleri</a>
+        {% endif %}
+        </div>
+        
+        
+    </span>
+</div>
+<br>
+{% endifnotequal %}
+		<div id="footer">
+
+		<div id="copyright">
+			Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz.
+			<br />
+			LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.
+			<br />
+			Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.
+			<br />
+		</div>
+
+		</div>		
+
+		<!-- Start of Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7686552-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+               <!-- End of Google Analytics Code -->
+
+
+
+	</body>
+</html>

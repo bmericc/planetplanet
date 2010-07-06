@@ -1,0 +1,66 @@
+form 
+{
+    margin:0 auto;
+    width:305px;
+    padding:14px;
+}
+
+p, h1, form {border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+
+.fieldWrapper
+{
+    border:solid 2px #b7ddf2;
+    background:#ebf4fb;
+}
+
+h1 
+{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.fieldWrapper label
+{
+    display:block;
+    font-weight:bold;
+    text-align:left;
+    width:140px;
+    float:left;
+    margin:2px 2px 1px 10px;
+}
+
+.fieldWrapper input
+{
+    float:left;
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:200px;
+    margin:2px 0px 20px 10px;
+}
+
+.fieldWrapper .small
+{
+    color:#666666;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+    text-align:left;
+    width:140px;
+    margin: 2px 2px 1px 10px;
+    padding: 2px;
+}
+
+.fieldWrapper .error
+{
+    color:red;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+    text-align:left;
+    width:140px;
+    margin: 2px 2px 1px 0px;
+    padding: 2px;
+}
