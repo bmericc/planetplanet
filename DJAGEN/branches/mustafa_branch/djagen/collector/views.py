@@ -146,7 +146,7 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
                 try:
                     entries_list |= item.entries_set.all()
                 except:
-                    entries_list = item.entries_set.all() 
+                    entries_list = item.entries_set.all()
 
         if( ('q_text' in request.GET)and(request.GET['q_text'])):
             try:
@@ -159,9 +159,24 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
         except:
                 return HttpResponseRedirect(BASE_URL+ "/query")
         #here is gonna be edited [X]
-        return render_to_response('main/main.html' ,{
+        # Pagination
+        elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
+        paginator = Paginator(entries_list,elements_in_a_page)
+        # Validation for page number if it is not int return first page.
+        try:
+            page = int(request.GET.get('page', '1'))
+        except ValueError:
+            page = 1
+
+        # If page request is out of range, return last page .
+        try:
+            p_entries_list = paginator.page(page)
+        except (EmptyPage, InvalidPage):
+            p_entries_list = paginator.page(paginator.num_pages)
+
+        return render_to_response('main/archive.html' ,{
                             'entries_list':entries_list,
-                            #'p_entries_list':p_entries_list,
+                            'p_entries_list':p_entries_list,
                             'truncate_words':truncate_words,
                             'items_per_page':repr(items_per_page),
                             'run_time':run_time,

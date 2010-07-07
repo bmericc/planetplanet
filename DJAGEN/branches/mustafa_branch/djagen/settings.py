@@ -1,6 +1,6 @@
 # Django settings for djagen project.
 import os
-BASEPATH = '/home/cad/Workspace/djagen_ws/gezegen/branches/mustafa_branch/djagen'
+BASEPATH = '/home/cad/Workspace/djagen_ws/gezegen/DJAGEN/branches/mustafa_branch/djagen'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
