@@ -40,7 +40,6 @@ FEED_TIMEOUT = 20 # seconds
 TEMPLATE_FILES = "examples/basic/planet.html.tmpl"
 
 
-
 def config_get(config, section, option, default=None, raw=0, vars=None):
     """Get a value from the configuration, with a default."""
     if config.has_option(section, option):
