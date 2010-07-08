@@ -47,8 +47,11 @@ def main(request):
                                             #'pag_entries_list':pag_entries_list,
                                             'BASE_URL': BASE_URL,
                                             'last_date_li': last_date_li,
+                                            'info_area':'main',
                                             })
 def member_subscribe(request):
+    info_area = 'subscribe'
+
     if request.method == 'POST':
         form = ContactForm(request.POST, request.FILES)
         #return HttpResponse(str(request.FILES))
@@ -75,10 +78,10 @@ def member_subscribe(request):
                 author.history_set.create(action_type=5, action_date=datetime.datetime.now(), action_explanation=request.POST['message'])
             #send mail part
             #fill it here
-            return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL})
+            return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL,'info_area':info_area})
     else:
         form = ContactForm()
-    return render_response(request, 'main/subscribe.html', {'form': form, 'BASE_URL': BASE_URL})
+    return render_response(request, 'main/subscribe.html', {'form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
 
 def handle_uploaded_file(f):
 
@@ -104,10 +107,11 @@ def handle_uploaded_file(f):
         return (False, '')
 
 def list_members(request):
+    info_area = 'members'
 
     authors = Authors.objects.all()
 
-    return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL})
+    return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL,'info_area' : info_area })
 
 def query(request):
 
@@ -131,28 +135,38 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
 
     if ( (request.GET) and ( not( does_getPage_exists) )):
         # Switch to 'return the result of query' mode.
+        info_area = 'query'
 
         #Querying
         #TODO: We should improve the querying method here.
+        q_author_name,q_author_surname,q_text = '','',''
+        authors = Authors.objects.all()
         if ( ('q_author_name' in request.GET) and (request.GET['q_author_name'] )):
-            for item in Authors.objects.filter(author_name__icontains = request.GET['q_author_name']):
-                try:
-                    entries_list |= item.entries_set.all()
-                except:
-                    entries_list = item.entries_set.all()
+            q_author_name = request.GET['q_author_name']
+            authors = authors.filter(author_name__icontains = q_author_name)
+
 
         if (('q_author_surname' in request.GET) and (request.GET['q_author_surname'])):
-            for item in Authors.objects.filter(author_name__icontains = request.GET['q_author_surname']):
-                try:
-                    entries_list |= item.entries_set.all()
-                except:
-                    entries_list = item.entries_set.all()
+            q_author_surname = request.GET['q_author_surname']
+            authors = authors.filter(author_surname__icontains = q_author_surname)
+
+
+        for item in authors:
+            try:
+                entries_list |= item.entries_set.all()
+            except:
+                entries_list = item.entries_set.all()
 
         if( ('q_text' in request.GET)and(request.GET['q_text'])):
+            q_text = request.GET['q_text']
+
             try:
                 entries_list |= Entries.objects.filter(content_text__icontains = request.GET['q_text'])
             except:
                 entries_list = Entries.objects.filter(content_text__icontains = request.GET['q_text'])
+
+
+
         try:
             if(not(entries_list)):
                 return HttpResponseRedirect(BASE_URL+"/query")
@@ -180,14 +194,16 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
                             'truncate_words':truncate_words,
                             'items_per_page':repr(items_per_page),
                             'run_time':run_time,
-                            #'archive_year':archive_year,
-                            #'archive_month':archive_month,
-                            #'error':error,
+                            'info_area':info_area,
+                            'q_author_name':q_author_name,
+                            'q_author_surname':q_author_surname,
+                            'q_text':q_text,
                             'BASE_URL':BASE_URL,
                             })
     ### If not ###
     else:
-    #Switch to return the result of arguments provided mode.
+    #Switch to return the result of arguments provided mode(archive viewing mode).
+            info_area = 'archive'
 
             selected_entries = Entries.objects.select_related()
 
@@ -242,6 +258,8 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
                                         'run_time':run_time,
                                         'archive_year':archive_year,
                                         'archive_month':archive_month,
+                                        'archive_day':archive_day,
                                         #'error':error,
                                         'BASE_URL':BASE_URL,
+                                        'info_area':info_area,
                                         })
