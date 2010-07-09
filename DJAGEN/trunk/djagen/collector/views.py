@@ -47,8 +47,11 @@ def main(request):
                                             #'pag_entries_list':pag_entries_list,
                                             'BASE_URL': BASE_URL,
                                             'last_date_li': last_date_li,
+                                            'info_area':'main',
                                             })
 def member_subscribe(request):
+    info_area = 'subscribe'
+
     if request.method == 'POST':
         form = ContactForm(request.POST, request.FILES)
         #return HttpResponse(str(request.FILES))
@@ -77,11 +80,10 @@ def member_subscribe(request):
             
             #send mail part
             #fill it here
-            return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL})
+            return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL,'info_area':info_area})
     else:
         form = ContactForm()
-    return render_response(request, 'main/subscribe.html', {'form': form, 'BASE_URL': BASE_URL})
-
+    return render_response(request, 'main/subscribe.html', {'form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
 
 def handle_uploaded_file(f):
 
@@ -107,93 +109,130 @@ def handle_uploaded_file(f):
         return (False, '')
 
 def list_members(request):
+    info_area = 'members'
 
     authors = Authors.objects.all()
 
-    return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL})
+    return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL,'info_area' : info_area })
 
 def query(request):
-    
+
     return render_response(request,'main/query.html',{'BASE_URL' : BASE_URL})
 
-def archive(request,archive_year='',archive_month=''):
-    
+def archive(request,archive_year='',archive_month='',archive_day=''):
+
     # This setting gets the content truncated which contains more than <truncate_words> words.
     truncate_words = 250
     items_per_page = 25
 
     #get the last run time
     run_time = RunTime.objects.all()[0]
-    
-    
+
+
     ### Determine if the request includes any query or not. ###
-    if (request.GET):
+    try:
+        does_getPage_exists =  request.GET['page']
+    except:
+        does_getPage_exists = None
+
+    if ( (request.GET) and ( not( does_getPage_exists) )):
         # Switch to 'return the result of query' mode.
-        
+        info_area = 'query'
+
         #Querying
         #TODO: We should improve the querying method here.
+        q_author_name,q_author_surname,q_text = '','',''
+        authors = Authors.objects.all()
         if ( ('q_author_name' in request.GET) and (request.GET['q_author_name'] )):
-            for item in Authors.objects.filter(author_name__icontains = request.GET['q_author_name']):
-                try:
-                    entries_list |= item.entries_set.all()
-                except:
-                    entries_list = item.entries_set.all()  
-        
+            q_author_name = request.GET['q_author_name']
+            authors = authors.filter(author_name__icontains = q_author_name)
+
+
         if (('q_author_surname' in request.GET) and (request.GET['q_author_surname'])):
-            for item in Authors.objects.filter(author_name__icontains = request.GET['q_author_surname']):
-                try:
-                    entries_list |= item.entries_set.all()
-                except:
-                    entries_list = item.entries_set.all() 
+            q_author_surname = request.GET['q_author_surname']
+            authors = authors.filter(author_surname__icontains = q_author_surname)
+
+
+        for item in authors:
+            try:
+                entries_list |= item.entries_set.all()
+            except:
+                entries_list = item.entries_set.all()
 
         if( ('q_text' in request.GET)and(request.GET['q_text'])):
+            q_text = request.GET['q_text']
+
             try:
                 entries_list |= Entries.objects.filter(content_text__icontains = request.GET['q_text'])
             except:
                 entries_list = Entries.objects.filter(content_text__icontains = request.GET['q_text'])
+
+
+
         try:
             if(not(entries_list)):
                 return HttpResponseRedirect(BASE_URL+"/query")
         except:
                 return HttpResponseRedirect(BASE_URL+ "/query")
-        #here is gonna be edited [X]        
-        return render_to_response('main/main.html' ,{
+        #here is gonna be edited [X]
+        # Pagination
+        elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
+        paginator = Paginator(entries_list,elements_in_a_page)
+        # Validation for page number if it is not int return first page.
+        try:
+            page = int(request.GET.get('page', '1'))
+        except ValueError:
+            page = 1
+
+        # If page request is out of range, return last page .
+        try:
+            p_entries_list = paginator.page(page)
+        except (EmptyPage, InvalidPage):
+            p_entries_list = paginator.page(paginator.num_pages)
+
+        return render_to_response('main/archive.html' ,{
                             'entries_list':entries_list,
-                            #'p_entries_list':p_entries_list,
+                            'p_entries_list':p_entries_list,
                             'truncate_words':truncate_words,
                             'items_per_page':repr(items_per_page),
                             'run_time':run_time,
-                            #'archive_year':archive_year,
-                            #'archive_month':archive_month,
-                            #'error':error,
+                            'info_area':info_area,
+                            'q_author_name':q_author_name,
+                            'q_author_surname':q_author_surname,
+                            'q_text':q_text,
                             'BASE_URL':BASE_URL,
                             })
-    ### If not ###    
-    else:                 
-    #Switch to return the result of arguments provided mode.
+    ### If not ###
+    else:
+    #Switch to return the result of arguments provided mode(archive viewing mode).
+            info_area = 'archive'
 
             selected_entries = Entries.objects.select_related()
-        
+
             # For entry categories
             entries_list1 = selected_entries.filter(entry_id__label_personal = 1)
             entries_list2 = selected_entries.filter(entry_id__label_lkd = 1)
             entries_list3 = selected_entries.filter(entry_id__label_community = 1)
             entries_list = entries_list1 | entries_list2 | entries_list3
-            
-            # Validating arguments provided by urls.py.
+
+        ## Validating arguments provided by urls.py.
+            # Check if archive_year is not empty and numeric.
             if((archive_year != '' ) and (str(archive_year).isalnum()) and (not(str(archive_year).isalpha()))):
                 entries_list = entries_list.filter(date__year=archive_year)
             else:
                 # Fall back to main view.
                 return HttpResponseRedirect(BASE_URL+"/main")
-            #else:
-            #    error = 1
-        
-            if(archive_month != ''and (str(archive_year).isalnum()) and not(str(archive_year).isalpha())):
-                entries_list = entries_list.filter(date__month=archive_month)
-            ##    error = 1
 
-        
+            # Check if archive_month is not empty and numeric.
+            if(archive_month != ''and (str(archive_month).isalnum()) and not(str(archive_month).isalpha())):
+                entries_list = entries_list.filter(date__month=archive_month)
+
+            # Check if archive_day is not empty and numeric.
+            if(archive_day != ''and (str(archive_day).isalnum()) and not(str(archive_day).isalpha())):
+                entries_list = entries_list.filter(date__day=archive_day)
+        ##
+
+
             # Pagination
             elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
             paginator = Paginator(entries_list,elements_in_a_page)
@@ -203,17 +242,17 @@ def archive(request,archive_year='',archive_month=''):
                 page = int(request.GET.get('page', '1'))
             except ValueError:
                 page = 1
-        
+
             # If page request is out of range, return last page .
             try:
                 p_entries_list = paginator.page(page)
             except (EmptyPage, InvalidPage):
                 p_entries_list = paginator.page(paginator.num_pages)
-        
-        
-    
-        
-            return render_to_response('main/main.html' ,{
+
+
+
+
+            return render_to_response('main/archive.html' ,{
                                         'entries_list':entries_list,
                                         'p_entries_list':p_entries_list,
                                         'truncate_words':truncate_words,
@@ -221,6 +260,8 @@ def archive(request,archive_year='',archive_month=''):
                                         'run_time':run_time,
                                         'archive_year':archive_year,
                                         'archive_month':archive_month,
+                                        'archive_day':archive_day,
                                         #'error':error,
                                         'BASE_URL':BASE_URL,
+                                        'info_area':info_area,
                                         })

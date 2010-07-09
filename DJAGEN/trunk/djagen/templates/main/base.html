@@ -46,19 +46,60 @@
             <li><a href="#" id="arsiv">Arşiv</a>
             <ul class="navlist">
                 {% for dt in last_date_li %}
-                <li><a href="{{ BASE_URL }}/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
+                <li><a href="{{ BASE_URL }}/archive/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
                 {% endfor %}
-                <li><a href="#">{% trans "Tümü" %}</a></li>
-            </ul>
+                        <li><a href="{{ BASE_URL }}/main/">{% trans "Tümü" %}</a></li>
+    </ul>
         </li>
         </ul>
         </ul>
         {% endblock %}
         </div>
 
-        <div class="contenttop"><p>Gezegen her 10 dakikada bir yenilenir. Son güncelleme: {{ run_time.get_run_time }}</p></div>
+        <div class="content		<div class="contenttop">
 
-        <div class="content">
+		{% if info_area == "main" %}
+		<p>Gezegen her 10 dakikada bir yenilenir. Son güncelleme: {{ run_time.get_run_time }}</p>
+		{% endif %}
+
+		{% if info_area == "archive" %}
+			<p>Gezegen arşivi: <b>{{ archive_year }}</b> yılı,
+			{% if archive_month %}
+			<b>{{ archive_month }}</b>. ay,
+			{% endif %}
+			{% if archive_day %}
+			<b>{{ archive_day }}</b>. gün
+			{% endif %}
+			arşivini gezmektesiniz. Bu arşivde toplam <b>{{ entries_list|length }}</b> blog girdisi mevcuttur.</p>
+		{% endif %}
+
+		{% if info_area == "query" %}
+			<p>Aradığınız kriterler:
+			{% if q_author_name or q_author_surname %}
+				 {% if q_author_name %}
+				 	<b>{{ q_author_name }}</b>
+				 {% endif %}
+
+				 {% if q_author_surname %}
+				 	<b> {{ q_author_surname }}</b>
+				 {% endif %}
+				 isimli yazarlar
+			{% endif %}
+
+			{% if q_text %}
+				İçinde <b>{{ q_text|truncatewords:8 }}</b> geçen girdiler
+			{% endif %}
+			.</p>
+		{% endif %}
+
+
+		{% if info_area == "subscribe" %}
+		{% endif %}
+
+		{% if info_area == "members" %}
+		{% endif %}
+		</div>
+t">
 
             {% block body %}
             {% endblock %}

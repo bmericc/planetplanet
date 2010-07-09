@@ -61,9 +61,9 @@ class AuthorsAdmin (admin.ModelAdmin):
             heads_path = os.path.join(images_path, 'heads')
             face_path = os.path.join(heads_path, a_face)
 
-            tmp_image_path = os.path.join(settinsg.MAIN_PATH, 'temp_ini', a_face)
+            tmp_image_path = os.path.join(settings.MAIN_PATH, 'temp_ini', a_face)
 
-            if os.path.exits(tmp_image_path):
+            if os.path.exists(tmp_image_path):
                 shutil.move(tmp_image_path, face_path)
 
 class HistoryAdmin(admin.ModelAdmin):
