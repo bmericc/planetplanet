@@ -7,6 +7,7 @@ from djagen.collector.models import *
 from djagen.collector.forms import ContactForm, QueryForm
 from djagen.collector.wrappers import render_response
 from django.conf import settings
+from django.utils.datastructures import MultiValueDictKeyError
 import magic
 import os
 import datetime, time
@@ -38,7 +39,7 @@ def main(request):
         last_entry_date -= day
         last_date_li.append(last_entry_date)
 
-    return render_to_response('main/main.html' ,{
+    return render_response(request, 'main/main.html' ,{
                                             'entries_list':entries_list,
                                             'truncate_words':truncate_words,
                                             'items_per_page':repr(items_per_page),
@@ -55,13 +56,12 @@ def member_subscribe(request):
             human = True
             try:
                 check = handle_uploaded_file(request.FILES['hackergotchi'])
-            except:
+            except MultiValueDictKeyError:
                 check = (False,False)
             #save the author information
 
-            f = request.FILES['hackergotchi']
-
             if check[0]:
+                f = request.FILES['hackergotchi']
 
                 #change the name of the file with the unique name created
                 f.name = check[1]
@@ -69,13 +69,12 @@ def member_subscribe(request):
                 author = Authors(author_name=request.POST['name'], author_surname=request.POST['surname'], author_email=request.POST['email'], channel_url=request.POST['feed'], author_face=f.name, is_approved=0, current_status=5)
             else:
                 author = Authors(author_name=request.POST['name'], author_surname=request.POST['surname'], author_email=request.POST['email'], channel_url=request.POST['feed'], is_approved=0, current_status=5)
-            try:
-                author.save()
+            
+            author.save()
 
-                #save the history with explanation
-                author.history_set.create(action_type=5, action_date=datetime.datetime.now(), action_explanation=request.POST['message'])
-            except:
-                pass
+            #save the history with explanation
+            author.history_set.create(action_type=5, action_date=datetime.datetime.now(), action_explanation=request.POST['message'])
+            
             #send mail part
             #fill it here
             return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL})
