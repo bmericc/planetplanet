@@ -48,15 +48,15 @@
                 {% for dt in last_date_li %}
                 <li><a href="{{ BASE_URL }}/archive/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
                 {% endfor %}
-                        <li><a href="{{ BASE_URL }}/main/">{% trans "Tümü" %}</a></li>
-    </ul>
+                <li><a href="{{ BASE_URL }}/main/">{% trans "Tümü" %}</a></li>
+            </ul>
         </li>
         </ul>
         </ul>
         {% endblock %}
         </div>
 
-        <div class="content		<div class="contenttop">
+		<div class="contenttop">
 
 		{% if info_area == "main" %}
 		<p>Gezegen her 10 dakikada bir yenilenir. Son güncelleme: {{ run_time.get_run_time }}</p>
@@ -99,7 +99,8 @@
 		{% if info_area == "members" %}
 		{% endif %}
 		</div>
-t">
+
+        <div class="content">
 
             {% block body %}
             {% endblock %}

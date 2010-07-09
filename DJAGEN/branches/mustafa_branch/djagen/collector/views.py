@@ -39,7 +39,7 @@ def main(request):
         last_entry_date -= day
         last_date_li.append(last_entry_date)
 
-    return render_to_response('main/main.html' ,{
+    return render_response(request, 'main/main.html' ,{
                                             'entries_list':entries_list,
                                             'truncate_words':truncate_words,
                                             'items_per_page':repr(items_per_page),
@@ -60,9 +60,9 @@ def member_subscribe(request):
             try:
                 check = handle_uploaded_file(request.FILES['hackergotchi'])
             except MultiValueDictKeyError:
-                check = (False, '')
-
+                check = (False,False)
             #save the author information
+
             if check[0]:
                 f = request.FILES['hackergotchi']
 
@@ -72,10 +72,12 @@ def member_subscribe(request):
                 author = Authors(author_name=request.POST['name'], author_surname=request.POST['surname'], author_email=request.POST['email'], channel_url=request.POST['feed'], author_face=f.name, is_approved=0, current_status=5)
             else:
                 author = Authors(author_name=request.POST['name'], author_surname=request.POST['surname'], author_email=request.POST['email'], channel_url=request.POST['feed'], is_approved=0, current_status=5)
-                author.save()
+            
+            author.save()
 
-                #save the history with explanation
-                author.history_set.create(action_type=5, action_date=datetime.datetime.now(), action_explanation=request.POST['message'])
+            #save the history with explanation
+            author.history_set.create(action_type=5, action_date=datetime.datetime.now(), action_explanation=request.POST['message'])
+            
             #send mail part
             #fill it here
             return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL,'info_area':info_area})
@@ -234,7 +236,7 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
             # Pagination
             elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
             paginator = Paginator(entries_list,elements_in_a_page)
-
+        
             # Validation for page number if it is not int return first page.
             try:
                 page = int(request.GET.get('page', '1'))
