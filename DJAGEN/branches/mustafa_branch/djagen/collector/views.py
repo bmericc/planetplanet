@@ -136,7 +136,7 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
 
     ### Determine if the request object includes any querying input or not. ###
 
-    if ( (request.GET) ):
+    if ( (request.GET) and ('q_author_name' in request.GET or 'q_author_surname' in request.GET or 'q_text' in request.GET ) ):
         # Switch to 'return the result of query' mode.
         info_area = 'query'
 
