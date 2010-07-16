@@ -72,12 +72,12 @@ def member_subscribe(request):
                 author = Authors(author_name=request.POST['name'], author_surname=request.POST['surname'], author_email=request.POST['email'], channel_url=request.POST['feed'], author_face=f.name, is_approved=0, current_status=5)
             else:
                 author = Authors(author_name=request.POST['name'], author_surname=request.POST['surname'], author_email=request.POST['email'], channel_url=request.POST['feed'], is_approved=0, current_status=5)
-            
+
             author.save()
 
             #save the history with explanation
             author.history_set.create(action_type=5, action_date=datetime.datetime.now(), action_explanation=request.POST['message'])
-            
+
             #send mail part
             #fill it here
             return render_response(request, 'main/subscribe.html/',{'submit': 'done', 'BASE_URL': BASE_URL,'info_area':info_area})
@@ -117,7 +117,12 @@ def list_members(request):
 
 def query(request):
 
-    return render_response(request,'main/query.html',{'BASE_URL' : BASE_URL})
+    q_form = QueryForm()
+
+    return render_response(request,'main/query.html',{
+                                                      'BASE_URL' : BASE_URL,
+                                                      'q_form':q_form,
+                                                      })
 
 def archive(request,archive_year='',archive_month='',archive_day=''):
 
@@ -129,31 +134,28 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
     run_time = RunTime.objects.all()[0]
 
 
-    ### Determine if the request includes any query or not. ###
-    try:
-        does_getPage_exists =  request.GET['page']
-    except:
-        does_getPage_exists = None
+    ### Determine if the request object includes any querying input or not. ###
 
-    if ( (request.GET) and ( not( does_getPage_exists) )):
+    if ( (request.GET) and ('q_author_name' in request.GET or 'q_author_surname' in request.GET or 'q_text' in request.GET ) ):
         # Switch to 'return the result of query' mode.
         info_area = 'query'
 
         #Querying
-        #TODO: We should improve the querying method here.
+        #TODO: We should improve querying method implemented here.
         q_author_name,q_author_surname,q_text = '','',''
         authors = Authors.objects.all()
         if ( ('q_author_name' in request.GET) and (request.GET['q_author_name'] )):
             q_author_name = request.GET['q_author_name']
-            authors = authors.filter(author_name__icontains = q_author_name)
+            authors = authors.filter(author_name__iexact = q_author_name)
 
 
         if (('q_author_surname' in request.GET) and (request.GET['q_author_surname'])):
             q_author_surname = request.GET['q_author_surname']
-            authors = authors.filter(author_surname__icontains = q_author_surname)
+            authors = authors.filter(author_surname__iexact = q_author_surname)
 
 
         for item in authors:
+
             try:
                 entries_list |= item.entries_set.all()
             except:
@@ -161,11 +163,11 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
 
         if( ('q_text' in request.GET)and(request.GET['q_text'])):
             q_text = request.GET['q_text']
+            if (q_author_name or q_author_surname):
 
-            try:
-                entries_list |= Entries.objects.filter(content_text__icontains = request.GET['q_text'])
-            except:
-                entries_list = Entries.objects.filter(content_text__icontains = request.GET['q_text'])
+                entries_list = entries_list.filter(content_text__icontains = q_text)
+            else:
+                entries_list = Entries.objects.filter(content_text__icontains = q_text)
 
 
 
@@ -174,8 +176,10 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
                 return HttpResponseRedirect(BASE_URL+"/query")
         except:
                 return HttpResponseRedirect(BASE_URL+ "/query")
+
         #here is gonna be edited [X]
         # Pagination
+
         elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
         paginator = Paginator(entries_list,elements_in_a_page)
         # Validation for page number if it is not int return first page.
@@ -205,7 +209,7 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
     ### If not ###
     else:
     #Switch to return the result of arguments provided mode(archive viewing mode).
-            info_area = 'archive'
+            info_area = 'archive' # \This variable is used for determining which infoarea text should be used in "contenttop" div in /main/base.html
 
             selected_entries = Entries.objects.select_related()
 
@@ -222,6 +226,7 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
             else:
                 # Fall back to main view.
                 return HttpResponseRedirect(BASE_URL+"/main")
+                #pass
 
             # Check if archive_month is not empty and numeric.
             if(archive_month != ''and (str(archive_month).isalnum()) and not(str(archive_month).isalpha())):
@@ -236,7 +241,7 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
             # Pagination
             elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
             paginator = Paginator(entries_list,elements_in_a_page)
-        
+
             # Validation for page number if it is not int return first page.
             try:
                 page = int(request.GET.get('page', '1'))

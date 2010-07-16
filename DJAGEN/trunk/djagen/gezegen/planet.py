@@ -166,16 +166,29 @@ def main():
     # run the planet
     my_planet = planet.Planet(config)
     my_planet.run(planet_name, planet_link, template_files, offline)
-    
-    
-    
+
+
+
     ## This is where archiving is done! ##
     #add the current channels to the db
     channels = my_planet.channels()
     for channel in channels:
-        
-        author_name = channel.name
-        
+       ### This part seperates surname from name do not activate it if needn't.
+        words = channel.name.split()
+        if len(words) == 1:
+            author_name = words[0]
+            author_surname == None
+        else:
+            author_surname = words[-1]
+            words.pop()
+            tmp_first_name = ''
+            for word in words: tmp_first_name += ' ' + word
+            author_name = tmp_first_name[1:]
+       ###                                                                 ###
+        #print channel.name
+       #author_name = channel.name
+       #author_surname = channel.surname
+
         try:
             author_face = channel.face
         except:
@@ -184,7 +197,7 @@ def main():
             channel_subtitle = channel.subtitle
         except:
             channel_subtitle = None
-        try: 
+        try:
             channel_title = channel.title
         except:
             channel_title = None
@@ -200,9 +213,8 @@ def main():
             channel_urlstatus = channel.url_status
         except:
             channel_urlstatus = None
-
         label = channel.label
-        
+
         label_personal = 0
         label_lkd = 0
         label_community = 0
@@ -215,7 +227,6 @@ def main():
             label_community = 1
         if label == "Eng":
             label_eng = 1
-        
         id = channel.id
 
         try:
@@ -223,6 +234,7 @@ def main():
 
             #update the values with the ones at the config file
             author.author_name = author_name
+            author.author_surname = author_surname
             #print author_name
             author.author_face = author_face
             author.channel_subtitle = channel_subtitle
@@ -237,8 +249,8 @@ def main():
 
         except Exception, ex:
             #print ex
-            author = Authors(author_id=id, author_name=author_name, author_face=author_face, channel_subtitle=channel_subtitle, channel_title=channel_title, channel_url=channel_url, channel_link=channel_link, channel_urlstatus=channel_urlstatus, label_personal=label_personal, label_lkd=label_lkd, label_community=label_community, label_eng=label_eng)
-            
+            author = Authors(author_id=id, author_name=author_name, author_surname=author_surname, author_face=author_face, channel_subtitle=channel_subtitle, channel_title=channel_title, channel_url=channel_url, channel_link=channel_link, channel_urlstatus=channel_urlstatus, label_personal=label_personal, label_lkd=label_lkd, label_community=label_community, label_eng=label_eng)
+
 
         author.save()
 
@@ -264,7 +276,7 @@ def main():
                 else: summary = item.summary
                 entry = author.entries_set.create(id_hash=id_hash, title=item.title, content_html=item.content, summary=summary, link=item.link, date=datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5]))
                 entry.content_text = entry.sanitize(content_html)
-            
+
             entry.save()
 
         #datetime issue

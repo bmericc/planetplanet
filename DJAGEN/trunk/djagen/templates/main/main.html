@@ -7,17 +7,17 @@
         {% autoescape off %}
 
         {% ifequal entry.entry_id.is_approved 1 %}
-        
+
         {% ifchanged entry.date.day entry.date.month entry.date.year %}<div class="separator"></div>{% endifchanged %}
 
         {% ifchanged %}<h2 class="date">{{ entry.date|date:"d F Y" }}</h2>{% endifchanged %}
 
         <div class="innercontent">
 
-            <a href="{{ entry.entry_id.channel_link }}" title="{{ entry.entry_id.channel_title }}"><img class="face" src="/djagenmedia/images/heads/{{ entry.entry_id.author_face|default:"nobody.png" }}" title="{{ entry.entry_id.author_name }}" width="80" height="80" /></a>
+            <a href="{{ entry.entry_id.channel_link }}" title="{{ entry.entry_id.channel_title }}"><img class="face" src="/djagenmedia/images/heads/{{ entry.entry_id.author_face|default:"nobody.png" }}" title="{{ entry.entry_id.author_name }} {{ entry.entry_id.author_surname }}" width="80" height="80" /></a>
             <h1 class="title"><a href="{{ entry.link }} ">{{ entry.title }}</a></h1>
             <p class="yazaneden">
-                Yazar:&nbsp;<a href="{{ entry.entry_id.channel_link }}" title="{{ entry.entry_id.channel_title }}">{{ entry.entry_id.author_name }}</a>
+                Yazar:&nbsp;<a href="{{ entry.entry_id.channel_link }}" title="{{ entry.entry_id.channel_title }}">{{ entry.entry_id.author_name }} {{ entry.entry_id.author_surname }}</a>
                 Tarih:&nbsp;<span class="blogdate">{{ entry.date|date:"d F Y H:i" }}</span>
             </p>
             <div class="blogcontent">
@@ -27,7 +27,7 @@
         {% endautoescape %}
 
         </div>
-        
+
 
         {% endfor %}
 

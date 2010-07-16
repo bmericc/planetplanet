@@ -16,6 +16,6 @@ class ContactForm(forms.Form):
     captcha = CaptchaField(label="Captcha Alanı", help_text='Gördüğünü karakterleri aynen yazınız', error_messages={'required': 'Hatalı yazdınız!'})
 
 class QueryForm(forms.Form):
-    name = forms.CharField(max_length=25, required = False, label = 'Adı')
-    surname = forms.CharField(max_length=25, required = False, label = 'Soyadı')
-    text = forms.CharField(required = False, label = 'Aradığınız metin', widget = forms.widgets.Textarea() )
+    q_author_name = forms.CharField(max_length=25, required = False, label = 'Adı')
+    q_author_surname = forms.CharField(max_length=25, required = False, label = 'Soyadı')
+    q_text = forms.CharField(required = False, label = 'Aradığınız metin', widget = forms.widgets.Textarea() )

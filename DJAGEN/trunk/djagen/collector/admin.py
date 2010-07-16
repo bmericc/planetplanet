@@ -20,7 +20,7 @@ class AuthorsAdmin (admin.ModelAdmin):
     search_fields = ['author_name', 'author_surname', 'author_email']
 
     def save_model(self, request, obj, form, change):
-        
+
         #get the values for saving
         author_name = obj.author_name
         author_surname = obj.author_surname

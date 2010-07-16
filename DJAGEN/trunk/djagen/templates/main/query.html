@@ -1,11 +1,30 @@
 {% extends "main/base.html" %}
 {% block body %}
-<form action='{{ BASE_URL }}/archive				' method='GET'> 
-    <b>Yazar<br> Adı:</b><input type="text" name="q_author_name"> 
+{% comment %}
+<form action='{{ BASE_URL }}/archive				' method='GET'>
+    <b>Yazar<br> Adı:</b><input type="text" name="q_author_name">
     ve/veya
     <b>Soyadı:</b><input type="text" name="q_author_surname"><br>
     veya<br>
-    <b>Aradığınız Metin:</b><input type="text" name="q_text"> 
-    <input type="submit" value="Listele"> 
-</form> 
+    <b>Aradığınız Metin:</b><input type="text" name="q_text">
+    <input type="submit" value="Listele">
+</form>
+{% endcomment %}
+
+<form action="{{ BASE_URL }}/archive" method="GET" enctype="multipart/form-data">
+            {% for field in q_form %}
+                <div class="fieldWrapper">
+                    {% if field.errors %}
+                    <span class="error">{{ field.errors }}</span>
+                    {% endif %}
+                    {{ field.label_tag }}
+                    {% if field.help_text %}
+                    <span class="small">{{ field.help_text }}</span>
+                    {% endif %}
+                    {{ field }}
+                </div>
+            {% endfor %}
+        <div class="spacer"></div>
+        <input type="submit" value="Listele" />
+        </form>
 {% endblock %}
