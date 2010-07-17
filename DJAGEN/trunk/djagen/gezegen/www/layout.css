@@ -257,6 +257,7 @@ body {
 }
 
 .blogcontent img {
+	float:right;
 	margin:0 0 20px 10px;
 }
 
@@ -265,7 +266,7 @@ body {
 	color:#000;
 }
 
-.blogcontent ul li{
+.blogcontent ul li {
 	padding:0 0 4px 25px;
 	background:url(img/bullet.png) left center no-repeat;
 }
