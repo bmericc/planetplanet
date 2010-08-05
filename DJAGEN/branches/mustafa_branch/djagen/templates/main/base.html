@@ -24,8 +24,8 @@
     <body onload="BrowserCompatible.check()">
     <div class="wrapper">
         <div class="icons">
-            <a href="#"><img src="/djagenmedia/img/Newsfeed-RSS-icon.png" alt="RSS" width="16" height="16" /></a>
-            <a href="#"><img src="/djagenmedia/img/Newsfeed-Atom-icon.png" alt="Atom" width="16" height="16" /></a>
+            <a href="#"><img src="/djagenmedia/img/newsfeed-rss-icon.png" alt="RSS" width="16" height="16" /></a>
+            <a href="#"><img src="/djagenmedia/img/newsfeed-atom-icon.png" alt="Atom" width="16" height="16" /></a>
         </div>
         <div class="hdr">
             <div class="logo"></div>
@@ -45,10 +45,12 @@
             {% blocktrans %}<li><a href="{{ BASE_URL }}/english">İngilizce Günlükler</a></li>{% endblocktrans %}
             <li><a href="#" id="arsiv">Arşiv</a>
             <ul class="navlist">
+                <li><a href="{{ BASE_URL }}/query/">{% trans "Ara" %}</a></li>
                 {% for dt in last_date_li %}
                 <li><a href="{{ BASE_URL }}/archive/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
                 {% endfor %}
-                <li><a href="{{ BASE_URL }}/main/">{% trans "Tümü" %}</a></li>
+
+                <li><a href="{{ BASE_URL }}/archive/">{% trans "Tümü" %}</a></li>
             </ul>
         </li>
         </ul>
@@ -109,9 +111,7 @@
 
         {% block footer%}
         <div id="footer">
-            {% blocktrans %}<p>Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz</p>{% endblocktrans %}
-            {% blocktrans %}<p>LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.</p>{% endblocktrans %}
-            {% blocktrans %}<p>Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.</p>{% endblocktrans %}
+            {% blocktrans %}<p>Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde LKD<http://www.lkd.org.tr/>'yi bağlamaz. Ayrıca Gezegen istatistiklere buradan<http://gezegen.linux.org.tr/stats> ulaşabilirsiniz.</p>{% endblocktrans %}
         </div>
         {% endblock %}
 

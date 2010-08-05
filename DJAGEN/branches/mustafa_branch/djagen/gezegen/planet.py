@@ -44,8 +44,7 @@ TEMPLATE_FILES = "examples/basic/planet.html.tmpl"
 import sys
 import os
 # In order to reduce integration issues, this path gets defined automatically.
-sys.path.append(os.path.abspath('../..'))
-
+sys.path.append("/home/cad/Workspace/djagen_ws/gezegen/DJAGEN/branches/mustafa_branch/")
 os.environ['DJANGO_SETTINGS_MODULE'] = 'djagen.settings'
 from djagen.collector.models import *
 
@@ -185,13 +184,12 @@ def main():
             for word in words: tmp_first_name += ' ' + word
             author_name = tmp_first_name[1:]
        ###                                                                 ###
-        print channel.name
+        #print channel.name
        #author_name = channel.name
        #author_surname = channel.surname
 
         try:
             author_face = channel.face
-            print channel.face
         except:
             author_face = None
         try:
@@ -214,7 +212,6 @@ def main():
             channel_urlstatus = channel.url_status
         except:
             channel_urlstatus = None
-        print channel.label
         label = channel.label
 
         label_personal = 0
@@ -229,7 +226,6 @@ def main():
             label_community = 1
         if label == "Eng":
             label_eng = 1
-        print channel.id
         id = channel.id
 
         try:
@@ -251,7 +247,7 @@ def main():
             author.label_eng = label_eng
 
         except Exception, ex:
-            print ex
+            #print ex
             author = Authors(author_id=id, author_name=author_name, author_surname=author_surname, author_face=author_face, channel_subtitle=channel_subtitle, channel_title=channel_title, channel_url=channel_url, channel_link=channel_link, channel_urlstatus=channel_urlstatus, label_personal=label_personal, label_lkd=label_lkd, label_community=label_community, label_eng=label_eng)
 
 
