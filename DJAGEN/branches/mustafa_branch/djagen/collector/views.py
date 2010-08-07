@@ -114,47 +114,51 @@ def list_members(request):
     authors = Authors.objects.all()
 
     return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL,'info_area' : info_area })
-#############################Under Construction######################
+
 def query(request):
-    return (HttpResponse("query page"))
-#    if(request.method == 'GET'):
-#        form = QueryForm(request.GET)
-#        if form.is_valid():
-#            if(('q_author_name' in request.GET) or
-#               ('q_author_surname' in request.GET) or
-#               ('q_text' in request.GET) or
-#               ('q_date_year' in request.GET) or
-#               ('q_date_month' in request.GET) or
-#               ('q_date_day' in request.GET)):
-#                redirect_url = BASE_URL + "/archive"
-#                if ('q_date_year' in request.GET and request.GET['q_date_year']):
-#                    redirect_url += "/" + request.GET['q_date_year']
-#                    if ('q_date_month' in request.GET and request.GET['q_date_month']):
-#                        redirect_url += "/" + request.GET['q_date_month']
-#                        if('q_date_day' in request.GET and request.GET['q_date_day']):
-#                            redirect_url += "/"+str(request.GET['q_date_day'])
-#                return HttpResponseRedirect(redirect_url)
-#            else:
-#                q_form = QueryForm()
-#                return render_response(request,'main/query.html',{
-#                                                              'BASE_URL' : BASE_URL,
-#                                                              'q_form':q_form,
-#                                                              })
-#        else:
-#                q_form = QueryForm()
-#                return render_response(request,'main/query.html',{
-#                                                              'BASE_URL' : BASE_URL,
-#                                                              'q_form':q_form,
-#                                                              })
-#
-#
-#    else:
-#
-#        q_form = QueryForm()
-#        return render_response(request,'main/query.html',{
-#                                                    'BASE_URL' : BASE_URL,
-#                                                      'q_form':q_form,
-#                                                      })
+    # Determine if method is  POST.
+    if (request.method == 'POST'):
+        ## If Yes:
+        form = QueryForm(request.POST)
+
+        # Determine if all of them were valid.
+        if (form.is_valid()):
+
+            ## If Yes:
+
+            q_author_name = request.POST['q_author_name']
+            q_author_surname = request.POST['q_author_surname']
+            q_text = request.POST['q_text']
+            q_date_year = request.POST['q_date_year']
+            q_date_month = request.POST['q_date_month']
+            q_date_day = request.POST['q_date_day']
+            # Redirect or call /archive/ view with the existing GET arguments.
+            #++ Complex string operations in order to form needed url.
+            args_part = "?q_author_name=%s&q_author_surname=%s&q_text=%s" % (q_author_name,q_author_surname,q_text)
+            date_part = ''
+            if (q_date_year):
+                date_part = q_date_year
+                if(q_date_month):
+                    date_part += "/" + q_date_month
+                    if(q_date_day):
+                        date_part += "/" + q_date_day + "/"
+            target_url = BASE_URL+"/archive/" + date_part + args_part
+           #--
+            return HttpResponseRedirect(target_url)
+        else:
+           # Issue an error message and show the form again.
+            form = QueryForm()
+            info_area = "query"
+
+            return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
+    else:
+        # Show the form.
+
+        form = QueryForm()
+        info_area = "query"
+
+    return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
+
 
 def archive(request,archive_year=None,archive_month=None,archive_day=None):
     info_area = 'query'
@@ -170,28 +174,28 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
     if ('q_author_name' in request.GET and request.GET['q_author_name']): #If that exists and not empty
         q_author_name = request.GET['q_author_name']
     else:
-        q_author_name = None
+        q_author_name = ""
     if ('q_author_surname' in request.GET and request.GET['q_author_surname']): #If that exists and not empty
         q_author_surname = request.GET['q_author_surname']
     else:
-        q_author_surname = None
+        q_author_surname = ""
     if ('q_text' in request.GET and request.GET['q_text']): #If that exists and not empty
         q_text = request.GET['q_text']
     else:
-        q_text = None
+        q_text = ""
     if ('q_label_personal' in request.GET and request.GET['q_label_personal'] == '1'): #If that exists and not empty
         q_label_personal = request.GET['q_label_personal']
     else:
-        q_label_personal = None
+        q_label_personal = ""
     if ('q_label_community' in request.GET and request.GET['q_label_community'] == '1'):
         q_label_community = request.GET['q_label_community']
     else:
-        q_label_community = None
+        q_label_community = ""
 
     if ('q_label_lkd' in request.GET and request.GET['q_label_lkd']=='1'):
         q_label_lkd = request.GET['q_label_lkd']
     else:
-        q_label_lkd = None
+        q_label_lkd = ""
     #--
 #--
 
@@ -206,7 +210,7 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
     elif(q_author_surname):
         entries_list = entries_list.filter(entry_id__author_surname__iexact = q_author_surname)
 
-
+    # Label based queries.
     if(q_label_personal):
         entries_list = entries_list.filter(entry_id__label_personal = 1)
     if(q_label_community):
@@ -215,10 +219,10 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
         entries_list = entries_list.filter(entry_id__label_lkd = 1)
 
 
-
+    # Text search.
     if(q_text):
-        entries_list = entries.list.filter(content_text__icontains = q_text)
-
+        entries_list = entries_list.filter(content_text__icontains = q_text)
+    # Date based queries.
     if(archive_year):
         entries_list = entries_list.filter(date__year = archive_year)
         if(archive_month):
@@ -257,3 +261,8 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
                         'BASE_URL':BASE_URL,
                         })
 
+def issue_error(request,error_msg=None):
+    info_area = 'error'
+    if not(error_msg):
+        error_msg = 'Bilinmeyen bir hata oluştu!'
+    return render_response(request, 'main/error.html', {'error_msg': error_msg,'info_area' : info_area })
