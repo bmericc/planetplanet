@@ -161,7 +161,7 @@ def query(request):
 
 
 def archive(request,archive_year=None,archive_month=None,archive_day=None):
-    info_area = 'query'
+    info_area = 'archive'
     # This setting gets the content truncated which contains more than <truncate_words> words.
     truncate_words = 250
     items_per_page = 25
@@ -255,6 +255,9 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
                         'items_per_page':repr(items_per_page),
                         'run_time':run_time,
                         'info_area':info_area,
+                        'archive_year' : archive_year,
+                        'archive_month' : archive_month,
+                        'archive_day' : archive_day,
                         'q_author_name':q_author_name,
                         'q_author_surname':q_author_surname,
                         'q_text':q_text,
