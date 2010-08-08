@@ -132,8 +132,8 @@ def query(request):
             q_date_year = request.POST['q_date_year']
             q_date_month = request.POST['q_date_month']
             q_date_day = request.POST['q_date_day']
-            # Redirect or call /archive/ view with the existing GET arguments.
-            #++ Complex string operations in order to form needed url.
+            # Redirect or call /archive/ view with the existing POST arguments.
+            #++ Complex string operations in order to form needed target_url.
             args_part = "?q_author_name=%s&q_author_surname=%s&q_text=%s" % (q_author_name,q_author_surname,q_text)
             date_part = ''
             if (q_date_year):

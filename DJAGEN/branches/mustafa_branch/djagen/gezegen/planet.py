@@ -227,6 +227,7 @@ def main():
         if label == "Eng":
             label_eng = 1
         id = channel.id
+        #print ("id is ", id)
 
         try:
             author = Authors.objects.get(author_id=id)
@@ -234,7 +235,7 @@ def main():
             #update the values with the ones at the config file
             author.author_name = author_name
             author.author_surname = author_surname
-            #print author_name
+            #print author_name,author_id
             author.author_face = author_face
             author.channel_subtitle = channel_subtitle
             author.channel_title = channel_title
@@ -247,7 +248,7 @@ def main():
             author.label_eng = label_eng
 
         except Exception, ex:
-            #print ex
+            print ex
             author = Authors(author_id=id, author_name=author_name, author_surname=author_surname, author_face=author_face, channel_subtitle=channel_subtitle, channel_title=channel_title, channel_url=channel_url, channel_link=channel_link, channel_urlstatus=channel_urlstatus, label_personal=label_personal, label_lkd=label_lkd, label_community=label_community, label_eng=label_eng)
 
 
@@ -259,21 +260,48 @@ def main():
             id_hash = item.id_hash
 
             try:
-                entry = author.entries_set.get(id_hash = id_hash)
-                entry.title = item.title
-                entry.content_html = item.content
-                entry.content_text = entry.sanitize(item.content)
-                entry.summary = item.summary
-                entry.link = item.link
+                #Only check for get if that fails then switch to create new entry mode.
+                entry = author.entries_set.get(id_hash = item.id_hash)
+
+                try:
+                    entry.title = item.title
+                except:
+                    #print "title"
+                    entry.title = None
+                try:
+                    entry.content_html = item.content
+                except:
+                    entry.content_html = None
+                try:
+                    entry.content_text = entry.sanitize(item.content)
+                except:
+                    entry.content_text = None
+                try:
+
+                    entry.summary = item.summary
+                except:
+                    #print "summary"
+                    entry.summary = None
+                try:
+
+                    entry.link = item.link
+                except:
+                    #print "link"
+                    entry.link = None
+
                 d = item.date
+
+
                 entry.date = datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5])
+
+
             except:
                 content_html = item.content
                 #content_text = entry.sanitize(content_html)
                 d = item.date
                 if not item.has_key('summary'): summary = None
                 else: summary = item.summary
-                entry = author.entries_set.create(id_hash=id_hash, title=item.title, content_html=item.content, summary=summary, link=item.link, date=datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5]))
+                entry = author.entries_set.create(id_hash= item.id_hash, title=item.title, content_html=item.content, summary=summary, link=item.link, date=datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5]))
                 entry.content_text = entry.sanitize(content_html)
 
             entry.save()
