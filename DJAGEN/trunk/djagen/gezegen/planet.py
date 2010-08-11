@@ -44,8 +44,7 @@ TEMPLATE_FILES = "examples/basic/planet.html.tmpl"
 import sys
 import os
 # In order to reduce integration issues, this path gets defined automatically.
-sys.path.append(os.path.abspath('../..'))
-
+sys.path.append("ABSOLUTEPATH")
 os.environ['DJANGO_SETTINGS_MODULE'] = 'djagen.settings'
 from djagen.collector.models import *
 
@@ -260,21 +259,48 @@ def main():
             id_hash = item.id_hash
 
             try:
-                entry = author.entries_set.get(id_hash = id_hash)
-                entry.title = item.title
-                entry.content_html = item.content
-                entry.content_text = entry.sanitize(item.content)
-                entry.summary = item.summary
-                entry.link = item.link
+                #Only check for get if that fails then switch to create new entry mode.
+                entry = author.entries_set.get(id_hash = item.id_hash)
+
+                try:
+                    entry.title = item.title
+                except:
+                    #print "title"
+                    entry.title = None
+                try:
+                    entry.content_html = item.content
+                except:
+                    entry.content_html = None
+                try:
+                    entry.content_text = entry.sanitize(item.content)
+                except:
+                    entry.content_text = None
+                try:
+
+                    entry.summary = item.summary
+                except:
+                    #print "summary"
+                    entry.summary = None
+                try:
+
+                    entry.link = item.link
+                except:
+                    #print "link"
+                    entry.link = None
+
                 d = item.date
+
+
                 entry.date = datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5])
+
+
             except:
                 content_html = item.content
                 #content_text = entry.sanitize(content_html)
                 d = item.date
                 if not item.has_key('summary'): summary = None
                 else: summary = item.summary
-                entry = author.entries_set.create(id_hash=id_hash, title=item.title, content_html=item.content, summary=summary, link=item.link, date=datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5]))
+                entry = author.entries_set.create(id_hash= item.id_hash, title=item.title, content_html=item.content, summary=summary, link=item.link, date=datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5]))
                 entry.content_text = entry.sanitize(content_html)
 
             entry.save()

@@ -35,7 +35,7 @@ def main(request):
     last_entry_date = Entries.objects.all()[0].date
     day = datetime.timedelta(days=1)
     last_date_li = []
-    for x in xrange(6):
+    for x in xrange(5):
         last_entry_date -= day
         last_date_li.append(last_entry_date)
 
@@ -116,16 +116,52 @@ def list_members(request):
     return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL,'info_area' : info_area })
 
 def query(request):
+    # Determine if method is  POST.
+    if (request.method == 'POST'):
+        ## If Yes:
+        form = QueryForm(request.POST)
 
-    q_form = QueryForm()
+        # Determine if all of them were valid.
+        if (form.is_valid()):
 
-    return render_response(request,'main/query.html',{
-                                                      'BASE_URL' : BASE_URL,
-                                                      'q_form':q_form,
-                                                      })
+            ## If Yes:
 
-def archive(request,archive_year='',archive_month='',archive_day=''):
+            q_author_name = request.POST['q_author_name']
+            q_author_surname = request.POST['q_author_surname']
+            q_text = request.POST['q_text']
+            q_date_year = request.POST['q_date_year']
+            q_date_month = request.POST['q_date_month']
+            q_date_day = request.POST['q_date_day']
+            # Redirect or call /archive/ view with the existing POST arguments.
+            #++ Complex string operations in order to form needed target_url.
+            args_part = "?q_author_name=%s&q_author_surname=%s&q_text=%s" % (q_author_name,q_author_surname,q_text)
+            date_part = ''
+            if (q_date_year):
+                date_part = q_date_year
+                if(q_date_month):
+                    date_part += "/" + q_date_month
+                    if(q_date_day):
+                        date_part += "/" + q_date_day + "/"
+            target_url = BASE_URL+"/archive/" + date_part + args_part
+           #--
+            return HttpResponseRedirect(target_url)
+        else:
+           # Issue an error message and show the form again.
+            form = QueryForm()
+            info_area = "query"
 
+            return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
+    else:
+        # Show the form.
+
+        form = QueryForm()
+        info_area = "query"
+
+    return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
+
+
+def archive(request,archive_year=None,archive_month=None,archive_day=None):
+    info_area = 'archive'
     # This setting gets the content truncated which contains more than <truncate_words> words.
     truncate_words = 250
     items_per_page = 25
@@ -133,140 +169,103 @@ def archive(request,archive_year='',archive_month='',archive_day=''):
     #get the last run time
     run_time = RunTime.objects.all()[0]
 
-
-    ### Determine if the request object includes any querying input or not. ###
-
-    if ( (request.GET) and ('q_author_name' in request.GET or 'q_author_surname' in request.GET or 'q_text' in request.GET ) ):
-        # Switch to 'return the result of query' mode.
-        info_area = 'query'
-
-        #Querying
-        #TODO: We should improve querying method implemented here.
-        q_author_name,q_author_surname,q_text = '','',''
-        authors = Authors.objects.all()
-        if ( ('q_author_name' in request.GET) and (request.GET['q_author_name'] )):
-            q_author_name = request.GET['q_author_name']
-            authors = authors.filter(author_name__iexact = q_author_name)
-
-
-        if (('q_author_surname' in request.GET) and (request.GET['q_author_surname'])):
-            q_author_surname = request.GET['q_author_surname']
-            authors = authors.filter(author_surname__iexact = q_author_surname)
-
-
-        for item in authors:
-
-            try:
-                entries_list |= item.entries_set.all()
-            except:
-                entries_list = item.entries_set.all()
-
-        if( ('q_text' in request.GET)and(request.GET['q_text'])):
-            q_text = request.GET['q_text']
-            if (q_author_name or q_author_surname):
-
-                entries_list = entries_list.filter(content_text__icontains = q_text)
-            else:
-                entries_list = Entries.objects.filter(content_text__icontains = q_text)
-
-
-
-        try:
-            if(not(entries_list)):
-                return HttpResponseRedirect(BASE_URL+"/query")
-        except:
-                return HttpResponseRedirect(BASE_URL+ "/query")
-
-        #here is gonna be edited [X]
-        # Pagination
-
-        elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
-        paginator = Paginator(entries_list,elements_in_a_page)
-        # Validation for page number if it is not int return first page.
-        try:
-            page = int(request.GET.get('page', '1'))
-        except ValueError:
-            page = 1
-
-        # If page request is out of range, return last page .
-        try:
-            p_entries_list = paginator.page(page)
-        except (EmptyPage, InvalidPage):
-            p_entries_list = paginator.page(paginator.num_pages)
-
-        return render_to_response('main/archive.html' ,{
-                            'entries_list':entries_list,
-                            'p_entries_list':p_entries_list,
-                            'truncate_words':truncate_words,
-                            'items_per_page':repr(items_per_page),
-                            'run_time':run_time,
-                            'info_area':info_area,
-                            'q_author_name':q_author_name,
-                            'q_author_surname':q_author_surname,
-                            'q_text':q_text,
-                            'BASE_URL':BASE_URL,
-                            })
-    ### If not ###
+ # Now we are creating few scenarios depending on the incoming variables.
+    # This part is for validation.
+    if ('q_author_name' in request.GET and request.GET['q_author_name']): #If that exists and not empty
+        q_author_name = request.GET['q_author_name']
     else:
-    #Switch to return the result of arguments provided mode(archive viewing mode).
-            info_area = 'archive' # \This variable is used for determining which infoarea text should be used in "contenttop" div in /main/base.html
+        q_author_name = ""
+    if ('q_author_surname' in request.GET and request.GET['q_author_surname']): #If that exists and not empty
+        q_author_surname = request.GET['q_author_surname']
+    else:
+        q_author_surname = ""
+    if ('q_text' in request.GET and request.GET['q_text']): #If that exists and not empty
+        q_text = request.GET['q_text']
+    else:
+        q_text = ""
+    if ('q_label_personal' in request.GET and request.GET['q_label_personal'] == '1'): #If that exists and not empty
+        q_label_personal = request.GET['q_label_personal']
+    else:
+        q_label_personal = ""
+    if ('q_label_community' in request.GET and request.GET['q_label_community'] == '1'):
+        q_label_community = request.GET['q_label_community']
+    else:
+        q_label_community = ""
 
-            selected_entries = Entries.objects.select_related()
+    if ('q_label_lkd' in request.GET and request.GET['q_label_lkd']=='1'):
+        q_label_lkd = request.GET['q_label_lkd']
+    else:
+        q_label_lkd = ""
+    #--
+#--
 
-            # For entry categories
-            entries_list1 = selected_entries.filter(entry_id__label_personal = 1)
-            entries_list2 = selected_entries.filter(entry_id__label_lkd = 1)
-            entries_list3 = selected_entries.filter(entry_id__label_community = 1)
-            entries_list = entries_list1 | entries_list2 | entries_list3
+# Querying
+    entries_list = Entries.objects.select_related()
+        # Name - surname queries.
 
-        ## Validating arguments provided by urls.py.
-            # Check if archive_year is not empty and numeric.
-            if((archive_year != '' ) and (str(archive_year).isalnum()) and (not(str(archive_year).isalpha()))):
-                entries_list = entries_list.filter(date__year=archive_year)
-            else:
-                # Fall back to main view.
-                return HttpResponseRedirect(BASE_URL+"/main")
-                #pass
+    if(q_author_name):
+        entries_list = entries_list.filter(entry_id__author_name__iexact = q_author_name)
+        if(q_author_surname):
+            entries_list = entries_list.filter(entry_id__author_surname__iexact = q_author_surname)
+    elif(q_author_surname):
+        entries_list = entries_list.filter(entry_id__author_surname__iexact = q_author_surname)
 
-            # Check if archive_month is not empty and numeric.
-            if(archive_month != ''and (str(archive_month).isalnum()) and not(str(archive_month).isalpha())):
-                entries_list = entries_list.filter(date__month=archive_month)
-
-            # Check if archive_day is not empty and numeric.
-            if(archive_day != ''and (str(archive_day).isalnum()) and not(str(archive_day).isalpha())):
-                entries_list = entries_list.filter(date__day=archive_day)
-        ##
-
-
-            # Pagination
-            elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
-            paginator = Paginator(entries_list,elements_in_a_page)
-
-            # Validation for page number if it is not int return first page.
-            try:
-                page = int(request.GET.get('page', '1'))
-            except ValueError:
-                page = 1
-
-            # If page request is out of range, return last page .
-            try:
-                p_entries_list = paginator.page(page)
-            except (EmptyPage, InvalidPage):
-                p_entries_list = paginator.page(paginator.num_pages)
+    # Label based queries.
+    if(q_label_personal):
+        entries_list = entries_list.filter(entry_id__label_personal = 1)
+    if(q_label_community):
+        entries_list = entries_list.filter(entry_id__label_community = 1)
+    if(q_label_lkd):
+        entries_list = entries_list.filter(entry_id__label_lkd = 1)
 
 
+    # Text search.
+    if(q_text):
+        entries_list = entries_list.filter(content_text__icontains = q_text)
+    # Date based queries.
+    if(archive_year):
+        entries_list = entries_list.filter(date__year = archive_year)
+        if(archive_month):
+            entries_list = entries_list.filter(date__month = archive_month)
+            if(archive_day):
+                entries_list = entries_list.filter(date__day = archive_day)
 
+#--
 
-            return render_to_response('main/archive.html' ,{
-                                        'entries_list':entries_list,
-                                        'p_entries_list':p_entries_list,
-                                        'truncate_words':truncate_words,
-                                        'items_per_page':repr(items_per_page),
-                                        'run_time':run_time,
-                                        'archive_year':archive_year,
-                                        'archive_month':archive_month,
-                                        'archive_day':archive_day,
-                                        #'error':error,
-                                        'BASE_URL':BASE_URL,
-                                        'info_area':info_area,
-                                        })
+  # Pagination
+    elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
+    paginator = Paginator(entries_list,elements_in_a_page)
+    # Validation for page number if it is not int return first page.
+    try:
+        page = int(request.GET.get('page', '1'))
+    except ValueError:
+        page = 1
+
+    # If page request is out of range, return last page .
+    try:
+        p_entries_list = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        p_entries_list = paginator.page(paginator.num_pages)
+  #--
+
+    return render_to_response('main/archive.html' ,{
+                        'entries_list':entries_list,
+                        'p_entries_list':p_entries_list,
+                        'truncate_words':truncate_words,
+                        'items_per_page':repr(items_per_page),
+                        'run_time':run_time,
+                        'info_area':info_area,
+                        'archive_year' : archive_year,
+                        'archive_month' : archive_month,
+                        'archive_day' : archive_day,
+                        'q_author_name':q_author_name,
+                        'q_author_surname':q_author_surname,
+                        'q_text':q_text,
+                        'BASE_URL':BASE_URL,
+                        })
+
+def issue_error(request,error_msg=None):
+    info_area = 'error'
+    if not(error_msg):
+        error_msg = 'Bilinmeyen bir hata oluştu!'
+    return render_response(request, 'main/error.html', {'error_msg': error_msg,'info_area' : info_area })

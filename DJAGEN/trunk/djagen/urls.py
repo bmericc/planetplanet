@@ -22,7 +22,7 @@ urlpatterns = patterns('',
     (r'^archive/$','djagen.collector.views.archive'),
     (r'^archive/(?P<archive_year>\d{4})/$', archive),
     (r'^archive/(?P<archive_year>\d{4})/(?P<archive_month>\d{1,2})/$', archive),
-    (r'^archive/(?P<archive_year>\d{4})/(?P<archive_month>\d{1,2})/(?P<archive_day>\d{1,2})$', archive),
+    (r'^archive/(?P<archive_year>\d{4})/(?P<archive_month>\d{1,2})/(?P<archive_day>\d{1,2})/$', archive),
     (r'^djagen/$',main),
     (r'^query/$',query),
     )

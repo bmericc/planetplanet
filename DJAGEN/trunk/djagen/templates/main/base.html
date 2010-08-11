@@ -24,8 +24,8 @@
     <body onload="BrowserCompatible.check()">
     <div class="wrapper">
         <div class="icons">
-            <a href="#"><img src="/djagenmedia/img/Newsfeed-RSS-icon.png" alt="RSS" width="16" height="16" /></a>
-            <a href="#"><img src="/djagenmedia/img/Newsfeed-Atom-icon.png" alt="Atom" width="16" height="16" /></a>
+            <a href="#"><img src="/djagenmedia/img/newsfeed-rss-icon.png" alt="RSS" width="16" height="16" /></a>
+            <a href="#"><img src="/djagenmedia/img/newsfeed-atom-icon.png" alt="Atom" width="16" height="16" /></a>
         </div>
         <div class="hdr">
             <div class="logo"></div>
@@ -45,10 +45,12 @@
             {% blocktrans %}<li><a href="{{ BASE_URL }}/english">İngilizce Günlükler</a></li>{% endblocktrans %}
             <li><a href="#" id="arsiv">Arşiv</a>
             <ul class="navlist">
+                <li><a href="{{ BASE_URL }}/query/">{% trans "Ara" %}</a></li>
                 {% for dt in last_date_li %}
                 <li><a href="{{ BASE_URL }}/archive/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
                 {% endfor %}
-                <li><a href="{{ BASE_URL }}/main/">{% trans "Tümü" %}</a></li>
+
+                <li><a href="{{ BASE_URL }}/archive/">{% trans "Tümü" %}</a></li>
             </ul>
         </li>
         </ul>
@@ -59,36 +61,48 @@
 		<div class="contenttop">
 
 		{% if info_area == "main" %}
-		<p>Gezegen her 10 dakikada bir yenilenir. Son güncelleme: {{ run_time.get_run_time }}</p>
+		<p>Gezegen her <b>10</b> dakikada bir yenilenir. Son güncelleme: <b>{{ run_time.get_run_time }}</b></p>
 		{% endif %}
 
 		{% if info_area == "archive" %}
-			<p>Gezegen arşivi: <b>{{ archive_year }}</b> yılı,
-			{% if archive_month %}
-			<b>{{ archive_month }}</b>. ay,
-			{% endif %}
-			{% if archive_day %}
-			<b>{{ archive_day }}</b>. gün
-			{% endif %}
-			arşivini gezmektesiniz. Bu arşivde toplam <b>{{ entries_list|length }}</b> blog girdisi mevcuttur.</p>
+			{% if entries_list|length %}
+				<p>{% if archive_year %}
+				<b>{{ archive_year }}</b> yılı,
+				{% endif %}
+				{% if archive_month %}
+				<b>{{ archive_month }}</b>. ayı,
+				{% endif %}
+				{% if archive_day %}
+				<b>{{ archive_day }}</b>. günü
+				{% endif %}
+
+				{% if q_author_name or q_author_surname %}
+					{% if q_author_name %}
+						<b>{{ q_author_name }}</b> isimli,
+					{% endif %}
+					{% if q_author_surname %}
+						<b>{{ q_author_surname }}</b> soyisimli,
+					{% endif %}
+					yazara ait
+				{% endif %}
+
+				{% if q_text %}
+					içinde <b>"{{ q_text|truncatewords:4 }} ..."</b> geçen yazıların olduğu
+				{% endif %}
+				{% if archive_year or q_author_name or q_author_surname or q_text %}
+				gezegen
+				{% else %}
+				Gezegen
+				{% endif %}
+				 arşivini gezmektesiniz.
+	Bu arşivde toplam <b>{{ entries_list|length }}</b> blog girdisi mevcuttur.</p>
+		{% else %}
+		<p><img src="/djagenmedia/img/warning.png" width="25" height="25" /> Bu kriterlere ait herhangi bir girdi <b>bulunmuyor</b>!</p>
 		{% endif %}
+	{% endif %}
 
 		{% if info_area == "query" %}
-			<p>Aradığınız kriterler:
-			{% if q_author_name or q_author_surname %}
-				 {% if q_author_name %}
-				 	<b>{{ q_author_name }}</b>
-				 {% endif %}
-
-				 {% if q_author_surname %}
-				 	<b> {{ q_author_surname }}</b>
-				 {% endif %}
-				 isimli yazarlar
-			{% endif %}
-
-			{% if q_text %}
-				İçinde <b>{{ q_text|truncatewords:8 }}</b> geçen girdiler
-			{% endif %}.</p>
+			<p>Lütfen aramak istediğiniz kriterleri giriniz.</p>
 		{% endif %}
 
 
@@ -109,9 +123,7 @@
 
         {% block footer%}
         <div id="footer">
-            {% blocktrans %}<p>Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde <a href="http://www.lkd.org.tr/">Linux Kullanıcıları Derneği</a>'ni bağlamaz</p>{% endblocktrans %}
-            {% blocktrans %}<p>LKD yalnızca Linux Gezegeni için teknik olanakları (sunucu, yazılım, bant genişliği) sağlar.</p>{% endblocktrans %}
-            {% blocktrans %}<p>Ayrıca Gezegen istatistiklere <a href="http://gezegen.linux.org.tr/stats">buradan</a> ulaşabilirsiniz.</p>{% endblocktrans %}
+            {% blocktrans %}<p>Bu sayfa içerisinde yazılanlar doğru veya yanlış herhangi bir biçimde LKD<http://www.lkd.org.tr/>'yi bağlamaz. Ayrıca Gezegen istatistiklere buradan<http://gezegen.linux.org.tr/stats> ulaşabilirsiniz.</p>{% endblocktrans %}
         </div>
         {% endblock %}
 

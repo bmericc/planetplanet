@@ -19,3 +19,6 @@ class QueryForm(forms.Form):
     q_author_name = forms.CharField(max_length=25, required = False, label = 'Adı')
     q_author_surname = forms.CharField(max_length=25, required = False, label = 'Soyadı')
     q_text = forms.CharField(required = False, label = 'Aradığınız metin', widget = forms.widgets.Textarea() )
+    q_date_year = forms.IntegerField(required = False, label = 'Blog girdisine ait yıl(Örn:2010)', widget=forms.widgets.DateTimeInput())
+    q_date_month = forms.IntegerField(required = False, label = 'Blog girdisine ait ay(Örn:03)', widget=forms.widgets.DateTimeInput())
+    q_date_day = forms.IntegerField(required = False, label = 'Blog girdisine ait gün (Örn:27)', widget=forms.widgets.DateTimeInput())
