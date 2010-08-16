@@ -65,7 +65,7 @@ def main():
             print "Usage: planet [options] [CONFIGFILE]"
             print
             print "Options:"
-            print " -v, --verbose       DEBUG level logging during update"
+            print " -v, --verbose       DEBUG level loggingportera during update"
             print " -o, --offline       Update the Planet from the cache only"
             print " -h, --help          Display this help message and exit"
             print
@@ -230,25 +230,44 @@ def main():
         #print ("id is ", id)
 
         try:
+            #update the values with the ones at the config file
             author = Authors.objects.get(author_id=id)
 
-            #update the values with the ones at the config file
             author.author_name = author_name
             author.author_surname = author_surname
-            #print author_name,author_id
-            author.author_face = author_face
-            author.channel_subtitle = channel_subtitle
-            author.channel_title = channel_title
             author.channel_url = channel_url
-            author.channel_link = channel_link
-            author.channel_url_status = channel_urlstatus
+
+            try:
+                author.author_face = author_face
+            except:
+                author.author_face = None
+            try:
+                author.channel_subtitle = channel_subtitle
+            except:
+                author.channel_subtitle = None
+            try:
+                author.channel_title = channel_title
+            except:
+                author.channel_title = None
+            try:
+                author.channel_link = channel_link
+            except:
+                author.channel_link = None
+            try:
+                author.channel_url_status = channel_urlstatus
+            except:
+                author.channel_url_status = None
+
             author.label_personal = label_personal
             author.label_lkd = label_lkd
             author.label_community = label_community
             author.label_eng = label_eng
 
+
+
+
         except Exception, ex:
-            print ex
+            #print ex
             author = Authors(author_id=id, author_name=author_name, author_surname=author_surname, author_face=author_face, channel_subtitle=channel_subtitle, channel_title=channel_title, channel_url=channel_url, channel_link=channel_link, channel_urlstatus=channel_urlstatus, label_personal=label_personal, label_lkd=label_lkd, label_community=label_community, label_eng=label_eng)
 
 
