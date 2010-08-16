@@ -160,7 +160,7 @@ def query(request):
     return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
 
 
-def archive(request,archive_year=None,archive_month=None,archive_day=None):
+def archive(request,archive_year=None,archive_month=None,archive_day=None,label=None):
     info_area = 'archive'
     # This setting gets the content truncated which contains more than <truncate_words> words.
     truncate_words = 250
@@ -183,19 +183,23 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
         q_text = request.GET['q_text']
     else:
         q_text = ""
-    if ('q_label_personal' in request.GET and request.GET['q_label_personal'] == '1'): #If that exists and not empty
-        q_label_personal = request.GET['q_label_personal']
+    if ((label == "personal") or 'q_label_personal' in request.GET and request.GET['q_label_personal'] == '1'): #If that exists and not empty
+        q_label_personal = 1
     else:
         q_label_personal = ""
-    if ('q_label_community' in request.GET and request.GET['q_label_community'] == '1'):
-        q_label_community = request.GET['q_label_community']
+    if ((label == "community") or 'q_label_community' in request.GET and request.GET['q_label_community'] == '1'):
+        q_label_community = 1
     else:
         q_label_community = ""
 
-    if ('q_label_lkd' in request.GET and request.GET['q_label_lkd']=='1'):
-        q_label_lkd = request.GET['q_label_lkd']
+    if ((label == "lkd") or 'q_label_lkd' in request.GET and request.GET['q_label_lkd']=='1'):
+        q_label_lkd = 1
     else:
         q_label_lkd = ""
+    if ((label == "eng") or 'q_label_eng' in request.GET and request.GET['q_label_eng']=='1'):
+        q_label_eng = 1
+    else:
+        q_label_eng = ""
     #--
 #--
 
@@ -217,6 +221,9 @@ def archive(request,archive_year=None,archive_month=None,archive_day=None):
         entries_list = entries_list.filter(entry_id__label_community = 1)
     if(q_label_lkd):
         entries_list = entries_list.filter(entry_id__label_lkd = 1)
+    if(q_label_eng):
+        entries_list = entries_list.filter(entry_id__label_eng = 1)
+
 
 
     # Text search.
