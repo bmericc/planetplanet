@@ -44,7 +44,9 @@ TEMPLATE_FILES = "examples/basic/planet.html.tmpl"
 import sys
 import os
 # In order to reduce integration issues, this path gets defined automatically.
-sys.path.append("ABSOLUTEPATH")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'../..')))
+
+
 os.environ['DJANGO_SETTINGS_MODULE'] = 'djagen.settings'
 from djagen.collector.models import *
 
