@@ -1,7 +1,8 @@
 # Django settings for djagen project.
 import os
-BASEPATH = '/home/cad/Workspace/djagen_ws/gezegen/DJAGEN/branches/mustafa_branch/djagen'
 
+#This BASEPATH gets defined automatically.
+BASEPATH = os.path.abspath(os.path.dirname(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
