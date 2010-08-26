@@ -90,7 +90,7 @@ def handle_uploaded_file(f):
     if not f.name: return False
     #lets create a unique name for the image
     t = str(time.time()).split(".")
-    img_name = t[0] + t[1].f.name.split(".")[1]
+    img_name = t[0] + t[1] + f.name.split(".")[1]
     f.name = img_name
     path = os.path.join(settings.FILE_UPLOAD_TEMP_DIR, f.name)
 

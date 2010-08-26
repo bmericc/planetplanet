@@ -67,7 +67,7 @@ def main():
             print "Usage: planet [options] [CONFIGFILE]"
             print
             print "Options:"
-            print " -v, --verbose       DEBUG level loggingportera during update"
+            print " -v, --verbose       DEBUG level logging during update"
             print " -o, --offline       Update the Planet from the cache only"
             print " -h, --help          Display this help message and exit"
             print
