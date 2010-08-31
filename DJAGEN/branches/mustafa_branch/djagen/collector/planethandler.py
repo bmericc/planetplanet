@@ -1,5 +1,8 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- 
+__author__ = ['Oguz Yarimtepe <oguzy@gmail.com>', 'Mustafa Arici <cad@mustafaarici.info>']
+
+''' This module is used for collecting processed data from any planet instance that is already ran.'''
 
 from djagen.collector.models import *
 
@@ -16,6 +19,10 @@ class PlanetHandler():
         self.__DeliverRunTimeToDB()
     
     def __DeliverChannelToDB(self,channel):
+        """ This def. writes author and channel related bits into the DB. 
+        You should provide at least a channel from planet.channels()
+        This def. returns an author object-model related to DB
+        """
         try:
             author = Authors.objects.get(author_id = channel.id )
         except:
@@ -62,6 +69,10 @@ class PlanetHandler():
             return author
     
     def __DeliverItemToDB(self,item,author):
+        """ This def. writes entry and item related bits into the DB. 
+        You should provide at least a an existing author object-model and an item from channel 
+        This def. returns an entry object-model related to DB
+        """
         try:
             entry = author.entries_set.get(id_hash = item.id_hash)
         except:
@@ -97,5 +108,6 @@ class PlanetHandler():
             return entry
     
     def __DeliverRunTimeToDB(self):
+        """ Passes the time to DB, which this script has runned at."""
         r = RunTime()
         r.save()
