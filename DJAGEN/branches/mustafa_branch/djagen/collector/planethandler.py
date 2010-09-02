@@ -53,9 +53,9 @@ class PlanetHandler():
                 author.channel_link = None
     
             try:
-                author.channel_url_status = channel.url_status
+                author.channel_urlstatus = channel.url_status
             except:
-                author.channel_url_status = None
+                author.channel_urlstatus = None
             
             if channel.label == "Personal":
                 author.label_personal = 1
