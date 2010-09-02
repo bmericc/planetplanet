@@ -170,6 +170,8 @@ def main():
     my_planet.run(planet_name, planet_link, template_files, offline)
     handler_instance = PlanetHandler(my_planet)
     handler_instance.run()
+    my_planet.generate_all_files(template_files, planet_name,
+                                 planet_link, planet_feed, owner_name, owner_email)
     
 
     #my_planet.generate_all_files(template_files, planet_name,
