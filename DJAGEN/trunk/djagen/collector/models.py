@@ -32,7 +32,7 @@ class Authors (models.Model):
     current_status = models.SmallIntegerField(default=2, choices=ACTION_CHOICES, help_text="Current Status of the Author")
     #whether the application to the planet is approved, the approved ones will be shown at the planet
     is_approved = models.BooleanField(default=1, help_text="Approve Status of the Author")
-    
+
     #planets that the channel belongs to
     #at the config.ini the entries should be obe of the belows:
     #label = Personal
@@ -84,7 +84,6 @@ class Entries (models.Model):
     class Meta:
 
         ordering = ['-date']
-    
 
     def sanitize(self, data):
         p = re.compile(r'<[^<]*?/?>')
