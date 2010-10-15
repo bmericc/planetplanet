@@ -67,8 +67,8 @@
 		<foaf:Agent>
 			<foaf:name>Ali Erdinç Köroğlu</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="">
-					<dc:title></dc:title>
+				<foaf:Document rdf:about="http://www.erdinc.info">
+					<dc:title>The Point of no return » LKD</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -574,8 +574,8 @@
 		<foaf:Agent>
 			<foaf:name>Gökmen Görgen</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.gokmengorgen.net">
-					<dc:title>[~]&gt; # Gökmen Görgen ;-) » pardus-tr</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -639,8 +639,8 @@
 		<foaf:Agent>
 			<foaf:name>Halid Said Altuner</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.halid.org">
-					<dc:title>Halid Altuner » Linux</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -678,8 +678,8 @@
 		<foaf:Agent>
 			<foaf:name>Kaya Oğuz</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.oguz.name.tr">
-					<dc:title>Blog::KayaOguz » Gezegen</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1082,7 +1082,7 @@
 			<foaf:name>Okan Akyüz</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://www.okanakyuz.com">
-					<dc:title>Okan Akyuz » Gezegen</dc:title>
+					<dc:title>Okan Akyüz » Gezegen</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1120,8 +1120,8 @@
 		<foaf:Agent>
 			<foaf:name>Onur Yalazı</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.yalazi.org">
-					<dc:title>www.yalazi.org » LKD Gezegen</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1276,8 +1276,8 @@
 		<foaf:Agent>
 			<foaf:name>Serkan Kenar</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="">
-					<dc:title></dc:title>
+				<foaf:Document rdf:about="http://serkan.feyvi.org/blog">
+					<dc:title>Kayıp Şehir / Serkan Kenar » debian</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
