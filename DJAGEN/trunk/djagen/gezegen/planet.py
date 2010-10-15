@@ -49,6 +49,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'../..'))
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'djagen.settings'
 from djagen.collector.models import *
+from djagen.collector.planethandler import PlanetHandler
 
 def config_get(config, section, option, default=None, raw=0, vars=None):
     """Get a value from the configuration, with a default."""
@@ -167,172 +168,14 @@ def main():
     # run the planet
     my_planet = planet.Planet(config)
     my_planet.run(planet_name, planet_link, template_files, offline)
-
-
-
-    ## This is where archiving is done! ##
-    #add the current channels to the db
-    channels = my_planet.channels()
-    for channel in channels:
-       ### This part seperates surname from name do not activate it if needn't.
-        words = channel.name.split()
-        if len(words) == 1:
-            author_name = words[0]
-            author_surname == None
-        else:
-            author_surname = words[-1]
-            words.pop()
-            tmp_first_name = ''
-            for word in words: tmp_first_name += ' ' + word
-            author_name = tmp_first_name[1:]
-       ###                                                                 ###
-        #print channel.name
-       #author_name = channel.name
-       #author_surname = channel.surname
-
-        try:
-            author_face = channel.face
-        except:
-            author_face = None
-        try:
-            channel_subtitle = channel.subtitle
-        except:
-            channel_subtitle = None
-        try:
-            channel_title = channel.title
-        except:
-            channel_title = None
-
-        channel_url = channel.url
-
-        try:
-            channel_link = channel.link
-        except:
-            channel_link = None
-
-        try:
-            channel_urlstatus = channel.url_status
-        except:
-            channel_urlstatus = None
-        label = channel.label
-
-        label_personal = 0
-        label_lkd = 0
-        label_community = 0
-        label_eng = 0
-        if label == "Personal":
-            label_personal = 1
-        if label == "LKD":
-            label_lkd = 1
-        if label == "Community":
-            label_community = 1
-        if label == "Eng":
-            label_eng = 1
-        id = channel.id
-        #print ("id is ", id)
-
-        try:
-            #update the values with the ones at the config file
-            author = Authors.objects.get(author_id=id)
-
-            author.author_name = author_name
-            author.author_surname = author_surname
-            author.channel_url = channel_url
-
-            try:
-                author.author_face = author_face
-            except:
-                author.author_face = None
-            try:
-                author.channel_subtitle = channel_subtitle
-            except:
-                author.channel_subtitle = None
-            try:
-                author.channel_title = channel_title
-            except:
-                author.channel_title = None
-            try:
-                author.channel_link = channel_link
-            except:
-                author.channel_link = None
-            try:
-                author.channel_url_status = channel_urlstatus
-            except:
-                author.channel_url_status = None
-
-            author.label_personal = label_personal
-            author.label_lkd = label_lkd
-            author.label_community = label_community
-            author.label_eng = label_eng
-
-
-
-
-        except Exception, ex:
-            #print ex
-            author = Authors(author_id=id, author_name=author_name, author_surname=author_surname, author_face=author_face, channel_subtitle=channel_subtitle, channel_title=channel_title, channel_url=channel_url, channel_link=channel_link, channel_urlstatus=channel_urlstatus, label_personal=label_personal, label_lkd=label_lkd, label_community=label_community, label_eng=label_eng)
-
-
-        author.save()
-
-        #entry issues
-        items = channel.items()
-        for item in items:
-            id_hash = item.id_hash
-
-            try:
-                #Only check for get if that fails then switch to create new entry mode.
-                entry = author.entries_set.get(id_hash = item.id_hash)
-
-                try:
-                    entry.title = item.title
-                except:
-                    #print "title"
-                    entry.title = None
-                try:
-                    entry.content_html = item.content
-                except:
-                    entry.content_html = None
-                try:
-                    entry.content_text = entry.sanitize(item.content)
-                except:
-                    entry.content_text = None
-                try:
-
-                    entry.summary = item.summary
-                except:
-                    #print "summary"
-                    entry.summary = None
-                try:
-
-                    entry.link = item.link
-                except:
-                    #print "link"
-                    entry.link = None
-
-                d = item.date
-
-
-                entry.date = datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5])
-
-
-            except:
-                content_html = item.content
-                #content_text = entry.sanitize(content_html)
-                d = item.date
-                if not item.has_key('summary'): summary = None
-                else: summary = item.summary
-                entry = author.entries_set.create(id_hash= item.id_hash, title=item.title, content_html=item.content, summary=summary, link=item.link, date=datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5]))
-                entry.content_text = entry.sanitize(content_html)
-
-            entry.save()
-
-        #datetime issue
-        r = RunTime()
-        r.save()
-
+    handler_instance = PlanetHandler(my_planet)
+    handler_instance.run()
     my_planet.generate_all_files(template_files, planet_name,
-        planet_link, planet_feed, owner_name, owner_email)
+                                 planet_link, planet_feed, owner_name, owner_email)
+    
+
+    #my_planet.generate_all_files(template_files, planet_name,
+        #planet_link, planet_feed, owner_name, owner_email)
 
 
 if __name__ == "__main__":
