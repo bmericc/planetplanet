@@ -2,8 +2,8 @@
 <opml version="1.1">
 	<head>
 		<title>Linux Gezegeni</title>
-		<dateCreated>Sat, 01 May 2010 15:30:21 +0000</dateCreated>
-		<dateModified>Sat, 01 May 2010 15:30:21 +0000</dateModified>
+		<dateCreated>Tue, 07 Sep 2010 14:52:39 +0000</dateCreated>
+		<dateModified>Tue, 07 Sep 2010 14:52:39 +0000</dateModified>
 		<ownerName>Gezegen Ekibi</ownerName>
 		<ownerEmail>gezegen@linux.org.tr</ownerEmail>
 	</head>
@@ -14,7 +14,7 @@
 		<outline text="Ahmet Aygün" xmlUrl=""/>
 		<outline text="Ahmet Yıldız" xmlUrl=""/>
 		<outline text="Ali Erdinç Köroğlu" xmlUrl=""/>
-		<outline text="Ali Erkan İMREK" xmlUrl=""/>
+		<outline text="Ali Erkan İmrek" xmlUrl=""/>
 		<outline text="Alper Kanat" xmlUrl=""/>
 		<outline text="Alper Orus" xmlUrl=""/>
 		<outline text="Alper Oğuz" xmlUrl=""/>
@@ -82,6 +82,7 @@
 		<outline text="Mehmet Salih Yıldırım" xmlUrl=""/>
 		<outline text="Murat Hazer" xmlUrl=""/>
 		<outline text="Murat Koç" xmlUrl=""/>
+		<outline text="Murat Pınar" xmlUrl=""/>
 		<outline text="Murat Sağlam" xmlUrl=""/>
 		<outline text="Murat TİKİL" xmlUrl=""/>
 		<outline text="Mustafa Akgül" xmlUrl=""/>
@@ -114,6 +115,7 @@
 		<outline text="Tayfur Taybuğa" xmlUrl=""/>
 		<outline text="Tonguç Yumruk" xmlUrl=""/>
 		<outline text="Umur Erdinç" xmlUrl=""/>
+		<outline text="Utku Demir" xmlUrl=""/>
 		<outline text="Zemberek NLP" xmlUrl=""/>
 		<outline text="Ömer Akyüz" xmlUrl=""/>
 		<outline text="Ömer Fadıl Usta" xmlUrl=""/>

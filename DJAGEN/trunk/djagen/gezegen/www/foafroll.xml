@@ -78,7 +78,7 @@
 	</foaf:member>
 	<foaf:member>
 		<foaf:Agent>
-			<foaf:name>Ali Erkan İMREK</foaf:name>
+			<foaf:name>Ali Erkan İmrek</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://armuting.blogspot.com/search/label/lkd_gezegen">
 					<dc:title>armut</dc:title>
@@ -444,8 +444,8 @@
 		<foaf:Agent>
 			<foaf:name>Erol Soyöz</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.soyoz.com/gunce">
-					<dc:title>Erol Soyöz | Dağıtık günce » linux gezegeni</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -457,8 +457,8 @@
 		<foaf:Agent>
 			<foaf:name>Erçin Eker</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.eker.info/blog">
-					<dc:title>The Useless Journal v4</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -470,8 +470,8 @@
 		<foaf:Agent>
 			<foaf:name>FINDIK Projesi</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://osjunkies.com">
-					<dc:title>OpenSource Junkies » findik</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -574,8 +574,8 @@
 		<foaf:Agent>
 			<foaf:name>Gökmen Görgen</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.gokmengorgen.net">
-					<dc:title>[~]&gt; # Gökmen Görgen ;-) » pardus-tr</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -639,8 +639,8 @@
 		<foaf:Agent>
 			<foaf:name>Halid Said Altuner</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.halid.org">
-					<dc:title>Halid Altuner » Linux</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -678,8 +678,8 @@
 		<foaf:Agent>
 			<foaf:name>Kaya Oğuz</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://blog.oguz.name.tr">
-					<dc:title>Blog::KayaOguz » Gezegen</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -861,7 +861,7 @@
 			<foaf:name>Levent Yıldırım</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://gunluk.lyildirim.net">
-					<dc:title>Arka Bahçem » gezegen</dc:title>
+					<dc:title>Levent'in Günlüğü » gezegen</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -953,6 +953,19 @@
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://kivi.com.tr/blog">
 					<dc:title>Koçhane Kayıtları</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Murat Pınar</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://wargasm.6te.net">
+					<dc:title>wargasm@arch ~</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1069,7 +1082,7 @@
 			<foaf:name>Okan Akyüz</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://www.okanakyuz.com">
-					<dc:title>Okan Akyuz » Gezegen</dc:title>
+					<dc:title>Okan Akyüz » Gezegen</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1107,8 +1120,8 @@
 		<foaf:Agent>
 			<foaf:name>Onur Yalazı</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://www.yalazi.org">
-					<dc:title>www.yalazi.org » LKD Gezegen</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1134,7 +1147,7 @@
 			<foaf:name>Oğuz Yarımtepe</foaf:name>
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://www.loopbacking.info/blog">
-					<dc:title>import me » Gezegen</dc:title>
+					<dc:title>import me</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1185,8 +1198,8 @@
 		<foaf:Agent>
 			<foaf:name>Recai Oktaş</foaf:name>
 			<foaf:weblog>
-				<foaf:Document rdf:about="http://00101010.info/konu/teknik/">
-					<dc:title>konu/teknik</dc:title>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>
@@ -1369,6 +1382,19 @@
 			<foaf:weblog>
 				<foaf:Document rdf:about="http://eumur.wordpress.com">
 					<dc:title>Umur'un Güncesi</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Utku Demir</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.birseyler.org">
+					<dc:title>Bir şeyler var burada! » Gezegen</dc:title>
 					<rdfs:seeAlso>
 						<rss:channel rdf:about="" />
 					</rdfs:seeAlso>

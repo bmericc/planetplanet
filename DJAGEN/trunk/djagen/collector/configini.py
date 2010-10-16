@@ -100,10 +100,3 @@ class Handler:
 
         tmp_entries.close()
 
-
-
-
-
-
-
-
