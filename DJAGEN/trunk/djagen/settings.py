@@ -15,8 +15,10 @@ MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = 'djagendb'             # Or path to database file if using sqlite3.
-DATABASE_USER = 'root'             # Not used with sqlite3.
-DATABASE_PASSWORD = '1234'         # Not used with sqlite3.
+DATABASE_USER = 'djagen'             # Not used with sqlite3.
+# DO NOT INCLUDE PASSWORD WITHIN THIS FILE BEFORE COMMITING TO SVN
+DATABASE_PASSWORD = '######'         # Not used with sqlite3.
+###
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
 CACHE_BACKEND = 'db://cache_table'
@@ -39,7 +41,7 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = '/var/www/localhost/htdocs/djagen_media/'
+MEDIA_ROOT = '/var/www/localhost/htdocs/djagenmedia/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -92,4 +94,4 @@ INSTALLED_APPS = (
 
 FILE_UPLOAD_TEMP_DIR = os.path.join(BASEPATH, 'templates/tmp')
 MAIN_PATH = os.path.join(BASEPATH, 'gezegen')
-BASE_URL  = 'http://192.168.8.1'
+BASE_URL  = 'http://djagen.linux.org.tr'
