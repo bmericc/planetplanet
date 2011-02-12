@@ -1,0 +1,5 @@
+
+dependencies = [
+        'django-simple-captcha',
+        ]
+
