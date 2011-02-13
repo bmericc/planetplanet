@@ -123,19 +123,33 @@ def query(request):
 
         # Determine if all of them were valid.
         if (form.is_valid()):
+            cdata = form.cleaned_data
+            
 
             ## If Yes:
 
-            q_author_name = request.POST['q_author_name']
-            q_author_surname = request.POST['q_author_surname']
-            q_text = request.POST['q_text']
-            q_date_year = request.POST['q_date_year']
-            q_date_month = request.POST['q_date_month']
-            q_date_day = request.POST['q_date_day']
+            #q_author_name = request.POST.get('q_author_name','')
+            q_author_name = cdata.get('q_author_name','')
+            q_author_surname = cdata.get('q_author_surname','')
+            q_text = cdata.get('q_text','')
+
+            q_date = cdata.get('q_date','')
+            if (q_date != None):
+                
+                q_date_year = str(q_date.year)
+                q_date_month = str(q_date.month)
+                q_date_day = str(q_date.day)
+            else:
+                
+                q_date_year,q_date_month,q_date_day = None,None,None
+                
+            
             # Redirect or call /archive/ view with the existing POST arguments.
             #++ Complex string operations in order to form needed target_url.
             args_part = "?q_author_name=%s&q_author_surname=%s&q_text=%s" % (q_author_name,q_author_surname,q_text)
             date_part = ''
+            
+            
             if (q_date_year):
                 date_part = q_date_year
                 if(q_date_month):
