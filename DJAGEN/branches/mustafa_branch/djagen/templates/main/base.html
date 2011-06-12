@@ -18,6 +18,7 @@
         </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
         <script src="/djagenmedia/script.js" type="text/javascript"></script>
+
     </head>
 
     {% endblock %}
@@ -45,7 +46,7 @@
             {% blocktrans %}<li><a href="{{ BASE_URL }}/english">İngilizce Günlükler</a></li>{% endblocktrans %}
             <li><a href="#" id="arsiv">Arşiv</a>
             <ul class="navlist">
-                <li><a href="{{ BASE_URL }}/query/">{% trans "Ara" %}</a></li>
+                <li><a href="{{ BASE_URL }}/search/">{% trans "Ara" %}</a></li>
                 {% for dt in last_date_li %}
                 <li><a href="{{ BASE_URL }}/archive/{{ dt|date:"Y/m/d"}}">{{ dt|date:"d.m.Y" }}</a>
                 {% endfor %}

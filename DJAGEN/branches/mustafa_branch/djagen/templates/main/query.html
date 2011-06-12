@@ -1,37 +1,34 @@
 {% extends "main/base.html" %}
 {% block body %}
 
-<form action="{{ BASE_URL }}/query/" method="POST" enctype="multipart/form-data">
+<form action="{{ BASE_URL }}/search/" method="POST" enctype="multipart/form-data">
     <table border="0px">
             {% for field in q_form %}
             <tr>
                 <div class="fieldWrapper">
                     <td>{{ field.label_tag }}</td>
-                    
+
                     <td>
                         {{ field }}
                     </td>
                     {% if field.help_text %}
                     <td>
-                    <span class="small">
                         {{ field.help_text }}
-                    </span>
                     </td>
                     {% endif %}
-                        {% if field.errors %}
+
+                    {% if field.errors %}
                       <td>
-                    <span class="error">
                         {{ field.errors }}
-                    </span>
                       </td>
-                        {% endif %}
-                      
-                    
+                    {% endif %}
+
+
                 </div>
     </tr>
             {% endfor %}
     </table>
         <div class="spacer"></div>
-        <input type="submit" value="Listele" />
+        <input type="submit" value="Ara!" />
         </form>
 {% endblock %}
