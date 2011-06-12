@@ -108,6 +108,21 @@ def handle_uploaded_file(f):
         os.unlink(path)
         return (False, '')
 
+def list_archives(request):
+
+    entries_list = Entries.objects.select_related()
+    ava_years = entries_list.dates('date','year',order='DESC')
+    archives_list  = []
+    for date in ava_years:
+        ava_months = entries_list.filter(date__year = date.year).dates('date','month',order='DESC')
+        for month in ava_months:
+            ava_days = entries_list.filter(date__year = date.year).filter(date__month = month.month).dates('date','day',order='DESC')
+            a = (date,ava_months,ava_days)
+        archives_list.append(a)
+
+    return render_to_response('main/archives.html', { 'archives_list': archives_list, 'BASE_URL':BASE_URL})
+
+
 def list_members(request):
     info_area = 'members'
 
