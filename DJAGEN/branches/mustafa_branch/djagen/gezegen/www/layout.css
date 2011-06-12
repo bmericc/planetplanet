@@ -182,7 +182,7 @@ body {
 
 .contenttop {
 	background:url(img/bg_slice.png) no-repeat scroll transparent;
-	height:45px;
+	height:35px;
 	width:950px;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 .date {
-	padding:20px 0 0 20px;
+	padding:0 0 0 20px;
 }
 
 .separator {
@@ -208,7 +208,7 @@ body {
 	background:#999;
 	border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC;
-	margin:20px 0;
+	margin:0 0;
 	clear:both;
 }
 
