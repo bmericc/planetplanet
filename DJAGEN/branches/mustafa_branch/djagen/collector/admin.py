@@ -14,7 +14,7 @@ from djagen.collector.configini import *
 
 class AuthorsAdmin (admin.ModelAdmin):
 
-    list_display = ('author_id', 'author_name', 'author_email', 'author_face', 'current_status', 'is_approved', 'label_personal', 'label_lkd', 'label_community', 'label_eng')
+    list_display = ('author_id', 'author_name','author_surname' ,'author_email', 'author_face', 'current_status', 'is_approved', 'label_personal', 'label_lkd', 'label_community', 'label_eng')
     list_select_related = True
 
     search_fields = ['author_name', 'author_surname', 'author_email']

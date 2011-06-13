@@ -13,7 +13,7 @@ class Handler:
         self.id = id
 
         self.tmp_entries_ini = os.path.join(settings.MAIN_PATH, 'tmp_ini', 'tmp_entries.ini')
-        
+
         self.config_header_ini = os.path.join(settings.MAIN_PATH, 'gezegen', 'config_header.ini')
 
         self.config_entries_ini = os.path.join(settings.MAIN_PATH, 'gezegen', 'config_entries.ini')
@@ -21,6 +21,8 @@ class Handler:
     def __set_values(self):
 
         author = Authors.objects.get(author_id = self.id)
+        print author
+        print author.author_id
 
         if not author.is_approved:
             return False
@@ -29,7 +31,7 @@ class Handler:
         self.surname = author.author_surname
         self.face = author.author_face 
         self.url = author.channel_url
-        
+
         labels = {
                   author.label_personal:'Personal', 
                   author.label_lkd: 'LKD', 
@@ -43,7 +45,7 @@ class Handler:
         return True
 
     def create_tmp_entries(self):
-        
+
         if not self.__set_values(): return 
 
         config_entries = open(self.config_entries_ini)
@@ -56,6 +58,7 @@ class Handler:
         header = config_header.read()
         config_header.close()
         tmp_entries.write(header)
+        found = False
         for section in sections:
             if (section == 'Planet'):
                 continue
@@ -71,6 +74,7 @@ class Handler:
                 config_face = None
 
             if config_id == self.id:
+                found = True
 
                 url = self.url
                 face = self.face
@@ -96,6 +100,23 @@ class Handler:
                 s += 'face = ' + face + '\n'
             s += 'id = ' + id + '\n' + '\n'
 
+            tmp_entries.write(s)
+
+        if found != True:
+            url = self.url
+            face = self.face
+            name = self.name
+            surname = self.surname
+            label = self.author_labels
+
+            id = self.id
+            s = '['+url+']' + '\n'
+            s += 'name = ' + name + '\n'
+            s += 'surname = ' + surname + '\n'
+            s += 'label = ' + label + '\n'
+            if face:
+                s += 'face = ' + face + '\n'
+            s += 'id = ' + str(id) + '\n' + '\n'
             tmp_entries.write(s)
 
         tmp_entries.close()
