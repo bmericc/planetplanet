@@ -90,6 +90,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 )
 
-FILE_UPLOAD_TEMP_DIR = os.path.join(BASEPATH, 'templates/tmp')
+FILE_UPLOAD_TEMP_DIR = os.path.join(BASEPATH, 'gezegen/tmp')
 MAIN_PATH = os.path.join(BASEPATH, 'gezegen')
 BASE_URL  = 'http://127.0.0.2'

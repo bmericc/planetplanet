@@ -21,8 +21,6 @@ class Handler:
     def __set_values(self):
 
         author = Authors.objects.get(author_id = self.id)
-        print author
-        print author.author_id
 
         if not author.is_approved:
             return False
