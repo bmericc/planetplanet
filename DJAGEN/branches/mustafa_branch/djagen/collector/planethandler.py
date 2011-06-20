@@ -7,17 +7,17 @@ __author__ = ['Oguz Yarimtepe <oguzy@gmail.com>', 'Mustafa Arici <cad@mustafaari
 from djagen.collector.models import *
 
 class PlanetHandler():
-    
+
     def __init__(self,planet):
         self.channels = planet.channels()
-        
+
     def run(self):
         for channel in self.channels:
             self.author_ch = self.__DeliverChannelToDB(channel)
             for item in channel.items():
                 self.__DeliverItemToDB(item,self.author_ch)
         self.__DeliverRunTimeToDB()
-    
+
     def __DeliverChannelToDB(self,channel):
         """ This def. writes author and channel related bits into the DB. 
         You should provide at least a channel from planet.channels()
@@ -34,7 +34,7 @@ class PlanetHandler():
             except:
                 author.author_surname = ''
             author.channel_url = channel.url
-            
+
             try:
                 author.author_face = channel.face
             except:
@@ -51,12 +51,12 @@ class PlanetHandler():
                 author.channel_link = channel.link
             except:
                 author.channel_link = None
-    
+
             try:
                 author.channel_urlstatus = channel.url_status
             except:
                 author.channel_urlstatus = None
-            
+
             if channel.label == "Personal":
                 author.label_personal = 1
             if channel.label == "LKD":
@@ -67,7 +67,7 @@ class PlanetHandler():
                 author.label_eng = 1
             author.save()
             return author
-    
+
     def __DeliverItemToDB(self,item,author):
         """ This def. writes entry and item related bits into the DB. 
         You should provide at least a an existing author object-model and an item from channel 
@@ -106,7 +106,7 @@ class PlanetHandler():
                 entry.date = datetime.datetime(d[0], d[1], d[2], d[3], d[4], d[5])
             entry.save()
             return entry
-    
+
     def __DeliverRunTimeToDB(self):
         """ Passes the time to DB, which this script has runned at."""
         r = RunTime()

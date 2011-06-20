@@ -84,7 +84,7 @@ class Entries (models.Model):
     class Meta:
 
         ordering = ['-date']
-        
+
     def sanitize(self, data):
         p = re.compile(r'<[^<]*?/?>')
         return p.sub('', data)

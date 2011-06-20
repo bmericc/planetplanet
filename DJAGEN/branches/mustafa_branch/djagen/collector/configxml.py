@@ -80,7 +80,7 @@ class Handler:
 
                 if node.nodeName == "label":
                     self.label = child.toxml()
-                
+
                 if node.nodeName == "face":
                     self.face = child.toxml()
 
