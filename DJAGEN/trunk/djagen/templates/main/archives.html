@@ -1,0 +1,17 @@
+{% extends "main/base.html" %}
+
+    {% block body %}
+    <h1>Gezegen Arşivi</h1>
+
+    <dl>
+    {% for date_y, l_date_m in archives_list %}
+    <dt><h2> <a href="/archive/{{ date_y.year }}/">{{ date_y.year }}</a></h2></dt>
+    {% for date_m in l_date_m %}
+    <dl><a href="/archive/{{ date_y.year }}/{{ date_m.month }}/">{{ date_m|date:"F" }}</a></dl>
+
+    {% endfor %}
+
+    {% endfor %}
+    </dl>
+
+    {% endblock %}

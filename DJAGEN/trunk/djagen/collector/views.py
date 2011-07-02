@@ -90,7 +90,7 @@ def handle_uploaded_file(f):
     if not f.name: return False
     #lets create a unique name for the image
     t = str(time.time()).split(".")
-    img_name = t[0] + t[1] + f.name.split(".")[1]
+    img_name = t[0] + t[1] + '.' +f.name.split(".")[1]
     f.name = img_name
     path = os.path.join(settings.FILE_UPLOAD_TEMP_DIR, f.name)
 
@@ -108,6 +108,21 @@ def handle_uploaded_file(f):
         os.unlink(path)
         return (False, '')
 
+def list_archives(request):
+
+    entries_list = Entries.objects.select_related()
+    ava_years = entries_list.dates('date','year',order='DESC')
+    archives_list  = []
+    for date in ava_years:
+        ava_months = entries_list.filter(date__year = date.year).dates('date','month',order='DESC')
+        for month in ava_months:
+            ava_days = entries_list.filter(date__year = date.year).filter(date__month = month.month).dates('date','day',order='DESC')
+            a = (date,ava_months,ava_days)
+        archives_list.append(a)
+
+    return render_to_response('main/archives.html', { 'archives_list': archives_list, 'BASE_URL':BASE_URL})
+
+
 def list_members(request):
     info_area = 'members'
 
@@ -115,7 +130,52 @@ def list_members(request):
 
     return render_response(request, 'main/members.html', {'members': authors, 'BASE_URL': BASE_URL,'info_area' : info_area })
 
+def __search(cleaned_data):
+    cdata = cleaned_data
+    q_author_name = cdata.get('q_author_name','')
+    q_author_surname = cdata.get('q_author_surname','')
+    q_text = cdata.get('q_text','')
+
+    q_date_from = cdata.get('q_date_from','')
+    q_date_till = cdata.get('q_date_till','')
+
+    q_label_personal = cdata.get('q_label_personal','')
+    q_label_community = cdata.get('q_label_community','')
+    q_label_lkd = cdata.get('q_label_lkd','')
+    q_label_eng = cdata.get('q_label_eng','')
+
+    entries_list = Entries.objects.select_related()
+        # Name - surname queries.
+
+    if(q_author_name):
+        entries_list = entries_list.filter(entry_id__author_name__iexact = q_author_name)
+    if(q_author_surname):
+        entries_list = entries_list.filter(entry_id__author_surname__iexact = q_author_surname)
+
+    # Label based queries.
+    if(q_label_personal == True):
+        entries_list = entries_list.filter(entry_id__label_personal = 1)
+    if(q_label_community == True):
+        entries_list = entries_list.filter(entry_id__label_community = 1)
+    if(q_label_lkd == True):
+        entries_list = entries_list.filter(entry_id__label_lkd = 1)
+    if(q_label_eng == True):
+        entries_list = entries_list.filter(entry_id__label_eng = 1)
+
+
+    # Text search.
+    if(q_text):
+        entries_list = entries_list.filter(content_text__icontains = q_text)
+
+    # Date based queries.
+    if(q_date_from and q_date_till):
+        entries_list = entries_list.filter(date__range = (q_date_from,q_date_till))
+
+    return entries_list
+
+
 def query(request):
+
     # Determine if method is  POST.
     if (request.method == 'POST'):
         ## If Yes:
@@ -123,39 +183,61 @@ def query(request):
 
         # Determine if all of them were valid.
         if (form.is_valid()):
+            cdata = form.cleaned_data
+            entries_list = __search(cdata)
+            p_entries_list = entries_list
 
-            ## If Yes:
+            truncate_words = 250
+            items_per_page = 25
 
-            q_author_name = request.POST['q_author_name']
-            q_author_surname = request.POST['q_author_surname']
-            q_text = request.POST['q_text']
-            q_date_year = request.POST['q_date_year']
-            q_date_month = request.POST['q_date_month']
-            q_date_day = request.POST['q_date_day']
-            # Redirect or call /archive/ view with the existing POST arguments.
-            #++ Complex string operations in order to form needed target_url.
-            args_part = "?q_author_name=%s&q_author_surname=%s&q_text=%s" % (q_author_name,q_author_surname,q_text)
-            date_part = ''
-            if (q_date_year):
-                date_part = q_date_year
-                if(q_date_month):
-                    date_part += "/" + q_date_month
-                    if(q_date_day):
-                        date_part += "/" + q_date_day + "/"
-            target_url = BASE_URL+"/archive/" + date_part + args_part
-           #--
-            return HttpResponseRedirect(target_url)
-        else:
+            #get the last run time
+            run_time = RunTime.objects.all()[0]
+            info_area = 'search'
+
+          # Pagination
+            elements_in_a_page = 25 # This determines, how many elements will be displayed in a paginator page.
+            paginator = Paginator(entries_list,elements_in_a_page)
+            # Validation for page number if it is not int return first page.
+            try:
+                page = int(request.GET.get('page', '1'))
+            except ValueError:
+                page = 1
+
+            # If page request is out of range, return last page .
+            try:
+                p_entries_list = paginator.page(page)
+            except (EmptyPage, InvalidPage):
+                p_entries_list = paginator.page(paginator.num_pages)
+          #--
+
+
+
+            return render_to_response('main/searchresult.html' ,{
+                                'entries_list':entries_list,
+                                'p_entries_list':p_entries_list,
+                                'truncate_words':truncate_words,
+                                'items_per_page':repr(items_per_page),
+                                'run_time':run_time,
+                                'info_area':info_area,
+                                #'q_author_name':q_author_name,
+                                #'q_author_surname':q_author_surname,
+                                #'q_text':q_text,
+                                'BASE_URL':BASE_URL,
+                                })
+
+
+
+        """else:
            # Issue an error message and show the form again.
-            form = QueryForm()
+            form = SearchForm(request.POST)
             info_area = "query"
 
-            return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
+            return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})"""
     else:
         # Show the form.
 
+        info_area = 'query'
         form = QueryForm()
-        info_area = "query"
 
     return render_to_response('main/query.html', {'q_form': form, 'BASE_URL': BASE_URL,'info_area':info_area})
 

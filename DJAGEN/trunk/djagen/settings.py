@@ -17,9 +17,9 @@ DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysq
 DATABASE_NAME = 'djagendb'             # Or path to database file if using sqlite3.
 DATABASE_USER = 'djagen'             # Not used with sqlite3.
 # DO NOT INCLUDE PASSWORD WITHIN THIS FILE BEFORE COMMITING TO SVN
-DATABASE_PASSWORD = '######'         # Not used with sqlite3.
-###
-DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
+DATABASE_PASSWORD = '#####'         # Not used with sqlite3.
+####
+DATABASE_HOST = '###.###.###.###'             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
 CACHE_BACKEND = 'db://cache_table'
 # Local time zone for this installation. Choices can be found here:
@@ -92,6 +92,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 )
 
-FILE_UPLOAD_TEMP_DIR = os.path.join(BASEPATH, 'templates/tmp')
+FILE_UPLOAD_TEMP_DIR = os.path.join(BASEPATH, 'gezegen/tmp')
 MAIN_PATH = os.path.join(BASEPATH, 'gezegen')
 BASE_URL  = 'http://djagen.linux.org.tr'

@@ -3,6 +3,8 @@
 
 from django import forms
 from captcha.fields import CaptchaField
+from datetime import date
+from django.contrib.admin import widgets
 
 class ContactForm(forms.Form):
 
@@ -19,6 +21,12 @@ class QueryForm(forms.Form):
     q_author_name = forms.CharField(max_length=25, required = False, label = 'Adı')
     q_author_surname = forms.CharField(max_length=25, required = False, label = 'Soyadı')
     q_text = forms.CharField(required = False, label = 'Aradığınız metin', widget = forms.widgets.Textarea() )
-    q_date_year = forms.IntegerField(required = False, label = 'Blog girdisine ait yıl(Örn:2010)', widget=forms.widgets.DateTimeInput())
-    q_date_month = forms.IntegerField(required = False, label = 'Blog girdisine ait ay(Örn:03)', widget=forms.widgets.DateTimeInput())
-    q_date_day = forms.IntegerField(required = False, label = 'Blog girdisine ait gün (Örn:27)', widget=forms.widgets.DateTimeInput())
+
+    q_label_personal = forms.BooleanField(required = False, label = 'Kişisel Günlükler', initial = True)
+    q_label_lkd = forms.BooleanField(required = False, label = 'LKD Günlükleri', initial = True)
+    q_label_community = forms.BooleanField(required = False, label = 'Topluluk Günlükleri')
+    q_label_eng = forms.BooleanField(required = False, label = 'İngilizce Günlükler')
+
+
+    q_date_from = forms.DateField(required = False, initial=date.today,label = "Şurdan",widget = widgets.AdminDateWidget() )
+    q_date_till = forms.DateField(required = False, initial=date.today,label = "Şuraya",widget = widgets.AdminDateWidget() )
