@@ -154,13 +154,13 @@ def __search(cleaned_data):
 
     # Label based queries.
     if(q_label_personal == True):
-        entries_list = entries_list.filter(entry_id__label_personal = 1)
+        entries_list |= entries_list.filter(entry_id__label_personal = 1)
     if(q_label_community == True):
-        entries_list = entries_list.filter(entry_id__label_community = 1)
+        entries_list |= entries_list.filter(entry_id__label_community = 1)
     if(q_label_lkd == True):
-        entries_list = entries_list.filter(entry_id__label_lkd = 1)
+        entries_list |= entries_list.filter(entry_id__label_lkd = 1)
     if(q_label_eng == True):
-        entries_list = entries_list.filter(entry_id__label_eng = 1)
+        entries_list |= entries_list.filter(entry_id__label_eng = 1)
 
 
     # Text search.
