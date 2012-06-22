@@ -15,11 +15,11 @@
                 <script type="text/javascript" src="jquery.cookie.min.js"></script>
 
                 <script type="text/javascript">
-        function toggleFeeds() {
-                $("#feedlist").slideToggle(function() {
-                        $("#feeds h3").toggleClass("open");
-                });
-        }
+                  function toggleFeeds() {
+                    $("#feedlist").slideToggle(function() {
+                      $("#feeds h3").toggleClass("open");
+                    });
+                  }
         $(document).ready(function() {
                 // $.cookie("hidden", null, {expires: -1});
                 var hidden = $.cookie("hidden") ? $.cookie("hidden").split(",") : new Array();
